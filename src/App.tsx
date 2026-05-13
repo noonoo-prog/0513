@@ -38,6 +38,8 @@ export default function App() {
   const [error, setError] = useState<string | null>(null);
   const [savedItems, setSavedItems] = useState<SavedItem[]>([]);
   const [isSaved, setIsSaved] = useState(false);
+  const [colorMode, setColorMode] = useState<'original' | 'custom'>('original');
+  const [customColor, setCustomColor] = useState('Blue and White');
 
   // Load from localStorage
   useEffect(() => {
@@ -65,10 +67,10 @@ export default function App() {
     reader.onload = () => {
       setOriginalImage(reader.result as string);
       setStatus('analyzing');
-      processImage(reader.result as string, file.type);
+      processImage(reader.result as string, file.type, colorMode === 'original' ? 'original' : customColor);
     };
     reader.readAsDataURL(file);
-  }, []);
+  }, [colorMode, customColor]);
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ 
     onDrop: (files: File[]) => onDrop(files), 
@@ -76,11 +78,11 @@ export default function App() {
     multiple: false 
   } as any);
 
-  const processImage = async (base64: string, type: string) => {
+  const processImage = async (base64: string, type: string, color: string) => {
     try {
       // Step 1: Analyze
       setStatus('analyzing');
-      const analysisResult = await analyzeImage(base64, type);
+      const analysisResult = await analyzeImage(base64, type, color);
       setAnalysis(analysisResult);
 
       // Step 2: Generate
@@ -90,8 +92,20 @@ export default function App() {
 
       setStatus('finished');
     } catch (err) {
-      console.error(err);
-      setError('이미지 처리 중 오류가 발생했습니다. 다시 시도해주세요.');
+      console.error("Process Image Error:", err);
+      let message = '이미지 처리 중 알 수 없는 오류가 발생했습니다.';
+      
+      if (err instanceof Error) {
+        message = err.message;
+        // Check for common Gemini errors
+        if (message.includes("403") || message.includes("PERMISSION_DENIED")) {
+          message = "API 권한이 거부되었습니다. API 키가 유효한지 확인하세요.";
+        } else if (message.includes("429") || message.includes("RESOURCE_EXHAUSTED")) {
+          message = "할당량이 초과되었습니다. 잠시 후 다시 시도해주세요.";
+        }
+      }
+      
+      setError(message);
       setStatus('error');
     }
   };
@@ -188,6 +202,65 @@ export default function App() {
                 <p className="text-[#888] text-lg max-w-md mx-auto">
                   사진이나 그림을 업로드하세요. <br /> AI가 특징을 분석하여 독창적인 심볼로 재탄생시킵니다.
                 </p>
+              </div>
+
+              {/* Color Settings */}
+              <div className="mb-8 p-6 border border-[#222] bg-[#111] rounded-xl">
+                <div className="flex items-center gap-3 mb-4">
+                  <Sparkles className="w-4 h-4 text-[#F27D26]" />
+                  <h3 className="text-xs font-mono uppercase tracking-widest text-[#888]">Color Preferences</h3>
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <button
+                    onClick={() => setColorMode('original')}
+                    className={`p-4 rounded-lg border flex flex-col items-center gap-2 transition-all ${
+                      colorMode === 'original' 
+                        ? 'border-[#F27D26] bg-[#F27D26]/10 text-white' 
+                        : 'border-[#222] hover:border-[#333] text-[#555]'
+                    }`}
+                  >
+                    <ImageIcon className="w-5 h-5" />
+                    <span className="text-xs font-bold uppercase tracking-tighter italic">Original Colors</span>
+                  </button>
+                  <button
+                    onClick={() => setColorMode('custom')}
+                    className={`p-4 rounded-lg border flex flex-col items-center gap-2 transition-all ${
+                      colorMode === 'custom' 
+                        ? 'border-[#F27D26] bg-[#F27D26]/10 text-white' 
+                        : 'border-[#222] hover:border-[#333] text-[#555]'
+                    }`}
+                  >
+                    <div className="w-5 h-5 rounded-full border border-current bg-gradient-to-tr from-blue-500 to-purple-500" />
+                    <span className="text-xs font-bold uppercase tracking-tighter italic">Custom Palette</span>
+                  </button>
+                </div>
+                {colorMode === 'custom' && (
+                  <motion.div 
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: 'auto' }}
+                    className="mt-4 pt-4 border-t border-[#222] space-y-3"
+                  >
+                    <label className="text-[10px] font-mono text-[#555] uppercase tracking-widest block">Describe your colors</label>
+                    <input 
+                      type="text"
+                      value={customColor}
+                      onChange={(e) => setCustomColor(e.target.value)}
+                      placeholder="e.g. Neon Pink and Cyan, Monochrome, Primary Colors"
+                      className="w-full bg-black border border-[#222] px-4 py-2 rounded text-sm focus:outline-none focus:border-[#F27D26] transition-colors"
+                    />
+                    <div className="flex flex-wrap gap-2">
+                      {['Gold and Black', 'Neon Futuristic', 'Pastel Soft', 'Vibrant Retro', 'Monochrome'].map(preset => (
+                        <button
+                          key={preset}
+                          onClick={() => setCustomColor(preset)}
+                          className="px-2 py-1 text-[9px] font-mono bg-[#1A1A1A] border border-[#333] text-[#888] rounded hover:text-white hover:border-[#555]"
+                        >
+                          {preset}
+                        </button>
+                      ))}
+                    </div>
+                  </motion.div>
+                )}
               </div>
 
               <div

@@ -1,6 +1,8 @@
-import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
+import { GoogleGenAI, Type } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || "" });
+// API key is injected via vite.config.ts define block or env
+const apiKey = process.env.GEMINI_API_KEY || "";
+const ai = new GoogleGenAI({ apiKey });
 
 export interface AnalysisResult {
   features: string[];
@@ -8,70 +10,101 @@ export interface AnalysisResult {
   explanation: string;
 }
 
-export async function analyzeImage(base64Image: string, mimeType: string): Promise<AnalysisResult> {
-  const model = "gemini-3-flash-preview";
+export async function analyzeImage(base64Image: string, mimeType: string, colorPreference?: string): Promise<AnalysisResult> {
+  // Use gemini-2.0-flash for multimodal analysis as it's very reliable
+  const model = "gemini-2.0-flash";
   
   const prompt = `
     Analyze this image and extract its core characteristics for creating a minimalist symbol.
     Focus on:
     1. Key visual elements (shapes, subjects).
-    2. Dominant colors.
+    2. Dominant colors (if colorPreference is 'original').
     3. Mood or vibe.
     
-    Then, suggest a specific, detailed image generation prompt to create a "minimalist, vector-style flat design symbol" based on these traits.
+    Color Requirement: ${colorPreference && colorPreference !== 'original' ? `Use ${colorPreference} color palette strictly.` : 'Extract and use dominant colors from the original image.'}
     
-    Return the response in JSON format with:
-    {
-      "features": ["feature 1", "feature 2"],
-      "suggestedPrompt": "The prompt for generation",
-      "explanation": "Why this symbol represents the image"
-    }
+    Then, suggest a specific, detailed image generation prompt to create a "minimalist, vector-style flat design symbol" based on these traits.
   `;
 
-  const response = await ai.models.generateContent({
-    model,
-    contents: {
-      parts: [
-        { inlineData: { data: base64Image.split(",")[1], mimeType } },
-        { text: prompt }
-      ]
-    },
-    config: {
-      responseMimeType: "application/json"
-    }
-  });
+  try {
+    const response = await ai.models.generateContent({
+      model,
+      contents: {
+        parts: [
+          { inlineData: { data: base64Image.split(",")[1], mimeType } },
+          { text: prompt }
+        ]
+      },
+      config: {
+        responseMimeType: "application/json",
+        responseSchema: {
+          type: Type.OBJECT,
+          properties: {
+            features: {
+              type: Type.ARRAY,
+              items: { type: Type.STRING },
+              description: "List of key visual characteristics"
+            },
+            suggestedPrompt: {
+              type: Type.STRING,
+              description: "The prompt for image generation"
+            },
+            explanation: {
+              type: Type.STRING,
+              description: "Explanation of the symbol design concept"
+            }
+          },
+          required: ["features", "suggestedPrompt", "explanation"]
+        }
+      }
+    });
 
-  return JSON.parse(response.text || "{}");
+    const text = response.text || "";
+    return JSON.parse(text);
+  } catch (error) {
+    console.error("Analysis Error:", error);
+    if (error instanceof Error && error.message.includes("API_KEY_INVALID")) {
+      throw new Error("API 키가 올바르지 않습니다. 설정에서 API 키를 확인해주세요.");
+    }
+    throw new Error(`이미지 분석 실패: ${error instanceof Error ? error.message : "알 수 없는 오류"}`);
+  }
 }
 
 export async function generateSymbol(prompt: string): Promise<string> {
   const model = "gemini-2.5-flash-image";
   
-  const finalPrompt = `${prompt}. Minimalist flat vector symbol, solid background, clean lines, professional logo style, high quality, 1k resolution.`;
+  const finalPrompt = `${prompt}. Minimalist flat vector symbol, solid white background, clean lines, professional logo style, high quality, centered composition.`;
 
-  const response = await ai.models.generateContent({
-    model,
-    contents: {
-      parts: [{ text: finalPrompt }]
-    },
-    config: {
-      imageConfig: {
-        aspectRatio: "1:1"
+  try {
+    const response = await ai.models.generateContent({
+      model,
+      contents: {
+        parts: [{ text: finalPrompt }]
+      },
+      config: {
+        imageConfig: {
+          aspectRatio: "1:1"
+        }
+      }
+    });
+
+    let imageUrl = "";
+    if (response.candidates && response.candidates[0] && response.candidates[0].content && response.candidates[0].content.parts) {
+      for (const part of response.candidates[0].content.parts) {
+        if (part.inlineData) {
+          imageUrl = `data:${part.inlineData.mimeType || 'image/png'};base64,${part.inlineData.data}`;
+          break;
+        }
       }
     }
-  });
 
-  let imageUrl = "";
-  for (const part of response.candidates[0].content.parts) {
-    if (part.inlineData) {
-      imageUrl = `data:image/png;base64,${part.inlineData.data}`;
-      break;
+    if (!imageUrl) {
+      throw new Error("이미지 데이터를 생성하지 못했습니다.");
     }
-  }
 
-  if (!imageUrl) {
-    throw new Error("Failed to generate image part");
+    return imageUrl;
+  } catch (error) {
+    console.error("Generation Error:", error);
+    throw new Error(`심볼 생성 실패: ${error instanceof Error ? error.message : "알 수 없는 오류"}`);
   }
-
-  return imageUrl;
 }
