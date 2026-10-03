@@ -40,6 +40,8 @@ export default function App() {
   const [isSaved, setIsSaved] = useState(false);
   const [colorMode, setColorMode] = useState<'original' | 'custom'>('original');
   const [customColor, setCustomColor] = useState('Blue and White');
+  const [customColorDraft, setCustomColorDraft] = useState('Blue and White');
+  const [isColorComposing, setIsColorComposing] = useState(false);
 
   // Load from localStorage
   useEffect(() => {
@@ -67,10 +69,10 @@ export default function App() {
     reader.onload = () => {
       setOriginalImage(reader.result as string);
       setStatus('analyzing');
-      processImage(reader.result as string, file.type, colorMode === 'original' ? 'original' : customColor);
+      processImage(reader.result as string, file.type, colorMode === 'original' ? 'original' : customColorDraft);
     };
     reader.readAsDataURL(file);
-  }, [colorMode, customColor]);
+  }, [colorMode, customColorDraft]);
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ 
     onDrop: (files: File[]) => onDrop(files), 
@@ -243,8 +245,19 @@ export default function App() {
                     <label className="text-[10px] font-mono text-[#555] uppercase tracking-widest block">Describe your colors</label>
                     <input 
                       type="text"
-                      value={customColor}
-                      onChange={(e) => setCustomColor(e.target.value)}
+                      value={customColorDraft}
+                      onChange={(e) => {
+                        const value = e.target.value;
+                        setCustomColorDraft(value);
+                        if (!isColorComposing) setCustomColor(value);
+                      }}
+                      onCompositionStart={() => setIsColorComposing(true)}
+                      onCompositionEnd={(e) => {
+                        const value = e.currentTarget.value;
+                        setIsColorComposing(false);
+                        setCustomColorDraft(value);
+                        setCustomColor(value);
+                      }}
                       placeholder="e.g. Neon Pink and Cyan, Monochrome, Primary Colors"
                       className="w-full bg-black border border-[#222] px-4 py-2 rounded text-sm focus:outline-none focus:border-[#F27D26] transition-colors"
                     />
@@ -252,7 +265,10 @@ export default function App() {
                       {['Gold and Black', 'Neon Futuristic', 'Pastel Soft', 'Vibrant Retro', 'Monochrome'].map(preset => (
                         <button
                           key={preset}
-                          onClick={() => setCustomColor(preset)}
+                          onClick={() => {
+                            setCustomColorDraft(preset);
+                            setCustomColor(preset);
+                          }}
                           className="px-2 py-1 text-[9px] font-mono bg-[#1A1A1A] border border-[#333] text-[#888] rounded hover:text-white hover:border-[#555]"
                         >
                           {preset}
