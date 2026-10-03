@@ -106,6 +106,7 @@ body{background:#fff}
 @media(max-width:580px){.action-grid{margin-top:10px}}
 
 </style>
+<meta name="app-version" content="moamoa-no-overlap-v4-20261004">
 </head>
 <body>
 <main class="wrap">
@@ -206,8 +207,20 @@ function previewState(){
   }
   return{board,placement:solution.placements[idx],index:idx,invalid:false};
 }
+function staticOverlapFree(sol){
+  if(!(sol&&Array.isArray(sol.placements)))return false;
+  const used=new Set(filled);
+  for(const p of sol.placements){
+    if(!p||!Array.isArray(p.cells))return false;
+    for(const k of p.cells){
+      if(used.has(k))return false;
+      used.add(k);
+    }
+  }
+  return true;
+}
 function validateSolutionSequence(sol){
-  if(!(sol&&sol.placements))return false;
+  if(!staticOverlapFree(sol))return false;
   let board=new Set(filled),reserved=new Set(filled);
   for(const p of sol.placements){
     if(p.cells.some(k=>board.has(k)||reserved.has(k)))return false;
@@ -222,10 +235,16 @@ function renderBoard(){
   const base=pv.board,placement=pv.placement,rec=new Set(placement?placement.cells:[]),icons=new Set(iconCells);
   const allRec=new Map();
   if(showAll){
-    solution.placements.forEach((p,i)=>p.cells.forEach(k=>{
-      if(!allRec.has(k))allRec.set(k,[]);
-      allRec.get(k).push(i+1);
-    }));
+    if(!staticOverlapFree(solution)){
+      solution=null;previewStep=-1;
+      setStatus("겹치는 추천을 감지해서 제거했어요. 추천 배치 찾기를 다시 눌러 주세요.");
+    }else{
+      solution.placements.forEach((p,i)=>p.cells.forEach(k=>{
+        if(base.has(k))return;
+        if(!allRec.has(k))allRec.set(k,[]);
+        allRec.get(k).push(i+1);
+      }));
+    }
   }
   $("board").innerHTML="";
   for(let y=0;y<H;y++)for(let x=0;x<W;x++){
@@ -503,17 +522,21 @@ function solve(){
       beam=[...uniq.values()];
     }
     if(!beam.length){solution=null;setStatus("현재 맵에서는 선택한 블록을 놓을 자리를 찾지 못했어요.");renderAll();return}
-    const complete=beam.filter(x=>x.placements.length===selected.length);
-    if(!complete.length){solution=beam[0]||null;previewStep=-1;setStatus("3개를 모두 안전하게 놓는 경로가 없어요. 가능한 추천 위치를 한 번에 표시해요.");renderAll();return}
+    const complete=beam.filter(x=>x.placements.length===selected.length&&staticOverlapFree(x));
+    if(!complete.length){
+      solution=null;previewStep=-1;
+      setStatus("기존 블록과 겹치지 않게 선택한 블록을 모두 놓을 경로가 없어요.");
+      renderAll();return
+    }
     const clearing=complete.filter(st=>st.clears>=1),pool=clearing.length?clearing:complete;
     for(const st of pool){
       const future=futureMobility(st.board);st.future=future;
       st.finalScore=st.clears*90000+linePoints(st.clears)*30+st.gainedIcons*26000+boardQuality(st.board)+future.score+st.points*5;
     }
     pool.sort((a,b)=>b.clears-a.clears||b.gainedIcons-a.gainedIcons||b.finalScore-a.finalScore);
-    solution=pool[0];
+    solution=pool.find(st=>staticOverlapFree(st)&&validateSolutionSequence(st))||null;
     previewStep=-1;
-    if(!validateSolutionSequence(solution)){solution=null;setStatus("겹치지 않는 배치 경로를 다시 계산해 주세요.");renderAll();return}
+    if(!solution){setStatus("겹치지 않는 배치 경로를 찾지 못했어요. 다른 블록 조합을 선택해 주세요.");renderAll();return}
     if(solution.clears>=1)setStatus("기존 블록과 새 블록이 겹치지 않게 유지하면서, 이번 3개로 가로 "+solution.clears+"줄을 완성하는 경로를 골랐어요.");
     else setStatus("기존 블록과 새 블록이 겹치지 않는 범위에서 다음 턴에 완성하기 쉬운 가로줄을 만들어요.");
     renderAll();
@@ -521,7 +544,7 @@ function solve(){
 }
 function removeSelectedOnce(piece){const i=selected.indexOf(piece);if(i>=0)selected.splice(i,1)}
 function abilitySpawn(oldCount,newCount){const spawn=Math.floor(newCount/7)-Math.floor(oldCount/7);if(spawn<=0)return"";const lost=registerSpawnedIcons(spawn);return"능력 아이콘 "+spawn+"개 생성! 게임판의 실제 위치를 등록해 주세요."+(lost?" 오래된 아이콘 "+lost+"개는 제거 처리했어요.":"")}
-function applySolution(){if(!(solution&&solution.placements&&solution.placements.length))return;if(solution.placements.length!==selected.length){setStatus("선택한 블록을 전부 놓을 수 있는 추천이 아니어서 적용하지 않았어요.");return}if(!validateSolutionSequence(solution)){setStatus("기존 블록이나 새 블록과 겹치는 추천은 적용할 수 없어요. 다시 추천해 주세요.");solution=null;previewStep=-1;renderAll();return}beforeChange();const old=placedCount,count=solution.placements.length;filled=new Set(solution.board);iconCells=solution.icons.slice();pendingAbilityClaims=Math.min(7,pendingAbilityClaims+solution.gainedIcons);placedCount+=count;clearedCount+=solution.clears;gameScore=Math.min(500000,gameScore+solution.points);for(const p of solution.placements)removeSelectedOnce(p.pieceIndex);const msg=abilitySpawn(old,placedCount);solution=null;previewStep=-1;dotRecommendCell=null;timingCache={key:"",value:null};persist();renderAll();if(gameScore>=500000)setStatus("500,000점 도달! 이 판의 목표를 달성했어요.");else setStatus(msg||(pendingAbilityClaims?"능력을 획득했어요. 실제로 나온 종류의 ＋를 눌러 등록해 주세요.":"선택한 블록 "+count+"개를 모두 적용했어요."))}
+function applySolution(){if(!(solution&&solution.placements&&solution.placements.length))return;if(solution.placements.length!==selected.length){setStatus("선택한 블록을 전부 놓을 수 있는 추천이 아니어서 적용하지 않았어요.");return}if(!staticOverlapFree(solution)||!validateSolutionSequence(solution)){setStatus("기존 블록이나 새 블록과 겹치는 추천은 적용할 수 없어요. 다시 추천해 주세요.");solution=null;previewStep=-1;renderAll();return}beforeChange();const old=placedCount,count=solution.placements.length;filled=new Set(solution.board);iconCells=solution.icons.slice();pendingAbilityClaims=Math.min(7,pendingAbilityClaims+solution.gainedIcons);placedCount+=count;clearedCount+=solution.clears;gameScore=Math.min(500000,gameScore+solution.points);for(const p of solution.placements)removeSelectedOnce(p.pieceIndex);const msg=abilitySpawn(old,placedCount);solution=null;previewStep=-1;dotRecommendCell=null;timingCache={key:"",value:null};persist();renderAll();if(gameScore>=500000)setStatus("500,000점 도달! 이 판의 목표를 달성했어요.");else setStatus(msg||(pendingAbilityClaims?"능력을 획득했어요. 실제로 나온 종류의 ＋를 눌러 등록해 주세요.":"선택한 블록 "+count+"개를 모두 적용했어요."))}
 function addPiece(i){if(swapDraft){if(swapDraft.stage==="old"){const at=selected.indexOf(i);if(at<0){setStatus("현재 선택된 블록 중 바꿀 블록을 눌러 주세요.");return}selected.splice(at,1);swapDraft.stage="new";renderAll();setStatus("게임에서 바뀐 결과 블록을 눌러 주세요.");return}selected.push(i);abilities.swap=Math.max(0,abilities.swap-1);past.push(swapDraft.before);if(past.length>WMAX)past.shift();future=[];swapDraft=null;persist();renderAll();if(selected.length){setStatus("바꿔 뽑기 1개를 사용했어요. 결과를 반영하고 다시 추천해요.");setTimeout(solve,0)}else setStatus("바꿔 뽑기 1개를 사용했어요.");return}if(selected.length>=3){setStatus("한 번에 블록은 3개까지 선택할 수 있어요.");return}beforeChange();selected.push(i);afterChange();setStatus("")}
 function removePiece(i){if(swapDraft){restore(swapDraft.before);swapDraft=null;renderAll();setStatus("바꿔 뽑기를 취소했어요.");return}const at=selected.lastIndexOf(i);if(at<0)return;beforeChange();selected.splice(at,1);afterChange()}
 function gainAbility(type){if(abilities.dot+abilities.swap>=7){setStatus("능력은 합계 7개까지만 보유할 수 있어요.");return}beforeChange();abilities[type]++;if(pendingAbilityClaims>0)pendingAbilityClaims--;afterChange();setStatus(type==="dot"?"점 찍기 능력을 등록했어요.":"바꿔 뽑기 능력을 등록했어요.")}
