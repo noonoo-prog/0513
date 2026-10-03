@@ -511,7 +511,7 @@ function solve(){
     }
     pool.sort((a,b)=>b.clears-a.clears||b.gainedIcons-a.gainedIcons||b.finalScore-a.finalScore);
     solution=pool[0];
-    previewStep=0;
+    previewStep=-1;
     if(!validateSolutionSequence(solution)){solution=null;setStatus("겹치지 않는 배치 경로를 다시 계산해 주세요.");renderAll();return}
     if(solution.clears>=1)setStatus("이번 3개로 가로 "+solution.clears+"줄을 완성하는 경로를 최우선으로 골랐어요.");
     else setStatus("이번 3개로 가로줄 완성이 불가능해서, 다음 턴에 완성하기 쉬운 가로줄을 만들어요.");
