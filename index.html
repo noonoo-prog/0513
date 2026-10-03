@@ -1,13 +1,539 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0f1728">
+<title>한글 모아모아 답안지</title>
+<meta name="description" content="현재 맵과 블록 최대 3개를 입력하면 한글 모아모아 추천 배치 순서를 계산해 주는 답안지">
+<style>
+:root{font-family:"Apple SD Gothic Neo",Pretendard,"Malgun Gothic",system-ui,sans-serif;color-scheme:dark;--bg:#0d1526;--panel:#1c283c;--panel2:#111b2c;--line:#34445d;--text:#eef4ff;--muted:#a5b2c6;--red:#ff405d;--green:#20c78f;--blue:#42aaf5;--orange:#ffae21;--pink:#ef4d9d;--yellow:#ffbf18}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -160px,#253149 0,#111a2b 45%,#0b1321 100%);color:var(--text);min-height:100vh}button,input{font:inherit}.wrap{width:min(1120px,calc(100% - 28px));margin:0 auto;padding:26px 0 60px}.hero{text-align:center;margin:6px 0 24px}.hero h1{margin:0;color:var(--red);font-size:clamp(32px,5vw,50px);letter-spacing:-.06em;font-weight:950}.hero p{margin:10px 0 0;color:var(--muted);font-size:14px}.layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);gap:16px;align-items:start}.panel{background:linear-gradient(180deg,#1e2b40,#182437);border:1px solid #33445f;border-radius:18px;box-shadow:0 14px 32px rgba(0,0,0,.22)}.panel-head{padding:17px 18px 0;display:flex;align-items:center;justify-content:space-between;gap:12px}.panel-head h2{margin:0;font-size:17px;letter-spacing:-.04em}.panel-head p{margin:4px 0 0;font-size:12px;color:var(--muted)}.head-actions{display:flex;gap:7px}.mini{border:1px solid #50617a;background:#3a4a62;color:#fff;border-radius:9px;min-height:34px;padding:0 11px;font-size:12px;font-weight:850}.pieces{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;padding:14px}.piece-card{position:relative;min-height:121px;border:2px solid #31445e;background:#0f192b;color:inherit;border-radius:12px;padding:9px 7px 7px;cursor:pointer}.piece-card:hover{border-color:#617691}.piece-card.selected{border-color:#1bd996;box-shadow:0 0 0 1px #1bd996 inset}.piece-card .order{position:absolute;left:7px;top:7px;width:20px;height:20px;border-radius:50%;display:none;place-items:center;color:#06121a;font-size:11px;font-weight:950}.piece-card.selected .order{display:grid}.piece-card[data-order="1"] .order{background:#1edb79}.piece-card[data-order="2"] .order{background:#37c3ff}.piece-card[data-order="3"] .order{background:#ffae22}.piece-card .count{position:absolute;right:8px;top:9px;font-size:12px;font-weight:900;color:#e8edf7}.piece-shape{height:70px;display:grid;place-items:center;margin-top:15px}.mini-grid{display:grid;gap:3px}.mini-cell{width:10px;height:10px;border-radius:2px;background:transparent}.mini-cell.on.c0{background:#f04da0}.mini-cell.on.c1{background:#1fc892}.mini-cell.on.c2{background:#3e8df2}.mini-cell.on.c3{background:#ffbf18}.piece-name{text-align:center;font-size:10px;color:#8291a7;margin-top:1px}.board-panel{padding-bottom:15px}.board-meta{padding:14px 15px 0;display:flex;justify-content:space-between;color:var(--muted);font-size:12px}.board-wrap{padding:13px 15px}.board{display:grid;grid-template-columns:repeat(10,1fr);aspect-ratio:10/16;border:2px solid #34455e;background:#07111e;border-radius:7px;overflow:hidden;touch-action:manipulation}.cell{position:relative;border:0;border-right:1px solid #33445d;border-bottom:1px solid #33445d;background:#07111e;min-width:0;padding:0}.cell:nth-child(10n){border-right:0}.cell.filled{background:linear-gradient(145deg,#2e7ff0,#43a4ff);box-shadow:inset 0 0 8px rgba(255,255,255,.25)}.cell.reco1{background:#19c98c;box-shadow:inset 0 0 0 2px #ff405d}.cell.reco2{background:#326b81;box-shadow:inset 0 0 0 2px #39bdff}.cell.reco3{background:#876726;box-shadow:inset 0 0 0 2px #ffae21}.cell .num{position:absolute;top:2px;right:3px;font-size:9px;font-weight:900}.toolbar{display:grid;grid-template-columns:1fr 1.15fr;gap:8px;padding:0 15px}.tool{min-height:44px;border:0;border-radius:10px;font-weight:900;color:white;background:#3d4c63}.tool.solve{background:linear-gradient(90deg,#e84267,#f4454e)}.steps{padding:0 15px 15px}.result{margin-top:10px;padding:13px;border:1px solid #33445b;border-radius:12px;background:#101a2b}.result-title{display:flex;justify-content:space-between;gap:8px;align-items:center;font-size:12px;color:var(--muted);margin-bottom:10px}.step-list{display:grid;gap:7px}.step{display:grid;grid-template-columns:27px 1fr auto;gap:8px;align-items:center;padding:9px 10px;border-radius:9px;background:#18263a;font-size:12px;color:inherit;text-align:left;border:1px solid transparent;width:100%}.step.preview-step{cursor:pointer}.step.preview-step.active{border-color:#7fd5ff;box-shadow:0 0 0 2px rgba(127,213,255,.18);background:#20314a}.step-badge{width:25px;height:25px;border-radius:50%;display:grid;place-items:center;color:#08111d;font-weight:950}.step:nth-child(1) .step-badge{background:#1edb79}.step:nth-child(2) .step-badge{background:#39bdff}.step:nth-child(3) .step-badge{background:#ffae21}.step small{color:#9fb0c7}.empty-result{color:#8291a7;font-size:12px;line-height:1.6}.help{margin-top:13px;padding:14px 16px;background:#172338;border:1px solid #30415b;border-radius:13px;color:#aebbd0;font-size:12px;line-height:1.7}.help strong{color:#fff}.status{margin:0 15px 12px;min-height:18px;color:#ffcb70;font-size:12px}.legend{display:flex;gap:8px;flex-wrap:wrap;padding:12px 15px 0}.legend span{display:flex;align-items:center;gap:5px;font-size:10px;color:#9eacc1}.legend i{width:9px;height:9px;border-radius:2px}.home-link{display:inline-flex;margin-top:18px;color:#b8c6d8;font-size:12px;text-decoration:none}.home-link:hover{text-decoration:underline}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.pieces{grid-template-columns:repeat(5,minmax(0,1fr))}.board-panel{max-width:560px;margin:0 auto;width:100%}}
+@media(max-width:580px){.wrap{width:calc(100% - 16px);padding-top:15px}.hero{margin-bottom:14px}.hero h1{font-size:31px}.hero p{font-size:12px}.pieces{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;padding:10px}.piece-card{min-height:108px;padding:7px 5px}.piece-shape{height:63px}.panel-head{padding:14px 13px 0}.panel-head h2{font-size:15px}.mini{padding:0 8px}.board-wrap{padding:10px}.toolbar{padding:0 10px}.steps{padding:0 10px 10px}}
 
+.select-help{padding:0 14px 14px;color:#8391a6;font-size:11px;line-height:1.55}
+.history-btn{width:38px;padding:0;font-size:20px}
+.board-meta{padding:11px 15px 0;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.board-stats{display:flex;gap:6px;flex-wrap:wrap}.board-stats span,.icon-stat{padding:5px 7px;border:1px solid #3b4b63;border-radius:8px;background:#152136;color:#d6deec;font-size:10px;font-weight:800}
+.score-progress{height:5px;margin:8px 15px 0;border-radius:999px;background:#0d1727;overflow:hidden}.score-progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,#1fc98f,#4ba3ff);transition:width .2s ease}
+
+.ability-box{margin:0 15px 11px;border:1px solid #394b63;border-radius:12px;background:#121e31;padding:11px}
+.ability-head{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:9px}.ability-head strong{font-size:13px}.ability-head span{font-size:10px;color:#a8b7cc}
+.ability-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}.ability-row{display:grid;grid-template-columns:minmax(0,1fr) 34px;gap:5px}
+.ability-use,.ability-add{min-height:42px;border:0;border-radius:9px;color:#fff;font-weight:900}.ability-use{background:#3c4b61}.ability-use.active{box-shadow:inset 0 0 0 2px #56d9ff;background:#324d67}.ability-use.swap-active{box-shadow:inset 0 0 0 2px #e778ff;background:#4c365d}.ability-add{background:#2e7d64;font-size:20px}
+.ability-rule{margin-top:8px;color:#8392a8;font-size:10px;line-height:1.5}
+.icon-controls{display:grid;grid-template-columns:1fr auto;gap:7px;align-items:center;margin-top:8px}
+.icon-mark-button{min-height:36px;border:1px solid #4a607e;border-radius:9px;background:#263956;color:#d8e8ff;font-size:10px;font-weight:900}
+.icon-mark-button.active{border-color:#ffd35a;background:#493f20;color:#ffe997;box-shadow:0 0 0 2px rgba(255,211,90,.16)}
+.icon-controls span{font-size:9px;color:#9fb0c5;white-space:nowrap}
+.cell.has-icon .ability-icon-mark{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:4;color:#ffe56d;font-size:17px;font-weight:950;text-shadow:0 0 5px #ffaf00,0 0 9px #ffdc6b;pointer-events:none}
+.cell.icon-mark-mode{box-shadow:inset 0 0 0 1px rgba(255,224,89,.2)}
+
+.ability-advice{margin-top:8px;padding:8px 9px;border-radius:8px;background:#182942;border:1px solid #334e70;color:#c8d8ed;font-size:10px;line-height:1.55}
+.ability-timing{display:grid;gap:6px;margin-top:8px}
+.timing-row{display:grid;grid-template-columns:auto auto;gap:2px 8px;align-items:center;padding:8px 9px;border:1px solid #30435d;border-radius:9px;background:#101c2e}
+.timing-row>span{font-size:10px;color:#aab9cd;font-weight:800}.timing-row>strong{justify-self:end;font-size:11px}
+.timing-row>small{grid-column:1/-1;color:#8293aa;font-size:9px;line-height:1.45}
+.timing-row.use-now{border-color:#2f9b76;background:#122b29}.timing-row.use-now>strong{color:#66e0ad}
+.timing-row.hold{border-color:#4a5366}.timing-row.hold>strong{color:#b7c0cf}
+.timing-row.none{opacity:.68}
+
+.cell.dot-recommend{background:#18384d!important;box-shadow:inset 0 0 0 3px #55e0ff,0 0 13px rgba(85,224,255,.5)}
+.cell.dot-recommend:after{content:"◎";position:absolute;inset:0;display:grid;place-items:center;color:#95f2ff;font-size:18px;font-weight:950}
+.piece-card.swap-recommend{border-color:#e778ff!important;box-shadow:0 0 0 2px rgba(231,120,255,.26),0 0 18px rgba(231,120,255,.2)}
+.piece-card.swap-recommend:after{content:"교체 추천";position:absolute;left:7px;bottom:6px;z-index:5;padding:3px 6px;border-radius:999px;background:#b950cf;color:#fff;font-size:9px;font-weight:900;pointer-events:none}
+
+.action-grid{grid-template-columns:1fr 1fr}.tool.apply{background:#1aa87c}.tool.reset{background:#f4434b}.tool.mode.active{background:#365f7d;box-shadow:inset 0 0 0 2px #47caff}
+.piece-card{overflow:hidden}.piece-hit{position:absolute;inset:0;width:100%;border:0;background:transparent;color:inherit;padding:9px 7px 7px}.piece-minus{position:absolute;right:5px;bottom:5px;z-index:4;width:24px;height:24px;border:0;border-radius:50%;background:#ff4c58;color:white;font-size:18px;font-weight:900;line-height:1}
+.order-stack{position:absolute;left:6px;top:6px;display:flex;gap:3px;z-index:3;pointer-events:none}.order-stack i{width:19px;height:19px;border-radius:50%;display:grid;place-items:center;color:#07111c;font-style:normal;font-size:10px;font-weight:950}.order-stack i:nth-child(1){background:#1edb79}.order-stack i:nth-child(2){background:#39bdff}.order-stack i:nth-child(3){background:#ffae21}
+
+
+/* High-visibility color pass — layout/logic unchanged */
+:root{--bg:#0a1020;--panel:#182338;--panel2:#0f192b;--line:#526682;--text:#f7faff;--muted:#c0cad9;--red:#ff4d61;--green:#39e6a7;--blue:#55b8ff;--orange:#ffb83d;--pink:#ff65b4;--yellow:#ffe060}
+body{background:radial-gradient(circle at 50% -160px,#2b3853 0,#111b2f 45%,#09101d 100%)}
+.panel{background:linear-gradient(180deg,#202e45,#172238);border-color:#455975}
+.panel-head p,.hero p,.select-help,.ability-rule,.timing-row>small,.piece-name,.step small,.empty-result,.help{color:#bac7da}
+.piece-card{background:#0d1728;border-color:#425675}
+.piece-card:hover{border-color:#7e93b0}
+.piece-card.selected{border-color:#42f0aa;box-shadow:0 0 0 2px rgba(66,240,170,.28) inset,0 0 12px rgba(66,240,170,.12)}
+.mini-cell.on.c0{background:#ff5eb8}.mini-cell.on.c1{background:#35e6a4}.mini-cell.on.c2{background:#5eb7ff}.mini-cell.on.c3{background:#ffd84a}
+.board{border-color:#6b7f9b;background:#050a14}
+.cell{background:#07101e;border-right-color:#435675;border-bottom-color:#435675}
+.cell.filled{background:#2d68d8;box-shadow:inset 0 0 0 1px #76a8ff,inset 0 0 10px rgba(255,255,255,.18)}
+.cell.reco1{background:#22d98f;box-shadow:inset 0 0 0 3px #7dffd0}.cell.reco2{background:#27aef1;box-shadow:inset 0 0 0 3px #85dbff}.cell.reco3{background:#f2a51c;box-shadow:inset 0 0 0 3px #ffd66e}
+.cell .num{color:#07101a;background:rgba(255,255,255,.86);border-radius:4px;padding:1px 3px}
+.legend span{color:#c7d2e2}
+.board-stats span,.icon-stat{border-color:#50647f;background:#101b2e;color:#f4f8ff}
+.score-progress{background:#07101d}.score-progress i{background:linear-gradient(90deg,#2fe0a2,#51b9ff)}
+.ability-box{background:#0f1a2c;border-color:#4a5e7c}
+.ability-use{background:#33445f}.ability-use:hover{background:#405572}
+.ability-add{background:#168866}.ability-add:hover{background:#1aa579}
+.ability-use.active,.tool.mode.active{background:#155f80;box-shadow:inset 0 0 0 2px #69dcff}
+.ability-use.swap-active{background:#68427c;box-shadow:inset 0 0 0 2px #f09bff}
+.icon-mark-button{background:#273b5b;border-color:#667d9e;color:#f1f7ff}
+.icon-mark-button.active{background:#5a4918;border-color:#ffe56a;color:#fff2a8;box-shadow:0 0 0 2px rgba(255,229,106,.22)}
+.cell.has-icon .ability-icon-mark{color:#fff06b;text-shadow:0 0 4px #000,0 0 7px #ffb700,0 0 12px #ffdf57}
+.ability-advice{background:#152744;border-color:#46688f;color:#e2edff}
+.timing-row{background:#0e1929;border-color:#405470}
+.timing-row>span{color:#d0d9e7}
+.timing-row.use-now{background:#10392f;border-color:#32d79c}.timing-row.use-now>strong{color:#67f3bd}
+.timing-row.hold{background:#20283a;border-color:#5d6880}.timing-row.hold>strong{color:#e0e6ef}
+.cell.dot-recommend{background:#164a68!important;box-shadow:inset 0 0 0 3px #63e6ff,0 0 15px rgba(99,230,255,.55)}
+.cell.dot-recommend:after{color:#c2f7ff}
+.piece-card.swap-recommend{border-color:#f08cff!important;box-shadow:0 0 0 2px rgba(240,140,255,.3),0 0 18px rgba(240,140,255,.24)}
+.piece-card.swap-recommend:after{background:#a93fbd}
+.mini{background:#32445f;border-color:#647997}.mini:hover{background:#405673}
+.tool{background:#3b4c65}
+.tool.solve{background:#365fd5}.tool.solve:hover{background:#4470ed}
+.tool.apply{background:#13956d}.tool.apply:hover{background:#18ad80}
+.tool.mode{background:#3f4678}.tool.mode:hover{background:#505992}
+.tool.reset{background:#d73d50}.tool.reset:hover{background:#ef4b60}
+.result{background:#0e192a;border-color:#435875}
+.step{background:#17263b}
+.step:nth-child(1) .step-badge,.order-stack i:nth-child(1){background:#42e5a5}
+.step:nth-child(2) .step-badge,.order-stack i:nth-child(2){background:#5cc7ff}
+.step:nth-child(3) .step-badge,.order-stack i:nth-child(3){background:#ffc34e}
+.status{color:#ffe07a}
+.help{background:#152239;border-color:#405573}
+
+
+/* white page background + action buttons above board */
+body{background:#fff}
+.hero p{color:#5f6d82}
+.home-link{color:#52657d}
+.action-grid{margin-top:12px}
+@media(max-width:580px){.action-grid{margin-top:10px}}
+
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="hero"><h1>한글 모아모아</h1><p>50만점 목표 · 가로줄 완성 최우선 · 퍼즐처럼 어디든 배치해요</p></header>
+<div class="layout">
+<section class="panel">
+<div class="panel-head"><div><h2>블록 선택 <span id="pieceCount">(0 / 3)</span></h2><p>같은 블록도 최대 3개까지 선택 · 회전/반전 자동 계산</p></div><div class="head-actions"><button id="clearPieces" class="mini" type="button">× 선택 취소</button></div></div>
+<div id="pieces" class="pieces" aria-label="19개 블록 선택"></div><div class="select-help">블록을 누르면 추가 · 빨간 − 버튼을 누르면 1개씩 취소돼요.</div>
+</section>
+<section class="panel board-panel">
+<div class="panel-head"><div><h2>맵</h2><p>맵 초기화 전까지 계속 누적돼요</p></div><div class="head-actions"><button id="undo" class="mini history-btn" type="button" aria-label="되돌리기">↶</button><button id="redo" class="mini history-btn" type="button" aria-label="다시 실행">↷</button></div></div><div class="board-meta"><div class="board-stats"><span id="scoreStat">점수 0 / 500,000</span><span id="placedStat">놓은 조각 0</span><span id="lineStat">지운 줄 0</span></div><div class="board-stats"><span id="stageStat">1단계</span><span id="iconStat" class="icon-stat">능력 아이콘 0 / 3</span></div></div><div class="score-progress"><i id="scoreProgress"></i></div>
+<div class="toolbar action-grid"><button id="solve" class="tool solve" type="button">추천 배치 찾기</button><button id="apply" class="tool apply" type="button" disabled>추천 전체 적용</button><button id="dotMode" class="tool mode" type="button">● 점 찍기</button><button id="resetMap" class="tool reset" type="button">맵 초기화</button></div>
+<div class="legend"><span><i style="background:#3f92f5"></i>현재 블록</span><span><i style="background:#1edb79"></i>1번</span><span><i style="background:#39bdff"></i>2번</span><span><i style="background:#ffae21"></i>3번</span></div>
+<div class="board-wrap"><div id="board" class="board" aria-label="10 x 16 맵"></div></div>
+<div class="ability-box">
+<div class="ability-head"><strong>능력</strong><span id="abilityProgress">보유 0/7 · 다음 생성까지 7조각</span></div>
+<div class="ability-grid">
+<div class="ability-row"><button id="useDot" class="ability-use" type="button">◎ 점 찍기 ×0</button><button id="gainDot" class="ability-add" type="button">＋</button></div>
+<div class="ability-row"><button id="useSwap" class="ability-use" type="button">⇄ 바꿔 뽑기 ×0</button><button id="gainSwap" class="ability-add" type="button">＋</button></div>
+</div>
+<div class="icon-controls">
+  <button id="markIcon" class="icon-mark-button" type="button" disabled>✦ 아이콘 위치 등록 ×0</button>
+  <span id="claimStat">획득 대기 0</span>
+</div>
+<div class="ability-timing">
+  <div class="timing-row"><span>◎ 점 찍기</span><strong id="dotTiming">보유 없음</strong><small id="dotTimingReason">능력을 등록하면 사용 타이밍을 알려줘요.</small></div>
+  <div class="timing-row"><span>⇄ 바꿔 뽑기</span><strong id="swapTiming">보유 없음</strong><small id="swapTimingReason">능력을 등록하면 교체 타이밍을 알려줘요.</small></div>
+</div>
+<div id="abilityAdvice" class="ability-advice">능력을 누르면 현재 맵 기준 추천 위치·교체 블록을 표시해요.</div>
+<div class="ability-rule">각 능력은 <strong>1회 사용하면 1개 차감</strong> · 조각 7번 배치마다 능력 아이콘 생성 · 보유 능력 합계 최대 7개</div>
+</div>
+
+<div id="status" class="status" aria-live="polite"></div>
+<div class="steps"><div class="result"><div class="result-title"><strong style="color:#fff">답안</strong><span id="scoreText">블록을 선택해 주세요</span></div><div id="resultList" class="empty-result">맵의 채워진 칸을 입력하고 블록을 선택한 뒤 <strong>추천 배치 찾기</strong>를 눌러 주세요.</div></div></div>
+</section>
+</div>
+<div class="help"><strong>50만점 전략</strong> · 블록은 아래에서 쌓는 방식이 아니라 <strong>빈칸이면 어디든 배치</strong>해요. 이번 3개로 가능하면 <strong>가로 1줄 이상 완성</strong>을 최우선으로 찾고, 불가능할 때만 다음 턴 가로줄 완성을 준비해요. 블록 최대 3개 선택 → 추천 배치 찾기 → 실제 게임에 그대로 놓았다면 <strong>추천 전체 적용</strong>. 답안의 1·2·3번을 누르면 각 블록을 놓기 직전 판을 따로 볼 수 있고, 추천 전체 적용 시 결과가 한 번에 누적돼요. ↶/↷ 또는 Ctrl+Z로 되돌릴 수 있어요. 능력 칸에는 지금 사용 추천/아껴두기가 표시돼요. 점 찍기는 비상용으로 보수적으로 추천해요. 7수마다 아이콘이 나오면 위치 등록은 선택사항이고, 등록하면 그 줄 회수까지 계산해 더 정확해져요. 안 찍어도 계속 진행돼요. 그리고 각 능력은 실제로 한 번 사용하면 1개가 사라져요. 점 찍기는 7회 능력 생성 카운트에 포함하지 않고, 중간에 수동 사용해도 남은 블록을 바로 다시 계산해요.</div>
+</main>
+<script>
+(()=>{"use strict";
+const W=10,H=16;
+// 조각 모양은 사용자가 제공한 실제 19종 선택 화면을 기준으로 맞췄습니다.
+const PIECES=[
+{n:"1번",c:0,s:[[0,0]]},
+{n:"2번",c:1,s:[[0,0],[1,1],[0,2]]},
+{n:"3번",c:2,s:[[0,0],[1,0],[2,0]]},
+{n:"4번",c:0,s:[[0,0],[0,1],[1,1]]},
+{n:"5번",c:0,s:[[2,0],[0,1],[1,1],[2,1]]},
+{n:"6번",c:2,s:[[0,0],[0,1],[1,1],[0,2]]},
+{n:"7번",c:1,s:[[1,0],[0,1],[2,1],[1,2]]},
+{n:"8번",c:0,s:[[0,0],[1,0],[0,1],[0,2],[1,2]]},
+{n:"9번",c:2,s:[[0,0],[1,0],[2,0],[3,0],[4,0]]},
+{n:"10번",c:1,s:[[0,0],[2,0],[1,1],[0,2],[1,2],[2,2]]},
+{n:"11번",c:3,s:[[0,0],[1,0],[1,1],[0,2],[1,2],[1,3]]},
+{n:"12번",c:1,s:[[0,0],[0,1],[1,1],[0,2],[0,3],[1,3],[0,4]]},
+{n:"13번",c:3,s:[[1,0],[0,1],[1,1],[2,1],[1,2],[0,3],[2,3]]},
+{n:"14번",c:1,s:[[0,0],[1,0],[2,0],[0,1],[2,1],[0,2],[1,2],[2,2]]},
+{n:"15번",c:0,s:[[0,0],[1,0],[1,1],[0,2],[1,2],[0,3],[0,4],[1,4]]},
+{n:"16번",c:3,s:[[0,0],[1,0],[0,1],[0,2],[1,2],[0,3],[0,4],[1,4]]},
+{n:"17번",c:1,s:[[2,0],[1,1],[2,1],[0,2],[2,2],[3,2],[1,3],[2,3],[2,4]]},
+{n:"18번",c:1,s:[[0,0],[2,0],[0,1],[1,1],[2,1],[0,2],[2,2],[0,3],[1,3],[2,3]]},
+{n:"19번",c:2,s:[[0,0],[2,0],[0,1],[1,1],[2,1],[0,2],[1,2],[2,2],[0,3],[2,3]]}
+];
+let filled=new Set(),selected=[],placedCount=0,clearedCount=0,gameScore=0,abilities={dot:0,swap:0},iconCells=[],awaitingIconMarks=0,pendingAbilityClaims=0;
+let solution=null,previewStep=0,dotArmed=false,dotRecommendCell=null,iconMarkMode=false,swapDraft=null,past=[],future=[],timingCache={key:"",value:null};
+const WMAX=80,STORE="moamoa-solver-v2";
+const $=id=>document.getElementById(id);
+function key(x,y){return y*W+x}
+function norm(shape){const minX=Math.min(...shape.map(p=>p[0])),minY=Math.min(...shape.map(p=>p[1]));return shape.map(([x,y])=>[x-minX,y-minY]).sort((a,b)=>a[1]-b[1]||a[0]-b[0])}
+function sig(shape){return norm(shape).map(p=>p.join(",")).join(";")}
+function transforms(shape){const out=[],seen=new Set();for(let flip=0;flip<2;flip++)for(let r=0;r<4;r++){let cur=shape.map(([x,y])=>[flip?-x:x,y]);for(let i=0;i<r;i++)cur=cur.map(([x,y])=>[-y,x]);cur=norm(cur);const k=sig(cur);if(!seen.has(k)){seen.add(k);out.push(cur)}}return out}
+const TRANS=PIECES.map(p=>transforms(p.s));
+function size(shape){return [Math.max(...shape.map(p=>p[0]))+1,Math.max(...shape.map(p=>p[1]))+1]}
+function snapshot(){return{filled:[...filled],selected:[...selected],placedCount,clearedCount,gameScore,abilities:{dot:abilities.dot,swap:abilities.swap},iconCells:[...iconCells],awaitingIconMarks,pendingAbilityClaims}}
+function validSnap(v){return v&&Array.isArray(v.filled)&&Array.isArray(v.selected)&&Number.isFinite(v.placedCount)&&Number.isFinite(v.clearedCount)&&v.abilities}
+function restore(v){if(!validSnap(v))return;filled=new Set(v.filled.filter(n=>Number.isInteger(n)&&n>=0&&n<W*H));selected=v.selected.filter(n=>Number.isInteger(n)&&n>=0&&n<PIECES.length).slice(0,3);placedCount=Math.max(0,Math.floor(v.placedCount));clearedCount=Math.max(0,Math.floor(v.clearedCount));gameScore=Math.max(0,Math.min(500000,Math.floor(Number.isFinite(v.gameScore)?v.gameScore:0)));abilities={dot:Math.max(0,Math.min(7,Math.floor(v.abilities.dot||0))),swap:Math.max(0,Math.min(7,Math.floor(v.abilities.swap||0)))};iconCells=Array.isArray(v.iconCells)?v.iconCells.filter(k=>Number.isInteger(k)&&k>=0&&k<W*H).slice(-3):[];awaitingIconMarks=Math.max(0,Math.min(3,Math.floor(Number.isFinite(v.awaitingIconMarks)?v.awaitingIconMarks:(v.pendingIcons||0))));pendingAbilityClaims=Math.max(0,Math.min(7,Math.floor(v.pendingAbilityClaims||0)));solution=null;previewStep=0;dotArmed=false;dotRecommendCell=null;iconMarkMode=false;swapDraft=null;timingCache={key:"",value:null}}
+function persist(){try{localStorage.setItem(STORE,JSON.stringify({state:snapshot(),past:past.slice(-WMAX),future:future.slice(-WMAX)}))}catch{}}
+function load(){try{const v=JSON.parse(localStorage.getItem(STORE)||"null");if(v&&validSnap(v.state)){restore(v.state);past=Array.isArray(v.past)?v.past.filter(validSnap).slice(-WMAX):[];future=Array.isArray(v.future)?v.future.filter(validSnap).slice(-WMAX):[]}}catch{}}
+function beforeChange(){past.push(snapshot());if(past.length>WMAX)past.shift();future=[]}
+function afterChange(){solution=null;previewStep=0;dotRecommendCell=null;timingCache={key:"",value:null};persist();renderAll()}
+function undo(){if(!past.length)return;future.push(snapshot());restore(past.pop());persist();renderAll();setStatus("되돌렸어요.")}
+function redo(){if(!future.length)return;past.push(snapshot());restore(future.pop());persist();renderAll();setStatus("다시 실행했어요.")}
+function setStatus(v){$("status").textContent=v}
+function miniShape(piece){const shape=norm(piece.s),wh=size(shape),w=wh[0],hh=wh[1],set=new Set(shape.map(p=>p[0]+","+p[1]));let out='<div class="mini-grid" style="grid-template-columns:repeat('+w+',10px);grid-template-rows:repeat('+hh+',10px)">';for(let y=0;y<hh;y++)for(let x=0;x<w;x++)out+='<i class="mini-cell '+(set.has(x+","+y)?"on c"+piece.c:"")+'"></i>';return out+"</div>"}
+function positionsOf(index){const a=[];selected.forEach((v,i)=>{if(v===index)a.push(i+1)});return a}
+function renderPieces(){$("pieces").innerHTML=PIECES.map((p,i)=>{const pos=positionsOf(i),orders=pos.map(n=>"<i>"+n+"</i>").join(""),swapRec=!!(swapDraft&&swapDraft.stage==="old"&&swapDraft.recommended===i);return '<div class="piece-card '+(pos.length?"selected ":"")+(swapRec?"swap-recommend":"")+'"><button class="piece-hit" type="button" data-add-index="'+i+'"><span class="count">'+p.s.length+'칸</span><div class="piece-shape">'+miniShape(p)+'</div><div class="piece-name">'+(i+1)+'번'+(pos.length?" · ×"+pos.length:"")+'</div></button>'+(pos.length?'<span class="order-stack">'+orders+'</span><button class="piece-minus" type="button" data-remove-index="'+i+'">−</button>':"")+'</div>'}).join("");$("pieceCount").textContent="("+selected.length+" / 3)"}
+function linePoints(n){return n>0?300*n*n:0}
+function stageForLines(lines){return lines<=30?1:lines<=60?2:lines<=100?3:lines<=150?4:5}
+function previewState(){
+  if(!(solution&&solution.placements&&solution.placements.length))return{board:new Set(filled),placement:null,index:0};
+  const idx=Math.max(0,Math.min(previewStep,solution.placements.length-1));
+  let board=new Set(filled);
+  for(let i=0;i<idx;i++){
+    const p=solution.placements[i];
+    if(p.cells.some(k=>board.has(k)))return{board,placement:null,index:idx,invalid:true};
+    p.cells.forEach(k=>board.add(k));
+    board=clearLines(board).board;
+  }
+  return{board,placement:solution.placements[idx],index:idx,invalid:false};
+}
+function validateSolutionSequence(sol){
+  if(!(sol&&sol.placements))return false;
+  let board=new Set(filled);
+  for(const p of sol.placements){
+    if(p.cells.some(k=>board.has(k)))return false;
+    p.cells.forEach(k=>board.add(k));
+    board=clearLines(board).board;
+  }
+  return true;
+}
+function renderBoard(){
+  const pv=previewState(),base=pv.board,placement=pv.placement,rec=new Set(placement?placement.cells:[]),icons=new Set(iconCells);
+  $("board").innerHTML="";
+  for(let y=0;y<H;y++)for(let x=0;x<W;x++){
+    const k=key(x,y),div=document.createElement("button");
+    div.type="button";
+    div.className="cell"+(base.has(k)?" filled":"")+(rec.has(k)?" reco"+(pv.index+1):"")+(dotArmed?" dot-mode":"")+(dotArmed&&dotRecommendCell===k?" dot-recommend":"")+(icons.has(k)?" has-icon":"")+(iconMarkMode?" icon-mark-mode":"");
+    div.dataset.cell=k;
+    let inner="";
+    if(rec.has(k))inner+='<span class="num">'+(pv.index+1)+"</span>";
+    if(icons.has(k))inner+='<span class="ability-icon-mark">✦</span>';
+    div.innerHTML=inner;
+    $("board").append(div);
+  }
+  $("scoreStat").textContent="점수 "+gameScore.toLocaleString()+" / 500,000";
+  $("scoreProgress").style.width=Math.min(100,gameScore/5000)+"%";
+  $("placedStat").textContent="놓은 조각 "+placedCount;
+  $("lineStat").textContent="지운 줄 "+clearedCount;
+  $("stageStat").textContent=stageForLines(clearedCount)+"단계";
+  $("iconStat").textContent="판 아이콘 "+iconCells.length+(awaitingIconMarks?" · 위치대기 "+awaitingIconMarks:"");
+}
+function renderAbilities(){const total=abilities.dot+abilities.swap,mod=placedCount%7,next=mod===0?7:7-mod;const timing=abilityTiming();$("useDot").textContent="◎ 점 찍기 ×"+abilities.dot;$("useSwap").textContent="⇄ 바꿔 뽑기 ×"+abilities.swap;$("dotMode").textContent="● 점 찍기 ×"+abilities.dot;$("useDot").disabled=abilities.dot<1;$("dotMode").disabled=abilities.dot<1;$("useSwap").disabled=abilities.swap<1||selected.length<1;$("gainDot").disabled=total>=7;$("gainSwap").disabled=total>=7;$("useDot").classList.toggle("active",dotArmed);$("dotMode").classList.toggle("active",dotArmed);$("useSwap").classList.toggle("swap-active",!!swapDraft);$("abilityProgress").textContent="보유 "+total+"/7 · 다음 생성까지 "+next+"조각";$("markIcon").textContent="✦ 아이콘 위치 등록 ×"+awaitingIconMarks;$("markIcon").disabled=awaitingIconMarks<1;$("markIcon").classList.toggle("active",iconMarkMode);$("claimStat").textContent="획득 대기 "+pendingAbilityClaims;paintTiming("dot",timing.dot);paintTiming("swap",timing.swap);const advice=$("abilityAdvice");if(iconMarkMode){advice.textContent="게임판에 나타난 노란 능력 아이콘의 정확한 칸을 눌러 주세요."}else if(awaitingIconMarks>0){advice.textContent="능력 아이콘 위치 등록은 선택사항이에요. 안 찍어도 계속 진행되고, 찍으면 회수 경로가 더 정확해져요."}else if(pendingAbilityClaims>0){advice.textContent="아이콘 줄을 지워 능력을 얻었어요. 실제로 나온 능력 종류의 ＋를 눌러 등록해 주세요."}else if(dotArmed&&dotRecommendCell!==null){const x=dotRecommendCell%W,y=Math.floor(dotRecommendCell/W);advice.textContent="점 찍기 추천 · 왼쪽 "+(x+1)+"칸 / 위 "+(y+1)+"칸. 다른 빈 칸을 직접 눌러도 돼요."}else if(swapDraft&&swapDraft.stage==="old"){advice.textContent="바꿔 뽑기 추천 · "+(swapDraft.recommended+1)+"번 블록 교체. 다른 선택 블록을 눌러도 돼요."}else if(swapDraft&&swapDraft.stage==="new"){advice.textContent="게임에서 새로 나온 블록을 눌러 주세요. 선택 즉시 다시 추천해요."}else advice.textContent="능력을 누르면 현재 맵 기준 추천 위치·교체 블록을 표시해요.";$("undo").disabled=!past.length;$("redo").disabled=!future.length;$("apply").disabled=!(solution&&solution.placements&&solution.placements.length===selected.length)}
+function renderAnswer(){if(!(solution&&solution.placements&&solution.placements.length)){$("scoreText").textContent=selected.length?"추천 배치 찾기를 눌러 주세요":"블록을 선택해 주세요";$("resultList").className="empty-result";$("resultList").textContent="현재 맵을 입력하고 블록을 선택해 주세요.";return}const p=solution.placements;$("scoreText").textContent=(previewStep+1)+"번 배치 보기 · 총 "+p.length+"개 · "+solution.clears+"줄 제거";$("resultList").className="step-list";$("resultList").innerHTML=p.map((x,i)=>{const wh=size(TRANS[x.pieceIndex][x.transform]);return '<button type="button" class="step preview-step'+(i===previewStep?" active":"")+'" data-preview-step="'+i+'"><span class="step-badge">'+(i+1)+'</span><div><strong>'+(x.pieceIndex+1)+'번 블록 · '+PIECES[x.pieceIndex].s.length+'칸</strong><br><small>왼쪽 '+(x.x+1)+'칸 · 위 '+(x.y+1)+'칸'+(x.cleared?" · 놓은 직후 "+x.cleared+"줄 제거":"")+'</small></div><small>'+wh[0]+'×'+wh[1]+"</small></button>"}).join("")}
+function renderAll(){renderPieces();renderBoard();renderAbilities();renderAnswer()}
+function clearLines(board){const full=[];for(let y=0;y<H;y++){let ok=true;for(let x=0;x<W;x++)if(!board.has(key(x,y))){ok=false;break}if(ok)full.push(y)}if(!full.length)return{board,cleared:0,rows:[]};const next=new Set(board);for(const y of full)for(let x=0;x<W;x++)next.delete(key(x,y));return{board:next,cleared:full.length,rows:full}}
+function rowFillCounts(board){const rows=Array(H).fill(0);for(const k of board)rows[Math.floor(k/W)]++;return rows}
+function largestEmptyRect(board){
+  const heights=Array(W).fill(0);let best=0;
+  for(let y=0;y<H;y++){
+    for(let x=0;x<W;x++)heights[x]=board.has(key(x,y))?0:heights[x]+1;
+    const stack=[];
+    for(let x=0;x<=W;x++){
+      const cur=x<W?heights[x]:0;let start=x;
+      while(stack.length&&stack[stack.length-1][1]>cur){const [sx,hh]=stack.pop();best=Math.max(best,hh*(x-sx));start=sx}
+      if(!stack.length||stack[stack.length-1][1]<cur)stack.push([start,cur]);
+    }
+  }
+  return best;
+}
+function openBlocks(board,size){
+  let n=0;
+  for(let y=0;y<=H-size;y++)for(let x=0;x<=W-size;x++){
+    let ok=true;
+    for(let dy=0;dy<size&&ok;dy++)for(let dx=0;dx<size;dx++)if(board.has(key(x+dx,y+dy))){ok=false;break}
+    if(ok)n++;
+  }
+  return n;
+}
+function isolatedEmpty(board){
+  let n=0;
+  for(let y=0;y<H;y++)for(let x=0;x<W;x++){
+    const k=key(x,y);if(board.has(k))continue;
+    let open=0;
+    if(x>0&&!board.has(key(x-1,y)))open++;if(x<W-1&&!board.has(key(x+1,y)))open++;
+    if(y>0&&!board.has(key(x,y-1)))open++;if(y<H-1&&!board.has(key(x,y+1)))open++;
+    if(open<=1)n++;
+  }
+  return n;
+}
+function edgeTransitions(board){
+  let n=0;
+  for(let y=0;y<H;y++)for(let x=1;x<W;x++)if(board.has(key(x,y))!==board.has(key(x-1,y)))n++;
+  for(let x=0;x<W;x++)for(let y=1;y<H;y++)if(board.has(key(x,y))!==board.has(key(x,y-1)))n++;
+  return n;
+}
+function boardQuality(board){
+  const stage=stageForLines(clearedCount),rows=rowFillCounts(board),occ=board.size,free=W*H-occ;
+  let rowSetup=0,nearRows=0;
+  for(const n of rows){
+    if(n===9){rowSetup+=5200;nearRows++}
+    else if(n===8){rowSetup+=2300;nearRows++}
+    else if(n===7){rowSetup+=1050}
+    else if(n===6){rowSetup+=420}
+    else if(n>=4){rowSetup+=(n-3)*85}
+  }
+  const rect=largestEmptyRect(board),open2=openBlocks(board,2),open3=openBlocks(board,3);
+  const iso=isolatedEmpty(board),edges=edgeTransitions(board);
+  const stageWeight=1+(stage-1)*0.18;
+  const crowdPenalty=Math.max(0,occ-105);
+  let iconSetup=0;
+  for(const cell of iconCells){const n=rows[Math.floor(cell/W)]||0;if(n>=6)iconSetup+=(n-5)*(n-5)*180}
+  return rowSetup + nearRows*900 + iconSetup
+    + rect*8*stageWeight + open2*1.5 + open3*5*stageWeight + free*1.5
+    - iso*70*stageWeight - edges*1.8 - crowdPenalty*crowdPenalty*1.3*stageWeight;
+}
+function heuristic(board,turnPoints,placed,totalClears){
+  return boardQuality(board)+turnPoints*5+linePoints(totalClears)*0.8+placed*80;
+}
+function fastQuality(board,turnPoints,placed,totalClears){
+  const rows=Array(H).fill(0);for(const k of board)rows[Math.floor(k/W)]++;
+  let setup=0;
+  for(const n of rows){
+    if(n===9)setup+=4200;
+    else if(n===8)setup+=1800;
+    else if(n===7)setup+=700;
+    else if(n===6)setup+=260;
+    else if(n>=4)setup+=(n-3)*55;
+  }
+  const crowd=Math.max(0,board.size-108);
+  return turnPoints*11+linePoints(totalClears)*4.5+totalClears*9500+setup-board.size*1.5-crowd*crowd*1.4+placed*35;
+}
+function keepTop(list,item,limit){
+  if(list.length<limit){list.push(item);return}
+  let worst=0;for(let i=1;i<list.length;i++)if(list[i].score<list[worst].score)worst=i;
+  if(item.score>list[worst].score)list[worst]=item;
+}
+
+function legalPlacementCount(board,piece,cap=24){
+  let count=0;
+  for(const shape of TRANS[piece]){
+    const wh=size(shape),sw=wh[0],sh=wh[1];
+    for(let y=0;y<=H-sh;y++)for(let x=0;x<=W-sw;x++){
+      let ok=true;
+      for(const p of shape)if(board.has(key(x+p[0],y+p[1]))){ok=false;break}
+      if(ok&&++count>=cap)return count;
+    }
+  }
+  return count;
+}
+function futureMobility(board){
+  const stage=stageForLines(clearedCount);let total=0,blocked=0,min=999;
+  for(let piece=0;piece<PIECES.length;piece++){
+    const count=legalPlacementCount(board,piece,24),sz=PIECES[piece].s.length;
+    const weight=1+(sz-1)*.24+(stage-1)*(sz-1)*.085;
+    min=Math.min(min,count);
+    if(!count){blocked++;total-=2500*weight}
+    else total+=Math.log1p(count)*130*weight;
+  }
+  return{score:total,blocked,min};
+}
+function candidates(board,pieceIndex){const list=[];for(let t=0;t<TRANS[pieceIndex].length;t++){const shape=TRANS[pieceIndex][t],wh=size(shape),sw=wh[0],sh=wh[1];for(let y=0;y<=H-sh;y++)for(let x=0;x<=W-sw;x++){const cells=shape.map(p=>key(x+p[0],y+p[1]));if(cells.some(k=>board.has(k)))continue;const next=new Set(board);cells.forEach(k=>next.add(k));const result=clearLines(next);list.push({board:result.board,cells,transform:t,x,y,cleared:result.cleared,rows:result.rows})}}return list}
+
+function iconsOnRows(icons,rows){if(!rows||!rows.length)return[];const r=new Set(rows);return icons.filter(k=>r.has(Math.floor(k/W)))}
+function resolveIconClear(icons,rows,alreadyGained=0){
+  const hit=iconsOnRows(icons,rows),used=abilities.dot+abilities.swap+pendingAbilityClaims+alreadyGained;
+  const capacity=Math.max(0,7-used),gained=Math.min(capacity,hit.length);
+  if(!gained)return{icons:icons.slice(),gained:0};
+  const claimed=new Set(hit.slice(0,gained));
+  return{icons:icons.filter(k=>!claimed.has(k)),gained};
+}
+function applyIconRows(rows){
+  const r=resolveIconClear(iconCells,rows,0);
+  if(r.gained){iconCells=r.icons;pendingAbilityClaims=Math.min(7,pendingAbilityClaims+r.gained);gameScore=Math.min(500000,gameScore+r.gained*50)}
+  return r.gained;
+}
+function registerSpawnedIcons(spawn){
+  let lost=0;
+  for(let i=0;i<spawn;i++){
+    while(iconCells.length+awaitingIconMarks>=3){if(iconCells.length){iconCells.shift();lost++}else if(awaitingIconMarks>0){awaitingIconMarks--;lost++}else break}
+    awaitingIconMarks++;
+  }
+  return lost;
+}
+function bestDotRecommendation(){
+  let best=null;
+  for(let k=0;k<W*H;k++){
+    if(filled.has(k))continue;
+    const board=new Set(filled);board.add(k);
+    const result=clearLines(board);
+    const fit=selected.reduce((sum,piece)=>{
+      const cs=candidates(result.board,piece);
+      if(!cs.length)return sum-50000;
+      let top=-Infinity;
+      for(const c of cs)top=Math.max(top,heuristic(c.board,PIECES[piece].s.length+linePoints(c.cleared),1,c.cleared));
+      return sum+Math.min(5000,cs.length*8)+top*.002;
+    },0);
+    const iconGain=resolveIconClear(iconCells,result.rows,0).gained;const score=heuristic(result.board,linePoints(result.cleared)+iconGain*50,0,result.cleared)+fit+result.cleared*50000+iconGain*14000;
+    if(!best||score>best.score)best={cell:k,score,cleared:result.cleared};
+  }
+  return best;
+}
+function recommendedSwapPiece(){
+  if(!selected.length)return null;
+  const unique=[...new Set(selected)],ranked=unique.map(piece=>{
+    const cs=candidates(filled,piece);
+    if(!cs.length)return{piece,legal:0,best:-Infinity};
+    let best=-Infinity;
+    for(const c of cs)best=Math.max(best,heuristic(c.board,PIECES[piece].s.length+linePoints(c.cleared),1,c.cleared));
+    return{piece,legal:cs.length,best};
+  });
+  ranked.sort((a,b)=>a.legal-b.legal||a.best-b.best||PIECES[b.piece].s.length-PIECES[a.piece].s.length);
+  return ranked[0].piece;
+}
+
+function almostFullRow(){
+  let best=null;
+  for(let y=0;y<H;y++){
+    let count=0,missing=null;
+    for(let x=0;x<W;x++){const k=key(x,y);if(filled.has(k))count++;else missing=k}
+    if(count===W-1)best={row:y,cell:missing};
+  }
+  return best;
+}
+function piecePlacementStats(board=filled){
+  return [...new Set(selected)].map(piece=>{
+    const cs=candidates(board,piece);
+    let best=-Infinity;
+    for(const c of cs)best=Math.max(best,heuristic(c.board,PIECES[piece].s.length+linePoints(c.cleared),1,c.cleared));
+    return{piece,legal:cs.length,best};
+  }).sort((a,b)=>a.legal-b.legal||a.best-b.best);
+}
+function abilityTiming(){
+  const cacheKey=[...filled].sort((a,b)=>a-b).join(",")+"|"+selected.join(".")+"|"+abilities.dot+"|"+abilities.swap+"|"+iconCells.join(".")+"|"+pendingAbilityClaims;
+  if(timingCache.key===cacheKey&&timingCache.value)return timingCache.value;
+  const stats=piecePlacementStats(),worst=stats[0]||null;
+  let dot={mode:"none",label:"보유 없음",reason:"점 찍기 능력이 없어요."};
+  if(abilities.dot>0){
+    dot={mode:"hold",label:"아껴두기",reason:selected.length?"점 찍기는 비상용으로 아껴요. 지금은 일반 블록 배치를 우선해요.":"블록을 고르면 꼭 필요한 순간만 추천해요."};
+    const near=almostFullRow();
+    if(near){
+      const coverable=selected.some(piece=>candidates(filled,piece).some(c=>c.cells.includes(near.cell)));
+      if(!coverable)dot={mode:"use",label:"지금 쓰기 추천",reason:"일반 블록으로 채우기 어려운 마지막 1칸이라, 점 하나로 즉시 1줄을 지울 수 있어요."};
+      else dot={mode:"hold",label:"아껴두기",reason:"한 칸 남았지만 현재 블록으로 채울 수 있어서 점 찍기는 아껴요."};
+    }else if(worst&&worst.legal===0){
+      const rec=bestDotRecommendation();
+      if(rec){
+        const board=new Set(filled);board.add(rec.cell);const cleared=clearLines(board);
+        const after=piecePlacementStats(cleared.board);
+        const rescued=after.find(x=>x.piece===worst.piece);
+        if(rescued&&rescued.legal>0)dot={mode:"use",label:"지금 쓰기 추천",reason:(worst.piece+1)+"번 블록이 현재는 완전히 막혔고, 점 하나로 배치 가능 상태를 만들 수 있어요."};
+      }
+    }
+  }
+  let swap={mode:"none",label:"보유 없음",reason:"바꿔 뽑기 능력이 없어요."};
+  if(abilities.swap>0){
+    if(!selected.length)swap={mode:"hold",label:"블록 선택 필요",reason:"현재 블록을 고르면 교체 타이밍을 판단해요."};
+    else if(worst&&worst.legal===0)swap={mode:"use",label:"지금 쓰기 추천",reason:(worst.piece+1)+"번 블록은 현재 맵에 놓을 자리가 없어요."};
+    else if(worst&&worst.legal<=2)swap={mode:"use",label:"지금 쓰기 고려",reason:(worst.piece+1)+"번 블록의 배치 가능한 자리가 매우 적어요."};
+    else swap={mode:"hold",label:"아껴두기",reason:"현재 블록들은 아직 배치 선택지가 충분해요."};
+  }
+  timingCache={key:cacheKey,value:{dot,swap}};
+  return timingCache.value;
+}
+function paintTiming(id,data){
+  const label=$(id+"Timing"),reason=$(id+"TimingReason"),row=label.closest(".timing-row");
+  label.textContent=data.label;reason.textContent=data.reason;
+  row.classList.toggle("use-now",data.mode==="use");
+  row.classList.toggle("hold",data.mode==="hold");
+  row.classList.toggle("none",data.mode==="none");
+}
+function solve(){
+  if(!selected.length){setStatus("블록을 1개 이상 선택해 주세요.");return}
+  setStatus(awaitingIconMarks>0?"아이콘 위치 미등록 상태로 계속 계산해요. 위치를 찍으면 더 정확해져요.":"50만점 장기 생존 기준으로 계산하고 있어요…");solution=null;renderBoard();
+  setTimeout(()=>{
+    let beam=[{board:new Set(filled),remaining:selected.slice(),placements:[],clears:0,points:0,icons:iconCells.slice(),gainedIcons:0,score:0}];
+    for(let depth=0;depth<selected.length;depth++){
+      const next=[];
+      for(const state of beam){
+        const tried=new Set();
+        for(let ri=0;ri<state.remaining.length;ri++){
+          const pieceIndex=state.remaining[ri];if(tried.has(pieceIndex))continue;tried.add(pieceIndex);
+          const rest=state.remaining.slice();rest.splice(ri,1);
+          const local=[];
+          for(const c of candidates(state.board,pieceIndex)){
+            const iconResult=resolveIconClear(state.icons,c.rows,state.gainedIcons);
+            const placements=state.placements.concat([{pieceIndex,cells:c.cells,x:c.x,y:c.y,transform:c.transform,cleared:c.cleared,rows:c.rows,iconGained:iconResult.gained}]);
+            const clears=state.clears+c.cleared,gainedIcons=state.gainedIcons+iconResult.gained;
+            const points=state.points+PIECES[pieceIndex].s.length+linePoints(c.cleared)+iconResult.gained*50;
+            const item={board:c.board,remaining:rest,placements,clears,points,icons:iconResult.icons,gainedIcons,score:fastQuality(c.board,points,placements.length,clears)+iconResult.gained*18000};
+            keepTop(local,item,depth===0?32:18);
+          }
+          next.push(...local);
+        }
+      }
+      if(!next.length)break;
+      next.sort((a,b)=>b.score-a.score);
+      const uniq=new Map(),limit=depth===selected.length-1?220:110;
+      for(const st of next){
+        const k=[...st.board].sort((a,b)=>a-b).join(",")+"|"+st.remaining.slice().sort((a,b)=>a-b).join(".")+"|"+st.icons.join(".");
+        if(!uniq.has(k))uniq.set(k,st);
+        if(uniq.size>=limit)break;
+      }
+      beam=[...uniq.values()];
+    }
+    if(!beam.length){solution=null;setStatus("현재 맵에서는 선택한 블록을 놓을 자리를 찾지 못했어요.");renderAll();return}
+    const complete=beam.filter(x=>x.placements.length===selected.length);
+    if(!complete.length){solution=beam[0]||null;setStatus("3개를 모두 안전하게 놓는 경로가 없어요. 능력 사용을 먼저 확인해 주세요.");renderAll();return}
+    const clearing=complete.filter(st=>st.clears>=1),pool=clearing.length?clearing:complete;
+    for(const st of pool){
+      const future=futureMobility(st.board);st.future=future;
+      st.finalScore=st.clears*90000+linePoints(st.clears)*30+st.gainedIcons*26000+boardQuality(st.board)+future.score+st.points*5;
+    }
+    pool.sort((a,b)=>b.clears-a.clears||b.gainedIcons-a.gainedIcons||b.finalScore-a.finalScore);
+    solution=pool[0];
+    previewStep=0;
+    if(!validateSolutionSequence(solution)){solution=null;setStatus("겹치지 않는 배치 경로를 다시 계산해 주세요.");renderAll();return}
+    if(solution.clears>=1)setStatus("이번 3개로 가로 "+solution.clears+"줄을 완성하는 경로를 최우선으로 골랐어요.");
+    else setStatus("이번 3개로 가로줄 완성이 불가능해서, 다음 턴에 완성하기 쉬운 가로줄을 만들어요.");
+    renderAll();
+  },0)
+}
+function removeSelectedOnce(piece){const i=selected.indexOf(piece);if(i>=0)selected.splice(i,1)}
+function abilitySpawn(oldCount,newCount){const spawn=Math.floor(newCount/7)-Math.floor(oldCount/7);if(spawn<=0)return"";const lost=registerSpawnedIcons(spawn);return"능력 아이콘 "+spawn+"개 생성! 게임판의 실제 위치를 등록해 주세요."+(lost?" 오래된 아이콘 "+lost+"개는 제거 처리했어요.":"")}
+function applySolution(){if(!(solution&&solution.placements&&solution.placements.length))return;if(solution.placements.length!==selected.length){setStatus("선택한 블록을 전부 놓을 수 있는 추천이 아니어서 적용하지 않았어요.");return}beforeChange();const old=placedCount,count=solution.placements.length;filled=new Set(solution.board);iconCells=solution.icons.slice();pendingAbilityClaims=Math.min(7,pendingAbilityClaims+solution.gainedIcons);placedCount+=count;clearedCount+=solution.clears;gameScore=Math.min(500000,gameScore+solution.points);for(const p of solution.placements)removeSelectedOnce(p.pieceIndex);const msg=abilitySpawn(old,placedCount);solution=null;previewStep=0;dotRecommendCell=null;timingCache={key:"",value:null};persist();renderAll();if(gameScore>=500000)setStatus("500,000점 도달! 이 판의 목표를 달성했어요.");else setStatus(msg||(pendingAbilityClaims?"능력을 획득했어요. 실제로 나온 종류의 ＋를 눌러 등록해 주세요.":"선택한 블록 "+count+"개를 모두 적용했어요."))}
+function addPiece(i){if(swapDraft){if(swapDraft.stage==="old"){const at=selected.indexOf(i);if(at<0){setStatus("현재 선택된 블록 중 바꿀 블록을 눌러 주세요.");return}selected.splice(at,1);swapDraft.stage="new";renderAll();setStatus("게임에서 바뀐 결과 블록을 눌러 주세요.");return}selected.push(i);abilities.swap=Math.max(0,abilities.swap-1);past.push(swapDraft.before);if(past.length>WMAX)past.shift();future=[];swapDraft=null;persist();renderAll();if(selected.length){setStatus("바꿔 뽑기 1개를 사용했어요. 결과를 반영하고 다시 추천해요.");setTimeout(solve,0)}else setStatus("바꿔 뽑기 1개를 사용했어요.");return}if(selected.length>=3){setStatus("한 번에 블록은 3개까지 선택할 수 있어요.");return}beforeChange();selected.push(i);afterChange();setStatus("")}
+function removePiece(i){if(swapDraft){restore(swapDraft.before);swapDraft=null;renderAll();setStatus("바꿔 뽑기를 취소했어요.");return}const at=selected.lastIndexOf(i);if(at<0)return;beforeChange();selected.splice(at,1);afterChange()}
+function gainAbility(type){if(abilities.dot+abilities.swap>=7){setStatus("능력은 합계 7개까지만 보유할 수 있어요.");return}beforeChange();abilities[type]++;if(pendingAbilityClaims>0)pendingAbilityClaims--;afterChange();setStatus(type==="dot"?"점 찍기 능력을 등록했어요.":"바꿔 뽑기 능력을 등록했어요.")}
+function toggleDot(){if(abilities.dot<1)return;if(dotArmed){dotArmed=false;dotRecommendCell=null;renderAll();setStatus("점 찍기를 취소했어요.");return}if(swapDraft){restore(swapDraft.before);swapDraft=null}solution=null;dotArmed=true;const rec=bestDotRecommendation();dotRecommendCell=rec?rec.cell:null;renderAll();setStatus(dotRecommendCell!==null?"점 찍기 추천 위치를 표시했어요. 원하는 다른 빈 칸을 눌러도 돼요.":"점 찍기 가능한 빈 칸이 없어요.")}
+function toggleSwap(){if(abilities.swap<1||!selected.length)return;if(swapDraft){restore(swapDraft.before);swapDraft=null;renderAll();setStatus("바꿔 뽑기를 취소했어요.");return}dotArmed=false;dotRecommendCell=null;solution=null;const recommended=recommendedSwapPiece();swapDraft={before:snapshot(),stage:"old",recommended};renderAll();setStatus("바꿔 뽑기: "+(recommended+1)+"번 블록을 교체 추천해요. 다른 선택 블록을 눌러도 돼요.")}
+function boardClick(k){if(iconMarkMode){if(filled.has(k)){setStatus("능력 아이콘은 게임에서 빈 칸에 생성돼요. 빈 칸을 눌러 주세요.");return}beforeChange();while(iconCells.length>=3)iconCells.shift();iconCells.push(k);awaitingIconMarks=Math.max(0,awaitingIconMarks-1);iconMarkMode=awaitingIconMarks>0;afterChange();setStatus(awaitingIconMarks?"다음 능력 아이콘 위치도 등록해 주세요.":"능력 아이콘 위치를 등록했어요. 이제 추천 계산에 포함돼요.");return}if(dotArmed){if(filled.has(k)){setStatus("점 찍기는 빈 칸에만 사용할 수 있어요.");return}beforeChange();filled.add(k);abilities.dot=Math.max(0,abilities.dot-1);dotArmed=false;dotRecommendCell=null;const result=clearLines(filled);filled=result.board;clearedCount+=result.cleared;const gained=applyIconRows(result.rows);gameScore=Math.min(500000,gameScore+linePoints(result.cleared));afterChange();if(selected.length){setStatus(result.cleared?"점 찍기 1개를 사용해 줄을 지웠어요. 남은 블록을 다시 추천해요.":"점 찍기 1개를 사용했어요. 남은 블록을 다시 추천해요.");setTimeout(solve,0)}else setStatus(result.cleared?"점 찍기 1개를 사용해 줄을 지웠어요.":"점 찍기 1개를 사용했어요. 조각 배치 횟수에는 포함되지 않아요.");return}beforeChange();if(filled.has(k))filled.delete(k);else filled.add(k);afterChange();setStatus("")}
+$("pieces").addEventListener("click",e=>{const minus=e.target.closest("[data-remove-index]");if(minus){removePiece(Number(minus.dataset.removeIndex));return}const hit=e.target.closest("[data-add-index]");if(hit)addPiece(Number(hit.dataset.addIndex))});
+$("board").addEventListener("click",e=>{const c=e.target.closest("[data-cell]");if(c)boardClick(Number(c.dataset.cell))});
+$("resultList").addEventListener("click",e=>{const step=e.target.closest("[data-preview-step]");if(!step||!solution)return;previewStep=Math.max(0,Math.min(solution.placements.length-1,Number(step.dataset.previewStep)||0));renderBoard();renderAnswer();setStatus((previewStep+1)+"번 블록을 놓기 직전 판을 보여주고 있어요.")});
+$("clearPieces").addEventListener("click",()=>{if(!selected.length)return;if(swapDraft){restore(swapDraft.before);swapDraft=null;renderAll();return}beforeChange();selected=[];afterChange();setStatus("블록 선택을 비웠어요.")});
+$("solve").addEventListener("click",solve);
+$("apply").addEventListener("click",applySolution);
+$("undo").addEventListener("click",undo);
+$("redo").addEventListener("click",redo);
+$("useDot").addEventListener("click",toggleDot);
+$("dotMode").addEventListener("click",toggleDot);
+$("useSwap").addEventListener("click",toggleSwap);
+$("gainDot").addEventListener("click",()=>gainAbility("dot"));
+$("gainSwap").addEventListener("click",()=>gainAbility("swap"));
+$("markIcon").addEventListener("click",()=>{if(awaitingIconMarks<1)return;iconMarkMode=!iconMarkMode;dotArmed=false;dotRecommendCell=null;renderAll();setStatus(iconMarkMode?"게임판의 실제 능력 아이콘 칸을 눌러 주세요.":"아이콘 위치 등록을 취소했어요.")});
+$("resetMap").addEventListener("click",()=>{if(!confirm("맵과 누적 기록, 능력, 되돌리기 기록까지 모두 초기화할까요?"))return;filled=new Set();selected=[];placedCount=0;clearedCount=0;gameScore=0;abilities={dot:0,swap:0};iconCells=[];awaitingIconMarks=0;pendingAbilityClaims=0;solution=null;previewStep=0;dotArmed=false;dotRecommendCell=null;iconMarkMode=false;swapDraft=null;past=[];future=[];persist();renderAll();setStatus("맵을 완전히 초기화했어요.")});
+document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&!e.altKey){const k=e.key.toLowerCase();if(k==="z"){e.preventDefault();if(e.shiftKey)redo();else undo()}else if(k==="y"){e.preventDefault();redo()}}});
+load();renderAll();
+
+})();</script>
+</body>
+</html>
