@@ -208,10 +208,10 @@ function previewState(){
 }
 function validateSolutionSequence(sol){
   if(!(sol&&sol.placements))return false;
-  let board=new Set(filled);
+  let board=new Set(filled),reserved=new Set(filled);
   for(const p of sol.placements){
-    if(p.cells.some(k=>board.has(k)))return false;
-    p.cells.forEach(k=>board.add(k));
+    if(p.cells.some(k=>board.has(k)||reserved.has(k)))return false;
+    p.cells.forEach(k=>{board.add(k);reserved.add(k)});
     board=clearLines(board).board;
   }
   return true;
@@ -357,7 +357,7 @@ function futureMobility(board){
   }
   return{score:total,blocked,min};
 }
-function candidates(board,pieceIndex){const list=[];for(let t=0;t<TRANS[pieceIndex].length;t++){const shape=TRANS[pieceIndex][t],wh=size(shape),sw=wh[0],sh=wh[1];for(let y=0;y<=H-sh;y++)for(let x=0;x<=W-sw;x++){const cells=shape.map(p=>key(x+p[0],y+p[1]));if(cells.some(k=>board.has(k)))continue;const next=new Set(board);cells.forEach(k=>next.add(k));const result=clearLines(next);list.push({board:result.board,cells,transform:t,x,y,cleared:result.cleared,rows:result.rows})}}return list}
+function candidates(board,pieceIndex,reserved=board){const list=[];for(let t=0;t<TRANS[pieceIndex].length;t++){const shape=TRANS[pieceIndex][t],wh=size(shape),sw=wh[0],sh=wh[1];for(let y=0;y<=H-sh;y++)for(let x=0;x<=W-sw;x++){const cells=shape.map(p=>key(x+p[0],y+p[1]));if(cells.some(k=>board.has(k)||reserved.has(k)))continue;const next=new Set(board);cells.forEach(k=>next.add(k));const result=clearLines(next);list.push({board:result.board,cells,transform:t,x,y,cleared:result.cleared,rows:result.rows})}}return list}
 
 function iconsOnRows(icons,rows){if(!rows||!rows.length)return[];const r=new Set(rows);return icons.filter(k=>r.has(Math.floor(k/W)))}
 function resolveIconClear(icons,rows,alreadyGained=0){
@@ -471,7 +471,7 @@ function solve(){
   if(!selected.length){setStatus("블록을 1개 이상 선택해 주세요.");return}
   setStatus(awaitingIconMarks>0?"아이콘 위치 미등록 상태로 계속 계산해요. 위치를 찍으면 더 정확해져요.":"50만점 장기 생존 기준으로 계산하고 있어요…");solution=null;renderBoard();
   setTimeout(()=>{
-    let beam=[{board:new Set(filled),remaining:selected.slice(),placements:[],clears:0,points:0,icons:iconCells.slice(),gainedIcons:0,score:0}];
+    let beam=[{board:new Set(filled),reserved:new Set(filled),remaining:selected.slice(),placements:[],clears:0,points:0,icons:iconCells.slice(),gainedIcons:0,score:0}];
     for(let depth=0;depth<selected.length;depth++){
       const next=[];
       for(const state of beam){
@@ -480,12 +480,13 @@ function solve(){
           const pieceIndex=state.remaining[ri];if(tried.has(pieceIndex))continue;tried.add(pieceIndex);
           const rest=state.remaining.slice();rest.splice(ri,1);
           const local=[];
-          for(const c of candidates(state.board,pieceIndex)){
+          for(const c of candidates(state.board,pieceIndex,state.reserved)){
             const iconResult=resolveIconClear(state.icons,c.rows,state.gainedIcons);
             const placements=state.placements.concat([{pieceIndex,cells:c.cells,x:c.x,y:c.y,transform:c.transform,cleared:c.cleared,rows:c.rows,iconGained:iconResult.gained}]);
+            const reserved=new Set(state.reserved);c.cells.forEach(k=>reserved.add(k));
             const clears=state.clears+c.cleared,gainedIcons=state.gainedIcons+iconResult.gained;
             const points=state.points+PIECES[pieceIndex].s.length+linePoints(c.cleared)+iconResult.gained*50;
-            const item={board:c.board,remaining:rest,placements,clears,points,icons:iconResult.icons,gainedIcons,score:fastQuality(c.board,points,placements.length,clears)+iconResult.gained*18000};
+            const item={board:c.board,reserved,remaining:rest,placements,clears,points,icons:iconResult.icons,gainedIcons,score:fastQuality(c.board,points,placements.length,clears)+iconResult.gained*18000};
             keepTop(local,item,depth===0?32:18);
           }
           next.push(...local);
@@ -495,7 +496,7 @@ function solve(){
       next.sort((a,b)=>b.score-a.score);
       const uniq=new Map(),limit=depth===selected.length-1?220:110;
       for(const st of next){
-        const k=[...st.board].sort((a,b)=>a-b).join(",")+"|"+st.remaining.slice().sort((a,b)=>a-b).join(".")+"|"+st.icons.join(".");
+        const k=[...st.board].sort((a,b)=>a-b).join(",")+"|R:"+[...st.reserved].sort((a,b)=>a-b).join(",")+"|"+st.remaining.slice().sort((a,b)=>a-b).join(".")+"|"+st.icons.join(".");
         if(!uniq.has(k))uniq.set(k,st);
         if(uniq.size>=limit)break;
       }
@@ -513,14 +514,14 @@ function solve(){
     solution=pool[0];
     previewStep=-1;
     if(!validateSolutionSequence(solution)){solution=null;setStatus("겹치지 않는 배치 경로를 다시 계산해 주세요.");renderAll();return}
-    if(solution.clears>=1)setStatus("이번 3개로 가로 "+solution.clears+"줄을 완성하는 경로를 최우선으로 골랐어요.");
-    else setStatus("이번 3개로 가로줄 완성이 불가능해서, 다음 턴에 완성하기 쉬운 가로줄을 만들어요.");
+    if(solution.clears>=1)setStatus("기존 블록과 새 블록이 겹치지 않게 유지하면서, 이번 3개로 가로 "+solution.clears+"줄을 완성하는 경로를 골랐어요.");
+    else setStatus("기존 블록과 새 블록이 겹치지 않는 범위에서 다음 턴에 완성하기 쉬운 가로줄을 만들어요.");
     renderAll();
   },0)
 }
 function removeSelectedOnce(piece){const i=selected.indexOf(piece);if(i>=0)selected.splice(i,1)}
 function abilitySpawn(oldCount,newCount){const spawn=Math.floor(newCount/7)-Math.floor(oldCount/7);if(spawn<=0)return"";const lost=registerSpawnedIcons(spawn);return"능력 아이콘 "+spawn+"개 생성! 게임판의 실제 위치를 등록해 주세요."+(lost?" 오래된 아이콘 "+lost+"개는 제거 처리했어요.":"")}
-function applySolution(){if(!(solution&&solution.placements&&solution.placements.length))return;if(solution.placements.length!==selected.length){setStatus("선택한 블록을 전부 놓을 수 있는 추천이 아니어서 적용하지 않았어요.");return}beforeChange();const old=placedCount,count=solution.placements.length;filled=new Set(solution.board);iconCells=solution.icons.slice();pendingAbilityClaims=Math.min(7,pendingAbilityClaims+solution.gainedIcons);placedCount+=count;clearedCount+=solution.clears;gameScore=Math.min(500000,gameScore+solution.points);for(const p of solution.placements)removeSelectedOnce(p.pieceIndex);const msg=abilitySpawn(old,placedCount);solution=null;previewStep=-1;dotRecommendCell=null;timingCache={key:"",value:null};persist();renderAll();if(gameScore>=500000)setStatus("500,000점 도달! 이 판의 목표를 달성했어요.");else setStatus(msg||(pendingAbilityClaims?"능력을 획득했어요. 실제로 나온 종류의 ＋를 눌러 등록해 주세요.":"선택한 블록 "+count+"개를 모두 적용했어요."))}
+function applySolution(){if(!(solution&&solution.placements&&solution.placements.length))return;if(solution.placements.length!==selected.length){setStatus("선택한 블록을 전부 놓을 수 있는 추천이 아니어서 적용하지 않았어요.");return}if(!validateSolutionSequence(solution)){setStatus("기존 블록이나 새 블록과 겹치는 추천은 적용할 수 없어요. 다시 추천해 주세요.");solution=null;previewStep=-1;renderAll();return}beforeChange();const old=placedCount,count=solution.placements.length;filled=new Set(solution.board);iconCells=solution.icons.slice();pendingAbilityClaims=Math.min(7,pendingAbilityClaims+solution.gainedIcons);placedCount+=count;clearedCount+=solution.clears;gameScore=Math.min(500000,gameScore+solution.points);for(const p of solution.placements)removeSelectedOnce(p.pieceIndex);const msg=abilitySpawn(old,placedCount);solution=null;previewStep=-1;dotRecommendCell=null;timingCache={key:"",value:null};persist();renderAll();if(gameScore>=500000)setStatus("500,000점 도달! 이 판의 목표를 달성했어요.");else setStatus(msg||(pendingAbilityClaims?"능력을 획득했어요. 실제로 나온 종류의 ＋를 눌러 등록해 주세요.":"선택한 블록 "+count+"개를 모두 적용했어요."))}
 function addPiece(i){if(swapDraft){if(swapDraft.stage==="old"){const at=selected.indexOf(i);if(at<0){setStatus("현재 선택된 블록 중 바꿀 블록을 눌러 주세요.");return}selected.splice(at,1);swapDraft.stage="new";renderAll();setStatus("게임에서 바뀐 결과 블록을 눌러 주세요.");return}selected.push(i);abilities.swap=Math.max(0,abilities.swap-1);past.push(swapDraft.before);if(past.length>WMAX)past.shift();future=[];swapDraft=null;persist();renderAll();if(selected.length){setStatus("바꿔 뽑기 1개를 사용했어요. 결과를 반영하고 다시 추천해요.");setTimeout(solve,0)}else setStatus("바꿔 뽑기 1개를 사용했어요.");return}if(selected.length>=3){setStatus("한 번에 블록은 3개까지 선택할 수 있어요.");return}beforeChange();selected.push(i);afterChange();setStatus("")}
 function removePiece(i){if(swapDraft){restore(swapDraft.before);swapDraft=null;renderAll();setStatus("바꿔 뽑기를 취소했어요.");return}const at=selected.lastIndexOf(i);if(at<0)return;beforeChange();selected.splice(at,1);afterChange()}
 function gainAbility(type){if(abilities.dot+abilities.swap>=7){setStatus("능력은 합계 7개까지만 보유할 수 있어요.");return}beforeChange();abilities[type]++;if(pendingAbilityClaims>0)pendingAbilityClaims--;afterChange();setStatus(type==="dot"?"점 찍기 능력을 등록했어요.":"바꿔 뽑기 능력을 등록했어요.")}
