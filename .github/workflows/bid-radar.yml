@@ -1,0 +1,44 @@
+name: 건축감리 입찰 자동수집 및 배포
+on:
+  schedule:
+    - cron: "17 0,6,12,18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: bid-radar-collection
+  cancel-in-progress: false
+
+jobs:
+  update-bids:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch G2B notices
+        env:
+          G2B_API_KEY: ${{ secrets.G2B_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python scripts/fetch_bids.py
+      - name: Commit updated data
+        run: |
+          if git diff --quiet -- data/bids.json; then
+            echo "No new data."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/bids.json
+            git commit -m "chore: refresh architecture bid notices"
+            git push
+          fi
+      - name: Trigger Pages build
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main
