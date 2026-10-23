@@ -32,11 +32,39 @@ class AnalysisTests(unittest.TestCase):
         self.assertEqual(region_evidence_from_api("충청북도")[0],"excluded")
         self.assertEqual(region_evidence_from_api("정보 미확인")[0],"unknown")
         self.assertEqual(region_from_doc("입찰참가자는 본점 소재지가 충청북도에 있어야 합니다.")[0],"excluded")
-        self.assertEqual(region_from_doc("본점 소재지는 서울특별시 또는 경기도여야 합니다")[0],"unknown")
+        self.assertEqual(region_from_doc("본점 소재지는 서울특별시 또는 경기도여야 합니다")[0],"possible")
         self.assertEqual(region_from_doc("나. 지역제한(경상남도) 대상 용역입니다.")[0],"excluded")
         self.assertEqual(region_from_doc("지역제한(영동군), 2인 이상 견적제출")[0],"excluded")
         self.assertEqual(region_from_doc("지역제한(서울특별시) 입찰용역입니다")[0],"possible")
         self.assertEqual(region_from_doc("울산광역시 지역제한 입찰입니다")[0],"excluded")
+    def test_explicit_seoul_region_evidence(self):
+        cases=[
+            ("입찰참가자 지역제한(서울특별시) 입찰입니다","possible"),
+            ("본점 소재지는 서울특별시 또는 경기도여야 합니다","possible"),
+            ("지역제한(서울특별시, 경기도) 대상","possible"),
+            ("전국 입찰 참가 가능 지역제한 없음","open"),
+            ("울산광역시 지역제한 입찰입니다","excluded"),
+            ("지역제한(인천광역시) 대상","excluded"),
+            ("지역제한(영동군), 견적 제출","excluded"),
+            ("입찰공고 전일부터 주된 영업소의 소재지가 충청북도로써 참가자격","excluded"),
+            ("본점 소재지(개인사업자 관련 서류에 기재된 사업장)를 계속 종전 전라남도에 둔 자이어야","excluded"),
+            ("공사 위치 서울특별시 강남구, 감리사업 참여자격 별도","unknown"),
+            ("발주기관 부산광역시, 건물 위치 부산광역시, 지역 요건은 공고문 확인","unknown"),
+            ("지역제한 대상 용역, 상세 지역은 별도 문서","unknown"),
+        ]
+        for text,status in cases:
+            with self.subTest(text=text):
+                self.assertEqual(region_from_doc(text)[0],status)
+
+    def test_seoul_candidate_priorities(self):
+        from analyze_bids import region_priority
+        item={"title":"서울 학교 증축 건축감리용역","contract":"수의계약","category":"건축감리"}
+        self.assertEqual(region_priority(item,"possible"),"우선 검토")
+        self.assertEqual(region_priority(item,"unknown"),"지역 확인 우선")
+        self.assertEqual(region_priority(item,"excluded"),"제외")
+        self.assertEqual(region_priority({**item,"category":"석면감리"},"possible"),"별도 등록 확인")
+        self.assertEqual(region_priority({**item,"contract":"적격심사"},"open"),"실적 점수 확인")
+
     def test_doc_pricing(self):
         doc=("입찰 참가자격은 건축사사무소 등록자입니다. "+
              "본점 소재지는 서울특별시 내 소재한 업체여야 합니다. "+

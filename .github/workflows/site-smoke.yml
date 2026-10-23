@@ -1,4 +1,4 @@
-name: 10억 벌기 화면 검증
+name: 10억 벌기 화면 및 브라우저 검증
 on:
   push:
     branches: [main]
@@ -6,7 +6,14 @@ on:
       - "index.html"
       - "awards.html"
       - "bid-review.js"
+      - "data/bids.json"
+      - "scripts/test_browser.cjs"
+      - "scripts/analyze_bids.py"
+      - "scripts/fetch_bids.py"
+      - "scripts/test_analysis.py"
       - ".github/workflows/site-smoke.yml"
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -20,9 +27,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Check JavaScript syntax and page integration
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Python classification regression
+        run: python -m unittest discover -s scripts -p 'test_analysis.py'
+      - name: Check static integration
         run: |
           node --check bid-review.js
+          node --check scripts/test_browser.cjs
           python - <<'PY'
           from pathlib import Path
           bid=Path("index.html").read_text(encoding="utf-8")
@@ -30,10 +43,16 @@ jobs:
           js=Path("bid-review.js").read_text(encoding="utf-8")
           assert 'src="./bid-review.js"' in bid
           assert 'id="suit"' in bid and 'value="eligible"' in bid
-          assert 'eligibility_status' in bid
+          assert 'id="refreshDataBtn"' in bid and 'id="runCollectionBtn"' in bid
+          assert 'id="regionFilter"' in bid and 'region_assessment' in bid
           assert 'data/awards.json' in award and 'data/bids.json' in bid
-          assert "function calculateScore" in js
-          assert "function calculate(" in js
+          assert "function calculateScore" in js and "function calculate(" in js
           assert "function fingerprint" in js
-          print("UI integration smoke checks passed.")
+          print("Static checks passed.")
           PY
+      - name: Install Chromium and browser test runtime
+        run: |
+          npm install --no-save --no-audit --no-fund playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Browser end-to-end regression
+        run: node scripts/test_browser.cjs

@@ -9,7 +9,7 @@ import urllib.request
 from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
-from analyze_bids import analyze_notice, attachment_list, category as refined_category, money, region_from_doc, base_from_clause, floor_from_clause
+from analyze_bids import analyze_notice, attachment_list, category as refined_category, money, region_from_doc, region_evidence_from_api, region_priority, base_from_clause, floor_from_clause
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "bids.json"
@@ -329,7 +329,31 @@ def main():
             new_doc_reads+=1
         else:
             x=analyze_notice(x,max_docs=0)
-        if x is not None:refreshed.append(x)
+        if x is not None:
+            # 이전 JSON을 재사용해도 최신 지역 판정 로직을 항상 적용한다.
+            api_status,api_msg=region_evidence_from_api(x.get("region","정보 미확인"))
+            clause=x.get("document_analysis",{}).get("evidence",{}).get("region_clause","")
+            doc_status,doc_msg=region_from_doc(clause)
+            if api_status!="unknown" and doc_status!="unknown" and api_status!=doc_status:
+                # 전국/서울 허용은 공통의 허용 조건으로 해석. 허용과 배제 충돌은 반드시 보류.
+                permissive={"open","possible"}
+                status=api_status if api_status in permissive and doc_status in permissive else "unknown"
+                reason="API·공고문 지역제한 정보 충돌 — 최신 원문 확인" if status=="unknown" else doc_msg
+            else:
+                status=doc_status if doc_status!="unknown" else api_status
+                reason=doc_msg if doc_status!="unknown" else api_msg
+            x["region_assessment"]={"status":status,"evidence":reason,"verified":status!="unknown"}
+            x["priority"]=region_priority(x,status)
+            x["eligibility_status"]="참가 불가" if status=="excluded" else "자격 확인 필요"
+            evidence=[api_msg]
+            if clause:evidence.append(doc_msg)
+            if status=="excluded":evidence.append("서울 소재 사무소 지역제한 불일치 (원문 재확인)")
+            x["eligibility_evidence"]=evidence
+            if status=="unknown" and "서울 업체 참가 가능 지역" not in x.get("eligibility_missing",[]):
+                x.setdefault("eligibility_missing",[]).append("서울 업체 참가 가능 지역")
+            if status!="unknown":
+                x["eligibility_missing"]=[v for v in x.get("eligibility_missing",[]) if v!="서울 업체 참가 가능 지역"]
+            refreshed.append(x)
     items=refreshed
     print("Document-analysis fetch attempts this run: "+str(new_doc_reads))
     result={"updated_at":now.isoformat(timespec="seconds"),"status":"ready","source":"조달청 나라장터 입찰공고정보서비스","query_window":before.date().isoformat()+" ~ "+now.date().isoformat(),

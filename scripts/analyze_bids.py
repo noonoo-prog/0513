@@ -202,30 +202,69 @@ def region_evidence_from_api(region):
         return "excluded","API 참가가능지역: "+r+" — 서울 본점 불가 가능성 높음"
     return "unknown","지역 코드 의미 확인 필요: "+r
 
+# 지역제한 근거를 발주지·사업위치·연락처와 구분해 보수적으로 판단한다.
+_REGION_NAME_RE = (
+    r"서울특별시|서울시|서울|경기도|경기|인천광역시|인천|부산광역시|"
+    r"대구광역시|대전광역시|광주광역시|울산광역시|세종특별자치시|"
+    r"강원특별자치도|강원도|충청북도|충청남도|충북|충남|"
+    r"전북특별자치도|전라북도|전라남도|전북|전남|"
+    r"경상북도|경상남도|경북|경남|제주특별자치도|제주도|"
+    r"[가-힣]{2,15}(?:시|군|구)"
+)
 def region_from_doc(clause):
+    """(status, evidence) ; unknown은 단순 공사위치나 추정만으로 배제하지 않는다."""
+    clause=re.sub(r"\s+"," ",str(clause or "")).strip()
     if not clause:return "unknown","공고문 지역 조항 확인 안 됨"
-    if re.search(r"전국\s*(대상|업체|지역|입찰)|지역\s*제한\s*(없음|하지)|전국\s*제한없음",clause):
-        return "open","원문 지역제한 없음: "+clause[:250]
-    # 명시된 지역제한(시·도 또는 시·군·구)은 소재지/발주기관 소재와 구분한다.
-    m=re.search(r"지역\s*제한\s*[\(（:：]\s*([가-힣·,\s]{2,36})[\)）]",clause)
+    if re.search(r"지역\s*제한\s*(?:이\s*)?(?:없음|없다|하지\s*않|없으며)|전국\s*(?:대상|입찰\s*참가\s*가능)",clause):
+        return "open","공고문 지역제한 없음·전국 명시"
+    # 지역제한(지역), 지역제한: 지역, 지역제한 지역의 직접 표현만 신뢰.
+    m=re.search(r"지역\s*제한\s*[\(（:：]\s*([^)\n）]{1,75})[\)）]",clause)
+    if not m:
+        m=re.search(r"("+_REGION_NAME_RE+r")\s*지역\s*제한\s*(?:입찰|견적|용역|대상)",clause)
     if m:
         named=m.group(1).strip()
-        if "서울" in named:return "possible","공고문 명시 지역: "+named
-        if "전국" in named or "없음" in named:return "open","공고문 명시 지역: "+named
-        if re.fullmatch(r"[가-힣]{2,24}(시|도|군|구)",named) or named.endswith("특별시") or named.endswith("광역시"):
-            return "excluded","공고문 지역 제한 확인: "+named+" / "+clause[:180]
-        return "unknown","공고문 복수지역·조건부 제한 추가 확인: "+named
-    m=re.search(r"(서울특별시|서울시|서울|울산광역시|인천광역시|부산광역시|대구광역시|대전광역시|광주광역시|경기도|충청북도|충청남도|경상북도|경상남도|전라남도|전북특별자치도|강원특별자치도|제주특별자치도)\s*지역\s*제한\s*(?:입찰|견적|용역)",clause)
+        if "전국" in named or re.fullmatch(r"\s*(없음|제한\s*없음)\s*",named):
+            return "open","공고문 지역제한 없음: "+named
+        regions=re.findall(_REGION_NAME_RE,named)
+        if not regions:return "unknown","지역제한 지역명 해석 필요: "+named[:65]
+        if len(regions)>1 and re.search(r"제외|불가|이외|미포함",named):
+            return "unknown","복합 지역제한 예외 확인 필요: "+named[:65]
+        if any("서울" in v for v in regions):
+            return "possible","공고문 서울 포함 지역제한: "+named[:65]
+        return "excluded","공고문 서울 외 지역제한: "+named[:65]
+    # 법인등기부상 본점 / 주된 영업소의 소재지가 OO에 있어야 하는 등 명시 자격만 추출.
+    m=re.search(
+        r"(?:본점|주된\s*영업소|사업장)\s*(?:의\s*)?(?:소재지|소재)\s*"
+        r"(?:\([^)]{0,150}\)\s*)?(?:가|는|를|의)?\s*(?:계속\s*|종전\s*)?"
+        r"(.{0,90})",clause
+    )
     if m:
-        named=m.group(1)
-        return ("possible" if "서울" in named else "excluded"),"공고문 명시 지역제한: "+named
-    region_words=re.findall(r"서울특별시|서울시|서울|경기도|인천광역시|충청북도|충청남도|경상북도|경상남도|전라남도|전북특별자치도|강원특별자치도|부산광역시|대구광역시|대전광역시|광주광역시|울산광역시|제주특별자치도",clause)
-    if "본점" not in clause and "영업소" not in clause:
-        return "unknown","공고문 지역조항 해석 필요: "+clause[:250]
-    if region_words and not any(x in region_words for x in ("서울","서울시","서울특별시")):
-        if len(set(region_words))==1 and re.search(r"(본점|주된\s*영업소).{0,90}("+re.escape(region_words[0])+r")",clause):
-            return "excluded","공고문 본점 지역제한: "+region_words[0]+" / "+clause[:180]
-    return "unknown","공고문 지역조항 해석 필요: "+clause[:250]
+        window=m.group(1)
+        if re.search(r"사업\s*위치|공사\s*위치",window[:30]):
+            return "unknown","사업위치와 참가자격 구분 필요"
+        regions=re.findall(_REGION_NAME_RE,window)
+        if regions and re.search(r"(?:에\s*(?:있|둔|소재|한정)|(?:으)?로서|(?:으)?로써|여야|이어야|업체|주소|소재)",window):
+            if any("서울" in v for v in regions):
+                return "possible","공고문 본점 소재지 서울 포함: "+", ".join(regions[:4])
+            return "excluded","공고문 본점 소재지 서울 외 제한: "+", ".join(regions[:4])
+    return "unknown","지역제한 대상 지역 미확정 — 원문 직접 확인"
+
+def region_priority(item, region_status):
+    """신축·증축 건축감리 및 지역 요건 확인된 소액계약부터 선별."""
+    title=str(item.get("title",""))
+    contract=str(item.get("contract",""))
+    if region_status=="excluded":
+        return "제외"
+    if region_status=="unknown":
+        return "지역 확인 우선"
+    if item.get("category")!="건축감리":
+        return "별도 등록 확인"
+    if "적격" in contract or "적격" in str(item.get("method","")):
+        return "실적 점수 확인"
+    # 수의계약이라도 지역과 면허·실적·배치 요건을 검토하기 전에는 확정하지 않는다.
+    if any(word in contract+" "+title for word in ("수의","소액")):
+        return "우선 검토"
+    return "자격 확인 필요"
 
 def base_from_clause(clause):
     if not clause:return None
@@ -300,6 +339,12 @@ def analyze_notice(item, max_docs=2):
         item["document_analysis"]["status"]="첨부 자동 분석 실패 — 원문 직접 확인 필요"
     else:
         item["document_analysis"]["status"]="원문 첨부 URL 없음 — 직접 확인 필요"
+    item["region_assessment"]={
+        "status":region_status,
+        "evidence":next((e for e in reversed(item["eligibility_evidence"]) if e.startswith("공고문")),region_msg),
+        "verified":region_status!="unknown",
+    }
+    item["priority"]=region_priority(item,region_status)
     if region_status=="excluded":
         item["eligibility_status"]="참가 불가"
         item["eligibility_evidence"].append("서울 소재 사무소의 본점지역 요건에 불리합니다. 원문 최종 확인 필요")
