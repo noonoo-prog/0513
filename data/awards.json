@@ -1,9 +1,9 @@
 {
   "status": "ready",
-  "updated_at": "2026-10-24T00:24:40+09:00",
+  "updated_at": "2026-10-24T01:26:58+09:00",
   "source": "조달청 나라장터 낙찰정보서비스 - 용역",
   "query_window": "2026-10-16 ~ 2026-10-24",
-  "total_valid": 38,
+  "total_valid": 37,
   "items": [
     {
       "id": "R26BK01768035-000",
@@ -316,19 +316,6 @@
       "bidder_count": "6",
       "winner": "",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01756599&bidPbancOrd=000"
-    },
-    {
-      "id": "R26BK01752283-000",
-      "number": "R26BK01752283",
-      "title": "수원 구 소화초등학교 보수공사 비상주 감리용역",
-      "category": "건축감리",
-      "agency": "경기도 수원시",
-      "award_at": "2026-10-13",
-      "award_amount": 28625000,
-      "award_rate": 88.695,
-      "bidder_count": "4",
-      "winner": "",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01752283&bidPbancOrd=000"
     },
     {
       "id": "R26BK01764737-000",
