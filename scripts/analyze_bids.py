@@ -243,7 +243,7 @@ def region_from_doc(clause):
         if re.search(r"사업\s*위치|공사\s*위치",window[:30]):
             return "unknown","사업위치와 참가자격 구분 필요"
         regions=re.findall(_REGION_NAME_RE,window)
-        if regions and re.search(r"(?:에\s*(?:있|둔|소재|한정)|여야|이어야|업체|주소|소재)",window):
+        if regions and re.search(r"(?:에\s*(?:있|둔|소재|한정)|(?:으)?로서|(?:으)?로써|여야|이어야|업체|주소|소재)",window):
             if any("서울" in v for v in regions):
                 return "possible","공고문 본점 소재지 서울 포함: "+", ".join(regions[:4])
             return "excluded","공고문 본점 소재지 서울 외 제한: "+", ".join(regions[:4])
