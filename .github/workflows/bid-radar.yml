@@ -4,6 +4,8 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/bid-radar.yml"
+      - "scripts/analyze_bids.py"
+      - "scripts/fetch_bids.py"
   schedule:
     # UTC 03:30 / 10:30 = KST 12:30 / 19:30 (automatic qualification review, guarded prices)
     - cron: "30 3,10 * * *"
