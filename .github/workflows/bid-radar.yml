@@ -1,5 +1,9 @@
 name: 건축감리 입찰 자동수집 및 배포
 on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/bid-radar.yml"
   schedule:
     # UTC 03:30 / 10:30 = KST 12:30 / 19:30
     - cron: "30 3,10 * * *"
