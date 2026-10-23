@@ -9,7 +9,7 @@ import urllib.request
 from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
-from analyze_bids import analyze_notice, attachment_list, category as refined_category, money
+from analyze_bids import analyze_notice, attachment_list, category as refined_category, money, region_from_doc, base_from_clause, floor_from_clause
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "bids.json"
@@ -291,6 +291,36 @@ def main():
             for name in ("document_analysis","eligibility_status","eligibility_evidence",
                          "eligibility_missing","price_analysis"):
                 if name in prior:x[name]=prior[name]
+            # 기존에 추출한 공개 공고문 근거를 새 판별 규칙으로 재평가한다.
+            evidence=prior.get("document_analysis",{}).get("evidence",{})
+            region_clause=evidence.get("region_clause","")
+            if region_clause and x.get("region") in ("정보 미확인","미확인",""):
+                kind,msg=region_from_doc(region_clause)
+                if kind=="excluded":
+                    x["eligibility_status"]="참가 불가"
+                    reasons=x.setdefault("eligibility_evidence",[])
+                    if msg not in reasons:reasons.append(msg)
+                elif kind in ("open","possible"):
+                    reasons=x.setdefault("eligibility_evidence",[])
+                    if msg not in reasons:reasons.append(msg)
+            if not x.get("base_amount"):
+                base=base_from_clause(evidence.get("base_evidence",""))
+                if base:
+                    x["base_amount"]=base
+                    x["base_amount_source"]="공고문 텍스트 자동 추출 · 원문 확인 필요"
+            if not x.get("floor_rate"):
+                floor=floor_from_clause(evidence.get("floor_evidence",""))
+                if floor:x["floor_rate"]=floor
+            if x.get("base_amount") and x.get("floor_rate"):
+                base=x["base_amount"];floor=x["floor_rate"]
+                x["price_analysis"]={
+                    "status":"가정 계산 가능","base_amount":base,"floor_rate":floor,
+                    "adjustment_rate":100,
+                    "reference_floor_amount":round(base*floor/100),
+                    "range_99_amount":round(base*0.99*floor/100),
+                    "range_101_amount":round(base*1.01*floor/100),
+                    "reason":"기초금액·하한율 원문 확인 필요. 사정률 100% 가정값이며 투찰추천가가 아닙니다."
+                }
             # 지역 등 API 정보가 바뀐 경우에는 보수적으로 재평가
             if x.get("region")!=prior.get("region"):
                 x=analyze_notice(x,max_docs=0)
