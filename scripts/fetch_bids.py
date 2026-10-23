@@ -19,7 +19,10 @@ BOT = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
 CHAT = os.getenv("TELEGRAM_CHAT_ID", "").strip()
 INCLUDE = ("감리", "건설사업관리", "공사감독")
 EXCLUDE = ("전기감리", "전기 감리", "정보통신감리", "정보통신 감리", "소방감리", "소방 감리", "문화재감리", "문화재 감리")
-ARCH = ("건축", "증축", "신축", "개축", "리모델링", "대수선", "시설개선", "학교", "청사", "체육관", "건립", "공사감리", "상주감리", "비상주감리")
+ARCH = ("건축", "증축", "신축", "개축", "리모델링", "대수선", "시설개선", "학교", "청사", "체육관", "건립", "공사감리", "상주감리", "비상주감리", "감독권한대행")
+DEMOLITION = ("해체", "철거", "멸실")
+ASBESTOS = ("석면", "asbestos")
+ALERT_STATE = ROOT / "data" / "alert_state.json"
 OTHER_REGIONS = ("경기도", "인천광역시", "부산광역시", "대구광역시", "대전광역시", "광주광역시", "울산광역시", "세종특별", "강원특별", "충청북도", "충청남도", "전북특별", "전라북도", "전라남도", "경상북도", "경상남도", "제주특별")
 GOOD_REGION = ("서울", "전국", "제한없음", "지역제한없음")
 
@@ -57,7 +60,13 @@ def classify(raw, now):
     title = get(raw, "bidNtceNm")
     if not any(s in title for s in INCLUDE) or any(s in title for s in EXCLUDE):
         return None
-    if not any(s in title for s in ARCH):
+    if any(s in title for s in ASBESTOS):
+        category = "석면감리"
+    elif any(s in title for s in DEMOLITION):
+        category = "해체감리"
+    elif any(s in title for s in ARCH):
+        category = "건축감리"
+    else:
         return None
     kind = get(raw, "ntceKindNm")
     if "취소" in kind:
@@ -74,8 +83,11 @@ def classify(raw, now):
     reasons = []
     if "수의" in contract or "수의" in title or "소액" in title:
         reasons.append("수의·소액계약 표기 — 실적 평가 여부 원문 확인")
-    if "감리" in title and ("건축" in title or "상주" in title or "비상주" in title):
-        reasons.append("건축감리 관련 공고명")
+    reasons.append(category + " 관련 공고명")
+    if category == "석면감리":
+        reasons.append("석면해체작업 감리인 지정·등록·배치 자격 원문 확인")
+    if category == "해체감리":
+        reasons.append("건축물 해체공사감리자 지정·자격·배치 요건 원문 확인")
     if not region:
         reasons.append("지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인")
     elif "서울" in region:
@@ -90,6 +102,7 @@ def classify(raw, now):
         return None
     return {
         "id":num + "-" + order, "number":num, "order":order,
+        "category": category,
         "title":title,"agency":get(raw,"ntceInsttNm","dminsttNm"),
         "notice_at":get(raw,"bidNtceDt"),"deadline":deadline,
         "budget":get(raw,"asignBdgtAmt","presmptPrce"),
@@ -97,33 +110,96 @@ def classify(raw, now):
         "region":region or "정보 미확인", "contract":contract, "method":bidmethod,
         "priority":priority, "reasons":reasons,
         "eligibility":"원문 확인 필요", "performance":"업체 감리실적 필수·배점 여부 미확인",
-        "staffing":"건축사·상주감리원 자격/기간 원문 확인",
+        "staffing":("석면해체작업 감리인 지정·배치조건 원문 확인" if category == "석면감리" else
+                    "해체공사감리자 지정·배치조건 원문 확인" if category == "해체감리" else
+                    "건축사·상주감리원 자격/기간 원문 확인"),
         "url":get(raw,"bidNtceDtlUrl") or "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo="+urllib.parse.quote(num)+"&bidPbancOrd="+urllib.parse.quote(order)
     }
 
+def send_telegram(text):
+    """전달 실패 시 예외를 발생시켜 재시도할 수 있도록 유지한다."""
+    payload = urllib.parse.urlencode({
+        "chat_id":CHAT, "text":text, "disable_web_page_preview":"true"
+    }).encode("utf-8")
+    request = urllib.request.Request(
+        "https://api.telegram.org/bot"+BOT+"/sendMessage",
+        data=payload, method="POST"
+    )
+    with urllib.request.urlopen(request,timeout=25) as response:
+        result=json.loads(response.read().decode("utf-8"))
+    if not result.get("ok"):
+        raise RuntimeError("Telegram sendMessage was rejected")
+
 def send_alert(items):
+    """한 메시지에 여러 공고 요약. 비밀 토큰은 파일 및 로그에 기록하지 않는다."""
     if not BOT or not CHAT or not items:
+        return False
+    for offset in range(0,len(items),6):
+        group=items[offset:offset+6]
+        lines=["[0513 감리 입찰 알림] 신규 검토 후보 "+str(len(group))+"건"]
+        for x in group:
+            lines.append(
+                "• ["+x.get("category","감리")+"] "+x["title"][:65]+
+                "\n발주: "+x["agency"][:30]+
+                "\n마감: "+x["deadline"][:16]+
+                "\n판정: "+x["priority"]+" (공고문 자격 검토 전)"+
+                "\n"+x["url"]
+            )
+        lines.append("※ 서울업체 지역조건 1차 필터만 통과. 업체실적·PQ·감리원 배치·석면감리 등록조건은 반드시 확인")
+        send_telegram("\n\n".join(lines))
+    return True
+
+def load_alert_state():
+    try:
+        value=json.loads(ALERT_STATE.read_text(encoding="utf-8"))
+        if isinstance(value,dict):
+            return value
+    except (OSError, ValueError):
+        pass
+    return {"initialized":False,"seen":[],"updated_at":None}
+
+def notify_new(items, now):
+    """초기 연결 시 기존 공고 폭탄 방지, 이후 신규 공고는 누락 없이 추적."""
+    if not BOT or not CHAT:
+        print("Telegram secrets missing; alert delivery not yet enabled.")
         return
-    # 검토 후보일 뿐 확정 적격업체 표시 금지
-    lines = ["[건축감리 입찰 레이더] 신규 검토 후보 " + str(len(items)) + "건"]
-    for x in items[:8]:
-        lines.append("• " + x["title"][:65] + "\n  " + x["deadline"][:16] + " 마감 · " + x["priority"] + "\n  " + x["url"])
-    if len(items) > 8:
-        lines.append("외 " + str(len(items)-8) + "건")
-    lines.append("※ 실적·인력·지역조건은 공고문 확인 전까지 미확정입니다.")
-    payload = urllib.parse.urlencode({"chat_id":CHAT, "text":"\n\n".join(lines), "disable_web_page_preview":"true"}).encode()
-    request = urllib.request.Request("https://api.telegram.org/bot"+BOT+"/sendMessage",data=payload,method="POST")
-    with urllib.request.urlopen(request,timeout=20) as resp:
-        obj=json.loads(resp.read())
-    if not obj.get("ok"):
-        raise RuntimeError("Telegram API returned not ok")
+    state=load_alert_state()
+    seen=set(state.get("seen",[]))
+    ids={x["id"] for x in items}
+    if not state.get("initialized"):
+        try:
+            send_telegram(
+                "✅ 0513 건축감리 입찰 알림 연결 완료\n"
+                "분야: 건축(신축·증축 포함), 해체, 석면 감리\n"
+                "확인: 매일 12:30 / 19:30 (한국시간, 예약실행 지연 가능)\n"
+                "기존 "+str(len(items))+"개 공고는 중복 알림 없이 등록했습니다. "
+                "다음 수집부터 새로 발견되는 후보를 알려드립니다.\n"
+                "※ 참가 및 낙찰자격 최종 판정은 공고문 확인 필요"
+            )
+        except Exception as exc:
+            print("Telegram setup verification failed: "+type(exc).__name__, file=sys.stderr)
+            return
+        state={"initialized":True,"seen":sorted(ids),"updated_at":now.isoformat(timespec="seconds")}
+    else:
+        new=[x for x in items if x["id"] not in seen]
+        if new:
+            try:
+                send_alert(new)
+            except Exception as exc:
+                print("Telegram notification failed: "+type(exc).__name__, file=sys.stderr)
+                return
+        state["seen"]=sorted(seen|ids)[-8000:]
+        state["updated_at"]=now.isoformat(timespec="seconds")
+        print("Telegram: "+str(len(new))+" new relevant notice(s).")
+    ALERT_STATE.parent.mkdir(parents=True,exist_ok=True)
+    ALERT_STATE.write_text(json.dumps(state,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 
 def main():
     if not KEY:
         print("G2B_API_KEY not configured. Preserving existing feed; connect repository secret to enable collection.")
         return
     now=datetime.now(KST)
-    before=now-timedelta(days=3)
+    before=now-timedelta(days=5)
     params={
         "serviceKey":KEY,"type":"json","inqryDiv":"1",
         "inqryBgnDt":before.strftime("%Y%m%d%H%M"),
@@ -171,14 +247,9 @@ def main():
             "total_matches":len(items),"items":items,"message":"자동 수집 결과입니다. 문서 기반 자격심사는 수행하지 않았습니다."}
     OUTPUT.parent.mkdir(parents=True,exist_ok=True)
     OUTPUT.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    new=[x for x in items if x["id"] not in old_ids and x["priority"]=="우선 검토"]
-    print(f"Fetched {total_count} notices, matched {len(items)}, new priority {len(new)}")
-    # 처음 연결하면 과거 3일 데이터를 대량 발송하지 않음
-    if old.get("status")=="ready" and new:
-        try:
-            send_alert(new)
-        except Exception as exc:
-            print("Notification failed:",type(exc).__name__,file=sys.stderr)
+    new=[x for x in items if x["id"] not in old_ids]
+    print(f"Fetched {total_count} notices, matched {len(items)}, new candidates {len(new)}")
+    notify_new(items, now)
 
 if __name__=="__main__":
     main()
