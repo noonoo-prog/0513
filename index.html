@@ -30,7 +30,7 @@ const initial=[
 ];
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)], storeKey="arch-bid-watch-0513-v1", favKey="arch-bid-favs-0513-v1";
 function safeLoad(key,fallback){try{let a=JSON.parse(localStorage.getItem(key));return Array.isArray(a)?a:fallback}catch(e){return fallback}}
-let added=safeLoad(storeKey,[]),favs=safeLoad(favKey,[]),all=[...initial,...added];
+let added=safeLoad(storeKey,[]),favs=safeLoad(favKey,[]),remote=[],remoteStatus="not_configured",all=[...initial,...added];
 function save(){localStorage.setItem(storeKey,JSON.stringify(added));localStorage.setItem(favKey,JSON.stringify(favs))}
 function won(n){return n>0?n.toLocaleString("ko-KR")+"원":"미공개"}
 function dt(s){if(!s)return "미정";let d=new Date(s);if(isNaN(d))return s;return d.toLocaleString("ko-KR",{year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hour12:false})}
@@ -41,12 +41,12 @@ function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&l
 function fitLabel(x){return x.fit==="good"?"실적 0원 우선 검토":x.fit==="risk"?"실적 평가 불리":"추가 확인 필요"}
 function tagClass(x){return x.fit==="good"?"good":x.fit==="risk"?"bad":"caution"}
 function assessment(x){if(x.fit==="good")return "수의견적 또는 실적 미평가가 확인된 유형입니다. 다만 개인자격·배치·등록 제한사항은 별도 확인이 필요합니다.";if(x.fit==="risk")return "건축감리 업체 준공실적이 적격심사에 반영됩니다. 실적 0원이라면 95점 통과 가능성을 먼저 계산해야 합니다.";return "입찰방식 또는 세부 공고문 검토가 끝나지 않았습니다. 실적 필수요건과 배치기준을 확인해야 합니다."}
-function render(){all=[...initial,...added];const open=all.filter(x=>!closed(x)),good=open.filter(x=>x.fit==="good");
+function render(){all=[...initial,...remote.filter(x=>!initial.some(y=>y.id===x.id)),...added];const open=all.filter(x=>!closed(x)),good=open.filter(x=>x.fit==="good");
 $("#mAll").textContent=all.length;$("#mOpen").textContent=open.length;$("#mGood").textContent=good.length;$("#mFav").textContent=favs.length;
 let q=$("#keyword").value.trim().toLowerCase(),st=$("#status").value,ft=$("#suit").value,sort=$("#sort").value,favOnly=$("#favOnly").checked,seoul=$("#seoulOnly").checked;
 let filtered=all.filter(x=>(!q||(x.title+" "+x.agency+" "+x.id+" "+x.memo).toLowerCase().includes(q))&&(st==="all"||(st==="closed"?closed(x):!closed(x)))&&(ft==="all"||x.fit===ft)&&(!favOnly||favs.includes(x.id))&&(!seoul||x.region.includes("서울")));
 filtered.sort((a,b)=>sort==="price"?(b.amount-a.amount):sort==="latest"?(new Date(b.deadline)-new Date(a.deadline)):(new Date(a.deadline)-new Date(b.deadline)));
-$("#count").textContent=filtered.length+"건 표시 · 최신 자동검색 아님";
+$("#count").textContent=filtered.length+(remoteStatus==="ready"?"건 표시 · 나라장터 데이터 반영":"건 표시 · 실시간 API 연결 대기");
 $("#cards").innerHTML=filtered.length?filtered.map(x=>'<article class="bid"><div class="bid-top"><div><div class="tags"><span class="tag '+tagClass(x)+'">'+fitLabel(x)+'</span><span class="tag '+(closed(x)?'':'blue')+'">'+days(x)+'</span><span class="tag">'+esc(x.method)+'</span><span class="tag">'+esc(x.tag||'직접 등록')+'</span></div><h3>'+esc(x.title)+'</h3><div class="sub">'+esc(x.agency)+' <span class="mini-sep">·</span> '+esc(x.id)+' <span class="mini-sep">·</span> '+esc(x.region)+'</div></div><button class="fav '+(favs.includes(x.id)?'on':'')+'" data-fav="'+esc(x.id)+'" aria-label="관심공고">★</button></div><div class="facts"><div><small>기초금액</small><strong>'+won(x.amount)+'</strong></div><div><small>마감일시</small><strong>'+dt(x.deadline)+'</strong></div><div><small>낙찰방식</small><strong>'+esc(x.method)+'</strong></div><div><small>업체 실적 0원</small><strong>'+fitLabel(x)+'</strong></div></div><div class="review"><strong>핵심 판단</strong> · '+assessment(x)+'</div><div class="bid-bottom"><div class="path"><a class="source" href="'+esc(validUrl(x.source)?x.source:'https://www.g2b.go.kr/')+'" target="_blank" rel="noopener">공고 원문 ↗</a></div><div class="bid-actions"><button class="btn sm" data-view="'+esc(x.id)+'">상세 검토</button><button class="btn sm" data-copy="'+esc(x.id)+'">요약 복사</button>'+(x.custom?'<button class="btn sm" data-del="'+esc(x.id)+'">삭제</button>':'')+'</div></div></article>').join(""):'<div class="empty"><h3>해당하는 공고가 없습니다.</h3><p>필터를 바꾸거나 새 공고를 추가해 보세요. 실시간 입찰 자료는 나라장터 검색으로 확인할 수 있습니다.</p><button class="btn primary" id="emptySearch">웹에서 공고 찾기 ↗</button></div>';
 $$("[data-fav]").forEach(b=>b.onclick=()=>{let id=b.dataset.fav;favs=favs.includes(id)?favs.filter(a=>a!==id):[...favs,id];save();render()});$$("[data-view]").forEach(b=>b.onclick=()=>showDetail(b.dataset.view));$$("[data-copy]").forEach(b=>b.onclick=()=>copyBid(b.dataset.copy));$$("[data-del]").forEach(b=>b.onclick=()=>{if(confirm("이 공고를 목록에서 삭제할까요?")){added=added.filter(x=>x.id!==b.dataset.del);favs=favs.filter(x=>x!==b.dataset.del);save();render()}});if($("#emptySearch"))$("#emptySearch").onclick=onlineSearch}
 function textBid(x){return x.title+"\n공고번호: "+x.id+"\n발주처: "+x.agency+"\n기초금액: "+won(x.amount)+"\n마감: "+dt(x.deadline)+"\n낙찰방식: "+x.method+"\n판정: "+fitLabel(x)+"\n검토: "+x.memo+"\n원문: "+x.source}
@@ -64,5 +64,37 @@ function exportCsv(){let cols=["id","title","agency","region","amount","deadline
 ["keyword","status","suit","sort","favOnly","seoulOnly"].forEach(id=>$("#"+id).addEventListener("input",render));
 $("#resetFilters").onclick=()=>{$("#keyword").value="";$("#status").value="open";$("#suit").value="all";$("#sort").value="deadline";$("#favOnly").checked=false;$("#seoulOnly").checked=true;render()};
 $("#addBtn").onclick=addModal;$("#exportBtn").onclick=exportCsv;$("#searchWeb").onclick=onlineSearch;$("#searchGov").onclick=()=>window.open("https://www.g2b.go.kr/","_blank","noopener");$("#copySummary").onclick=()=>copyText(all.filter(x=>!closed(x)).map(textBid).join("\n\n———\n\n"));$("#closeModal").onclick=close;$("#modalBg").addEventListener("click",e=>{if(e.target===$("#modalBg"))close()});document.addEventListener("keydown",e=>{if(e.key==="Escape")close()});
+
+async function fetchFeed(){
+  try{
+    const response=await fetch("./data/bids.json?nocache="+Date.now(),{cache:"no-store"});
+    if(!response.ok)throw new Error("HTTP "+response.status);
+    const data=await response.json();
+    if(!Array.isArray(data.items))throw new Error("Invalid feed");
+    remoteStatus=data.status||"not_configured";
+    remote=data.items.filter(x=>x&&x.number).map(x=>({
+      id:String(x.number),
+      title:String(x.title||"건축감리 용역"),
+      agency:String(x.agency||"발주기관 미확인"),
+      region:(()=>{const region=String(x.region||"미확인");return region.includes("서울")?"서울":region.includes("전국")?"전국":region==="미확인"?"미확인":region})(),
+      amount:Number(x.budget||0),
+      deadline:String(x.deadline||"").replace(" ","T"),
+      method:String(x.contract||x.method||"방식 확인 필요"),
+      fit:"check",
+      source:String(x.url||"https://www.g2b.go.kr/"),
+      memo:"[나라장터 공개 API 자동수집] "+(x.priority==="우선 검토"?"수의·소액계약 표기 후보. ":"")+"업체 감리실적 필수 여부·적격심사 점수·배치 자격은 공고문/과업지침서 검토 전까지 미확정.\n"+(x.reasons||[]).join("\n")+"\n※ 수집 금액은 기초금액이 아닌 배정예산 또는 추정가격일 수 있습니다.",
+      tag:"나라장터 API",
+      floor:0
+    }));
+    if(remoteStatus==="ready"){
+      document.querySelector(".footer .shell").firstChild.textContent="0513 · 감리 입찰 검토 보드 · 나라장터 공고 자동수집 "+String(data.updated_at||"")+" · 이행실적/인력요건은 개별 공고문 확인 필수 · ";
+      if(remote.length===0)console.info("나라장터 API 결과: 현재 일치하는 공고 없음");
+    }
+    render();
+  }catch(e){console.warn("입찰공고 수집파일 연결 실패:",e);remoteStatus="error";render()}
+}
 render();
+fetchFeed();
+setInterval(fetchFeed,300000);
+document.addEventListener("visibilitychange",()=>{if(!document.hidden)fetchFeed()});
 </script></body></html>
