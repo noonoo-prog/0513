@@ -8,7 +8,7 @@ import time
 from pathlib import Path
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
-from fetch_bids import fetch_json, get
+from fetch_bids import fetch_json, get, title_category
 
 ROOT=Path(__file__).resolve().parents[1]
 OUTPUT=ROOT/"data"/"awards.json"
@@ -29,17 +29,7 @@ def decimal(text):
         return None
 
 def classify(name):
-    if any(word in name for word in EXCLUDE):
-        return None
-    if not any(word in name for word in KEYWORDS):
-        return None
-    if any(word in name for word in ASBESTOS):
-        return "석면감리"
-    if any(word in name for word in DEMOLITION):
-        return "해체감리"
-    if any(word in name for word in ARCH):
-        return "건축감리"
-    return None
+    return title_category(name)
 
 def normalize(item):
     title=get(item,"bidNtceNm")
@@ -83,7 +73,7 @@ def main():
             pass
     now=datetime.now(TZ)
     start=now-timedelta(days=28 if old.get("status")!="ready" else 8)
-    existing={x["id"]:x for x in old.get("items",[]) if isinstance(x,dict) and x.get("id")}
+    existing={x["id"]:x for x in old.get("items",[]) if isinstance(x,dict) and x.get("id") and title_category(x.get("title",""))}
     for keyword in KEYWORDS:
         params={
             "serviceKey":KEY, "type":"json", "pageNo":"1", "numOfRows":"100",
