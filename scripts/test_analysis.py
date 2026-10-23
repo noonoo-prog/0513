@@ -8,7 +8,7 @@ from pathlib import Path
 sys.path.insert(0,str(Path(__file__).parent))
 from analyze_bids import (
     category, region_evidence_from_api, region_from_doc, analyze_text,
-    doc_text, analyze_notice, money
+    doc_text, analyze_notice, money, base_from_clause, floor_from_clause
 )
 class AnalysisTests(unittest.TestCase):
     def test_categories(self):
@@ -27,6 +27,10 @@ class AnalysisTests(unittest.TestCase):
         self.assertEqual(region_evidence_from_api("정보 미확인")[0],"unknown")
         self.assertEqual(region_from_doc("입찰참가자는 본점 소재지가 충청북도에 있어야 합니다.")[0],"excluded")
         self.assertEqual(region_from_doc("본점 소재지는 서울특별시 또는 경기도여야 합니다")[0],"unknown")
+        self.assertEqual(region_from_doc("나. 지역제한(경상남도) 대상 용역입니다.")[0],"excluded")
+        self.assertEqual(region_from_doc("지역제한(영동군), 2인 이상 견적제출")[0],"excluded")
+        self.assertEqual(region_from_doc("지역제한(서울특별시) 입찰용역입니다")[0],"possible")
+        self.assertEqual(region_from_doc("울산광역시 지역제한 입찰입니다")[0],"excluded")
     def test_doc_pricing(self):
         doc=("입찰 참가자격은 건축사사무소 등록자입니다. "+
              "본점 소재지는 서울특별시 내 소재한 업체여야 합니다. "+
@@ -36,6 +40,9 @@ class AnalysisTests(unittest.TestCase):
         found=analyze_text(doc)
         self.assertEqual(found["floor_rate"],88.745)
         self.assertEqual(found["base_amount"],98_000_000)
+        self.assertEqual(base_from_clause("기초금액 금25,531,000원 추정가격 23,210,000원"),25_531_000)
+        self.assertEqual(base_from_clause("기초금액 추정가격 부가가치세 6,643,000 6,039,091 603,909"),6_643_000)
+        self.assertEqual(floor_from_clause("낙찰하한율 88.745%"),88.745)
         self.assertTrue(found["license_clause"])
         self.assertTrue(found["staffing_clause"])
     def test_hwpx(self):
