@@ -176,7 +176,7 @@ def send_alert(items):
                 "\n판정: "+x["priority"]+" (공고문 자격 검토 전)"+
                 "\n"+x["url"]
             )
-        lines.append("※ 서울업체 지역조건 1차 필터만 통과. 업체실적·PQ·감리원 배치·석면감리 등록조건은 반드시 확인")
+        lines.append("※ 감리 분야 1차 필터 통과 후 지역·실적·배치 등 자격 미확인 후보만 전송. 공고문을 반드시 확인")
         send_telegram("\n\n".join(lines))
     return True
 
@@ -212,7 +212,7 @@ def notify_new(items, now):
             return
         state={"initialized":True,"seen":sorted(ids),"updated_at":now.isoformat(timespec="seconds")}
     else:
-        new=[x for x in items if x["id"] not in seen]
+        new=[x for x in items if x["id"] not in seen and x.get("eligibility_status")!="참가 불가"]
         if new:
             try:
                 send_alert(new)
