@@ -28,14 +28,14 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python scripts/fetch_bids.py
-      - name: Commit updated data
+      - name: Commit updated data and notification receipts
         run: |
-          if git diff --quiet -- data/bids.json; then
+          if git diff --quiet -- data/bids.json data/alert_state.json; then
             echo "No new data."
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/bids.json
+            git add data/bids.json data/alert_state.json
             git commit -m "chore: refresh architecture bid notices"
             git push
           fi
