@@ -23,6 +23,47 @@ ARCH = ("건축", "증축", "신축", "개축", "리모델링", "대수선", "�
 DEMOLITION = ("해체", "철거", "멸실")
 ASBESTOS = ("석면", "asbestos")
 ALERT_STATE = ROOT / "data" / "alert_state.json"
+
+# 공고명에는 발주기관명(예: 감리교회)과 타분야 공사명이 혼재한다.
+# '건축/학교'라는 글자만 있다는 이유로 전기·소방·통신 감리까지 포함하지 않는다.
+OTHER_TRADE = (
+    "전기공사", "전기감리", "전기 감리", "(전기)감리", "감리자(전기)", "감리업자(전기)",
+    "전력시설물 감리", "태양광발전", "햇빛이음학교", "조성전기공사",
+    "정보통신", "통신공사", "통신시설", "통신 감리", "통신감리",
+    "소방공사", "소방감리", "소방 감리", "감리자(소방)",
+    "기계설비공사", "유무선 네트워크", "조리시설(인덕션)", "감리자(기계)",
+    "문화재감리", "문화재 감리", "교통신호기", "보행신호등"
+)
+NOT_BUILDING = (
+    "간선도로", "지방도", "도로 확포장", "고속도로", "도로 개설",
+    "농업용수", "배수지", "정수장", "복개철거", "하수처리시설",
+    "인조잔디 운동장", "옹벽 개선", "부지조성공사", "수리시설개보수",
+    "네트워크 개선", "건설폐기물 처리", "안전점검 수행기관"
+)
+BUILDING = (
+    "건축", "건물", "건립", "신축", "증축", "개축", "리모델링",
+    "대수선", "교사동", "급식실", "체육관", "청사", "도서관",
+    "화장실", "학교", "유치원", "시설개선", "공사감리",
+    "상주감리", "비상주감리", "책임감리", "건설사업관리"
+)
+
+def title_category(title):
+    """제목 기반 후보 분류. 지역/실적/면허는 이 함수만으로 판정하지 않는다."""
+    cleaned = title.replace("감리교회", "교회")
+    if not any(word in cleaned for word in INCLUDE):
+        return None
+    if any(word in cleaned for word in NOT_BUILDING):
+        return None
+    if any(word in cleaned for word in OTHER_TRADE):
+        return None
+    if any(word in cleaned for word in ASBESTOS):
+        return "석면감리"
+    if any(word in cleaned for word in DEMOLITION):
+        return "해체감리"
+    if any(word in cleaned for word in BUILDING):
+        return "건축감리"
+    return None
+
 OTHER_REGIONS = ("경기도", "인천광역시", "부산광역시", "대구광역시", "대전광역시", "광주광역시", "울산광역시", "세종특별", "강원특별", "충청북도", "충청남도", "전북특별", "전라북도", "전라남도", "경상북도", "경상남도", "제주특별")
 GOOD_REGION = ("서울", "전국", "제한없음", "지역제한없음")
 
@@ -58,15 +99,8 @@ def parse_kst(value):
 
 def classify(raw, now):
     title = get(raw, "bidNtceNm")
-    if not any(s in title for s in INCLUDE) or any(s in title for s in EXCLUDE):
-        return None
-    if any(s in title for s in ASBESTOS):
-        category = "석면감리"
-    elif any(s in title for s in DEMOLITION):
-        category = "해체감리"
-    elif any(s in title for s in ARCH):
-        category = "건축감리"
-    else:
+    category = title_category(title)
+    if not category:
         return None
     kind = get(raw, "ntceKindNm")
     if "취소" in kind:
@@ -237,10 +271,10 @@ def main():
             old=json.loads(OUTPUT.read_text(encoding="utf-8"))
         except (ValueError, OSError):
             pass
-    old_ids=set(x.get("id") for x in old.get("items",[]) if x.get("id"))
+    old_ids=set(x.get("id") for x in old.get("items",[]) if x.get("id") and title_category(x.get("title","")))
     for x in old.get("items",[]):
         d=parse_kst(x.get("deadline"))
-        if x.get("id") not in found and d and d>now:
+        if x.get("id") not in found and d and d>now and title_category(x.get("title","")):
             found[x["id"]]=x
     items=sorted(found.values(),key=lambda v:(v.get("priority")!="우선 검토",v.get("deadline",""),v.get("id","")))[:400]
     result={"updated_at":now.isoformat(timespec="seconds"),"status":"ready","source":"조달청 나라장터 입찰공고정보서비스","query_window":before.date().isoformat()+" ~ "+now.date().isoformat(),
