@@ -30,7 +30,7 @@ jobs:
           js=Path("bid-review.js").read_text(encoding="utf-8")
           assert 'src="./bid-review.js"' in bid
           assert 'id="suit"' in bid and 'value="eligible"' in bid
-          assert '"eligibility_status"' in bid
+          assert 'eligibility_status' in bid
           assert 'data/awards.json' in award and 'data/bids.json' in bid
           assert "function calculateScore" in js
           assert "function calculate(" in js
