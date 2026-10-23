@@ -37,7 +37,9 @@ jobs:
         run: python -m pip install --disable-pip-version-check pypdf olefile
       - name: Regression tests
         if: ${{ github.event_name != 'workflow_dispatch' || inputs.test_telegram != true }}
-        run: python -m unittest discover -s scripts -p 'test_analysis.py'
+        run: |
+          python -m unittest discover -s scripts -p 'test_analysis.py'
+          node --check bid-review.js
       - name: Telegram test message
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.test_telegram == true }}
         env:
@@ -68,6 +70,10 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data/bids.json data/awards.json data/alert_state.json
             git commit -m "chore: refresh architecture bid notices"
-            git push
+            # UI/source changes may land during a several-minute API fetch.
+            # Rebase the data-only commit; never force push over newer commits.
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
           fi
       # pages.yml automatically deploys data updates committed to main.
