@@ -3,6 +3,7 @@
 (function(){
   const KEY="0513-eligibility-verifications-v1";
   const PRICE_KEY="0513-bid-price-scenarios-v1";
+  const SCORE_KEY="0513-bid-score-scenarios-v1";
   const CHECKS=[
     ["region","서울 본점으로 지역제한 충족 확인"],
     ["license","건축사사무소/해체·석면 해당 등록·지정 자격 확인"],
@@ -12,15 +13,16 @@
     ["documents","최신 공고문·과업지침서 및 정정공고 직접 검토"]
   ];
   function load(key){try{const a=JSON.parse(localStorage.getItem(key)||"{}");return a&&typeof a==="object"&&!Array.isArray(a)?a:{}}catch{return {}}}
-  const reviews=load(KEY), prices=load(PRICE_KEY);
+  const reviews=load(KEY), prices=load(PRICE_KEY), scores=load(SCORE_KEY);
   let history=[];
   const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
   const format=new Intl.NumberFormat("ko-KR");
   function amount(n){return Number.isFinite(+n)&&+n>0?format.format(+n)+"원":"원문 확인 필요"}
+  function fingerprint(x){return [x.title,x.region,x.deadline,x.method,x.source].join("|")}
   function status(x){
     if(x.eligibility_status==="참가 불가")return "참가 불가";
     const r=reviews[x.id];
-    if(r&&r.complete&&r.note&&r.note.trim().length>=10&&CHECKS.every(([key])=>r.checks&&r.checks[key])){
+    if(r&&r.fingerprint===fingerprint(x)&&r.complete&&r.note&&r.note.trim().length>=10&&CHECKS.every(([key])=>r.checks&&r.checks[key])){
       return "참가 가능 (직접 검토)";
     }
     return "자격 확인 필요";
@@ -74,6 +76,37 @@
       '<div class="actions"><button class="btn primary" id="reviewSave" type="button">검토 결과 저장</button><button class="btn" id="reviewClear" type="button">검토 기록 초기화</button></div>'+
       '<p class="sub" style="margin-top:6px">검토 저장은 법적 참가자격을 보증하지 않습니다. 공고 변경 시 재확인해야 합니다.</p>';
   }
+  function scoreHtml(x){
+    const saved=scores[x.id]||{};
+    const input=(id,label,value,placeholder)=>'<div class="form-item"><label for="'+id+'">'+label+'</label><input class="field" type="number" min="0" max="100" step="0.01" id="'+id+'" value="'+esc(value!==undefined?value:"")+'" placeholder="'+placeholder+'"></div>';
+    return '<p class="sub" style="margin-top:0">적격심사표의 실제 배점을 입력하면, 업체실적 0원에 따른 <strong>이론적 최대점수</strong>를 확인할 수 있습니다. 자동으로 95점, 100점을 가정하지 않습니다.</p>'+
+      '<div class="form-grid">'+
+      input("scoreTotal","종합평가 만점",saved.total,"원문 확인")+
+      input("scorePass","적격심사 통과점수",saved.pass,"원문 확인")+
+      input("scorePerformanceMax","업체 실적 항목 만점",saved.performanceMax,"원문 확인")+
+      input("scorePerformanceEarned","업체실적 0원일 때 해당 항목 점수",saved.performanceEarned,"평가표 기준 확인")+
+      '</div><div class="actions"><button class="btn" type="button" id="scoreCalc">적격심사 최대점수 검토</button></div>'+
+      '<div id="scoreResult" class="calc" aria-live="polite" style="margin-top:11px">적격심사 배점이 모두 확인되면 상한점수를 계산합니다. 개인 기술인 경력 및 신인도 등 다른 점수는 모두 만점으로 가정하는 상한선입니다.</div>';
+  }
+  function calculateScore(x){
+    const q=id=>document.querySelector(id),p=q("#scoreResult");
+    const names=["scoreTotal","scorePass","scorePerformanceMax","scorePerformanceEarned"];
+    if(names.some(id=>q("#"+id).value.trim()==="")){p.textContent="원문에서 확인한 네 가지 배점을 모두 입력해야 계산할 수 있습니다.";return}
+    const [total,pass,performanceMax,performanceEarned]=names.map(id=>Number(q("#"+id).value));
+    if([total,pass,performanceMax,performanceEarned].some(n=>!Number.isFinite(n)||n<0||n>100)||
+       total<=0||pass>total||performanceMax>total||performanceEarned>performanceMax){
+      p.textContent="배점 범위를 확인해 주세요. 실적항목 득점 ≤ 실적항목 만점 ≤ 전체 만점, 통과점수 ≤ 전체 만점이어야 합니다.";
+      return;
+    }
+    scores[x.id]={total,pass,performanceMax,performanceEarned,updatedAt:new Date().toISOString()};
+    localStorage.setItem(SCORE_KEY,JSON.stringify(scores));
+    const max=total-performanceMax+performanceEarned;
+    const impossible=max+1e-8<pass;
+    p.innerHTML='<strong>실적 0원 기준 이론적 최대점수: '+max.toFixed(2)+' / '+total.toFixed(2)+'점</strong>'+
+      '<div style="margin-top:7px;font-weight:800;color:'+(impossible?"#a23b43":"#996006")+'">'+
+      (impossible?"입력된 조건이 정확하다면 통과점수 "+pass.toFixed(2)+"점에 미달합니다.":"상한선상으로는 통과점수 "+pass.toFixed(2)+"점에 도달할 수 있습니다. 실제 통과 여부는 확인 필요합니다.")+
+      '</div><div class="lead" style="margin-top:7px">실제 결과는 기술인 배치, 경영상태, 신인도, 지역, 감점 및 발주처 평가기준에 따라 달라집니다. 자동 참가자격 확정 또는 법률상 판정이 아닙니다.</div>';
+  }
   function priceHtml(x){
     const stored=prices[x.id]||{},api=x.price_analysis||{};
     const base=stored.base!==undefined?stored.base:(x.base_amount||api.base_amount||"");
@@ -103,7 +136,8 @@
         '</div>')+
       section("2. PDF·HWP·HWPX 공고문 분석",evidenceHtml(x))+
       section("3. 직접 참가자격 확인",checklistHtml(x))+
-      section("4. 투찰금액 시나리오",priceHtml(x))+
+      section("4. 실적 0원 적격심사 상한 계산",scoreHtml(x))+
+      section("5. 투찰금액 시나리오",priceHtml(x))+
       '<div class="actions"><a class="btn" target="_blank" rel="noopener noreferrer" href="'+esc(x.source&&/^https:\/\//.test(x.source)?x.source:"https://www.g2b.go.kr/")+'">공고 원문 ↗</a><button class="btn" type="button" id="reviewClose">닫기</button></div>';
     if(typeof modal!=="function")return;
     modal(x.title,x.id+" · "+x.agency,html);
@@ -116,7 +150,7 @@
         alert("API/공고문에서 참가 불가 조건이 확인됐습니다. 원문을 다시 확인한 뒤 별도로 판단하세요.");
         return;
       }
-      reviews[x.id]={checks,note,complete,verifiedAt:new Date().toISOString(),source:x.source||""};
+      reviews[x.id]={checks,note,complete,verifiedAt:new Date().toISOString(),source:x.source||"",fingerprint:fingerprint(x)};
       localStorage.setItem(KEY,JSON.stringify(reviews));
       if(typeof render==="function")render();
       if(!complete)alert("검토 내역은 저장했습니다. '참가 가능'은 전체 항목과 확인 메모를 충족한 후에만 표시됩니다.");
@@ -127,6 +161,7 @@
       if(typeof render==="function")render();show(x);
     };
     q("#scenarioCalc").onclick=()=>calculate(x);
+    q("#scoreCalc").onclick=()=>calculateScore(x);
   }
   function calculate(x){
     const q=id=>document.querySelector(id),result=q("#scenarioResult");
