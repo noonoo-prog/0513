@@ -1,0 +1,39 @@
+name: 10억 벌기 화면 검증
+on:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "awards.html"
+      - "bid-review.js"
+      - ".github/workflows/site-smoke.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check JavaScript syntax and page integration
+        run: |
+          node --check bid-review.js
+          python - <<'PY'
+          from pathlib import Path
+          bid=Path("index.html").read_text(encoding="utf-8")
+          award=Path("awards.html").read_text(encoding="utf-8")
+          js=Path("bid-review.js").read_text(encoding="utf-8")
+          assert 'src="./bid-review.js"' in bid
+          assert 'id="suit"' in bid and 'value="eligible"' in bid
+          assert '"eligibility_status"' in bid
+          assert 'data/awards.json' in award and 'data/bids.json' in bid
+          assert "function calculateScore" in js
+          assert "function calculate(" in js
+          assert "function fingerprint" in js
+          print("UI integration smoke checks passed.")
+          PY
