@@ -1,8 +1,8 @@
 {
   "status": "ready",
-  "updated_at": "2026-10-23T18:22:30+09:00",
+  "updated_at": "2026-10-24T00:24:40+09:00",
   "source": "조달청 나라장터 낙찰정보서비스 - 용역",
-  "query_window": "2026-09-25 ~ 2026-10-23",
+  "query_window": "2026-10-16 ~ 2026-10-24",
   "total_valid": 38,
   "items": [
     {
@@ -52,7 +52,7 @@
       "agency": "충청북도",
       "award_at": "2026-10-21",
       "award_amount": 21423600,
-      "award_rate": 90,
+      "award_rate": 90.0,
       "bidder_count": "1",
       "winner": "",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01784352&bidPbancOrd=000"
@@ -65,7 +65,7 @@
       "agency": "충청북도",
       "award_at": "2026-10-21",
       "award_amount": 21423600,
-      "award_rate": 90,
+      "award_rate": 90.0,
       "bidder_count": "1",
       "winner": "",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01781675&bidPbancOrd=000"
@@ -78,7 +78,7 @@
       "agency": "경기도교육청",
       "award_at": "2026-10-21",
       "award_amount": 34676900,
-      "award_rate": 95,
+      "award_rate": 95.0,
       "bidder_count": "1",
       "winner": "",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01778412&bidPbancOrd=000"
@@ -182,7 +182,7 @@
       "agency": "서울특별시 서부공원여가센터",
       "award_at": "2026-10-19",
       "award_amount": 42750000,
-      "award_rate": 100,
+      "award_rate": 100.0,
       "bidder_count": "1",
       "winner": "",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01777003&bidPbancOrd=000"
@@ -500,5 +500,5 @@
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01747512&bidPbancOrd=000"
     }
   ],
-  "message": "공식 API 수신 데이터를 감리업종 공고명 기준으로 1차 정제했습니다. 지역제한·업체실적·면허·인력조건은 공고문 확인 전까지 미확정입니다."
+  "message": "공식 API에서 수신된 기록만 표시. 낙찰률은 예정가격 대비 비율이며 공고별 참가 자격을 보증하지 않습니다."
 }
