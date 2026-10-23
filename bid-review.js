@@ -36,6 +36,37 @@
     const risk=x.fit==="risk"?"업체실적 0원으로 적격심사 통과 어려울 수 있습니다. ":"";
     return risk+(found?found+" · ":"")+(missing?"미확인: "+missing:"참가자격·실적·인력·낙찰하한율 원문 검토 필요");
   }
+  function brief(x){
+    const current=status(x);
+    const evidence=Array.isArray(x.eligibility_evidence)?x.eligibility_evidence.map(String):[];
+    const regionFromDocument=evidence.map(v=>{
+      const m=v.match(/^공고문\s*(?:지역 제한 확인|본점 지역제한|명시 지역제한)\s*:\s*([^/·,\n]{2,28})/);
+      return m?m[1].trim():"";
+    }).find(Boolean);
+    const apiRegion=String(x.region||"");
+    let reason="";
+    if(current==="참가 불가"){
+      if(regionFromDocument)reason="지역제한 "+regionFromDocument+" — 서울 소재 사무소 참가 불가";
+      else if(apiRegion&&!/미확인|서울|전국|제한없음/.test(apiRegion))
+        reason="참가지역 "+apiRegion+" — 서울 소재 사무소 제한";
+      else reason="지역 등 참가요건 불일치 — 공고문 재확인 필요";
+    }else if(current.startsWith("참가 가능")){
+      reason="공고문 자격요건 직접 확인 기록 완료 (정정공고 재확인)";
+    }else{
+      const missing=Array.isArray(x.eligibility_missing)?x.eligibility_missing:[];
+      const flags=[];
+      if(missing.some(v=>/지역/.test(v))||/미확인/.test(apiRegion))flags.push("지역제한");
+      flags.push("실적 0원 배점","면허·감리원 배치");
+      reason=flags.join(" · ")+" 확인 필요";
+    }
+    const cat=String(x.category||"건축감리");
+    let requirements="";
+    if(cat==="해체감리")requirements="본점 소재지 · 해체공사감리자 지정·자격 · 감리원 배치 · 업체실적";
+    else if(cat==="석면감리")requirements="본점 소재지 · 석면해체작업 감리인 등록·교육 · 배치인력 · 업체실적";
+    else requirements="본점 소재지 · 건축사사무소 등록 · 업체실적·적격심사 · 감리원 등급·배치";
+    return {reasonTitle:current==="참가 불가"?"불가 사유":current.startsWith("참가 가능")?"검토 결과":"확인 필요 사유",
+            reason,requirements};
+  }
   function median(values){
     const v=values.filter(x=>Number.isFinite(x)&&x>=60&&x<=110).sort((a,b)=>a-b);
     if(v.length<5)return {median:null,n:v.length};
@@ -124,7 +155,9 @@
   }
   function show(x){
     const current=status(x);
+    const short=brief(x);
     let html='<div class="tags" style="margin-top:12px"><span class="tag '+(current==="참가 불가"?"bad":current.startsWith("참가 가능")?"good":"caution")+'">'+esc(current)+'</span><span class="tag">'+esc(x.category||"감리 분야 미확인")+'</span></div>'+
+      '<div class="note" style="margin:12px 0;font-size:12px;line-height:1.7;white-space:normal"><strong>'+esc(short.reasonTitle)+'</strong> · '+esc(short.reason)+'<div style="margin-top:5px"><strong>확인할 자격</strong> · '+esc(short.requirements)+'</div></div>'+
       '<div class="viewgrid">'+
       '<div class="vcell"><span>API 표시금액 종류</span><b>'+esc(x.amountType||"금액 유형 미확인")+'</b><div>'+esc(amount(x.amount))+'</div></div>'+
       '<div class="vcell"><span>'+esc(x.base_amount_source||"기초금액 (API·원문 확인 필요)")+'</span><b>'+esc(amount(x.base_amount))+'</b></div>'+
@@ -200,7 +233,7 @@
       const d=await r.json();if(d.status==="ready"&&Array.isArray(d.items))history=d.items;
     }catch(e){console.warn("유사 낙찰정보 일시 불러오기 실패",e)}
   }
-  window.BidReview={status,summary,show,calculate};
+  window.BidReview={status,summary,brief,show,calculate};
   loadHistory();
   if(typeof render==="function")render();
 })();
