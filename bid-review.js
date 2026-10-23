@@ -74,7 +74,7 @@
     return {median:v.length%2?v[mid]:(v[mid-1]+v[mid])/2,n:v.length};
   }
   function statsFor(cat){return median(history.filter(x=>x.category===cat).map(x=>x.award_rate===null||x.award_rate===undefined?NaN:Number(x.award_rate)))}
-  function section(title,body){return '<h3 style="font-size:15px;margin:22px 0 10px">'+title+'</h3>'+body}
+  function section(title,body){const open=/^1\./.test(title)?" open":"";return '<details class="review-section"'+open+' style="border-top:1px solid #e1e7ed;margin-top:10px"><summary style="font-size:15px;font-weight:800;padding:13px 3px;cursor:pointer;list-style:auto">'+esc(title)+'</summary><div style="padding:0 3px 12px">'+body+'</div></details>'}
   function evidenceHtml(x){
     const doc=x.document_analysis||{};
     const rows=Object.entries(doc.evidence||{}).map(([k,v])=>{
@@ -157,19 +157,19 @@
     const current=status(x);
     const short=brief(x);
     let html='<div class="tags" style="margin-top:12px"><span class="tag '+(current==="참가 불가"?"bad":current.startsWith("참가 가능")?"good":"caution")+'">'+esc(current)+'</span><span class="tag">'+esc(x.category||"감리 분야 미확인")+'</span></div>'+
-      '<div class="note" style="margin:12px 0;font-size:12px;line-height:1.7;white-space:normal"><strong>'+esc(short.reasonTitle)+'</strong> · '+esc(short.reason)+'<div style="margin-top:5px"><strong>확인할 자격</strong> · '+esc(short.requirements)+'</div></div>'+
+      '<div class="note" style="margin:12px 0;font-size:13px;line-height:1.7;white-space:normal"><strong>'+esc(short.reasonTitle)+'</strong> · '+esc(short.reason)+'<div style="margin-top:5px"><strong>확인할 자격</strong> · '+esc(short.requirements)+'</div></div>'+
       '<div class="viewgrid">'+
       '<div class="vcell"><span>API 표시금액 종류</span><b>'+esc(x.amountType||"금액 유형 미확인")+'</b><div>'+esc(amount(x.amount))+'</div></div>'+
       '<div class="vcell"><span>'+esc(x.base_amount_source||"기초금액 (API·원문 확인 필요)")+'</span><b>'+esc(amount(x.base_amount))+'</b></div>'+
       '<div class="vcell"><span>마감일시</span><b>'+esc(typeof dt==="function"?dt(x.deadline):x.deadline)+'</b></div>'+
-      '<div class="vcell"><span>참가가능지역</span><b>'+esc(x.region||"미확인")+'</b></div></div>'+
+      '<div class="vcell"><span>참가가능지역 (원문 우선)</span><b>'+esc(typeof regionDisplay==="function"?regionDisplay(x):x.region||"미확인")+'</b></div></div>'+
       section("1. 자동 자격 분석",'<div class="note" style="white-space:normal;font-size:12px">'+
         '<strong>현재 판정:</strong> '+esc(current)+'<div style="margin-top:7px">'+esc(summary(x))+'</div>'+
         ((x.eligibility_missing||[]).length?'<div style="margin-top:7px;color:#9b5a14"><strong>미확인</strong> · '+esc(x.eligibility_missing.join(" / "))+'</div>':"")+
         '</div>')+
-      section("2. PDF·HWP·HWPX 공고문 분석",evidenceHtml(x))+
-      section("3. 직접 참가자격 확인",checklistHtml(x))+
-      section("4. 실적 0원 적격심사 상한 계산",scoreHtml(x))+
+      section("2. 원문 근거 및 첨부 분석",evidenceHtml(x))+
+      section("3. 직접 참가자격 확인 · 체크리스트",checklistHtml(x))+
+      section("4. 적격심사 점수 계산",scoreHtml(x))+
       section("5. 투찰금액 시나리오",priceHtml(x))+
       '<div class="actions"><a class="btn" target="_blank" rel="noopener noreferrer" href="'+esc(x.source&&/^https:\/\//.test(x.source)?x.source:"https://www.g2b.go.kr/")+'">공고 원문 ↗</a><button class="btn" type="button" id="reviewClose">닫기</button></div>';
     if(typeof modal!=="function")return;
