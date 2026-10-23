@@ -9,6 +9,7 @@ import urllib.request
 from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
+from analyze_bids import analyze_notice, attachment_list, category as refined_category, money
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "bids.json"
@@ -49,20 +50,7 @@ BUILDING = (
 
 def title_category(title):
     """제목 기반 후보 분류. 지역/실적/면허는 이 함수만으로 판정하지 않는다."""
-    cleaned = title.replace("감리교회", "교회")
-    if not any(word in cleaned for word in INCLUDE):
-        return None
-    if any(word in cleaned for word in NOT_BUILDING):
-        return None
-    if any(word in cleaned for word in OTHER_TRADE):
-        return None
-    if any(word in cleaned for word in ASBESTOS):
-        return "석면감리"
-    if any(word in cleaned for word in DEMOLITION):
-        return "해체감리"
-    if any(word in cleaned for word in BUILDING):
-        return "건축감리"
-    return None
+    return refined_category(title)
 
 OTHER_REGIONS = ("경기도", "인천광역시", "부산광역시", "대구광역시", "대전광역시", "광주광역시", "울산광역시", "세종특별", "강원특별", "충청북도", "충청남도", "전북특별", "전라북도", "전라남도", "경상북도", "경상남도", "제주특별")
 GOOD_REGION = ("서울", "전국", "제한없음", "지역제한없음")
@@ -110,8 +98,7 @@ def classify(raw, now):
     if not dt or dt <= now:
         return None
     region = get(raw, "prtcptLmtRgnNm", "prtcptPsblRgnNm")
-    if region and any(s in region for s in OTHER_REGIONS) and not any(s in region for s in GOOD_REGION):
-        return None
+    # 제외 지역도 검토 기록에 남겨서 서울 업체 기준 참가 불가로 표시한다.
     contract = get(raw, "cntrctCnclsMthdNm")
     bidmethod = get(raw, "bidMethdNm")
     reasons = []
@@ -137,6 +124,16 @@ def classify(raw, now):
     return {
         "id":num + "-" + order, "number":num, "order":order,
         "category": category,
+        "attachments":attachment_list(raw),
+        "base_amount":money(get(raw,"bssamt","bsisAmt","basisAmt")),
+        "floor_rate":None,
+        "raw_qualification":{
+            "industry":get(raw,"lcnsLmtNm","permsnIndstrytyList","indstrytyNm"),
+            "participation_region":get(raw,"prtcptPsblRgnNm"),
+            "limited_region":get(raw,"prtcptLmtRgnNm"),
+            "joint_venture":get(raw,"cmmnSpldmdMethdNm"),
+            "pq":get(raw,"pqApplDocRcptMthdNm","pqYn"),
+        },
         "title":title,"agency":get(raw,"ntceInsttNm","dminsttNm"),
         "notice_at":get(raw,"bidNtceDt"),"deadline":deadline,
         "budget":get(raw,"asignBdgtAmt","presmptPrce"),
@@ -276,9 +273,37 @@ def main():
         d=parse_kst(x.get("deadline"))
         if x.get("id") not in found and d and d>now and title_category(x.get("title","")):
             found[x["id"]]=x
+    # 원문 분석은 비용/시간 제한을 둔다. 공고명·차수가 동일하면 이전 분석을 재활용한다.
+    previous={x.get("id"):x for x in old.get("items",[]) if isinstance(x,dict)}
     items=sorted(found.values(),key=lambda v:(v.get("priority")!="우선 검토",v.get("deadline",""),v.get("id","")))[:400]
+    refreshed=[]
+    new_doc_reads=0
+    for x in items:
+        prior=previous.get(x.get("id"),{})
+        # API 원본에 부착 URL이 없을 경우에도 이전에 확인한 URL/자료를 사용한다.
+        if not x.get("attachments") and prior.get("attachments"):
+            x["attachments"]=prior["attachments"]
+        if not x.get("base_amount") and prior.get("base_amount"):
+            x["base_amount"]=prior["base_amount"]
+        if not x.get("floor_rate") and prior.get("floor_rate"):
+            x["floor_rate"]=prior["floor_rate"]
+        if prior.get("document_analysis") and prior.get("title")==x["title"]:
+            for name in ("document_analysis","eligibility_status","eligibility_evidence",
+                         "eligibility_missing","price_analysis"):
+                if name in prior:x[name]=prior[name]
+            # 지역 등 API 정보가 바뀐 경우에는 보수적으로 재평가
+            if x.get("region")!=prior.get("region"):
+                x=analyze_notice(x,max_docs=0)
+        elif new_doc_reads<12 and x.get("attachments"):
+            x=analyze_notice(x,max_docs=1)
+            new_doc_reads+=1
+        else:
+            x=analyze_notice(x,max_docs=0)
+        if x is not None:refreshed.append(x)
+    items=refreshed
+    print("Document-analysis fetch attempts this run: "+str(new_doc_reads))
     result={"updated_at":now.isoformat(timespec="seconds"),"status":"ready","source":"조달청 나라장터 입찰공고정보서비스","query_window":before.date().isoformat()+" ~ "+now.date().isoformat(),
-            "total_matches":len(items),"items":items,"message":"자동 수집 결과입니다. 문서 기반 자격심사는 수행하지 않았습니다."}
+            "total_matches":len(items),"items":items,"message":"공고명·구조화 필드·공개 첨부 원문 일부를 분석했습니다. 참가자격은 증빙 확인 전까지 미확정입니다."}
     OUTPUT.parent.mkdir(parents=True,exist_ok=True)
     OUTPUT.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     new=[x for x in items if x["id"] not in old_ids]
