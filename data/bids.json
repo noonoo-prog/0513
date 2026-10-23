@@ -1,0 +1,9 @@
+{
+  "updated_at": null,
+  "status": "not_configured",
+  "source": "나라장터 입찰공고정보서비스",
+  "query_window": "",
+  "total_matches": 0,
+  "items": [],
+  "message": "나라장터 API 인증키가 연결되면 자동 수집이 시작됩니다."
+}
