@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-10-24T01:23:53+09:00",
+  "updated_at": "2026-10-24T01:33:56+09:00",
   "status": "ready",
   "source": "조달청 나라장터 입찰공고정보서비스",
   "query_window": "2026-10-19 ~ 2026-10-24",
-  "total_matches": 66,
+  "total_matches": 38,
   "items": [
     {
       "id": "R26BK01783991-000",
@@ -24,7 +24,7 @@
           "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01783991&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
         }
       ],
-      "base_amount": null,
+      "base_amount": 6643000,
       "floor_rate": null,
       "raw_qualification": {
         "industry": "",
@@ -53,17 +53,6 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01783991&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "공고문 지역조항 해석 필요: 적제출 및 계약방식 가. 견적서에 산출내역서를 첨부하지 않는 총액 견적으로 국가종합전자조달시스템(G2B)을 이용하여 2인 이상으로부터 견적서를 제출받는 수의계약 대상입니다. 나. 지역제한(경상남도) 대상 용역입니다. 다. 해당 공사는 청렴서약제 시행 대상 용역입니다. 3. 견적제출 참가자격 가. 지방자치단체를 당사자로 하는 계약에 관한 법률 시행령」 제13조, 같은 법 시행규칙 제14조의 규정에 따른 자격 요건을 갖추고, 「석면안전관리법」제30",
-        "감리원 배치조항 발견 — 개인경력·전담 가능 여부 확인 필요"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "업체 실적 필수조건 및 배점",
-        "석면해체작업 감리인 지정·등록 요건"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -81,13 +70,26 @@
           "score_clause": "기준에 미달하는 자 ※ 기술자 보유현황의 심사는 「낙찰자결정기준」제1장 입찰참가자격 사전심사기준 제5절 “4”의 그밖에 해당공사 수행능력상 결격여부, 제2장의2 기술·학술연구 용역 적격심사 세부기준 <별표>의 기술인력 평가방법을 준용한다. 이때 ‘입찰공고일’은 ‘안내공고일’로 ‘적격심사서류 제출마감일’은 ‘견적서 제출마감일’로 본다. ⑤ 견적서 제출 마감일 기준 최근 3개월 이내에 해당 지방자치단체의 입찰 ․ 계약 및 그 이행과 관"
         }
       },
+      "eligibility_status": "참가 불가",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "공고문 지역조항 해석 필요: 적제출 및 계약방식 가. 견적서에 산출내역서를 첨부하지 않는 총액 견적으로 국가종합전자조달시스템(G2B)을 이용하여 2인 이상으로부터 견적서를 제출받는 수의계약 대상입니다. 나. 지역제한(경상남도) 대상 용역입니다. 다. 해당 공사는 청렴서약제 시행 대상 용역입니다. 3. 견적제출 참가자격 가. 지방자치단체를 당사자로 하는 계약에 관한 법률 시행령」 제13조, 같은 법 시행규칙 제14조의 규정에 따른 자격 요건을 갖추고, 「석면안전관리법」제30",
+        "감리원 배치조항 발견 — 개인경력·전담 가능 여부 확인 필요",
+        "공고문 지역 제한 확인: 경상남도 / 적제출 및 계약방식 가. 견적서에 산출내역서를 첨부하지 않는 총액 견적으로 국가종합전자조달시스템(G2B)을 이용하여 2인 이상으로부터 견적서를 제출받는 수의계약 대상입니다. 나. 지역제한(경상남도) 대상 용역입니다. 다. 해당 공사는 청렴서약제 시행 대상 용역입니다. 3. 견적제출 참가자격 가. 지방자치단체를 당사자로 하"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역",
+        "업체 실적 필수조건 및 배점",
+        "석면해체작업 감리인 지정·등록 요건"
+      ],
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
         "base_amount": null,
         "floor_rate": null,
         "adjustment_rate": null
-      }
+      },
+      "base_amount_source": "공고문 텍스트 자동 추출 · 원문 확인 필요"
     },
     {
       "id": "R26BK01779757-000",
@@ -108,7 +110,7 @@
           "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01779757&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
         }
       ],
-      "base_amount": null,
+      "base_amount": 25531000,
       "floor_rate": null,
       "raw_qualification": {
         "industry": "",
@@ -136,16 +138,6 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01779757&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "공고문 지역조항 해석 필요: 링) 사업(건축) (비상주)감리용역 사업위치 영동군 영동읍 부용리 399번지 일원 사업개요 감리용역 1식 과업기간 착수일로부터 180일 입찰 및 계약방식 총액견적 , 전자견적 , 지역제한(영동군), 2인 이상 견적제출 수의계약 예정금액 금25,531,000원 기초금액 금25,531,000원 추정가격 금23,210,000원 손해배상공제료 금98,000원 부가가치세 금2,321,000원 기타금액 입찰 개시일시 2026.10.23.(금) 12:00 "
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -162,88 +154,25 @@
           "score_clause": "및 계약 집행기준 제11장 및 제11조에 의합니다. ○ 본 입찰의 자격 등의 진위여부는 적격심사시 확인하며 조건·내용이 다를 경우 무효 처리되며, 지방계약법 시행령 제92조 규정에 따라 부정당업체 제재 처분을 받게 됩니다. ○ 개찰결과 기초금액 및 기타 본 공고와 상이한 내용으로 개찰이 진행되었을 경우 개찰결과(입찰순위)를 무효로 하고 재공고 입찰을 실시합니다. 6. 예정가격 결정 및 낙찰자 결정 ○ 예정가격은 기초금액의 ±3%범위"
         }
       },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01780181-001",
-      "number": "R26BK01780181",
-      "order": "001",
-      "category": "해체감리",
-      "attachments": [
-        {
-          "name": "2. 과업내용서.hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01780181&bidPbancOrd=001&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "3. 계약특수조건.hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01780181&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "남양주시 화도 공공하수처리시설 민간투자사업 기존 제1화도 해체 공사 감리용역",
-      "agency": "한국환경공단 수도권동부환경본부",
-      "notice_at": "2026-10-22 11:11:40",
-      "deadline": "2026-10-27 15:00:00",
-      "budget": "86600000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "수의계약",
-      "method": "전자시담",
-      "priority": "우선 검토",
-      "reasons": [
-        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
-        "해체감리 관련 공고명",
-        "건축물 해체공사감리자 지정·자격·배치 요건 원문 확인",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "해체공사감리자 지정·배치조건 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01780181&bidPbancOrd=001",
-      "eligibility_status": "자격 확인 필요",
+      "eligibility_status": "참가 불가",
       "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
+        "지역제한 정보가 API에 없음",
+        "공고문 지역조항 해석 필요: 링) 사업(건축) (비상주)감리용역 사업위치 영동군 영동읍 부용리 399번지 일원 사업개요 감리용역 1식 과업기간 착수일로부터 180일 입찰 및 계약방식 총액견적 , 전자견적 , 지역제한(영동군), 2인 이상 견적제출 수의계약 예정금액 금25,531,000원 기초금액 금25,531,000원 추정가격 금23,210,000원 손해배상공제료 금98,000원 부가가치세 금2,321,000원 기타금액 입찰 개시일시 2026.10.23.(금) 12:00 ",
+        "공고문 지역 제한 확인: 영동군 / 링) 사업(건축) (비상주)감리용역 사업위치 영동군 영동읍 부용리 399번지 일원 사업개요 감리용역 1식 과업기간 착수일로부터 180일 입찰 및 계약방식 총액견적 , 전자견적 , 지역제한(영동군), 2인 이상 견적제출 수의계약 예정금액 금25,531,000원 기초금액 금25,531,000원 추정가격 금23,210,000원"
       ],
       "eligibility_missing": [
         "서울 업체 참가 가능 지역",
         "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력",
-        "해체공사감리자 지정 요건"
+        "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "일부 텍스트 자동 추출",
-        "files": [
-          {
-            "name": "2. 과업내용서.hwp",
-            "format": "HWP",
-            "status": "본문 추출됨"
-          }
-        ],
-        "evidence": {
-          "license_clause": "2번지(화도푸른물센터 내) 3.2. 기존 제1화도 해체 공사비 내역 氠瑢 ※ 건축물 관리법 제31조(건축물 해체공사감리자의 지정등)에 의거 감리자 지정대상임. 구 분 금 액(천원, VAT제외) 비 고 직접공사비 (2개동) 55,885 간접공사비 26,687 보험료 등 합 계 86,572 3.3. 시설물 개요 氠瑢 남양주시 화도 공공하수처리시설 민간투자사업 기존 제1화도 등 해체 공사 연면적 1)침사지 및 자재창고 : 647,06m2 2)탈수기동 : 630m2 해체 연면적 1,277.06m2 해체규모 2개동(지하1층~지상2층) 구조 철근콘크리트조 공사 기간 ‘26.11.16. ~ ’27.1.15. 철거공사금액 86,572천원(vat제외) 주요 작업내용 - 지상층(전체 해체) : 지상에서 B/H 500LC+Crusher(압쇄기)를 이용하여"
-        }
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
         "base_amount": null,
         "floor_rate": null,
         "adjustment_rate": null
-      }
+      },
+      "base_amount_source": "공고문 텍스트 자동 추출 · 원문 확인 필요"
     },
     {
       "id": "R26BK01785863-000",
@@ -264,7 +193,7 @@
           "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01785863&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
         }
       ],
-      "base_amount": null,
+      "base_amount": 9986000,
       "floor_rate": null,
       "raw_qualification": {
         "industry": "",
@@ -292,16 +221,6 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01785863&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "공고문 지역조항 해석 필요: 시에는 부가가치세를 제외하는 금액으로 계약을 체결합니다. 2. 견적제출 및 계약방식 가. 조달청 국가종합전자조달시스템(G2B)를 이용한 2인 이상 수의계약 견적제출입니다. 나. 지역제한(인천광역시) 대상 용역입니다. 다. 견적서에 산출내역서를 첨부하지 않는 총액 견적제출 대상 용역입니다. 라. 청렴계약 대상 용역입니다. 마. 계약체결은 국가종합전자조달시스템(G2B)에서 전자계약으로 체결합니다. 바. 공동도급을 허용하지 않습니다. 사. 손해배상보"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -318,13 +237,25 @@
           "score_clause": "업종등록 기준에 미달하는 자 ※ 기술자 보유현황의 심사는 「낙찰자결정기준」제2장 시설공사 적격심사 세부기준 <별지 2>의 그밖에 해당공사 수행능력상 결격여부, 제3장 기술용역 적격심사 세부기준 <별표>의 기술인력 평가방법을 준용한다. 이때 ‘입찰공고일’은 ‘안내공고일’로 ‘적격심사서류 제출마감일’은 ‘견적서 제출마감일’로 본다. ⑤ 견적서 제출 마감일 기준 최근 3개월 이내에 해당 지방자치단체의 입찰 ․ 계약 및 그 이행과 관련하여"
         }
       },
+      "eligibility_status": "참가 불가",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "공고문 지역조항 해석 필요: 시에는 부가가치세를 제외하는 금액으로 계약을 체결합니다. 2. 견적제출 및 계약방식 가. 조달청 국가종합전자조달시스템(G2B)를 이용한 2인 이상 수의계약 견적제출입니다. 나. 지역제한(인천광역시) 대상 용역입니다. 다. 견적서에 산출내역서를 첨부하지 않는 총액 견적제출 대상 용역입니다. 라. 청렴계약 대상 용역입니다. 마. 계약체결은 국가종합전자조달시스템(G2B)에서 전자계약으로 체결합니다. 바. 공동도급을 허용하지 않습니다. 사. 손해배상보",
+        "공고문 지역 제한 확인: 인천광역시 / 시에는 부가가치세를 제외하는 금액으로 계약을 체결합니다. 2. 견적제출 및 계약방식 가. 조달청 국가종합전자조달시스템(G2B)를 이용한 2인 이상 수의계약 견적제출입니다. 나. 지역제한(인천광역시) 대상 용역입니다. 다. 견적서에 산출내역서를 첨부하지 않는 총액 견적제출 대상 용역입니다. 라. 청렴계약 대상 용역입니다. "
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역",
+        "업체 실적 필수조건 및 배점",
+        "감리원 등급/배치기간/경력"
+      ],
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
         "base_amount": null,
         "floor_rate": null,
         "adjustment_rate": null
-      }
+      },
+      "base_amount_source": "공고문 텍스트 자동 추출 · 원문 확인 필요"
     },
     {
       "id": "R26BK01787744-000",
@@ -345,7 +276,7 @@
           "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787744&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
         }
       ],
-      "base_amount": null,
+      "base_amount": 26240000,
       "floor_rate": null,
       "raw_qualification": {
         "industry": "",
@@ -374,17 +305,6 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "해체공사감리자 지정·배치조건 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01787744&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "공고문 지역조항 해석 필요: 을 경우에는 1차 재입찰은 15:00까지 (2차는 17:00까지) 국가종합전자조달시스템(G2B)에서 재입찰하여야 합니다.(별도 통보없음) 3. 입찰방법 가. 본 용역은 총액입찰, 지역제한, 적격심사 비대상 용역입니다. 나. 본 입찰은 전자입찰 방식이며, 입찰에 참가하고자 하는 자는 행정안전부장관이 지정․고시한 정보처리장치인 국가종합전자조달시스템( 汫╨ www.g2b.go.kr 汫h )에 입찰마감일 전일까지 이용자 등록을 필한 업체이어야 하며, "
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력",
-        "해체공사감리자 지정 요건"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -401,13 +321,25 @@
           "score_clause": "재입찰하여야 합니다.(별도 통보없음) 3. 입찰방법 가. 본 용역은 총액입찰, 지역제한, 적격심사 비대상 용역입니다. 나. 본 입찰은 전자입찰 방식이며, 입찰에 참가하고자 하는 자는 행정안전부장관이 지정․고시한 정보처리장치인 국가종합전자조달시스템( 汫╨ www.g2b.go.kr 汫h )에 입찰마감일 전일까지 이용자 등록을 필한 업체이어야 하며, 미등록업체는 국가종합전자조달시스템의 이용자등록 안내에 따라 등록하여야 합니다. 다. 전자입"
         }
       },
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "공고문 지역조항 해석 필요: 을 경우에는 1차 재입찰은 15:00까지 (2차는 17:00까지) 국가종합전자조달시스템(G2B)에서 재입찰하여야 합니다.(별도 통보없음) 3. 입찰방법 가. 본 용역은 총액입찰, 지역제한, 적격심사 비대상 용역입니다. 나. 본 입찰은 전자입찰 방식이며, 입찰에 참가하고자 하는 자는 행정안전부장관이 지정․고시한 정보처리장치인 국가종합전자조달시스템( 汫╨ www.g2b.go.kr 汫h )에 입찰마감일 전일까지 이용자 등록을 필한 업체이어야 하며, "
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역",
+        "업체 실적 필수조건 및 배점",
+        "감리원 등급/배치기간/경력",
+        "해체공사감리자 지정 요건"
+      ],
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
         "base_amount": null,
         "floor_rate": null,
         "adjustment_rate": null
-      }
+      },
+      "base_amount_source": "공고문 텍스트 자동 추출 · 원문 확인 필요"
     },
     {
       "id": "R26BK01789278-000",
@@ -432,7 +364,7 @@
           "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01789278&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
         }
       ],
-      "base_amount": null,
+      "base_amount": 14498000,
       "floor_rate": null,
       "raw_qualification": {
         "industry": "",
@@ -461,17 +393,6 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01789278&bidPbancOrd=000",
-      "eligibility_status": "참가 불가",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "공고문 지역 제한 발췌: 공정거래에 관한 법률」 제2조 제3호에 따른 계열사 ⑥ ① 또는 ⑤까지 해당하는 자가 가입한 비영리법인 다. 입찰공고 전일부터 입찰일(낙찰자의 경우 계약체결일)까지 법인등기부상 본점 소재지(개인사업자인 경우에는 사업자등록증 또는 관련 법령에 따른 허가‧인가‧면허‧등록‧신고 등에 관련된 서류에 기재된 사업장 소재지를 말한다)를 계속 종전 전라남도에 둔 자이어야 하며, 그러하지 않을 경우 낙찰자 결정을 취소합니다. 라. 견적서 제출 참가자격으로 공",
-        "서울 소재 사무소의 본점지역 요건에 불리합니다. 원문 최종 확인 필요"
-      ],
-      "eligibility_missing": [
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력",
-        "석면해체작업 감리인 지정·등록 요건"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -487,94 +408,26 @@
           "base_evidence": "과역리 442-2외 1필지 (고흥영주고등학교 교지 내, 현 폐교) 3. 기초금액: 금14,498,000원(추정가격 13,180,000원, 부가가치세 1,318,000원) * 본 용역은 부가가치세를 포함한 금액이므로 면세사업자의 경우 반드시 부가가치세를 포함하여 입찰서를 제출하여야 하며, 낙찰자가 면세사업자인 경우 투찰한"
         }
       },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01781395-000",
-      "number": "R26BK01781395",
-      "order": "000",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "1. 입찰공고문(신창동 지역주택조합 유탑유블레스 승계공사 건설사업관리)_3차.hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01781395&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "2. 입찰 관련 서류.zip",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01781395&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "1. 입찰공고문(신창동 지역주택조합 유탑유블레스 승계공사 건설사업관리)_3차.pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01781395&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "신창동 지역주택조합 유탑유블레스 승계공사 건설사업관리",
-      "agency": "주택도시보증공사",
-      "notice_at": "2026-10-20 15:48:59",
-      "deadline": "2026-10-26 10:00:00",
-      "budget": "656146000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "제한경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01781395&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
+      "eligibility_status": "참가 불가",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음",
-        "실적 조항 발견 — 필수실적/배점은 수동 확인 필요",
-        "감리원 배치조항 발견 — 개인경력·전담 가능 여부 확인 필요"
+        "공고문 지역 제한 발췌: 공정거래에 관한 법률」 제2조 제3호에 따른 계열사 ⑥ ① 또는 ⑤까지 해당하는 자가 가입한 비영리법인 다. 입찰공고 전일부터 입찰일(낙찰자의 경우 계약체결일)까지 법인등기부상 본점 소재지(개인사업자인 경우에는 사업자등록증 또는 관련 법령에 따른 허가‧인가‧면허‧등록‧신고 등에 관련된 서류에 기재된 사업장 소재지를 말한다)를 계속 종전 전라남도에 둔 자이어야 하며, 그러하지 않을 경우 낙찰자 결정을 취소합니다. 라. 견적서 제출 참가자격으로 공",
+        "서울 소재 사무소의 본점지역 요건에 불리합니다. 원문 최종 확인 필요",
+        "공고문 본점 지역제한: 전라남도 / 공정거래에 관한 법률」 제2조 제3호에 따른 계열사 ⑥ ① 또는 ⑤까지 해당하는 자가 가입한 비영리법인 다. 입찰공고 전일부터 입찰일(낙찰자의 경우 계약체결일)까지 법인등기부상 본점 소재지(개인사업자인 경우에는 사업자등록증 또는 관련 법령에 따른 허가‧인가‧면허‧등록‧신고 등에 관련된 서류에 기재된 사업장 소재지를 말한다"
       ],
       "eligibility_missing": [
-        "서울 업체 참가 가능 지역"
+        "업체 실적 필수조건 및 배점",
+        "감리원 등급/배치기간/경력",
+        "석면해체작업 감리인 지정·등록 요건"
       ],
-      "document_analysis": {
-        "status": "일부 텍스트 자동 추출",
-        "files": [
-          {
-            "name": "1. 입찰공고문(신창동 지역주택조합 유탑유블레스 승계공사 건설사업관리)_3차.hwpx",
-            "format": "HWPX/DOCX",
-            "status": "본문 추출됨"
-          }
-        ],
-        "evidence": {
-          "license_clause": "칙 제37조제1항제5호부터 제7호까지의 규정에 해당되는 자격을 모두 갖추어야 한다(보증제한, 보증금지, 입찰참가 자격제한에 해당되지 않는 자) 4. 현장설명 : 생략 5. 입찰등록 서류 제출(투찰시 첨부 필요) 가. 입찰등록서류 제출기간 : 입찰참여 기간과 동일 나. 입찰등록서류 접수장소: 나라장터 전자조달시스템 다. 입찰등록 및 실적심사 제출서류(입찰시에 전자 제출) 1) 입찰참가신청서(별지서식) 1부 2) 건설기술용역업 등록증 사본 1부 3) 건설기술용역업 수행실적 증명서(관련협회 발행) 1부 4) 건설기술자 보유현황 확인서(관련협회 발행) 1부. 5) 업체의 최근 1년간 행정제재 유무 확인서(관련협회 발행) 1부 6) 국세, 지방세 완납증명서 각 1부 7) 8) 한국CM협회 실적증명서(관련협회 발행) 1부 9 ) 그 밖에 입찰참",
-          "performance_clause": "전자 제출) 1) 입찰참가신청서(별지서식) 1부 2) 건설기술용역업 등록증 사본 1부 3) 건설기술용역업 수행실적 증명서(관련협회 발행) 1부 4) 건설기술자 보유현황 확인서(관련협회 발행) 1부. 5) 업체의 최근 1년간 행정제재 유무 확인서(관련협회 발행) 1부 6) 국세, 지방세 완납증명서 각 1부 7) 8) 한국CM협회 실적증명서(관련협회 발행) 1부 9 ) 그 밖에 입찰참가자격의 확인을 위하여 필요하거나 입찰공고, 현장설명에서 정한 서류 라. 입찰보증금 1) 입찰보증금액 : 입찰금액의 100분의 5 이상 2) 납 부 일 시 : 전자입찰 시 3) 납 부 방 법 : 우리공사 계약규정 제62조제4항 각 호의 증서·증권 [피보험자 주택도시보증공사(사업자등록번호 116-81-52684)] (입찰보증금 지급각서로 대체 가능) 4) 보증금의 귀속 : 낙찰자가 낙찰일로부터 7일 이내에 우",
-          "staffing_clause": "인 선임계 및 경력확인서, 건설사업관리비 산출내역서 및 산출근거, 인력투입계획서, 건설사업관리용역 예정공정표, 건설사업관리용역배치계획서, 보안각서 등 관련 문서를 함께 작성·제출 11) 시공성과확인 및 검측업무: 작업계획서 사전 검토, 매일 작업실적과 사용자재량, 품질관리시험회수 및 성과 등이 서로 일치하는지 확인, 설계도면·시방서·관계법령 일치 확인, 시설물 측량성과 확인 등 12) 사용자재의 적정성 검토: 주요 기자재 공급원 승인요청서 검토(시험성과표 등 품질, 납품능력 종합 검토), 반입사용자재 품질관리시험 및 품질변화 여부 점검, 주요자재 수급계획 수립 및 감독 13) 시공계획검토: 현장조직표, 세부공정표, 주요공정 시공절차 및 방법, 시공일정, 주요장비동원계획, 주요자재 및 인력투입계획,",
-          "floor_evidence": "준은 「조달청 건설엔지니어링사업자 사업수행능력 세부평가기준」 적용 - 예정가격이하로서 예정가격 대비 입찰금액이 87.495%(낙찰하한율) 이상으로 입찰한 자 중 최저가격으로 입찰한 자 순으로 계약이행능력을 심사하여 종합평점이 95점 이상인 자를 낙찰자로 결정 ※ 예비가격은 기초금액(추정가격+부가가치세)의 ±2%",
-          "base_evidence": "을 심사하여 종합평점이 95점 이상인 자를 낙찰자로 결정 ※ 예비가격은 기초금액(추정가격+부가가치세)의 ±2% 금액 범위 내에서 15개 작성되며, 예정가격은 입찰자가 입찰서 제출 시 2개씩 추첨하여 가장 많이 선택한 번호 4개에 해당하는 예비가격을 산술평균한 가격으로 결정(천원미만은 절상)함 다. 입찰금액 중 문자와 숫",
-          "score_clause": "개월로 착공 전 일부 업무 추진 필요 2. 입찰 및 계약방식 : 제한경쟁입찰, 총액입찰, 적격심사 3. 입찰참가자의 자격 가. 「건설기술진흥법」에 따른 종합 분야 또는 설계·사업관리의 세부분야 중 일반 또는 건설사업관리로 등록한 건설기술용역업자 * 건설엔지니어링(종합)(G2B업종코드 : 4966), 건설엔지니어링업(설계,사업관리-일반)(G2B업종코드 : 4967), 건설엔지니어링업(설계,사업관리-건설사업관리)(G2B업종코드 : 496"
-        }
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
         "base_amount": null,
         "floor_rate": null,
         "adjustment_rate": null
-      }
+      },
+      "base_amount_source": "공고문 텍스트 자동 추출 · 원문 확인 필요"
     },
     {
       "id": "R26BK01772558-001",
@@ -600,7 +453,7 @@
         }
       ],
       "base_amount": null,
-      "floor_rate": null,
+      "floor_rate": 86.745,
       "raw_qualification": {
         "industry": "",
         "participation_region": "",
@@ -626,16 +479,6 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01772558&bidPbancOrd=001",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "공고문 지역조항 해석 필요: 이에 따라 감리용역 기한도 변경) 2. 계약방법 가. 국가종합전자조달시스템의 전자입찰로 집행하며 산출내역서를 첨부하지 않는 총액 입찰입니다. 나. 적격심사 대상 용역입니다. 다. 지역제한(서울특별시) 입찰용역입니다. 라. 장기계속계약 대상입니다. 마. 청렴서약제 적용대상입니다. 바. 국가종합전자조달시스템의 전자계약에 의해 계약서를 작성합니다. 사. 손해배상보험(공제) 가입 대상입니다. 아. 본 사업은 공동도급 및 하도급을 허용하지 않습니다. 자",
-        "실적 조항 발견 — 필수실적/배점은 수동 확인 필요",
-        "감리원 배치조항 발견 — 개인경력·전담 가능 여부 확인 필요"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -655,6 +498,17 @@
           "score_clause": "종합전자조달시스템의 전자입찰로 집행하며 산출내역서를 첨부하지 않는 총액 입찰입니다. 나. 적격심사 대상 용역입니다. 다. 지역제한(서울특별시) 입찰용역입니다. 라. 장기계속계약 대상입니다. 마. 청렴서약제 적용대상입니다. 바. 국가종합전자조달시스템의 전자계약에 의해 계약서를 작성합니다. 사. 손해배상보험(공제) 가입 대상입니다. 아. 본 사업은 공동도급 및 하도급을 허용하지 않습니다. 자. 본 사업은 채권 양도·양수를 허용하지 않습니"
         }
       },
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "공고문 지역조항 해석 필요: 이에 따라 감리용역 기한도 변경) 2. 계약방법 가. 국가종합전자조달시스템의 전자입찰로 집행하며 산출내역서를 첨부하지 않는 총액 입찰입니다. 나. 적격심사 대상 용역입니다. 다. 지역제한(서울특별시) 입찰용역입니다. 라. 장기계속계약 대상입니다. 마. 청렴서약제 적용대상입니다. 바. 국가종합전자조달시스템의 전자계약에 의해 계약서를 작성합니다. 사. 손해배상보험(공제) 가입 대상입니다. 아. 본 사업은 공동도급 및 하도급을 허용하지 않습니다. 자",
+        "실적 조항 발견 — 필수실적/배점은 수동 확인 필요",
+        "감리원 배치조항 발견 — 개인경력·전담 가능 여부 확인 필요",
+        "공고문 명시 지역: 서울특별시"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역"
+      ],
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -686,7 +540,7 @@
           "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01776736&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
         }
       ],
-      "base_amount": null,
+      "base_amount": 213587000,
       "floor_rate": null,
       "raw_qualification": {
         "industry": "",
@@ -713,16 +567,6 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01776736&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "공고문 지역조항 해석 필요: 추정가격 194,170,000원 + 부가세 19,417,000원) 2. 입찰 및 계약방식 2.1. 입찰서에 산출내역서를 첨부하지 않는 총액입찰 대상용역입니다. 2.2. 울산광역시 지역제한 입찰입니다. 2.3. 청렴서약제가 적용되는 용역입니다. 2.4. 계속비 계약 대상 용역입니다. 2.5. 본 용역은 「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」 제2조의3(중소기업자와의 우선조달계약에 대한 예외) 제4호 및 「중소기업제품 공공구매제도",
-        "실적 조항 발견 — 필수실적/배점은 수동 확인 필요"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "감리원 등급/배치기간/경력"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -740,169 +584,25 @@
           "score_clause": "공구매제도 운영요령」 제44조에 따라 중소기업자 우선조달 계약 제외 용역입니다. 2.6. 적격심사 대상 용역입니다. 2.7. 손해배상책임보험(공제)가입 대상 용역입니다. 3. 입찰참가자격 3.1. 「지방자치단체를 당사자로 하는 계약에 관한 법률 시행령」제13조의 규정에 따른 요건을 갖춘 자로서, 입찰 공고일 전일부터 입찰일(낙찰자의 경우 계약체결일)까지 법인등기부상 본점 소재지(개인사업자인 경우에는 사업자등록증 또는 관련 법령에 따른"
         }
       },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01779665-000",
-      "number": "R26BK01779665",
-      "order": "000",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "8. .과업지시서(비양도 해저관로 확충사업 건설사업관리용역).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01779665&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "8. 입찰공고(비양도 해저관로 확충사업 건설사업관리용역)_P.Q후 가격입찰.hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01779665&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "입찰유의서(행정안전부 예규 252호), 청렴유의서.zip",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01779665&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        },
-        {
-          "name": "8. 입찰공고(비양도 해저관로 확충사업 건설사업관리용역)_P.Q후 가격입찰.pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01779665&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)혼합방식",
-        "pq": "수기"
-      },
-      "title": "비양도 해저관로 확충사업 건설사업관리용역 (P.Q 후 가격입찰) (사업소)",
-      "agency": "제주특별자치도",
-      "notice_at": "2026-10-19 19:44:32",
-      "deadline": "2026-10-27 10:00:00",
-      "budget": "1423832000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "일반경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01779665&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
+      "eligibility_status": "참가 불가",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음",
-        "감리원 배치조항 발견 — 개인경력·전담 가능 여부 확인 필요"
+        "공고문 지역조항 해석 필요: 추정가격 194,170,000원 + 부가세 19,417,000원) 2. 입찰 및 계약방식 2.1. 입찰서에 산출내역서를 첨부하지 않는 총액입찰 대상용역입니다. 2.2. 울산광역시 지역제한 입찰입니다. 2.3. 청렴서약제가 적용되는 용역입니다. 2.4. 계속비 계약 대상 용역입니다. 2.5. 본 용역은 「중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령」 제2조의3(중소기업자와의 우선조달계약에 대한 예외) 제4호 및 「중소기업제품 공공구매제도",
+        "실적 조항 발견 — 필수실적/배점은 수동 확인 필요",
+        "공고문 명시 지역제한: 울산광역시"
       ],
       "eligibility_missing": [
         "서울 업체 참가 가능 지역",
-        "업체 실적 필수조건 및 배점"
-      ],
-      "document_analysis": {
-        "status": "일부 텍스트 자동 추출",
-        "files": [
-          {
-            "name": "8. .과업지시서(비양도 해저관로 확충사업 건설사업관리용역).hwpx",
-            "format": "HWPX/DOCX",
-            "status": "본문 추출됨"
-          }
-        ],
-        "evidence": {
-          "license_clause": "인 경력확인서 라. 건설사업관리기술인 조직 구성내용과 건설사업관리기술인별 투입기간 및 담당업무 6.3 입찰 참가자격사전심사에 의해 건설사업관리용역사업자로 선정된 경우에 있어 “6.2”항 다 호의 건설사업관리기술인은 입찰참가제안서에 명시된 자로 하여야 한다. 다만, 부득이한 사유로 교체가 필요한 경우에는 기술자격, 학‧경력 등을 종합적으로 검토하여 건설사업관리 업무 수행 능력이 저하되지 않는 범위내에서 발주청의 사전 승인을 받아야 한다. 6.4 발주청은 6.2항 제다호 및 제라호의 내용을 검토하여 건설사업관리기술인 또는 건설사업관리조직 구성내용이 당해 공사현장의 공종 및 공사 성격에 적합하지 않다고 인정될 때에는 그 사유를 명시하여 서면으로 건설사업관리용역사업자에게 변경을 요구 할 수 있으며, 변경 요구를 받은 건설사업관리용역사업자는",
-          "staffing_clause": ".건설사업관리기술인 선임계 및 경력확인서 3.용역비 산출내역서 및 산출근거 4.인력투입계획서 5.기술용역예정공정표 6.기술용역배치계획서 7.보안각서 등을 작성, 제출 2. 건설사업관리 업무수행계획서 작성 1.개요, 업무정의(기본업무, 추가업무), 단계별과업수행범위, 역할분담, 단계별주요성과물 2.과업수행목표 및 달성전략, 단계별 예상문제점 및 대책 등 Risk관리방안 3.조직구성방안, 인원투입계획, 단계별 사업관리조직 및 역할 4.단계별업무수행계획(공통사항, 분야별, 요소기술별, 관리부문별세부계획)등을 작성, 제출 건설사업관리 절차서 작성ㆍ운영 1. 건설사업관리 절차서 작성 1.건설사업관리 절차서(단계별, 요소/관리부문별항목포함) 주요개별절차서: 사업비, 공정, 계약/구매관리, 설계관리 등(필요시"
-        }
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01778171-000",
-      "number": "R26BK01778171",
-      "order": "000",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "용역입찰공고(가격)[감포항 남측호안 보강공사 건설사업관리용역].hml",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778171&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "용역입찰공고(가격)[감포항 남측호안 보강공사 건설사업관리용역].pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778171&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "과업지시서(감포항 남측호안 보강공사 건설사업관리용역(안)).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778171&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)혼합방식",
-        "pq": "수기"
-      },
-      "title": "감포항 남측호안 보강공사 건설사업관리용역",
-      "agency": "해양수산부 포항지방해양수산청",
-      "notice_at": "2026-10-19 15:43:25",
-      "deadline": "2026-10-27 11:00:00",
-      "budget": "4490000000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "제한경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01778171&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [
-          {
-            "name": "용역입찰공고(가격)[감포항 남측호안 보강공사 건설사업관리용역].hml",
-            "format": "지원하지 않는 첨부 형식",
-            "status": "본문 추출 불가"
-          }
-        ],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
         "base_amount": null,
         "floor_rate": null,
         "adjustment_rate": null
-      }
+      },
+      "base_amount_source": "공고문 텍스트 자동 추출 · 원문 확인 필요"
     },
     {
       "id": "R26BK01780420-000",
@@ -954,16 +654,6 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01780420&bidPbancOrd=000",
-      "eligibility_status": "참가 불가",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "공고문 지역 제한 발췌: 업으로 고품질쌀유통활성화사업(가공시설 현대화) 건축 감리용역으로 2023년도부터 공고일 전일까지 단일계약 1건 이상 준공한 실적을 보유한 업체로써 입찰공고인 전일부터계약체결일까지 주된 영업소의 소재지가 충청북도로써 아래의 자격을 모두 갖춘 업체 3) 전력기술관리법 제14조에 의한 전력시설물 종합감리업 또는 전문감리업 등록자 4) 소방시설공사업법 제4조에 의한 전문소방공사감리업 또는 일반소방공사 감리업(전기, 기계) 면허 보유자 다. 소정기간 내",
-        "서울 소재 사무소의 본점지역 요건에 불리합니다. 원문 최종 확인 필요"
-      ],
-      "eligibility_missing": [
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -978,6 +668,17 @@
           "license_clause": "군농협쌀조합 공동사업법인 주소 충청북도 보은군 장안면 장안로 10-26 (보은군농협쌀조합공동사업법인) 4. 입찰참가자격 : 아래의 자격을 모두 갖춘 업체 가. 본 입찰은 조달청사이트(www.g2b.go.kr)를 이용하여 전자입찰로 진행되며 조달청에 입찰참가자격등록을 한 자이어야 합니다. 입찰 참가자격을 등록 하지 않은 자는 국가종합전자조달시스템 입찰참가 등록규정에 따라 개찰일 전 일까지 국가종합전자조달 홈페이지 또는 각 지방 조달청에 입찰참가자격 등록을 하여야 함 나. “건축사법에 의한 건축사 면허를 소지하고 건축사사무소를 개설한 업체이며, 농림축산식품부 지원사업으로 고품질쌀유통활성화사업(가공시설 현대화) 건축 감리용역으로 2023년도부터 공고일 전일까지 단일계약 1건 이상 준공한 실적을 보유한 업체로써 입찰공고인 전일부터계약체결일까지"
         }
       },
+      "eligibility_status": "참가 불가",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "공고문 지역 제한 발췌: 업으로 고품질쌀유통활성화사업(가공시설 현대화) 건축 감리용역으로 2023년도부터 공고일 전일까지 단일계약 1건 이상 준공한 실적을 보유한 업체로써 입찰공고인 전일부터계약체결일까지 주된 영업소의 소재지가 충청북도로써 아래의 자격을 모두 갖춘 업체 3) 전력기술관리법 제14조에 의한 전력시설물 종합감리업 또는 전문감리업 등록자 4) 소방시설공사업법 제4조에 의한 전문소방공사감리업 또는 일반소방공사 감리업(전기, 기계) 면허 보유자 다. 소정기간 내",
+        "서울 소재 사무소의 본점지역 요건에 불리합니다. 원문 최종 확인 필요",
+        "공고문 본점 지역제한: 충청북도 / 업으로 고품질쌀유통활성화사업(가공시설 현대화) 건축 감리용역으로 2023년도부터 공고일 전일까지 단일계약 1건 이상 준공한 실적을 보유한 업체로써 입찰공고인 전일부터계약체결일까지 주된 영업소의 소재지가 충청북도로써 아래의 자격을 모두 갖춘 업체 3) 전력기술관리법 제14조에 의한 전력시설물 종합감리업 또는 전문감리업 등록"
+      ],
+      "eligibility_missing": [
+        "업체 실적 필수조건 및 배점",
+        "감리원 등급/배치기간/경력"
+      ],
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -1036,6 +737,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01780420&bidPbancOrd=001",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -1046,76 +752,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01695274-001",
-      "number": "R26BK01695274",
-      "order": "001",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "입찰 공고문(강진군 생활자원회수시설 설치사업 건설사업관리용역)(총괄및1차분)(지명, PQ, 가격).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01695274&bidPbancOrd=001&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "입찰 공고문(강진군 생활자원회수시설 설치사업 건설사업관리용역)(총괄및1차분)(지명, PQ, 가격).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01695274&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)혼합방식",
-        "pq": "수기"
-      },
-      "title": "강진군 생활자원회수시설 설치사업 건설사업관리용역(지명, PQ, 가격)",
-      "agency": "전남광주통합특별시 강진군",
-      "notice_at": "2026-10-20 11:31:34",
-      "deadline": "2026-10-28 10:00:00",
-      "budget": "1663400000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "일반경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01695274&bidPbancOrd=001",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -1170,6 +806,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01772858&bidPbancOrd=001",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -1180,11 +821,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -1243,6 +879,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01782216&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -1253,11 +894,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -1316,6 +952,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01782216&bidPbancOrd=001",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -1326,149 +967,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01787440-000",
-      "number": "R26BK01787440",
-      "order": "000",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "공고문(죽고 풍수해생활권 종합정비사업 기본 및 실시설계 건설사업관리용역).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787440&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "공고문(죽고 풍수해생활권 종합정비사업 기본 및 실시설계 건설사업관리용역).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787440&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "과업지시서(죽고 풍수해생활권 종합정비사업 기본 및 실시설계 건설사업관리용역).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787440&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "죽고 풍수해생활권 종합정비사업 기본 및 실시설계 건설사업관리용역",
-      "agency": "경상남도 합천군",
-      "notice_at": "2026-10-22 20:51:40",
-      "deadline": "2026-10-28 10:00:00",
-      "budget": "152603000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "제한경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01787440&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01782991-000",
-      "number": "R26BK01782991",
-      "order": "000",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "[가격입찰 공고문] 직현천(직현지구) 하천재해예방사업 건설사업관리용역.pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01782991&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "02_설계설명서 및 과업지시서(직현천 건설사업관리).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01782991&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "04_내역서(직현천 건설사업관리).xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01782991&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)공동이행",
-        "pq": "수기"
-      },
-      "title": "[가격입찰] 직현천(직현지구) 하천재해예방사업 건설사업관리용역",
-      "agency": "경상북도",
-      "notice_at": "2026-10-21 10:58:36",
-      "deadline": "2026-10-29 10:00:00",
-      "budget": "2973000000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "지명경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01782991&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -1523,6 +1021,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01783443&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -1533,84 +1036,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01789395-000",
-      "number": "R26BK01789395",
-      "order": "000",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "[공고문]북삼지구 풍수해생활권 종합정비사업 건설사업관리(설계단계) 및 설계VE 용역.hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01789395&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "[공고문]북삼지구 풍수해생활권 종합정비사업 건설사업관리(설계단계) 및 설계VE 용역.pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01789395&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "[과업지시서]북삼지구 풍수해생활권 종합정비사업 건설사업관리(설계단계) 및 설계VE 용역.hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01789395&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        },
-        {
-          "name": "[심사결과서]북삼지구 풍수해생활권 종합정비사업 건설사업관리(설계단계) 및 설계VE 용역.hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01789395&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "북삼지구 풍수해생활권 종합정비사업 건설사업관리(설계단계) 및 설계VE 용역",
-      "agency": "경기도 연천군",
-      "notice_at": "2026-10-23 18:18:35",
-      "deadline": "2026-10-29 10:00:00",
-      "budget": "198000000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "제한경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01789395&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -1665,6 +1090,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01789522&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -1675,413 +1105,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01784518-000",
-      "number": "R26BK01784518",
-      "order": "000",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "[붙임1]가격입찰공고(청라호수공원 보행교량 설치사업 건설사업관리).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01784518&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "[붙임1]가격입찰공고(청라호수공원 보행교량 설치사업 건설사업관리).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01784518&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "[붙임2]과업내용서(청라호수공원 보행교량 설치사업 건설사업관리).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01784518&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)혼합방식",
-        "pq": "수기"
-      },
-      "title": "(PQ 후 가격입찰)청라호수공원 보행교량 설치사업 건설사업관리",
-      "agency": "인천광역시 경제자유구역청",
-      "notice_at": "2026-10-22 17:04:50",
-      "deadline": "2026-10-30 10:00:00",
-      "budget": "799810000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "지명경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01784518&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01784654-000",
-      "number": "R26BK01784654",
-      "order": "000",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "공고문(충효지구 도시침수예방사업 외 1개소(외동) 통합건설사업관리용역).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01784654&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "공고문(충효지구 도시침수예방사업 외 1개소(외동) 통합건설사업관리용역).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01784654&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "과업지시서.pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01784654&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)혼합방식",
-        "pq": "전자문서"
-      },
-      "title": "충효지구 도시침수예방사업 외 1개소(외동) 통합건설사업관리용역 가격 입찰",
-      "agency": "경상북도 경주시 맑은물사업본부",
-      "notice_at": "2026-10-22 09:06:21",
-      "deadline": "2026-10-30 10:00:00",
-      "budget": "2424000000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "지명경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01784654&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01787350-000",
-      "number": "R26BK01787350",
-      "order": "000",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "가격입찰 공고(자동차일반산업단지 조성사업 감독 권한대행 등 건설사업관리용역).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787350&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "가격입찰 공고(자동차일반산업단지 조성사업 감독 권한대행 등 건설사업관리용역).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787350&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "용역설계서(과업지시서포함).hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787350&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)공동이행",
-        "pq": "수기"
-      },
-      "title": "[PQ후 가격입찰] 울산 자동차일반산업단지 조성공사 감독권한대행 등 건설사업관리용역 가격입찰 안내 공고",
-      "agency": "울산광역시도시공사",
-      "notice_at": "2026-10-22 19:41:59",
-      "deadline": "2026-10-30 10:00:00",
-      "budget": "7498590000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "지명경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01787350&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01787940-000",
-      "number": "R26BK01787940",
-      "order": "000",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "공고문(중로2-01-66(마지기~갈마곡가) 건설사업관리용역)(PQ후 가격입찰)).hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787940&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "공고문(중로2-01-66(마지기~갈마곡가) 건설사업관리용역)(PQ후 가격입찰)).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787940&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)공동이행",
-        "pq": "전자문서"
-      },
-      "title": "중로2-01-66(마지기~갈마곡간)개설공사 건설사업관리용역",
-      "agency": "강원특별자치도 홍천군",
-      "notice_at": "2026-10-23 10:59:46",
-      "deadline": "2026-10-30 11:00:00",
-      "budget": "3478000000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "지명경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01787940&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01787940-001",
-      "number": "R26BK01787940",
-      "order": "001",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "공고문(중로2-01-66(마지기~갈마곡가) 건설사업관리용역)(PQ후 가격입찰)).hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787940&bidPbancOrd=001&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "공고문(중로2-01-66(마지기~갈마곡가) 건설사업관리용역)(PQ후 가격입찰)).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787940&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)공동이행 또는 분담이행",
-        "pq": "전자문서"
-      },
-      "title": "중로2-01-66(마지기~갈마곡간)개설공사 건설사업관리용역",
-      "agency": "강원특별자치도 홍천군",
-      "notice_at": "2026-10-23 11:37:52",
-      "deadline": "2026-10-30 12:00:00",
-      "budget": "3478000000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "지명경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01787940&bidPbancOrd=001",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01787940-002",
-      "number": "R26BK01787940",
-      "order": "002",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "공고문(중로2-01-66(마지기~갈마곡가) 건설사업관리용역)(PQ후 가격입찰)).hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787940&bidPbancOrd=002&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "공고문(중로2-01-66(마지기~갈마곡가) 건설사업관리용역)(PQ후 가격입찰)).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787940&bidPbancOrd=002&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)혼합방식",
-        "pq": "전자문서"
-      },
-      "title": "중로2-01-66(마지기~갈마곡간)개설공사 건설사업관리용역",
-      "agency": "강원특별자치도 홍천군",
-      "notice_at": "2026-10-23 11:48:34",
-      "deadline": "2026-10-30 12:00:00",
-      "budget": "3478000000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "지명경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01787940&bidPbancOrd=002",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -2136,6 +1159,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01777823&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -2146,11 +1174,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -2205,6 +1228,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01779961&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -2215,11 +1243,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -2274,6 +1297,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01779961&bidPbancOrd=001",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -2284,11 +1312,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -2343,6 +1366,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01776519&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -2353,80 +1381,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01781395-001",
-      "number": "R26BK01781395",
-      "order": "001",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "1. 입찰공고문(신창동 지역주택조합 유탑유블레스 승계공사 건설사업관리)_변경공고.hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01781395&bidPbancOrd=001&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "2. 입찰 참가관련 서류_변경공고.egg",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01781395&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "1. 입찰공고문(신창동 지역주택조합 유탑유블레스 승계공사 건설사업관리)_변경공고.pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01781395&bidPbancOrd=001&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "신창동 지역주택조합 유탑유블레스 승계공사 건설사업관리",
-      "agency": "주택도시보증공사",
-      "notice_at": "2026-10-21 14:14:22",
-      "deadline": "2026-11-02 10:00:00",
-      "budget": "656146000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "제한경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01781395&bidPbancOrd=001",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -2481,6 +1435,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01781412&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -2491,169 +1450,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01786598-000",
-      "number": "R26BK01786598",
-      "order": "000",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "홍성의료원 본관(2-2단계) 리모델링 및 증축공사 감리용역(전기) 입찰 공고.hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01786598&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "홍성의료원 본관(2-2단계) 리모델링 및 증축공사 감리용역(전기) 입찰 공고.pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01786598&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "과업지시서.hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01786598&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        },
-        {
-          "name": "배치계획표(전기감리).xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01786598&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
-        },
-        {
-          "name": "사업수행능력평가기준.hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01786598&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)공동이행",
-        "pq": "전자문서"
-      },
-      "title": "홍성의료원 본관 리모델링 및 증축공사 감리용역(전기)",
-      "agency": "충청남도홍성의료원",
-      "notice_at": "2026-10-22 16:32:41",
-      "deadline": "2026-11-03 10:00:00",
-      "budget": "317400000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "제한경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01786598&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01788679-000",
-      "number": "R26BK01788679",
-      "order": "000",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "홍성의료원 본관(2-2단계) 리모델링 및 증축공사 감리용역(전기) 입찰 공고.hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01788679&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "홍성의료원 본관(2-2단계) 리모델링 및 증축공사 감리용역(전기) 입찰 공고.pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01788679&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "과업지시서.hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01788679&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        },
-        {
-          "name": "배치계획표(전기감리).xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01788679&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
-        },
-        {
-          "name": "사업수행능력평가기준.hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01788679&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=05"
-        },
-        {
-          "name": "청렴계약이행서약서(공급용).hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01788679&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)공동이행",
-        "pq": "전자문서"
-      },
-      "title": "홍성의료원 본관 리모델링 및 증축공사 감리용역(전기)",
-      "agency": "충청남도홍성의료원",
-      "notice_at": "2026-10-23 14:46:54",
-      "deadline": "2026-11-03 10:00:00",
-      "budget": "317400000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "제한경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01788679&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -2712,6 +1508,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01788081&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -2722,11 +1523,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -2781,6 +1577,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01776519&bidPbancOrd=001",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -2791,11 +1592,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -2850,6 +1646,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01788871&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -2860,11 +1661,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -2919,6 +1715,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01780723&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -2929,11 +1730,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -3000,6 +1796,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01774110&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -3010,11 +1811,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -3069,6 +1865,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01783224&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -3079,11 +1880,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -3146,6 +1942,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01780828&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -3156,96 +1957,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01786511-000",
-      "number": "R26BK01786511",
-      "order": "000",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "[공고문] 라오스 화학물질 안전 역량 강화 사업 교육센터 건설사업관리 PMC 용역.hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01786511&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
-        },
-        {
-          "name": "2. 과업내용서(라오스 PMC)_사전규격.hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01786511&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
-        },
-        {
-          "name": "3. 제안서 작성지침(라오스 PMC)_수정.hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01786511&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
-        },
-        {
-          "name": "4. 제안서 평가기준(라오스 PMC).hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01786511&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
-        },
-        {
-          "name": "7.2 예산 산출내역서(PMC 용역 공내역서).xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01786511&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
-        },
-        {
-          "name": "Biddomg invitation Summary(laos).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01786511&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03"
-        },
-        {
-          "name": "[공고문] 라오스 화학물질 안전 역량 강화 사업 교육센터 건설사업관리 PMC 용역.pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01786511&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=03"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)공동이행",
-        "pq": ""
-      },
-      "title": "「라오스 화학물질 안전 역량 강화 사업」 교육센터 건설사업관리 PMC 용역",
-      "agency": "한국환경공단",
-      "notice_at": "2026-10-22 16:46:27",
-      "deadline": "2026-11-12 10:00:00",
-      "budget": "4355972000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "일반경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01786511&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -3312,6 +2023,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01785070&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -3322,11 +2038,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -3389,6 +2100,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01784939&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -3399,11 +2115,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -3466,6 +2177,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01784983&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -3476,169 +2192,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01785392-000",
-      "number": "R26BK01785392",
-      "order": "000",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "★차세대_사용자매뉴얼_기술용역PQ심사_업체_v2.0.hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01785392&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "건설사업관리용역업자_사업수행능력평가서작성요령(2026. 1. 1.).xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01785392&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "과업지시서(R26DC00264962)_대구공고.hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01785392&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        },
-        {
-          "name": "기술용역 입찰설명서(R26DC00264962)_대구공고.hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01785392&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
-        },
-        {
-          "name": "배치계획표(R26DC00264962)_대구공고.xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01785392&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=05"
-        },
-        {
-          "name": "기술용역 입찰설명서(R26DC00264962)_대구공고.pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01785392&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)공동이행",
-        "pq": "전자문서"
-      },
-      "title": "대구공업고등학교 외 1교(상인초) 공간재구조화사업 건설사업관리용역(장기계속)",
-      "agency": "조달청",
-      "notice_at": "2026-10-22 18:03:11",
-      "deadline": "2026-11-17 10:00:00",
-      "budget": "2117343000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "일반경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01785392&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01786976-000",
-      "number": "R26BK01786976",
-      "order": "000",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "기술용역 입찰설명서(R26DC00261946).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01786976&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "과업내용서(R26DC00261946).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01786976&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "배치계획표(R26DC00261946).xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01786976&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        },
-        {
-          "name": "건설사업관리용역업자_사업수행능력평가서작성요령(2026. 1. 1.).xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01786976&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
-        },
-        {
-          "name": "기술용역 입찰설명서(R26DC00261946).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01786976&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)혼합방식",
-        "pq": "전자문서"
-      },
-      "title": "산성시장 제2공영주차장 조성공사 감독권한대행 등 건설사업관리용역",
-      "agency": "조달청",
-      "notice_at": "2026-10-22 19:00:08",
-      "deadline": "2026-11-17 10:00:00",
-      "budget": "1430880000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "일반경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01786976&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -3705,6 +2258,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01787720&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -3715,92 +2273,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01778547-000",
-      "number": "R26BK01778547",
-      "order": "000",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "4.1_과업내용서(도림천 유지용수 정비 건설사업관리(설계단계)).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778547&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "5_자기평가서_도림천유지용수_건설사업관리.xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778547&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        },
-        {
-          "name": "7.1_도림천_유지용수_정비_기본_및_실시설계_건설사업관리설계단계_용역_세부평가기준.hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778547&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
-        },
-        {
-          "name": "8_용역설명서(도림천 유지용수 정비 기본 및 실시설계 건설사업관리).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778547&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=05"
-        },
-        {
-          "name": "2_입찰공고문(도림천 유지용수 정비 기본 및 실시설계 건설사업관리 설계단계).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778547&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=05"
-        },
-        {
-          "name": "2_입찰공고문(도림천 유지용수 정비 기본 및 실시설계 건설사업관리 설계단계).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778547&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)공동이행 또는 분담이행",
-        "pq": "수기"
-      },
-      "title": "도림천 유지용수 정비 기본 및 실시설계 건설사업관리(설계단계) 용역",
-      "agency": "서울특별시",
-      "notice_at": "2026-10-19 15:00:22",
-      "deadline": "2026-11-17 12:00:00",
-      "budget": "282740000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "일반경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01778547&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -3875,6 +2347,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01787687&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -3885,11 +2362,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -3960,6 +2432,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01778894&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -3970,92 +2447,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01779738-000",
-      "number": "R26BK01779738",
-      "order": "000",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "★건설사업관리용역업자_사업수행능력평가서 작성요령(2026. 1. 1.)수정.xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01779738&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=05"
-        },
-        {
-          "name": "3. 건설사업관리용역 수행지침서(수정)(인제-기린초).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01779738&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=05"
-        },
-        {
-          "name": "★차세대_사용자매뉴얼_기술용역PQ심사_업체_v2.0.hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01779738&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=05"
-        },
-        {
-          "name": "기술용역 입찰설명서(R26DC00252169).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01779738&bidPbancOrd=000&fileType=&fileSeq=8&prcmBsneSeCd=05"
-        },
-        {
-          "name": "기술용역 입찰설명서(R26DC00252169).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01779738&bidPbancOrd=000&fileType=&fileSeq=9&prcmBsneSeCd=05"
-        },
-        {
-          "name": "배치계획표.xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01779738&bidPbancOrd=000&fileType=&fileSeq=10&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)공동이행",
-        "pq": "전자문서"
-      },
-      "title": "기린초 다목적운동장 조성 및 환경개선공사 건설사업관리 용역",
-      "agency": "조달청",
-      "notice_at": "2026-10-21 16:54:27",
-      "deadline": "2026-11-19 10:00:00",
-      "budget": "477547000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "일반경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01779738&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -4126,6 +2517,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01785945&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -4136,11 +2532,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -4215,6 +2606,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01779847&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -4225,11 +2621,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -4304,6 +2695,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01770862&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -4314,11 +2710,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -4393,6 +2784,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01778890&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -4403,11 +2799,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -4482,6 +2873,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01783566&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -4492,400 +2888,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01787506-000",
-      "number": "R26BK01787506",
-      "order": "000",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "summary_R26DC00268241.pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787506&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "첨부1. 입찰공고서_R26DC00268241.hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787506&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "첨부1. 입찰공고서_R26DC00268241.pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787506&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        },
-        {
-          "name": "첨부2. 과업내용서(오산오산 1BL).xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787506&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
-        },
-        {
-          "name": "첨부3. 기술인배치계획표(오산오산 1BL).xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787506&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=05"
-        },
-        {
-          "name": "첨부4. 공공주택 종합심사낙찰제 통합평가방식 정량평가 제출양식.xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787506&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=05"
-        },
-        {
-          "name": "첨부5. (2026.10.1)소방감리 PQ 소방분담사명_용역명.xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787506&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=05"
-        },
-        {
-          "name": "첨부6. 소방공사 설계감리용역 사업수행능력 평가지침.hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787506&bidPbancOrd=000&fileType=&fileSeq=8&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)혼합방식",
-        "pq": ""
-      },
-      "title": "오산오산1BL 민간참여 공공주택 건설사업 시공단계 감독권한대행 등 건설사업관리용역",
-      "agency": "조달청",
-      "notice_at": "2026-10-23 15:07:11",
-      "deadline": "2026-11-27 17:00:00",
-      "budget": "9752789000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "일반경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01787506&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01779464-000",
-      "number": "R26BK01779464",
-      "order": "000",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "입찰 공고문[국동항 건설공사 건설사업관리용역].pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01779464&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "설계서[국동항 건설공사 감독권한대행 등 건설사업관리용역].hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01779464&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "종합기술제안서 평가기준 및 작성안내서[국동항 건설공사 건설사업관리용역].hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01779464&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        },
-        {
-          "name": "Notice for Submission of Pre-qualification(Gukdong Fishery Port).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01779464&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)공동이행",
-        "pq": ""
-      },
-      "title": "국동항 건설공사 건설사업관리용역",
-      "agency": "해양수산부 여수지방해양수산청",
-      "notice_at": "2026-10-20 13:44:35",
-      "deadline": "2026-12-01 16:00:00",
-      "budget": "5890000000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "일반경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01779464&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01785390-000",
-      "number": "R26BK01785390",
-      "order": "000",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "입찰 공고문[국동항 건설공사 건설사업관리용역].pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01785390&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "설계서[국동항 건설공사 감독권한대행 등 건설사업관리용역].hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01785390&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "종합기술제안서 평가기준 및 작성안내서[국동항 건설공사 건설사업관리용역].hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01785390&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        },
-        {
-          "name": "Notice for Submission of Pre-qualification(Gukdong Fishery Port).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01785390&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)혼합방식",
-        "pq": ""
-      },
-      "title": "국동항 건설공사 건설사업관리용역",
-      "agency": "해양수산부 여수지방해양수산청",
-      "notice_at": "2026-10-22 15:41:14",
-      "deadline": "2026-12-01 16:00:00",
-      "budget": "5890000000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "일반경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01785390&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01778014-000",
-      "number": "R26BK01778014",
-      "order": "000",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "공고문(고성 마차진·대진지구 연안정비사업 건설사업관리용역).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778014&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "Summary.pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778014&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "고성 마차진·대진지구 연안정비사업 건설사업관리용역(과업지시서).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778014&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        },
-        {
-          "name": "고성 마차진·대진지구 연안정비사업 건설사업관리용역(내역서).xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778014&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
-        },
-        {
-          "name": "사업수행능력(기술인평가서) 평가기준 및 작성안내서(안)[고성 마차진 대진지구 연안정비사업 건설사업관리용역].hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778014&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)공동이행 또는 분담이행",
-        "pq": "수기"
-      },
-      "title": "고성 마차진 대진지구 연안정비사업 건설사업관리용역",
-      "agency": "해양수산부 동해지방해양수산청",
-      "notice_at": "2026-10-19 14:23:27",
-      "deadline": "2026-12-03 10:00:00",
-      "budget": "4213000000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "일반경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01778014&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01778014-001",
-      "number": "R26BK01778014",
-      "order": "001",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "공고문(고성 마차진·대진지구 연안정비사업 건설사업관리용역).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778014&bidPbancOrd=001&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "Summary.pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778014&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "고성 마차진·대진지구 연안정비사업 건설사업관리용역(과업지시서).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778014&bidPbancOrd=001&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        },
-        {
-          "name": "고성 마차진·대진지구 연안정비사업 건설사업관리용역(내역서).xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778014&bidPbancOrd=001&fileType=&fileSeq=4&prcmBsneSeCd=05"
-        },
-        {
-          "name": "사업수행능력(기술인평가서) 평가기준 및 작성안내서(안)[고성 마차진 대진지구 연안정비사업 건설사업관리용역].hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778014&bidPbancOrd=001&fileType=&fileSeq=5&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)공동이행",
-        "pq": "수기"
-      },
-      "title": "고성 마차진 대진지구 연안정비사업 건설사업관리용역",
-      "agency": "해양수산부 동해지방해양수산청",
-      "notice_at": "2026-10-19 14:50:44",
-      "deadline": "2026-12-03 10:00:00",
-      "budget": "4213000000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "일반경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01778014&bidPbancOrd=001",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -4956,6 +2958,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01781127&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -4966,88 +2973,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      }
-    },
-    {
-      "id": "R26BK01778014-002",
-      "number": "R26BK01778014",
-      "order": "002",
-      "category": "건축감리",
-      "attachments": [
-        {
-          "name": "변경공고문(고성 마차진·대진지구 연안정비사업 건설사업관리용역).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778014&bidPbancOrd=002&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "Summary.pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778014&bidPbancOrd=002&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "고성 마차진·대진지구 연안정비사업 건설사업관리용역(내역서).xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778014&bidPbancOrd=002&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        },
-        {
-          "name": "고성 마차진·대진지구 연안정비사업 건설사업관리용역(과업지시서).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778014&bidPbancOrd=002&fileType=&fileSeq=4&prcmBsneSeCd=05"
-        },
-        {
-          "name": "사업수행능력(기술인평가서) 평가기준 및 작성안내서(정정)[고성 마차진 대진지구 연안정비사업 건설사업관리용역].hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01778014&bidPbancOrd=002&fileType=&fileSeq=5&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)공동이행",
-        "pq": "수기"
-      },
-      "title": "고성 마차진 대진지구 연안정비사업 건설사업관리용역",
-      "agency": "해양수산부 동해지방해양수산청",
-      "notice_at": "2026-10-21 09:29:33",
-      "deadline": "2026-12-08 10:00:00",
-      "budget": "4213000000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "일반경쟁",
-      "method": "전자입찰",
-      "priority": "확인 필요",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01778014&bidPbancOrd=002",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
