@@ -1,0 +1,9 @@
+{
+  "status": "not_configured",
+  "updated_at": null,
+  "source": "조달청 나라장터 낙찰정보서비스",
+  "query_window": null,
+  "items": [],
+  "total_valid": 0,
+  "message": "낙찰정보 API 연결 및 첫 수집 전입니다. 과거 낙찰률이나 추천가격은 표시하지 않습니다."
+}
