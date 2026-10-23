@@ -127,7 +127,7 @@
     let html='<div class="tags" style="margin-top:12px"><span class="tag '+(current==="참가 불가"?"bad":current.startsWith("참가 가능")?"good":"caution")+'">'+esc(current)+'</span><span class="tag">'+esc(x.category||"감리 분야 미확인")+'</span></div>'+
       '<div class="viewgrid">'+
       '<div class="vcell"><span>API 표시금액 종류</span><b>'+esc(x.amountType||"금액 유형 미확인")+'</b><div>'+esc(amount(x.amount))+'</div></div>'+
-      '<div class="vcell"><span>공식 기초금액</span><b>'+esc(amount(x.base_amount))+'</b></div>'+
+      '<div class="vcell"><span>'+esc(x.base_amount_source||"기초금액 (API·원문 확인 필요)")+'</span><b>'+esc(amount(x.base_amount))+'</b></div>'+
       '<div class="vcell"><span>마감일시</span><b>'+esc(typeof dt==="function"?dt(x.deadline):x.deadline)+'</b></div>'+
       '<div class="vcell"><span>참가가능지역</span><b>'+esc(x.region||"미확인")+'</b></div></div>'+
       section("1. 자동 자격 분석",'<div class="note" style="white-space:normal;font-size:12px">'+
