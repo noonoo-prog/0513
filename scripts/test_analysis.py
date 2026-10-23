@@ -20,6 +20,12 @@ class AnalysisTests(unittest.TestCase):
         self.assertIsNone(category("학교 태양광발전 전기공사 감리용역"))
         self.assertIsNone(category("건축사무소 감리교회 주차장 폐기물 처리용역"))
         self.assertIsNone(category("공원 조성공사 건설사업관리용역"))
+        self.assertIsNone(category("비양도 해저관로 확충사업 건설사업관리용역"))
+        self.assertIsNone(category("감포항 남측호안 보강공사 건설사업관리용역"))
+        self.assertIsNone(category("중로2-01-66 개설공사 건설사업관리용역"))
+        self.assertIsNone(category("홍성의료원 본관 리모델링 감리용역(전기)"))
+        self.assertIsNone(category("국동항 건설공사 건설사업관리용역"))
+        self.assertEqual(category("서울남부보호관찰소 청사 리모델링 건설사업관리용역"),"건축감리")
     def test_region(self):
         self.assertEqual(region_evidence_from_api("서울특별시")[0],"possible")
         self.assertEqual(region_evidence_from_api("전국")[0],"open")
