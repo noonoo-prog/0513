@@ -178,13 +178,9 @@ def analyze_text(text):
     floor=extract_clause(text,r"(낙찰\s*하한\s*율|낙찰하한율|투찰\s*하한\s*율|투찰하한율)",70,100)
     rate=None
     if floor:
-        m=re.search(r"(?:하한\s*율|하한율)[^\d%]{0,55}(\d{2}\.\d{1,4})\s*%",floor,re.I)
-        if m and 80<=float(m.group(1))<=100:rate=float(m.group(1))
+        rate=floor_from_clause(floor)
     base=extract_clause(text,r"(기초금액|기초\s*금액)",40,135)
-    amt=None
-    if base:
-        m=re.search(r"(?:기초\s*금액)[^\d]{0,28}([\d,]{6,18})\s*원",base)
-        if m:amt=money(m.group(1))
+    amt=base_from_clause(base)
     score=extract_clause(text,r"(적격\s*심사|종합\s*평점|통과\s*점수|심사\s*기준)",50,190)
     return {"region_clause":region,"license_clause":license,"performance_clause":perf,
             "staffing_clause":staffing,"floor_rate":rate,"floor_evidence":floor,
@@ -204,16 +200,46 @@ def region_evidence_from_api(region):
 
 def region_from_doc(clause):
     if not clause:return "unknown","공고문 지역 조항 확인 안 됨"
-    # 지역 제한 조항이 250자 내에 한 개 이상 발견되고, 서울이 명시되지 않으면 신중하게 제외
     if re.search(r"전국\s*(대상|업체|지역|입찰)|지역\s*제한\s*(없음|하지)|전국\s*제한없음",clause):
-        return "open","공고문 발췌: "+clause[:250]
+        return "open","원문 지역제한 없음: "+clause[:250]
+    # 명시된 지역제한(시·도 또는 시·군·구)은 소재지/발주기관 소재와 구분한다.
+    m=re.search(r"지역\s*제한\s*[\(（:：]\s*([가-힣·,\s]{2,36})[\)）]",clause)
+    if m:
+        named=m.group(1).strip()
+        if "서울" in named:return "possible","공고문 명시 지역: "+named
+        if "전국" in named or "없음" in named:return "open","공고문 명시 지역: "+named
+        if re.fullmatch(r"[가-힣]{2,24}(시|도|군|구)",named) or named.endswith("특별시") or named.endswith("광역시"):
+            return "excluded","공고문 지역 제한 확인: "+named+" / "+clause[:180]
+        return "unknown","공고문 복수지역·조건부 제한 추가 확인: "+named
+    m=re.search(r"(서울특별시|서울시|서울|울산광역시|인천광역시|부산광역시|대구광역시|대전광역시|광주광역시|경기도|충청북도|충청남도|경상북도|경상남도|전라남도|전북특별자치도|강원특별자치도|제주특별자치도)\s*지역\s*제한\s*(?:입찰|견적|용역)",clause)
+    if m:
+        named=m.group(1)
+        return ("possible" if "서울" in named else "excluded"),"공고문 명시 지역제한: "+named
     region_words=re.findall(r"서울특별시|서울시|서울|경기도|인천광역시|충청북도|충청남도|경상북도|경상남도|전라남도|전북특별자치도|강원특별자치도|부산광역시|대구광역시|대전광역시|광주광역시|울산광역시|제주특별자치도",clause)
-    if "본점" not in clause and "영업소" not in clause and "지역제한" not in clause:
-        return "unknown","지역조항 맥락 추가 확인 필요"
+    if "본점" not in clause and "영업소" not in clause:
+        return "unknown","공고문 지역조항 해석 필요: "+clause[:250]
     if region_words and not any(x in region_words for x in ("서울","서울시","서울특별시")):
         if len(set(region_words))==1 and re.search(r"(본점|주된\s*영업소).{0,90}("+re.escape(region_words[0])+r")",clause):
-            return "excluded","공고문 지역 제한 발췌: "+clause[:250]
+            return "excluded","공고문 본점 지역제한: "+region_words[0]+" / "+clause[:180]
     return "unknown","공고문 지역조항 해석 필요: "+clause[:250]
+
+def base_from_clause(clause):
+    if not clause:return None
+    patterns=(
+        r"기초\s*금액\s*(?:금|:|：|은|는|\s)*([\d,]{6,18})\s*원",
+        r"기초\s*금액\s*추정가격\s*부가가치세\s*([\d,]{6,18})",
+        r"기초\s*금액[^\d]{0,14}([\d,]{6,18})\s*원",
+    )
+    for p in patterns:
+        m=re.search(p,clause,re.I)
+        if m:return money(m.group(1))
+    return None
+
+def floor_from_clause(clause):
+    if not clause:return None
+    m=re.search(r"(?:낙찰|투찰)\s*하한\s*율[^\d%]{0,55}(\d{2}(?:\.\d{1,4})?)\s*%",clause,re.I)
+    if m and 75<=float(m.group(1))<=100:return float(m.group(1))
+    return None
 
 def analyze_notice(item, max_docs=2):
     """자동 분석은 판정 근거와 불확실성을 명시한다."""
@@ -292,7 +318,11 @@ def analyze_notice(item, max_docs=2):
     base=money(item.get("base_amount"))
     floor=item.get("floor_rate")
     if not floor and best:floor=best.get("floor_rate")
-    if not base and best:base=best.get("base_amount")
+    if not base and best:
+        base=best.get("base_amount")
+        if base:
+            item["base_amount"]=base
+            item["base_amount_source"]="공고문 텍스트 자동 추출 · 원문 확인 필요"
     if isinstance(floor,(str,int,float)):
         try:
             floor=float(floor)
