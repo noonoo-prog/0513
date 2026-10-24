@@ -56,6 +56,27 @@ const assert = require("node:assert/strict");
     await mobile.locator("#mobileFiltersToggle").click();
     assert.equal(await mobile.locator("#mobileFiltersToggle").getAttribute("aria-expanded"),"true");
     assert.equal(mobileErrors.length,0,"mobile runtime errors: "+mobileErrors.join(" | "));
+    // Synthetic fixtures exercise new categories even before the first expanded API run.
+    const scopePage=await browser.newPage({timezoneId:"Asia/Seoul"});
+    const scopeErrors=[];scopePage.on("pageerror",e=>scopeErrors.push(e.message));
+    const fixtures=[
+      {id:"SCOPE-D",number:"SCOPE-D",title:"학교 화장실 개선 설계용역",category:"설계용역",deadline:"2099-12-01 10:00",budget:20000000},
+      {id:"SCOPE-C",number:"SCOPE-C",title:"도서관 간이 설계공모",category:"설계공모",deadline:"2099-12-02 10:00",budget:30000000}
+    ];
+    await scopePage.route("**/data/bids.json?*",route=>route.fulfill({json:{status:"ready",scope_version:2,items:fixtures}}));
+    await scopePage.goto("http://127.0.0.1:8765/index.html");
+    await scopePage.locator('[data-work="design"]').click();
+    assert.equal(await scopePage.locator("#cards article").count(),1);
+    await scopePage.locator('[data-view]').click();
+    assert(!(await scopePage.locator("#modalBody").innerText()).includes("실적 0원 기준 이론적"));
+    await scopePage.locator("#closeModal").click();
+    await scopePage.locator('[data-work="competition"]').click();
+    assert.equal(await scopePage.locator("#cards article").count(),1);
+    assert((await scopePage.locator("#cards").innerText()).includes("작품제출: 원문 확인 필요"));
+    await scopePage.locator('[data-view]').click();
+    assert.equal(await scopePage.locator("#scenarioCalc").count(),0);
+    assert.equal(scopeErrors.length,0,scopeErrors.join(" | "));
+
     console.log("Browser regression passed:",{feedItems:feed.items.length,visibleCandidates:visible.length,renderedCards:cards,desktopErrors:errors.length,mobileErrors:mobileErrors.length});
   }finally {
     if(browser)await browser.close();
