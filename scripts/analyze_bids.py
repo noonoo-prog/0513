@@ -63,6 +63,13 @@ REGION_WORDS = (
 
 def category(title):
     clean = str(title or "").replace("감리교회", "교회")
+    if "설계" in clean:
+        # Title routing only: never infer eligibility or a small workload from the name.
+        building = any(w in clean for w in BUILDING_HINTS + ("학교", "기숙사", "보건소", "경로당", "외벽", "창호", "방수", "바닥보수", "환경개선"))
+        if not building or any(w in clean for w in CIVIL): return None
+        if any(w in clean for w in ("전기", "소방", "통신", "기계설비", "조경", "구조")) and "건축" not in clean:
+            return None
+        return "설계공모" if "공모" in clean else "설계용역"
     if not any(w in clean for w in BID_TERMS): return None
     if any(w in clean for w in OTHER_TRADES): return None
     if any(w in clean for w in CIVIL): return None
@@ -353,11 +360,11 @@ def analyze_notice(item, max_docs=2):
     else:
         item["eligibility_missing"].append("서울 업체 참가 가능 지역")
     if not (best and best.get("license_clause")):
-        item["eligibility_missing"].append("건축사사무소/감리자 등록 자격")
+        item["eligibility_missing"].append("건축사사무소 등록 및 협업 분야 자격" if cat in ("설계용역", "설계공모") else "건축사사무소/감리자 등록 자격")
     if not (best and best.get("performance_clause")):
         item["eligibility_missing"].append("업체 실적 필수조건 및 배점")
     if not (best and best.get("staffing_clause")):
-        item["eligibility_missing"].append("감리원 등급/배치기간/경력")
+        item["eligibility_missing"].append("설계 참여인력·협업 분야·과업기간" if cat in ("설계용역", "설계공모") else "감리원 등급/배치기간/경력")
     if cat=="석면감리":
         item["eligibility_missing"].append("석면해체작업 감리인 지정·등록 요건")
     if cat=="해체감리":

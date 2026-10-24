@@ -1,4 +1,4 @@
-/* 10억 벌기: 원문 근거 기반 수동 참가자격 검토와 투찰 시나리오 (브라우저 저장). */
+/* 상어 레이더: 원문 근거 기반 수동 참가자격 검토와 투찰 시나리오 (브라우저 저장). */
 "use strict";
 (function(){
   const KEY="0513-eligibility-verifications-v1";
@@ -7,7 +7,7 @@
   const CHECKS=[
     ["region","서울 본점으로 지역제한 충족 확인"],
     ["license","건축사사무소/해체·석면 해당 등록·지정 자격 확인"],
-    ["performance","업체 실적 0원 기준 필수실적 및 적격심사 배점 확인"],
+    ["performance","해당 업무의 보유실적·필수실적·평가배점 확인 (설계·감리 별도)"],
     ["staffing","건축사·특급·중급·초급 인력의 경력·등급·배치기간 확인"],
     ["process","PQ·공동도급·현장설명·계약조건 확인"],
     ["documents","최신 공고문·과업지침서 및 정정공고 직접 검토"]
@@ -56,12 +56,13 @@
       const missing=Array.isArray(x.eligibility_missing)?x.eligibility_missing:[];
       const flags=[];
       if(missing.some(v=>/지역/.test(v))||/미확인/.test(apiRegion))flags.push("지역제한");
-      flags.push("실적 0원 배점","면허·감리원 배치");
+      if(/설계/.test(x.category||""))flags.push("설계실적·추가 자격·제출물");else flags.push("감리실적 0원 배점","면허·감리원 배치");
       reason=flags.join(" · ")+" 확인 필요";
     }
     const cat=String(x.category||"건축감리");
     let requirements="";
-    if(cat==="해체감리")requirements="본점 소재지 · 해체공사감리자 지정·자격 · 감리원 배치 · 업체실적";
+    if(/설계/.test(cat))requirements="참가 지역 · 건축사사무소 등록 · 설계실적(별도 확인) · 협업 자격 · 제출물·일정";
+    else if(cat==="해체감리")requirements="본점 소재지 · 해체공사감리자 지정·자격 · 감리원 배치 · 업체실적";
     else if(cat==="석면감리")requirements="본점 소재지 · 석면해체작업 감리인 등록·교육 · 배치인력 · 업체실적";
     else requirements="본점 소재지 · 건축사사무소 등록 · 업체실적·적격심사 · 감리원 등급·배치";
     return {reasonTitle:current==="참가 불가"?"불가 사유":current.startsWith("참가 가능")?"검토 결과":"확인 필요 사유",
@@ -169,8 +170,8 @@
         '</div>')+
       section("2. 원문 근거 및 첨부 분석",evidenceHtml(x))+
       section("3. 직접 참가자격 확인 · 체크리스트",checklistHtml(x))+
-      section("4. 적격심사 점수 계산",scoreHtml(x))+
-      section("5. 투찰금액 시나리오",priceHtml(x))+
+      (/설계/.test(x.category||"")?section("4. 설계·공모 검토", "설계실적은 감리실적과 별도 확인합니다. "+esc(x.collaboration_status||"단독·공동 참여 자격 원문 확인 필요")+" · "+esc(x.workload_status||"제출물·설계비·면적·기간 원문 확인 필요")):section("4. 적격심사 점수 계산",scoreHtml(x)))+
+      (x.category==="설계공모"?section("5. 공모 일정", "참가등록: "+esc(x.registration_deadline||"원문 확인 필요")+" · 작품제출: "+esc(x.submission_deadline||"원문 확인 필요")):section("5. 투찰금액 시나리오",priceHtml(x)))+
       '<div class="actions"><a class="btn" target="_blank" rel="noopener noreferrer" href="'+esc(x.source&&/^https:\/\//.test(x.source)?x.source:"https://www.g2b.go.kr/")+'">공고 원문 ↗</a><button class="btn" type="button" id="reviewClose">닫기</button></div>';
     if(typeof modal!=="function")return;
     modal(x.title,x.id+" · "+x.agency,html);
@@ -193,8 +194,8 @@
       delete reviews[x.id];localStorage.setItem(KEY,JSON.stringify(reviews));
       if(typeof render==="function")render();show(x);
     };
-    q("#scenarioCalc").onclick=()=>calculate(x);
-    q("#scoreCalc").onclick=()=>calculateScore(x);
+    if(q("#scenarioCalc"))q("#scenarioCalc").onclick=()=>calculate(x);
+    if(q("#scoreCalc"))q("#scoreCalc").onclick=()=>calculateScore(x);
   }
   function calculate(x){
     const q=id=>document.querySelector(id),result=q("#scenarioResult");

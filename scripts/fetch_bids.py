@@ -95,7 +95,7 @@ def classify(raw, now):
         return None
     deadline = get(raw, "bidClseDt")
     dt = parse_kst(deadline)
-    if not dt or dt <= now:
+    if (dt and dt <= now) or (not dt and category != "설계공모"):
         return None
     region = get(raw, "prtcptLmtRgnNm", "prtcptPsblRgnNm")
     # 제외 지역도 검토 기록에 남겨서 서울 업체 기준 참가 불가로 표시한다.
@@ -124,6 +124,10 @@ def classify(raw, now):
     return {
         "id":num + "-" + order, "number":num, "order":order,
         "category": category,
+        "registration_deadline":None, "submission_deadline":None,
+        "competition_type":("간이공모" if "간이" in title else "제안공모" if "제안" in title else "일반·기타 공모") if category == "설계공모" else None,
+        "workload_status":"제출물·설계비·면적·기간 원문 확인 필요" if category == "설계공모" else "과업·기간 원문 확인 필요",
+        "collaboration_status":"추가 분야 자격·분담 확인 필요" if any(w in title for w in ("구조", "내진", "전기", "소방", "통신", "기계")) else "단독 수행 가능 여부 원문 확인 필요",
         "attachments":attachment_list(raw),
         "base_amount":money(get(raw,"bssamt","bsisAmt","basisAmt")),
         "floor_rate":None,
@@ -140,8 +144,8 @@ def classify(raw, now):
         "budget_type":("배정예산" if get(raw,"asignBdgtAmt") else "추정가격" if get(raw,"presmptPrce") else ""),
         "region":region or "정보 미확인", "contract":contract, "method":bidmethod,
         "priority":priority, "reasons":reasons,
-        "eligibility":"원문 확인 필요", "performance":"업체 감리실적 필수·배점 여부 미확인",
-        "staffing":("석면해체작업 감리인 지정·배치조건 원문 확인" if category == "석면감리" else
+        "eligibility":"원문 확인 필요", "performance":("설계실적 보유현황 및 필수·배점 조건 미확인 (감리실적과 별도)" if category in ("설계용역","설계공모") else "업체 감리실적 필수·배점 여부 미확인"),
+        "staffing":("설계 참여인력·협업 분야 자격 확인" if category in ("설계용역","설계공모") else "석면해체작업 감리인 지정·배치조건 원문 확인" if category == "석면감리" else
                     "해체공사감리자 지정·배치조건 원문 확인" if category == "해체감리" else
                     "건축사·상주감리원 자격/기간 원문 확인"),
         "url":get(raw,"bidNtceDtlUrl") or "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo="+urllib.parse.quote(num)+"&bidPbancOrd="+urllib.parse.quote(order)
@@ -230,7 +234,11 @@ def main():
         print("G2B_API_KEY not configured. Preserving existing feed; connect repository secret to enable collection.")
         return
     now=datetime.now(KST)
-    before=now-timedelta(days=5)
+    try:
+        prior_feed=json.loads(OUTPUT.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        prior_feed={}
+    before=now-timedelta(days=30 if prior_feed.get("scope_version") != 2 else 5)
     params={
         "serviceKey":KEY,"type":"json","inqryDiv":"1",
         "inqryBgnDt":before.strftime("%Y%m%d%H%M"),
@@ -240,27 +248,33 @@ def main():
     found={}
     max_pages=50
     total_count=0
-    for page in range(1,max_pages+1):
-        params["pageNo"]=str(page)
-        d=fetch_json(API, params)
-        body=d.get("response",{}).get("body",{})
-        total_count=int(body.get("totalCount") or 0)
-        batch=body.get("items") or []
-        if isinstance(batch,dict):
-            batch=batch.get("item",[])
-        if isinstance(batch,dict):
-            batch=[batch]
-        for raw in batch:
-            if not isinstance(raw,dict):
-                continue
-            item=classify(raw,now)
-            if item:
-                found[item["id"]]=item
-        if page*100>=total_count or not batch:
-            break
-        time.sleep(0.15)
-    if page*100<total_count:
-        raise RuntimeError("조회 페이지 상한 초과: 누락방지를 위해 데이터를 덮어쓰지 않습니다.")
+    window_start=before
+    while window_start < now:
+        window_end=min(window_start+timedelta(days=1),now)
+        params["inqryBgnDt"]=window_start.strftime("%Y%m%d%H%M")
+        params["inqryEndDt"]=window_end.strftime("%Y%m%d%H%M")
+        for page in range(1,max_pages+1):
+            params["pageNo"]=str(page)
+            d=fetch_json(API, params)
+            body=d.get("response",{}).get("body",{})
+            total_count=int(body.get("totalCount") or 0)
+            batch=body.get("items") or []
+            if isinstance(batch,dict):
+                batch=batch.get("item",[])
+            if isinstance(batch,dict):
+                batch=[batch]
+            for raw in batch:
+                if not isinstance(raw,dict):
+                    continue
+                item=classify(raw,now)
+                if item:
+                    found[item["id"]]=item
+            if page*100>=total_count or not batch:
+                break
+            time.sleep(0.15)
+        if page*100<total_count:
+            raise RuntimeError("조회 페이지 상한 초과: 누락방지를 위해 데이터를 덮어쓰지 않습니다.")
+        window_start=window_end
 
     old={}
     if OUTPUT.exists():
@@ -275,7 +289,7 @@ def main():
             found[x["id"]]=x
     # 원문 분석은 비용/시간 제한을 둔다. 공고명·차수가 동일하면 이전 분석을 재활용한다.
     previous={x.get("id"):x for x in old.get("items",[]) if isinstance(x,dict)}
-    items=sorted(found.values(),key=lambda v:(v.get("priority")!="우선 검토",v.get("deadline",""),v.get("id","")))[:400]
+    items=sorted(found.values(),key=lambda v:(v.get("priority")!="우선 검토",v.get("deadline",""),v.get("id","")))
     refreshed=[]
     new_doc_reads=0
     for x in items:
@@ -356,13 +370,13 @@ def main():
             refreshed.append(x)
     items=refreshed
     print("Document-analysis fetch attempts this run: "+str(new_doc_reads))
-    result={"updated_at":now.isoformat(timespec="seconds"),"status":"ready","source":"조달청 나라장터 입찰공고정보서비스","query_window":before.date().isoformat()+" ~ "+now.date().isoformat(),
+    result={"scope_version":2,"scope":["설계용역","설계공모","건축감리","해체감리","석면감리"],"updated_at":now.isoformat(timespec="seconds"),"status":"ready","source":"조달청 나라장터 입찰공고정보서비스","query_window":before.date().isoformat()+" ~ "+now.date().isoformat(),
             "total_matches":len(items),"items":items,"message":"공고명·구조화 필드·공개 첨부 원문 일부를 분석했습니다. 참가자격은 증빙 확인 전까지 미확정입니다."}
     OUTPUT.parent.mkdir(parents=True,exist_ok=True)
     OUTPUT.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     new=[x for x in items if x["id"] not in old_ids]
     print(f"Fetched {total_count} notices, matched {len(items)}, new candidates {len(new)}")
-    notify_new(items, now)
+    notify_new([x for x in items if x.get("category") not in ("설계용역","설계공모")], now)
 
 if __name__=="__main__":
     main()

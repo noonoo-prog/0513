@@ -45,7 +45,7 @@
 <div class="metric"><small>석면감리</small><b id="asbestosCount">—</b><span class="hint">낙찰 결과</span></div>
 </section>
 <h2 style="font-size:18px;letter-spacing:-.5px;margin:0 0 13px">분야별 낙찰률 중앙값</h2>
-<section class="median-grid" aria-label="감리 분야별 낙찰률 중앙값">
+<section class="median-grid" aria-label="업무 분야별 낙찰률 중앙값">
 <div class="median-card"><small>건축감리</small><b id="archMedian">—</b><span id="archSample">자료 확인 중</span></div>
 <div class="median-card"><small>해체감리</small><b id="demoMedian">—</b><span id="demoSample">자료 확인 중</span></div>
 <div class="median-card"><small>석면감리</small><b id="asbestosMedian">—</b><span id="asbestosSample">자료 확인 중</span></div>
@@ -53,7 +53,7 @@
 <p class="muted-note">낙찰률은 <strong>예정가격 대비 비율</strong>로, 기초금액에 그대로 곱하는 비율이 아닙니다. 표본 5건 미만은 중앙값을 표시하지 않습니다. 분야별 통계는 입찰 적격 여부나 권장 투찰률을 확정하지 않습니다.</p>
 <section class="award-filter" aria-label="낙찰정보 검색">
 <div class="wide"><label for="search">공고명 · 발주기관 · 공고번호 검색</label><input class="field" id="search" type="search" placeholder="예: 서울, 학교, 해체감리"></div>
-<div><label for="category">감리 분야</label><select class="field" id="category"><option value="all">전체 감리</option><option value="건축감리">건축감리</option><option value="해체감리">해체감리</option><option value="석면감리">석면감리</option></select></div>
+<div><label for="category">업무 분야</label><select class="field" id="category"><option value="all">전체 분야</option><option value="설계용역">설계용역</option><option value="설계공모">설계공모</option><option value="건축감리">건축감리</option><option value="해체감리">해체감리</option><option value="석면감리">석면감리</option></select></div>
 <div><label for="sort">정렬</label><select class="field" id="sort"><option value="recent">최근 낙찰순</option><option value="oldest">오래된 낙찰순</option><option value="amountHigh">낙찰금액 높은 순</option><option value="amountLow">낙찰금액 낮은 순</option><option value="rateHigh">낙찰률 높은 순</option><option value="rateLow">낙찰률 낮은 순</option></select></div>
 <button type="button" class="btn" id="clear">초기화</button>
 </section>
@@ -97,7 +97,7 @@ function render(){
   $("#results").innerHTML=filtered.length?filtered.map(x=>{
     const bidders=Number(x.bidder_count),bidderText=String(x.bidder_count??"").trim()&&Number.isFinite(bidders)&&bidders>=0?fmt.format(bidders)+"개 업체":"미기재";
     return '<article class="award-card"><div class="tags"><span class="tag blue">'+esc(x.category||"분야 확인 필요")+'</span><span class="tag">'+esc(dateLabel(x.award_at))+' 낙찰</span></div><h3>'+esc(x.title||"공고명 미기재")+'</h3><div class="sub">'+esc(x.agency||"발주기관 미기재")+' · 공고번호 '+esc(x.number||"미기재")+'</div><div class="award-facts"><div><small>낙찰금액</small><strong>'+esc(money(x.award_amount))+'</strong></div><div><small>낙찰률 (예정가격 대비)</small><strong>'+esc(rateText(x.award_rate))+'</strong></div><div><small>참가업체 수</small><strong>'+esc(bidderText)+'</strong></div><div><small>낙찰일</small><strong>'+esc(dateLabel(x.award_at))+'</strong></div></div><div class="award-bottom"><span class="sub">'+(x.winner?"낙찰업체 "+esc(x.winner):"낙찰업체명 API 미기재")+'</span><a class="source" href="'+esc(validLink(x.url))+'" target="_blank" rel="noopener noreferrer">나라장터 공고 원문 ↗</a></div></article>'
-  }).join(""):'<div class="empty"><h3>조건에 맞는 낙찰정보가 없습니다.</h3><p>검색어나 감리 분야를 변경해 보세요.</p></div>';
+  }).join(""):'<div class="empty"><h3>조건에 맞는 낙찰정보가 없습니다.</h3><p>검색어나 업무 분야를 변경해 보세요.</p></div>';
 }
 async function loadData(){
   try{

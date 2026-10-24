@@ -1,4 +1,4 @@
-name: 건축감리 입찰 자동수집 및 배포
+name: 상어 레이더 설계·감리·공모 자동수집
 on:
   push:
     branches: [main]
@@ -41,6 +41,7 @@ jobs:
         if: ${{ github.event_name != 'workflow_dispatch' || inputs.test_telegram != true }}
         run: |
           python -m unittest discover -s scripts -p 'test_analysis.py'
+          python -m unittest discover -s scripts -p 'test_scope.py'
           node --check bid-review.js
       - name: Telegram test message
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.test_telegram == true }}
