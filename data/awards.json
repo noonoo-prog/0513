@@ -1,10 +1,88 @@
 {
   "status": "ready",
-  "updated_at": "2026-10-24T01:36:22+09:00",
+  "updated_at": "2026-10-24T14:04:56+09:00",
   "source": "조달청 나라장터 낙찰정보서비스 - 용역",
   "query_window": "2026-10-16 ~ 2026-10-24",
-  "total_valid": 37,
+  "total_valid": 49,
   "items": [
+    {
+      "id": "R26BK01776959-000",
+      "number": "R26BK01776959",
+      "title": "낙생초 화장실 개선공사 설계용역",
+      "category": "설계용역",
+      "agency": "경기도교육청 경기도성남교육지원청",
+      "award_at": "2026-10-24",
+      "award_amount": 37849580,
+      "award_rate": 88.001,
+      "bidder_count": "60",
+      "winner": "",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01776959&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01786491-000",
+      "number": "R26BK01786491",
+      "title": "의성읍 농촌중심지활성화사업 건축물 해체공사 세부설계 용역",
+      "category": "설계용역",
+      "agency": "한국농어촌공사 경북지역본부 의성.군위지사",
+      "award_at": "2026-10-23",
+      "award_amount": 11600000,
+      "award_rate": null,
+      "bidder_count": "1",
+      "winner": "",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01786491&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01779711-000",
+      "number": "R26BK01779711",
+      "title": "서구도서관 외벽개선(내진보강) 및 장애인편의시설 설치공사 설계용역(계속비)",
+      "category": "설계용역",
+      "agency": "인천광역시교육청",
+      "award_at": "2026-10-23",
+      "award_amount": 57666200,
+      "award_rate": 88.004,
+      "bidder_count": "220",
+      "winner": "",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01779711&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01779698-000",
+      "number": "R26BK01779698",
+      "title": "(가칭)계양3초등학교 신축공사 설계의 경제성 등 검토용역(계속비)",
+      "category": "설계용역",
+      "agency": "인천광역시교육청",
+      "award_at": "2026-10-23",
+      "award_amount": 71618915,
+      "award_rate": 88.009,
+      "bidder_count": "42",
+      "winner": "",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01779698&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01779639-000",
+      "number": "R26BK01779639",
+      "title": "AI융합교육원 본관동 옥상방수공사 설계용역",
+      "category": "설계용역",
+      "agency": "인천광역시교육청",
+      "award_at": "2026-10-23",
+      "award_amount": 14244500,
+      "award_rate": 90.008,
+      "bidder_count": "199",
+      "winner": "",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01779639&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01777862-000",
+      "number": "R26BK01777862",
+      "title": "한국미래농업고등학교 실습동 증축공사 설계용역[재공고]",
+      "category": "설계용역",
+      "agency": "경상북도교육청 한국미래농업고등학교",
+      "award_at": "2026-10-23",
+      "award_amount": 41427000,
+      "award_rate": 88.772,
+      "bidder_count": "14",
+      "winner": "",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01777862&bidPbancOrd=000"
+    },
     {
       "id": "R26BK01768035-000",
       "number": "R26BK01768035",
@@ -43,6 +121,19 @@
       "bidder_count": "46",
       "winner": "",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01739268&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01782547-001",
+      "number": "R26BK01782547",
+      "title": "무지개마을 노후생활관 증개축 공사 해체계획서 작성 설계용역 공고",
+      "category": "설계용역",
+      "agency": "무지개마을",
+      "award_at": "2026-10-22",
+      "award_amount": 15090000,
+      "award_rate": 100.0,
+      "bidder_count": "1",
+      "winner": "",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01782547&bidPbancOrd=001"
     },
     {
       "id": "R26BK01784352-000",
@@ -84,6 +175,19 @@
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01778412&bidPbancOrd=000"
     },
     {
+      "id": "R26BK01775335-000",
+      "number": "R26BK01775335",
+      "title": "춘천기계공업고등학교 디자인 감성화 사업에 따른 설계 용역",
+      "category": "설계용역",
+      "agency": "강원특별자치도교육청 춘천기계공업고등학교",
+      "award_at": "2026-10-21",
+      "award_amount": 19701000,
+      "award_rate": 90.0,
+      "bidder_count": "1",
+      "winner": "",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01775335&bidPbancOrd=000"
+    },
+    {
       "id": "R26BK01780447-000",
       "number": "R26BK01780447",
       "title": "옥천면 기초생활거점조성사업 건축감리 용역",
@@ -97,10 +201,49 @@
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01780447&bidPbancOrd=000"
     },
     {
+      "id": "R26BK01778347-000",
+      "number": "R26BK01778347",
+      "title": "서울중마초 교사동 드라이비트 해소 및 내진보강 실시설계용역",
+      "category": "설계용역",
+      "agency": "서울특별시교육청 서울특별시성동광진교육지원청",
+      "award_at": "2026-10-20",
+      "award_amount": 16191900,
+      "award_rate": 90.0,
+      "bidder_count": "1",
+      "winner": "",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01778347&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01777807-000",
+      "number": "R26BK01777807",
+      "title": "한국전통문화대학교 조월정 보수정비 설계 용역",
+      "category": "설계용역",
+      "agency": "국가유산청 한국전통문화대학교",
+      "award_at": "2026-10-20",
+      "award_amount": 21900000,
+      "award_rate": 100.0,
+      "bidder_count": "1",
+      "winner": "",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01777807&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01777528-000",
+      "number": "R26BK01777528",
+      "title": "신평동 행정복지센터 건립 인테리어공사 실시설계 용역",
+      "category": "설계용역",
+      "agency": "경기도 평택시",
+      "award_at": "2026-10-20",
+      "award_amount": 30520000,
+      "award_rate": 90.005,
+      "bidder_count": "1",
+      "winner": "",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01777528&bidPbancOrd=000"
+    },
+    {
       "id": "R26BK01777437-000",
       "number": "R26BK01777437",
       "title": "의령폐비닐 폐토건조장 증축공사 실시설계 및 감리용역",
-      "category": "건축감리",
+      "category": "설계용역",
       "agency": "한국환경공단 부산울산경남환경본부",
       "award_at": "2026-10-20",
       "award_amount": 18500000,
@@ -173,6 +316,19 @@
       "bidder_count": "406",
       "winner": "",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01758006&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01777308-000",
+      "number": "R26BK01777308",
+      "title": "염치읍 기초생활거점조성사업 및 공공청사 복합건립사업 설계의도 구현 용역",
+      "category": "설계용역",
+      "agency": "한국농어촌공사 충남지역본부 아산지사",
+      "award_at": "2026-10-19",
+      "award_amount": 18293000,
+      "award_rate": 100.0,
+      "bidder_count": "1",
+      "winner": "",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01777308&bidPbancOrd=000"
     },
     {
       "id": "R26BK01777003-000",
