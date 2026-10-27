@@ -7,11 +7,11 @@
     "해체감리",
     "석면감리"
   ],
-  "updated_at": "2026-10-27T18:15:32+09:00",
+  "updated_at": "2026-10-28T00:57:31+09:00",
   "status": "ready",
   "source": "조달청 나라장터 입찰공고정보서비스",
-  "query_window": "2026-10-22 ~ 2026-10-27",
-  "total_matches": 124,
+  "query_window": "2026-10-23 ~ 2026-10-28",
+  "total_matches": 125,
   "items": [
     {
       "id": "R26BK01790664-000",
@@ -148,15 +148,6 @@
       "performance": "설계실적 보유현황 및 필수·배점 조건 미확인 (감리실적과 별도)",
       "staffing": "설계 참여인력·협업 분야 자격 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01793035&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "업체 실적 필수조건 및 배점",
-        "설계 참여인력·협업 분야·과업기간"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -170,6 +161,15 @@
           "license_clause": "유가 없는 자. 나. 「건축사법 시행령」제21조의2에 따른 외국건축사 면허 또는 자격을 취득한 자로서 국내 건축사사무소 개설자와 공동업무 수행 협약을 체결한 경우의 대표자는 국내 건축사로 함. 다. 공고일 기준으로 등록 취소, 휴·폐업, 영업정지 및 기타 이와 유사한 행정처분을 받은 자는 응모할 수 없으며, 당선자가 설계계약 및 수행에 필요한 법적 요건을 갖추지 못한 경우 설계권을 포함한 당선자로서의 권리를 상실한 것으로 봄. 라. 공동응모 시 공동응모자 모두 “가항”부터 “다항”까지의 자격 조건을 갖추어야 하며, 공동수급체 구성원 수는 2인 이하의 범위에서 구성할 수 있으며, 구성원별 계약 최소지분율 20% 이상으로 하고, 과반의 비율을 가진 응모자를 대표자(1인)로 선정하여야 함. 마. 1개 업체가 2개 이상 중복으로 응모하는 것과"
         }
       },
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역",
+        "업체 실적 필수조건 및 배점",
+        "설계 참여인력·협업 분야·과업기간"
+      ],
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -235,15 +235,6 @@
       "performance": "설계실적 보유현황 및 필수·배점 조건 미확인 (감리실적과 별도)",
       "staffing": "설계 참여인력·협업 분야 자격 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01793035&bidPbancOrd=001",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "업체 실적 필수조건 및 배점",
-        "설계 참여인력·협업 분야·과업기간"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -257,6 +248,15 @@
           "license_clause": "유가 없는 자. 나. 「건축사법 시행령」제21조의2에 따른 외국건축사 면허 또는 자격을 취득한 자로서 국내 건축사사무소 개설자와 공동업무 수행 협약을 체결한 경우의 대표자는 국내 건축사로 함. 다. 공고일 기준으로 등록 취소, 휴·폐업, 영업정지 및 기타 이와 유사한 행정처분을 받은 자는 응모할 수 없으며, 당선자가 설계계약 및 수행에 필요한 법적 요건을 갖추지 못한 경우 설계권을 포함한 당선자로서의 권리를 상실한 것으로 봄. 라. 공동응모 시 공동응모자 모두 “가항”부터 “다항”까지의 자격 조건을 갖추어야 하며, 공동수급체 구성원 수는 2인 이하의 범위에서 구성할 수 있으며, 구성원별 계약 최소지분율 20% 이상으로 하고, 과반의 비율을 가진 응모자를 대표자(1인)로 선정하여야 함. 마. 1개 업체가 2개 이상 중복으로 응모하는 것과"
         }
       },
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역",
+        "업체 실적 필수조건 및 배점",
+        "설계 참여인력·협업 분야·과업기간"
+      ],
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -271,23 +271,31 @@
       }
     },
     {
-      "id": "R26BK01787249-000",
-      "number": "R26BK01787249",
+      "id": "R26BK01794993-000",
+      "number": "R26BK01794993",
       "order": "000",
-      "category": "설계용역",
+      "category": "설계공모",
       "registration_deadline": null,
       "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
+      "competition_type": "일반·기타 공모",
+      "workload_status": "제출물·설계비·면적·기간 원문 확인 필요",
       "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
       "attachments": [
         {
-          "name": "공고서[공공건축물 그린리모델링 사업(원용포 등) 기본 및 실시설계 용역].hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787249&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
+          "name": "★공고문(인창동 복합커뮤니티센터 건립사업 건축 설계공모).hwpx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01794993&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
         },
         {
-          "name": "공고서[공공건축물 그린리모델링 사업(원용포 등) 기본 및 실시설계 용역].pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787249&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
+          "name": "★공고문(인창동 복합커뮤니티센터 건립사업 건축 설계공모).pdf",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01794993&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
+        },
+        {
+          "name": "★과업지시서(인창동 복합커뮤니티센터 건립사업 건축 설계공모).hwpx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01794993&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
+        },
+        {
+          "name": "★설계공모지침서(인창동 복합커뮤니티센터 건립사업 건축 설계공모).hwpx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01794993&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
         }
       ],
       "base_amount": null,
@@ -296,43 +304,50 @@
         "industry": "",
         "participation_region": "",
         "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
+        "joint_venture": "(수기)공동이행",
         "pq": ""
       },
-      "title": "공공건축물 그린리모델링 사업(원용포 등) 기본 및 실시설계용역",
-      "agency": "전북특별자치도 무주군",
-      "notice_at": "2026-10-22 18:15:10",
-      "deadline": "2026-10-28 10:00:00",
-      "budget": "46937000",
+      "title": "[긴급]인창동 복합커뮤니티센터 건립사업 건축 설계공모",
+      "agency": "경기도 구리시",
+      "notice_at": "2026-10-27 21:29:07",
+      "deadline": "",
+      "budget": "1540000000",
       "budget_type": "배정예산",
       "region": "정보 미확인",
       "contract": "수의계약",
-      "method": "전자입찰",
+      "method": "직찰",
       "priority": "지역 확인 우선",
       "reasons": [
         "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
-        "설계용역 관련 공고명",
+        "설계공모 관련 공고명",
         "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
       ],
       "eligibility": "원문 확인 필요",
       "performance": "설계실적 보유현황 및 필수·배점 조건 미확인 (감리실적과 별도)",
       "staffing": "설계 참여인력·협업 분야 자격 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01787249&bidPbancOrd=000",
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01794993&bidPbancOrd=000",
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
       ],
       "eligibility_missing": [
         "서울 업체 참가 가능 지역",
-        "건축사사무소 등록 및 협업 분야 자격",
         "업체 실적 필수조건 및 배점",
         "설계 참여인력·협업 분야·과업기간"
       ],
+      "document_analysis": {
+        "status": "일부 텍스트 자동 추출",
+        "files": [
+          {
+            "name": "★공고문(인창동 복합커뮤니티센터 건립사업 건축 설계공모).hwpx",
+            "format": "HWPX/DOCX",
+            "status": "본문 추출됨"
+          }
+        ],
+        "evidence": {
+          "license_clause": "우 예외) ※ 과업 범위의 변경 없이 공사비가 증가하는 경우 추가 용역비를 지급하지 않는다. 4. 설계공모 참가자격 : “설계공모지침서” 참조 5. 설계공모 일정 구 분 일 시 세 부 사 항 설계공모공고 2026. 10. 28.(수) · 건축행정시스템(세움터), 구리시 홈페이지 응모신청접수 2026. 11. 5.(목), 2026. 11. 6.(금) 10:00∼17:00까지 · 접수장소 : 회계과(본관 4층) · 방문 접수만 가능(점심시간 제외, 우편·팩스등 불가) 질의접수 2026. 11. 13.(금) 10:00∼17:00까지 · 접수방법 : 전자메일(chokss@korea.kr) (질의서 수신 여부 반드시 유선확인) 질의회신 2026. 11. 20.(금) · 구리시 홈페이지 게시 설계공모안 제출 2027. 1. 11.(월) 10:"
+        }
+      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -1956,7 +1971,7 @@
         }
       ],
       "base_amount": 44000000,
-      "floor_rate": null,
+      "floor_rate": 88.0,
       "raw_qualification": {
         "industry": "",
         "participation_region": "",
@@ -1983,16 +1998,6 @@
       "performance": "설계실적 보유현황 및 필수·배점 조건 미확인 (감리실적과 별도)",
       "staffing": "설계 참여인력·협업 분야 자격 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01794062&bidPbancOrd=000",
-      "eligibility_status": "참가 불가",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "공고문 본점 소재지 서울 외 제한: 부산광역시",
-        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
-      ],
-      "eligibility_missing": [
-        "업체 실적 필수조건 및 배점",
-        "설계 참여인력·협업 분야·과업기간"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -2010,22 +2015,31 @@
           "score_clause": "입찰 및 계약 방법 가. 총액입찰 로서 전자입찰 로만 집행합니다. 나. 제한입찰(지역), 적격심사 비대상 용역입니다. 3. 입찰 참가 자격 가. 「지방자치단체를 당사자로 하는 계약에 관한 법률 시행령」 제13조(입찰의 참가자격) 및 같은 법 시행규칙 제14조(입찰참가자격요건의 증명)에 따른 자격을 갖춘 자로써 아래의 자격을 모두 갖춘 자이어야 합니다. ① 법인등기부상 본점소재지( 개인사업자인 경우에는 사업자등록증 또는 관련 법령에 따"
         }
       },
+      "eligibility_status": "참가 불가",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "공고문 본점 소재지 서울 외 제한: 부산광역시",
+        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
+      ],
+      "eligibility_missing": [
+        "업체 실적 필수조건 및 배점",
+        "설계 참여인력·협업 분야·과업기간"
+      ],
       "price_analysis": {
         "status": "가정 계산 가능",
-        "reason": "기초금액에 예정가격 사정률 100%를 가정한 하한선. 실투찰 추천가는 아님",
         "base_amount": 44000000,
         "floor_rate": 88.0,
         "adjustment_rate": 100,
         "reference_floor_amount": 38720000,
         "range_99_amount": 38332800,
-        "range_101_amount": 39107200
+        "range_101_amount": 39107200,
+        "reason": "기초금액·하한율 원문 확인 필요. 사정률 100% 가정값이며 투찰추천가가 아닙니다."
       },
       "region_assessment": {
         "status": "excluded",
         "evidence": "공고문 본점 소재지 서울 외 제한: 부산광역시",
         "verified": true
-      },
-      "base_amount_source": "공고문 텍스트 자동 추출 · 원문 확인 필요"
+      }
     },
     {
       "id": "R26BK01793700-000",
@@ -2048,7 +2062,7 @@
         }
       ],
       "base_amount": 68152000,
-      "floor_rate": null,
+      "floor_rate": 88.0,
       "raw_qualification": {
         "industry": "",
         "participation_region": "",
@@ -2075,16 +2089,6 @@
       "performance": "설계실적 보유현황 및 필수·배점 조건 미확인 (감리실적과 별도)",
       "staffing": "설계 참여인력·협업 분야 자격 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01793700&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "지역제한 대상 지역 미확정 — 원문 직접 확인"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "업체 실적 필수조건 및 배점",
-        "설계 참여인력·협업 분야·과업기간"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -2102,22 +2106,31 @@
           "score_clause": "로 제제를 받게 됩니다. 6. 견적서 제출 및 계약방식 ○ 총액입찰, 수의계약대상 용역, 적격심사 비대상 용역입니다. ○ 본 용역은 전자입찰방식으로 집행되므로 조달청전자입찰 이용자 등록을 필한 업체이어야 하며, 미등록업체는 입찰집행일 전까지 조달청 국가종합전자조달 누리집 또는 지방조달청에 입찰참가이용자 등록을 하여야 합니다. ○ 반드시 조달청 국가종합전자조달시스템을 이용하여 제출하여야 하며, 입찰서 제출 확인은 조달청 국가종합전자조달"
         }
       },
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "지역제한 대상 지역 미확정 — 원문 직접 확인"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역",
+        "업체 실적 필수조건 및 배점",
+        "설계 참여인력·협업 분야·과업기간"
+      ],
       "price_analysis": {
         "status": "가정 계산 가능",
-        "reason": "기초금액에 예정가격 사정률 100%를 가정한 하한선. 실투찰 추천가는 아님",
         "base_amount": 68152000,
         "floor_rate": 88.0,
         "adjustment_rate": 100,
         "reference_floor_amount": 59973760,
         "range_99_amount": 59374022,
-        "range_101_amount": 60573498
+        "range_101_amount": 60573498,
+        "reason": "기초금액·하한율 원문 확인 필요. 사정률 100% 가정값이며 투찰추천가가 아닙니다."
       },
       "region_assessment": {
         "status": "unknown",
         "evidence": "지역제한 정보가 API에 없음",
         "verified": false
-      },
-      "base_amount_source": "공고문 텍스트 자동 추출 · 원문 확인 필요"
+      }
     },
     {
       "id": "R26BK01789599-000",
@@ -2171,16 +2184,6 @@
       "performance": "설계실적 보유현황 및 필수·배점 조건 미확인 (감리실적과 별도)",
       "staffing": "설계 참여인력·협업 분야 자격 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01789599&bidPbancOrd=000",
-      "eligibility_status": "참가 불가",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "공고문 서울 외 지역제한: 경상남도",
-        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
-      ],
-      "eligibility_missing": [
-        "업체 실적 필수조건 및 배점",
-        "설계 참여인력·협업 분야·과업기간"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -2196,6 +2199,16 @@
           "score_clause": "기준에 미달하는 자 ※ 기술자 보유현황의 심사는 「낙찰자결정기준」제1장 입찰참가자격 사전심사기준 제5절 “4”의 그밖에 해당공사 수행능력상 결격여부, 제2장의2 기술·학술연구 용역 적격심사 세부기준 <별표>의 기술인력 평가방법을 준용한다. 이때 ‘입찰공고일’은 ‘안내공고일’로 ‘적격심사서류 제출마감일’은 ‘견적서 제출마감일’로 본다. ⑤ 견적서 제출 마감일 기준 최근 3개월 이내에 해당 지방자치단체의 입찰 ․ 계약 및 그 이행과 관"
         }
       },
+      "eligibility_status": "참가 불가",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "공고문 서울 외 지역제한: 경상남도",
+        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
+      ],
+      "eligibility_missing": [
+        "업체 실적 필수조건 및 배점",
+        "설계 참여인력·협업 분야·과업기간"
+      ],
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -2261,16 +2274,6 @@
       "performance": "설계실적 보유현황 및 필수·배점 조건 미확인 (감리실적과 별도)",
       "staffing": "설계 참여인력·협업 분야 자격 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01791143&bidPbancOrd=000",
-      "eligibility_status": "참가 불가",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "공고문 서울 외 지역제한: 경기도",
-        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
-      ],
-      "eligibility_missing": [
-        "업체 실적 필수조건 및 배점",
-        "설계 참여인력·협업 분야·과업기간"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -2287,6 +2290,16 @@
           "score_clause": ", 하도급자와 수기로 하도급계약을 체결하는 경우에도 시스템에 등록하겠습니다.(PQ심사 및 적격심사 시 사용계획서 준수) 하도급 대금, 노무비, 장비·자재대금 등을 하도급지킴이를 이용하여 전자적으로 지급하겠습니다.(당사 몫 외의 지급은 “인출 제한” 기능 사용) 수요기관의 하도급 대금, 노무비, 장비·자재대금의 직접 지급 또는 적정 지급 여부 확인에 적극 응하겠습니다. [ ] 예 [ ] 아니오 [ ] 해당없음 11 안전 및 보건 확보"
         }
       },
+      "eligibility_status": "참가 불가",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "공고문 서울 외 지역제한: 경기도",
+        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
+      ],
+      "eligibility_missing": [
+        "업체 실적 필수조건 및 배점",
+        "설계 참여인력·협업 분야·과업기간"
+      ],
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -2442,16 +2455,6 @@
       "performance": "설계실적 보유현황 및 필수·배점 조건 미확인 (감리실적과 별도)",
       "staffing": "설계 참여인력·협업 분야 자격 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01792246&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "지역제한 대상 지역 미확정 — 원문 직접 확인"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "업체 실적 필수조건 및 배점",
-        "설계 참여인력·협업 분야·과업기간"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -2467,6 +2470,16 @@
           "base_evidence": "이내 마. 추정금액: 금80,671,000원(금팔천육십칠만일천원) 바. 기초금액: 금80,671,000원(금팔천육십칠만일천원) 사. 견적(입찰)서 제출기한: 2026. 10. 30. 09:00 ~ 2026. 11. 3. 10:00 아. 개찰일시 및 장소 : 2026. 11. 3. 11:00 이후 춘천시 회계과 입찰집행담"
         }
       },
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "지역제한 대상 지역 미확정 — 원문 직접 확인"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역",
+        "업체 실적 필수조건 및 배점",
+        "설계 참여인력·협업 분야·과업기간"
+      ],
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -2478,8 +2491,7 @@
         "status": "unknown",
         "evidence": "지역제한 정보가 API에 없음",
         "verified": false
-      },
-      "base_amount_source": "공고문 텍스트 자동 추출 · 원문 확인 필요"
+      }
     },
     {
       "id": "R26BK01658511-001",
@@ -2524,16 +2536,6 @@
       "performance": "설계실적 보유현황 및 필수·배점 조건 미확인 (감리실적과 별도)",
       "staffing": "설계 참여인력·협업 분야 자격 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01658511&bidPbancOrd=001",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소 등록 및 협업 분야 자격",
-        "업체 실적 필수조건 및 배점",
-        "설계 참여인력·협업 분야·과업기간"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -2545,6 +2547,16 @@
         ],
         "evidence": {}
       },
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역",
+        "건축사사무소 등록 및 협업 분야 자격",
+        "업체 실적 필수조건 및 배점",
+        "설계 참여인력·협업 분야·과업기간"
+      ],
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -3560,6 +3572,82 @@
       "performance": "설계실적 보유현황 및 필수·배점 조건 미확인 (감리실적과 별도)",
       "staffing": "설계 참여인력·협업 분야 자격 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01787236&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역",
+        "건축사사무소 등록 및 협업 분야 자격",
+        "업체 실적 필수조건 및 배점",
+        "설계 참여인력·협업 분야·과업기간"
+      ],
+      "price_analysis": {
+        "status": "계산 불가",
+        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
+        "base_amount": null,
+        "floor_rate": null,
+        "adjustment_rate": null
+      },
+      "region_assessment": {
+        "status": "unknown",
+        "evidence": "지역제한 정보가 API에 없음",
+        "verified": false
+      }
+    },
+    {
+      "id": "R26BK01787249-000",
+      "number": "R26BK01787249",
+      "order": "000",
+      "category": "설계용역",
+      "registration_deadline": null,
+      "submission_deadline": null,
+      "competition_type": null,
+      "workload_status": "과업·기간 원문 확인 필요",
+      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
+      "attachments": [
+        {
+          "name": "공고서[공공건축물 그린리모델링 사업(원용포 등) 기본 및 실시설계 용역].hwpx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787249&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
+        },
+        {
+          "name": "공고서[공공건축물 그린리모델링 사업(원용포 등) 기본 및 실시설계 용역].pdf",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01787249&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
+        }
+      ],
+      "base_amount": null,
+      "floor_rate": null,
+      "raw_qualification": {
+        "industry": "",
+        "participation_region": "",
+        "limited_region": "",
+        "joint_venture": "(없음)공동수급불허",
+        "pq": ""
+      },
+      "title": "공공건축물 그린리모델링 사업(원용포 등) 기본 및 실시설계용역",
+      "agency": "전북특별자치도 무주군",
+      "notice_at": "2026-10-22 18:15:10",
+      "deadline": "2026-10-28 10:00:00",
+      "budget": "46937000",
+      "budget_type": "배정예산",
+      "region": "정보 미확인",
+      "contract": "수의계약",
+      "method": "전자입찰",
+      "priority": "지역 확인 우선",
+      "reasons": [
+        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
+        "설계용역 관련 공고명",
+        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
+      ],
+      "eligibility": "원문 확인 필요",
+      "performance": "설계실적 보유현황 및 필수·배점 조건 미확인 (감리실적과 별도)",
+      "staffing": "설계 참여인력·협업 분야 자격 확인",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01787249&bidPbancOrd=000",
       "document_analysis": {
         "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
         "files": [],
@@ -6850,13 +6938,6 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01788081&bidPbancOrd=001",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -6875,6 +6956,13 @@
           "score_clause": "업수행능력 점수 및 입찰가격 심사방법 (「주택건설공사 감리자지정기준」 [별표] “감리자의 적격심사항목 및 배점기준”)에 의한 점수를 합산하여 최종 예비순위가 확정됩니다. 2) 나라장터의 개찰결과는 종합평가에 의한 우선순위가 아닌 입찰가격에 따른 낙찰하한율 적용순위이며, 낙찰하한율은 사업수행능력 배점(세대별)에 종합평점 85점이 되기 위한 예정가격 대비 최소입찰가격 비율을 말합니다. <참고자료2 참조> 3) 개찰결과 예비 우선순위(1~"
         }
       },
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역"
+      ],
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -6886,8 +6974,7 @@
         "status": "unknown",
         "evidence": "지역제한 정보가 API에 없음",
         "verified": false
-      },
-      "base_amount_source": "공고문 텍스트 자동 추출 · 원문 확인 필요"
+      }
     },
     {
       "id": "R26BK01788894-000",
@@ -6940,13 +7027,6 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01788894&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -6965,6 +7045,13 @@
           "score_clause": "을 받지 않도록 유의하시기 바랍니다. (2) 신청서 제출서류(8.가항의 서류)를 미첨부시 적격심사 대상에서 제외(실격처리) 됩니다. (3) 나라장터 시스템 전자입찰 이용자 등록을 하여야만 전자입찰서 제출이 가능하며, 전자입찰 이용자 등록을 하지 않은 자는 지정 공인인증기관의 인증서를 교부받은 후 조달업체 이용약관에 동의한 다음 나라장터 시스템에 이용자 등록을 하여야 합니다. (4) 전자입찰서 제출확인은 나라장터 시스템의 ‘전자문서함-"
         }
       },
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역"
+      ],
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -6976,8 +7063,7 @@
         "status": "unknown",
         "evidence": "지역제한 정보가 API에 없음",
         "verified": false
-      },
-      "base_amount_source": "공고문 텍스트 자동 추출 · 원문 확인 필요"
+      }
     },
     {
       "id": "R26BK01776519-001",
@@ -7801,13 +7887,6 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01792907&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -7825,6 +7904,13 @@
           "score_clause": ")을 받지않도록 유의하시기 바랍니다. (2) 신청서 제출서류(8.가항의 서류)를 미첨부시 적격심사 대상에서 제외(실격처리) 됩니다. (3) 나라장터 시스템 전자입찰 이용자 등록을 하여야만 전자입찰서 제출이 가능하며, 전자입찰 이용자 등록을 하지 않은 자는 지정 공인인증기관의 인증서를 교부받은 후 조달업체 이용약관에 동의한 다음 나라장터 시스템에 이용자 등록을 하여야 합니다. (4) 전자입찰서 제출확인은 나라장터 시스템의 ‘전자문서함-"
         }
       },
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역"
+      ],
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -7889,13 +7975,6 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01794564&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -7914,6 +7993,13 @@
           "score_clause": "을 받지 않도록 유의하시기 바랍니다. (2) 신청서 제출서류(8.가항의 서류)를 미첨부시 적격심사 대상에서 제외(실격처리) 됩니다. (3) 나라장터 시스템 전자입찰 이용자 등록을 하여야만 전자입찰서 제출이 가능하며, 전자입찰 이용자 등록을 하지 않은 자는 지정 공인인증기관의 인증서를 교부받은 후 조달업체 이용약관에 동의한 다음 나라장터 시스템에 이용자 등록을 하여야 합니다. (4) 전자입찰서 제출확인은 나라장터 시스템의 ‘전자문서함-"
         }
       },
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역"
+      ],
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -7925,8 +8011,7 @@
         "status": "unknown",
         "evidence": "지역제한 정보가 API에 없음",
         "verified": false
-      },
-      "base_amount_source": "공고문 텍스트 자동 추출 · 원문 확인 필요"
+      }
     },
     {
       "id": "R26BK01761985-000",
@@ -9467,6 +9552,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01793972&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -9477,11 +9567,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -9653,6 +9738,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01790983&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -9663,11 +9753,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -10128,6 +10213,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01790448&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -10138,11 +10228,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
