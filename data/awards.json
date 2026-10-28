@@ -1,10 +1,49 @@
 {
   "status": "ready",
-  "updated_at": "2026-10-28T00:58:38+09:00",
+  "updated_at": "2026-10-28T18:58:40+09:00",
   "source": "조달청 나라장터 낙찰정보서비스 - 용역",
   "query_window": "2026-10-20 ~ 2026-10-28",
-  "total_valid": 65,
+  "total_valid": 68,
   "items": [
+    {
+      "id": "R26BK01793519-000",
+      "number": "R26BK01793519",
+      "title": "경천1리 취약지역생활여건개조사업 석면해체공사 감리용역",
+      "category": "석면감리",
+      "agency": "한국농어촌공사 충남지역본부 공주지사",
+      "award_at": "2026-10-28",
+      "award_amount": 19126000,
+      "award_rate": 89.996,
+      "bidder_count": "1",
+      "winner": "",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01793519&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01787236-000",
+      "number": "R26BK01787236",
+      "title": "공공건축물  그린리모델링 사업(공정 등) 기본 및 실시설계용역",
+      "category": "설계용역",
+      "agency": "전북특별자치도 무주군",
+      "award_at": "2026-10-28",
+      "award_amount": 37739380,
+      "award_rate": 88.36,
+      "bidder_count": "6",
+      "winner": "",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01787236&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01786021-000",
+      "number": "R26BK01786021",
+      "title": "휴양림 수련관 리모델링(추인) 공사 실시설계 용역",
+      "category": "설계용역",
+      "agency": "경상북도 의성군",
+      "award_at": "2026-10-28",
+      "award_amount": 26281100,
+      "award_rate": 88.596,
+      "bidder_count": "7",
+      "winner": "",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01786021&bidPbancOrd=000"
+    },
     {
       "id": "R26BK01790732-000",
       "number": "R26BK01790732",
