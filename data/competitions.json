@@ -1,8 +1,35 @@
 {
   "status": "ready",
-  "updated_at": "2026-10-29T01:48:40.290067+09:00",
+  "updated_at": "2026-10-29T19:23:30.051597+09:00",
   "source": "https://www.hub.go.kr/portal/dpsMain.do",
   "items": [
+    {
+      "id": "HUB-D264301476C",
+      "number": "HUB-D264301476C",
+      "title": "홍성군 노인종합복지관 건립사업 제안공모",
+      "category": "설계공모",
+      "agency": "건축HUB 원문 확인",
+      "url": "https://www.hub.go.kr/portal/dpsMain.do",
+      "source_name": "건축HUB · 참가등록 목록",
+      "registration_deadline": "2026-11-03",
+      "registration_precision": "date",
+      "submission_deadline": null,
+      "deadline": "",
+      "budget": 831800000,
+      "budget_type": "설계비 추정가격",
+      "region": "정보 미확인",
+      "eligibility_status": "자격 확인 필요",
+      "priority": "확인 필요",
+      "eligibility_missing": [
+        "참가 지역·설계실적·공동참여 자격",
+        "제출물·모형·발표·현장설명 조건"
+      ],
+      "competition_type": "제안공모",
+      "reasons": [
+        "등록 마감은 날짜만 제공됨 · 마감시각 원문 확인",
+        "홈페이지의 참가등록 목록만 수집 · 전체 공모 목록 아님"
+      ]
+    },
     {
       "id": "HUB-D264201458C",
       "number": "HUB-D264201458C",
@@ -25,33 +52,6 @@
         "제출물·모형·발표·현장설명 조건"
       ],
       "competition_type": "제안공모",
-      "reasons": [
-        "등록 마감은 날짜만 제공됨 · 마감시각 원문 확인",
-        "홈페이지의 참가등록 목록만 수집 · 전체 공모 목록 아님"
-      ]
-    },
-    {
-      "id": "HUB-D264201457C",
-      "number": "HUB-D264201457C",
-      "title": "(가칭)경상북도교육청 봉화도서관 신축공사",
-      "category": "설계공모",
-      "agency": "건축HUB 원문 확인",
-      "url": "https://www.hub.go.kr/portal/dpsMain.do",
-      "source_name": "건축HUB · 참가등록 목록",
-      "registration_deadline": "2026-10-29",
-      "registration_precision": "date",
-      "submission_deadline": null,
-      "deadline": "",
-      "budget": 510095000,
-      "budget_type": "설계비 추정가격",
-      "region": "정보 미확인",
-      "eligibility_status": "자격 확인 필요",
-      "priority": "확인 필요",
-      "eligibility_missing": [
-        "참가 지역·설계실적·공동참여 자격",
-        "제출물·모형·발표·현장설명 조건"
-      ],
-      "competition_type": "공모 방식 원문 확인",
       "reasons": [
         "등록 마감은 날짜만 제공됨 · 마감시각 원문 확인",
         "홈페이지의 참가등록 목록만 수집 · 전체 공모 목록 아님"
