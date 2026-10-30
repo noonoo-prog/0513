@@ -1,5 +1,5 @@
 {
-  "status": "ready",
+  "status": "error",
   "updated_at": "2026-10-30T19:26:25.615202+09:00",
   "source": "https://www.hub.go.kr/portal/dpsMain.do",
   "items": [
@@ -30,5 +30,7 @@
         "홈페이지의 참가등록 목록만 수집 · 전체 공모 목록 아님"
       ]
     }
-  ]
+  ],
+  "attempted_at": "2026-10-31T01:49:00.630323+09:00",
+  "message": "외부 수집 실패 · 이전 자료 유지 (URLError)"
 }
