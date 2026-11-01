@@ -1,10 +1,49 @@
 {
   "status": "ready",
-  "updated_at": "2026-10-30T02:03:32+09:00",
+  "updated_at": "2026-11-01T19:46:11+09:00",
   "source": "조달청 나라장터 낙찰정보서비스 - 용역",
-  "query_window": "2026-10-22 ~ 2026-10-30",
-  "total_valid": 82,
+  "query_window": "2026-10-24 ~ 2026-11-01",
+  "total_valid": 85,
   "items": [
+    {
+      "id": "R26BK01800882-000",
+      "number": "R26BK01800882",
+      "title": "자전거플랫폼 및 호반전망루프 리모델링 실시설계(건축,기계) 용역",
+      "category": "설계용역",
+      "agency": "강원특별자치도 춘천시",
+      "award_at": "2026-10-30",
+      "award_amount": 38800000,
+      "award_rate": 89.39,
+      "bidder_count": "1",
+      "winner": "",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01800882&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01789990-002",
+      "number": "R26BK01789990",
+      "title": "서라벌고등학교 급식실 환경개선공사_설계",
+      "category": "설계용역",
+      "agency": "서울특별시교육청 서라벌고등학교",
+      "award_at": "2026-10-30",
+      "award_amount": 54800000,
+      "award_rate": 100.0,
+      "bidder_count": "1",
+      "winner": "",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01789990&bidPbancOrd=002"
+    },
+    {
+      "id": "R26BK01789821-000",
+      "number": "R26BK01789821",
+      "title": "한국체육대학교 월계관 외벽개선 및 기타공사 설계용역",
+      "category": "설계용역",
+      "agency": "한국체육대학교",
+      "award_at": "2026-10-30",
+      "award_amount": 51557430,
+      "award_rate": 88.002,
+      "bidder_count": "393",
+      "winner": "",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01789821&bidPbancOrd=000"
+    },
     {
       "id": "R26BK01797924-000",
       "number": "R26BK01797924",
