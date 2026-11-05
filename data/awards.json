@@ -1,10 +1,36 @@
 {
   "status": "ready",
-  "updated_at": "2026-11-04T20:25:21+09:00",
+  "updated_at": "2026-11-05T20:24:50+09:00",
   "source": "조달청 나라장터 낙찰정보서비스 - 용역",
-  "query_window": "2026-10-27 ~ 2026-11-04",
-  "total_valid": 105,
+  "query_window": "2026-10-28 ~ 2026-11-05",
+  "total_valid": 107,
   "items": [
+    {
+      "id": "R26BK01811453-000",
+      "number": "R26BK01811453",
+      "title": "서울형 키즈카페 시립 길동생태공원점 조성 건축사 감리용역",
+      "category": "건축감리",
+      "agency": "서울특별시 동부공원여가센터",
+      "award_at": "2026-11-05",
+      "award_amount": 10500000,
+      "award_rate": 95.229,
+      "bidder_count": "1",
+      "winner": "",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01811453&bidPbancOrd=000"
+    },
+    {
+      "id": "R26BK01799425-000",
+      "number": "R26BK01799425",
+      "title": "2026년 천안한들초등학교 체육활동(간이체육실) 환경개선 공사 설계용역 견적 공고 안내",
+      "category": "설계용역",
+      "agency": "충청남도교육청 충청남도천안교육지원청 천안한들초등학교",
+      "award_at": "2026-11-05",
+      "award_amount": 3503336,
+      "award_rate": 90.138,
+      "bidder_count": "14",
+      "winner": "",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01799425&bidPbancOrd=000"
+    },
     {
       "id": "R26BK01808733-000",
       "number": "R26BK01808733",
