@@ -251,7 +251,8 @@
     if(q("#scenarioCalc"))q("#scenarioCalc").onclick=()=>calculate(x);
     if(q("#scoreCalc"))q("#scoreCalc").onclick=()=>calculateScore(x);
   }
-  async function calculate(x){
+  function calculate(x){return calculateAsync(x)}
+  async function calculateAsync(x){
     const q=id=>document.querySelector(id),result=q("#scenarioResult");
     if(!result)return;
     const b=q("#scenarioBase"),f=q("#scenarioFloor"),a=q("#scenarioAdjust"),c=q("#scenarioBidders");
