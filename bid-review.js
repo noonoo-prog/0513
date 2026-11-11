@@ -74,7 +74,10 @@
     let mid=Math.floor(v.length/2);
     return {median:v.length%2?v[mid]:(v[mid-1]+v[mid])/2,n:v.length};
   }
-  function statsFor(cat){return median(history.filter(x=>x.category===cat).map(x=>x.award_rate===null||x.award_rate===undefined?NaN:Number(x.award_rate)))}
+  function statsFor(cat,minBidders=0){
+    return median(history.filter(x=>x.category===cat&&Number(x.bidder_count)>=minBidders)
+      .map(x=>x.award_rate===null||x.award_rate===undefined?NaN:Number(x.award_rate)));
+  }
   function section(title,body){const open=/^1\./.test(title)?" open":"";return '<details class="review-section"'+open+' style="border-top:1px solid #e1e7ed;margin-top:10px"><summary style="font-size:15px;font-weight:800;padding:13px 3px;cursor:pointer;list-style:auto">'+esc(title)+'</summary><div style="padding:0 3px 12px">'+body+'</div></details>'}
   function evidenceHtml(x){
     const doc=x.document_analysis||{};
@@ -141,18 +144,27 @@
   }
   function priceHtml(x){
     const stored=prices[x.id]||{},api=x.price_analysis||{};
-    const base=stored.base!==undefined?stored.base:(x.base_amount||api.base_amount||"");
+    const base=stored.base!==undefined?stored.base:(x.base_amount||api.base_amount||(x.custom&&x.amount?x.amount:""));
     const floor=stored.floor!==undefined?stored.floor:(x.floor_rate||api.floor_rate||"");
     const adjust=stored.adjust!==undefined?stored.adjust:100;
-    const stats=statsFor(x.category);
-    return '<p class="sub">기초금액은 <strong>배정예산·추정가격과 다릅니다.</strong> 공식 기초금액을 확인한 뒤 입력하세요. 낙찰하한율은 공고별 기준을 확인해야 하며, 사정률은 계산 가정입니다.</p>'+
+    const bidders=stored.bidders!==undefined?stored.bidders:5;
+    const stats=statsFor(x.category,2);
+    const autoBase=Number(x.base_amount||api.base_amount||(x.custom&&x.amount?x.amount:0))>0;
+    const autoFloor=Number(x.floor_rate||api.floor_rate)>0;
+    const dataNote=autoBase&&autoFloor
+      ?"이 공고에서 수집한 기초금액·하한율을 자동으로 입력했습니다."
+      :"확인된 값은 자동 입력합니다. "+(!autoBase?"기초금액 ":"")+(!autoFloor?"낙찰하한율 ":"")+"미확인 항목은 원문 값이 필요합니다.";
+    return '<p class="sub" style="margin-top:0">'+esc(dataNote)+' 예산·추정가격을 기초금액으로 임의 대체하지 않습니다.</p>'+
       '<div class="form-grid" style="margin-top:12px">'+
-      '<div class="form-item"><label for="scenarioBase">기초금액 (원)</label><input class="field" id="scenarioBase" type="number" min="1" step="1" placeholder="공식 기초금액" value="'+esc(base)+'"></div>'+
-      '<div class="form-item"><label for="scenarioFloor">해당 공고 낙찰하한율 (%)</label><input class="field" id="scenarioFloor" type="number" min="75" max="100" step="0.001" placeholder="원문 하한율" value="'+esc(floor)+'"></div>'+
+      '<div class="form-item"><label for="scenarioBase">기초금액 (원)</label><input class="field" id="scenarioBase" type="number" min="1" step="1" placeholder="공고에 없으면 직접 입력" value="'+esc(base)+'"></div>'+
+      '<div class="form-item"><label for="scenarioFloor">공고 낙찰하한율 (%)</label><input class="field" id="scenarioFloor" type="number" min="75" max="100" step="0.001" placeholder="공고별 하한율" value="'+esc(floor)+'"></div>'+
       '<div class="form-item"><label for="scenarioAdjust">예정가격 사정률 가정 (%)</label><input class="field" id="scenarioAdjust" type="number" min="90" max="110" step="0.01" value="'+esc(adjust)+'"></div>'+
-      '<div class="form-item"><label>과거 같은 분야 낙찰률</label><div class="field" style="background:#f6f8fb">'+(stats.median!==null?stats.median.toFixed(3)+"% · "+stats.n+"건":"유효 표본 "+stats.n+"건 · 통계 보류")+'</div></div></div>'+
+      '<div class="form-item"><label for="scenarioBidders">예상 참가업체 수 (2개 이상)</label><input class="field" id="scenarioBidders" type="number" min="2" max="500" step="1" value="'+esc(bidders)+'"></div>'+
+      '<div class="form-item full"><label>같은 분야 실제 낙찰률 · 2개 업체 이상 참가 사례</label><div class="field" style="background:#f6f8fb">'+
+      (stats.median!==null?stats.median.toFixed(3)+"% · 최근 "+stats.n+"건 중앙값":"유효 표본 "+stats.n+"건 · 5건 미만이므로 통계 보류")+
+      '</div></div></div>'+
       '<div class="actions" style="margin-top:5px"><button class="btn primary" id="scenarioCalc" type="button">투찰금액 시나리오 계산</button></div>'+
-      '<div id="scenarioResult" class="calc" aria-live="polite" style="margin-top:13px">공식 기초금액과 해당 공고의 하한율을 입력하면, 사정률 가정에 따른 금액을 계산합니다.</div>';
+      '<div id="scenarioResult" class="calc" aria-live="polite" style="margin-top:13px">버튼을 누르면 참가업체 2·3·5·10·15개 경쟁 시나리오를 자동 비교합니다.</div>';
   }
   function show(x){
     const current=status(x);
@@ -199,33 +211,74 @@
   }
   function calculate(x){
     const q=id=>document.querySelector(id),result=q("#scenarioResult");
-    const base=Number(q("#scenarioBase").value),floor=Number(q("#scenarioFloor").value),adjust=Number(q("#scenarioAdjust").value);
-    if(!Number.isFinite(base)||base<=0||!Number.isFinite(floor)||floor<75||floor>100||
-       !Number.isFinite(adjust)||adjust<90||adjust>110){
-      result.textContent="공식 기초금액(1원 이상), 공고 하한율(75~100%), 사정률 가정(90~110%)을 확인해 주세요.";
+    if(!result)return;
+    const b=q("#scenarioBase"),f=q("#scenarioFloor"),a=q("#scenarioAdjust"),c=q("#scenarioBidders");
+    const base=Number(b.value),floor=Number(f.value),adjust=Number(a.value),bidders=Number(c.value);
+    const missing=[];
+    if(!b.value.trim())missing.push("공식 기초금액");
+    if(!f.value.trim())missing.push("공고 낙찰하한율");
+    if(missing.length){
+      result.innerHTML='<strong>자동 계산에 필요한 공고 정보가 없습니다: '+esc(missing.join(" · "))+'</strong>'+
+        '<div class="lead" style="margin-top:8px">확인된 값은 위 입력란에 자동 채웠습니다. 미확인 값은 해당 공고에서 확인해 입력해 주세요. 배정예산이나 임의 하한율로 금액을 만들지 않습니다.</div>'+
+        '<div class="lead" style="margin-top:7px">참가업체 수 '+esc(c.value||"5")+'개 가정은 적용 가능하지만, 금액 두 항목이 있어야 원 단위 결과를 계산할 수 있습니다.</div>';
       return;
     }
-    prices[x.id]={base,floor,adjust,updatedAt:new Date().toISOString()};
+    if(!Number.isFinite(base)||base<=0||!Number.isFinite(floor)||floor<75||floor>100||
+       !Number.isFinite(adjust)||adjust<90||adjust>110||
+       !Number.isInteger(bidders)||bidders<2||bidders>500){
+      result.textContent="기초금액 1원 이상, 공고 하한율 75~100%, 사정률 90~110%, 참가업체 수는 정수 2~500개로 입력하세요.";
+      return;
+    }
+    prices[x.id]={base,floor,adjust,bidders,updatedAt:new Date().toISOString()};
     localStorage.setItem(PRICE_KEY,JSON.stringify(prices));
-    const estimated=base*adjust/100,threshold=Math.round(estimated*floor/100);
-    const stats=statsFor(x.category),verified=status(x).startsWith("참가 가능");
-    const scenario=(n)=>amount(Math.round(base*n/100*floor/100));
+    const estimated=base*adjust/100;
+    const threshold=Math.ceil(estimated*floor/100);
+    const historicalStats=statsFor(x.category,2);
+    const verified=status(x).startsWith("참가 가능");
+    const priceAt=rate=>amount(Math.max(threshold,Math.ceil(estimated*rate/100)));
+    // 단순 민감도 모델: 각 경쟁 투찰률이 [하한율, 하한율+1%p]에 균등하고
+    // 그중 가장 낮은 유효 투찰금액이 선택된다는 가정. 실제 입찰자 분포/낙찰확률이 아님.
+    const assumedRate=(n,p)=>Math.min(100,floor+1-Math.pow(p,1/(n-1)));
+    const candidates=[...new Set([2,3,5,10,15,bidders])].sort((l,r)=>l-r);
+    const grid=candidates.map(n=>{
+      const rate=assumedRate(n,0.5);
+      const selected=n===bidders;
+      return '<tr'+(selected?' style="background:#eaf6fb;font-weight:800"':'')+'>'+
+        '<td style="padding:9px 6px;border-bottom:1px solid #e1e7ed">'+n+'개'+(selected?' · 선택':'')+'</td>'+
+        '<td style="padding:9px 6px;border-bottom:1px solid #e1e7ed;text-align:right">'+rate.toFixed(4)+'%</td>'+
+        '<td style="padding:9px 6px;border-bottom:1px solid #e1e7ed;text-align:right;white-space:nowrap">'+priceAt(rate)+'</td></tr>';
+    }).join("");
+    const chosen=[
+      ["하한 근접",0.7],
+      ["경쟁 중간",0.5],
+      ["여유 구간",0.3]
+    ].map(([name,p])=>{
+      const rate=assumedRate(bidders,p);
+      return '<div class="vcell"><span>'+name+' · '+rate.toFixed(4)+'%</span><b>'+priceAt(rate)+'</b></div>';
+    }).join("");
+    const officialSource=Number(x.base_amount||x.price_analysis&&x.price_analysis.base_amount)>0&&Number(x.floor_rate||x.price_analysis&&x.price_analysis.floor_rate)>0;
+    const sourceNote=officialSource?"수집된 공고 기준값 또는 사용자가 수정해 저장한 입력값":"사용자가 확인해 입력·저장한 기준값";
     let historical="";
-    if(stats.median!==null){
-      historical='<div class="lead">유사 분야 과거 낙찰률 중앙값 '+stats.median.toFixed(3)+'% ('+stats.n+'건) · 예정가격 대비</div>';
-      if(verified&&stats.median>=floor){
-        historical+='<div><strong>비교용 참고 후보금액: '+amount(Math.round(estimated*stats.median/100))+'</strong></div>';
-      }else{
-        historical+='<div class="lead">원문 참가자격/해당 하한율 조건이 검증되기 전에는 과거 낙찰률로 투찰 후보를 추천하지 않습니다.</div>';
-      }
-    }else{historical='<div class="lead">유사 낙찰 사례 5건 미만 · 통계기반 참고금액 없음</div>'}
-    result.innerHTML='<div class="lead">'+(verified?"직접 참가조건 확인 기록 있음":"자격 확인 전 · 계산값은 추천 투찰가 아님")+'</div>'+
-      '<div style="margin:7px 0"><strong>예정가격 가정: '+amount(Math.round(estimated))+'</strong></div>'+
-      '<div style="margin:7px 0"><strong>가정 하한선: '+amount(threshold)+'</strong></div>'+
-      '<div class="lead">사정률 99% 하한선 '+scenario(99)+' / 101% 하한선 '+scenario(101)+'</div>'+
-      '<div class="lead" style="margin:8px 0">기초금액 × 사정률 가정 × 공고 하한율입니다. 예상 예정가격을 확정하지 않으며 낙찰을 보장하지 않습니다.</div>'+
+    if(historicalStats.median!==null){
+      historical='<div class="lead" style="margin-top:9px">같은 분야·참가업체 2개 이상 최근 낙찰률 중앙값: '+historicalStats.median.toFixed(3)+'% ('+historicalStats.n+'건, 예정가격 대비). 현재 경쟁자 투찰 분포를 뜻하지 않습니다.</div>';
+    }else{
+      historical='<div class="lead" style="margin-top:9px">동일 분야 2개 이상 참가 낙찰사례가 5건 미만이므로 통계 비교는 보류합니다.</div>';
+    }
+    result.innerHTML='<div class="lead">'+(verified?"참가요건 직접 확인 기록 있음":"참가자격 확인 전 · 참고 계산")+' · '+sourceNote+'</div>'+
+      '<div class="viewgrid" style="margin-top:9px">'+
+        '<div class="vcell"><span>예정가격 가정</span><b>'+amount(Math.round(estimated))+'</b></div>'+
+        '<div class="vcell"><span>가정 낙찰하한선 (올림)</span><b>'+amount(threshold)+'</b></div>'+
+      '</div>'+
+      '<div style="margin:13px 0 7px;font-weight:800">참가업체 '+bidders+'개 · 가정 투찰금액 3가지</div>'+
+      '<div class="viewgrid">'+chosen+'</div>'+
+      '<div style="margin:14px 0 7px;font-weight:800">업체 수별 비교 · 2개 이상</div>'+
+      '<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:12px;min-width:335px">'+
+      '<thead><tr><th style="text-align:left;padding:9px 6px;border-bottom:2px solid #c5d6e2">참가</th>'+
+      '<th style="text-align:right;padding:9px 6px;border-bottom:2px solid #c5d6e2">가정 투찰률</th>'+
+      '<th style="text-align:right;padding:9px 6px;border-bottom:2px solid #c5d6e2">가정 금액</th></tr></thead><tbody>'+grid+'</tbody></table></div>'+
+      '<div class="lead" style="margin-top:9px"><strong>계산 가정:</strong> 각 참가업체의 투찰률이 하한율부터 하한율+1.0%p 사이에 균등하게 퍼져 있고, 적격업체 중 최저가를 선정하는 단순 모형입니다. 참가업체 수 증가에 따른 민감도만 보여줍니다. 실제 업체의 투찰분포·예정가격·낙찰확률을 예측한 결과가 아니며, 공고별 적격심사·동가·점수 기준 등은 반영하지 않습니다.</div>'+
       historical+
-      '<div class="lead" style="margin-top:8px">실제 투찰 전 원문, 법령, 최신 정정공고, PQ·적격심사 점수, 보험료 등 금액 조정항목을 확인하세요.</div>';
+      '<div class="lead" style="margin-top:7px">실제 투찰 전 최신 정정공고, 하한율·예정가격 산정, 참가자격, 적격심사 점수와 보험료 등 공고별 조정금액을 확인해야 합니다. 위 금액은 투찰 추천가가 아닙니다.</div>';
   }
   async function loadHistory(){
     try{
