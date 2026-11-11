@@ -64,6 +64,14 @@ summary{cursor:pointer;font-weight:700}summary:focus-visible{outline:3px solid #
 @media(max-width:950px){.list-head,.bid{grid-template-columns:60px minmax(0,1fr) 130px 135px 40px;gap:10px}.row-status{grid-column:2/5;display:flex;flex-wrap:wrap}.list-head .status-heading{display:none}.bid .fav{grid-column:5;grid-row:1}.advanced-filters{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:720px){.sidebar{padding:12px}.sidebar>.filter-group{max-width:none}.sidebar.expanded .advanced-filters{display:grid;grid-template-columns:1fr}.list-head{display:none}.list{border:0;background:transparent;gap:12px;overflow:visible}.bid{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;padding:15px;border:1px solid var(--line);border-radius:10px;background:white}.bid:last-child{border-bottom:1px solid var(--line)}.row-category{grid-column:1/-1;padding-right:42px;color:var(--accent)}.row-title{grid-column:1/-1;padding-right:0}.bid .fav{position:absolute;right:10px;top:6px}.row-price{grid-column:1}.row-deadline{grid-column:2}.row-status{grid-column:1/-1;display:flex;border-top:1px solid var(--line);padding-top:9px}.mobile-label{display:block;font-size:11px;color:var(--muted)}.row-title .review{margin-top:7px}.hero p{font-size:12px}.hero-actions{margin-top:10px}.metrics{margin-bottom:12px}.quickbar{gap:6px;margin-bottom:12px}}
 @media(min-width:721px){.mobile-filter-toggle{display:inline-flex}.sidebar .advanced-filters{display:none}.sidebar.expanded .advanced-filters{display:grid}.sidebar>.filter-group{max-width:none;margin-bottom:0}.hero{padding:12px 0}.view-tabs{padding:6px 0}.metrics{margin-bottom:10px}.quickbar{display:inline-flex;margin-right:12px;margin-bottom:10px}}
+
+/* Supervision category colors: text labels remain for color-independent recognition. */
+.bid[data-category="건축감리"]{--category-ink:#075985;--category-bg:#e0f2fe;--category-line:#0284c7}
+.bid[data-category="해체감리"]{--category-ink:#9a3412;--category-bg:#ffedd5;--category-line:#ea580c}
+.bid[data-category="석면감리"]{--category-ink:#6b21a8;--category-bg:#f3e8ff;--category-line:#9333ea}
+.category-badge{display:inline-block;white-space:nowrap;font-size:12px;font-weight:800;padding:5px 7px;border-radius:6px;color:var(--category-ink,#49667c);background:var(--category-bg,#edf2f6);line-height:1.5}
+.bid[data-category$="감리"]{box-shadow:inset 3px 0 0 var(--category-line,#94a3b8)}
+@media(min-width:721px){.row-category{margin-left:-5px}}
 </style></head><body>
 <header class="top"><div class="shell bar"><a class="brand" href="./index.html" aria-label="상어 레이더 입찰공고"><span class="logo">S</span><span>상어 레이더<small>설계 · 감리 · 설계공모</small></span></a><div class="right"><span class="tiny" id="collectorBadge"><span class="dot"></span>자동 수집 연결 확인 중</span><details class="tool-menu"><summary class="btn sm">관리 · 내보내기</summary><div class="tool-items"><button class="btn sm" id="exportBtn">CSV 내보내기</button><button class="btn primary sm" id="addBtn">＋ 공고 추가</button></div></details></div></div></header>
 <div class="navband"><nav class="shell view-tabs" aria-label="입찰·낙찰 화면"><a class="view-tab active" aria-current="page" href="./index.html">일거리 찾기</a><a class="view-tab" href="./awards.html">낙찰정보</a></nav></div>
@@ -151,8 +159,8 @@ function compareSmall(a,b){
 function renderRow(x){
  const competition=x.category==='설계공모';
  const date=(value)=>value?esc(dt(value)):'원문 확인 필요';
- return `<article class="bid">
- <div class="row-category">${esc(x.category||'건축감리')}</div>
+ return `<article class="bid" data-category="${esc(x.category||'건축감리')}">
+ <div class="row-category"><span class="category-badge">${esc(x.category||'건축감리')}</span></div>
  <div class="row-title"><h3><button class="title-button" data-view="${esc(x.id)}">${esc(x.title)}</button></h3><div class="row-meta">${esc(x.agency)} · ${esc(x.id)}<a class="source" href="${esc(validUrl(x.source)?x.source:'https://www.g2b.go.kr/')}" target="_blank" rel="noopener">원문 ↗</a></div><div class="review brief-review">${compactReview(x)}</div>${competition?`<button class="btn sm" data-workload="${esc(x.id)}">${esc(window.CompetitionWorkload?.get(x).label||'준비 부담 미확인')}</button>`:''}${x.custom?`<button class="btn sm" data-del="${esc(x.id)}">삭제</button>`:''}</div>
  <div class="row-price"><small>${esc(x.amountType||'표시금액')}</small><strong>${won(x.amount)}</strong></div>
  <div class="row-deadline">${competition?`<small>참가등록</small>${x.registration_precision==='date'?esc(x.registration_deadline||'원문 확인 필요')+' (시각 확인)':date(x.registration_deadline)}<small>작품제출</small>${date(x.submission_deadline)}`:`<span class="tag ${deadlineClass(x)}">${days(x)}</span><small>마감일시</small>${date(x.deadline)}`}</div>
