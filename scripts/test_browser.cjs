@@ -74,7 +74,7 @@ const assert = require("node:assert/strict");
     await scopePage.locator("#closeModal").click();
     await scopePage.locator('[data-work="competition"]').click();
     assert.equal(await scopePage.locator("#cards article").count(),1);
-    assert.match(await scopePage.locator(".row-deadline").innerText(),/작품제출\\s+원문 확인 필요/);
+    assert.match(await scopePage.locator(".row-deadline").innerText(),/작품제출\s+원문 확인 필요/);
     assert(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),"mobile must not overflow horizontally");
     await scopePage.locator('[data-view]').click();
     assert.equal(await scopePage.locator("#scenarioCalc").count(),0);
