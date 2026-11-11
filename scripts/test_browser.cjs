@@ -35,6 +35,7 @@ const assert = require("node:assert/strict");
 
     await page.locator('[data-quick="priority"]').click();
     await page.locator('[data-quick="all"]').click();
+    await page.locator("#mobileFiltersToggle").click();
     await page.locator("#regionFilter").selectOption("unknown");
     await page.locator("#regionFilter").selectOption("all");
     await page.locator("#sort").selectOption("deadline");
@@ -64,6 +65,7 @@ const assert = require("node:assert/strict");
       {id:"SCOPE-C",number:"SCOPE-C",title:"도서관 간이 설계공모",category:"설계공모",deadline:"2099-12-02 10:00",budget:30000000}
     ];
     await scopePage.route("**/data/bids.json?*",route=>route.fulfill({json:{status:"ready",scope_version:2,items:fixtures}}));
+    await scopePage.route("**/data/competitions.json?*",route=>route.fulfill({json:{status:"ready",items:[]}}));
     await scopePage.goto("http://127.0.0.1:8765/index.html");
     await scopePage.locator('[data-work="design"]').click();
     assert.equal(await scopePage.locator("#cards article").count(),1);
@@ -72,7 +74,8 @@ const assert = require("node:assert/strict");
     await scopePage.locator("#closeModal").click();
     await scopePage.locator('[data-work="competition"]').click();
     assert.equal(await scopePage.locator("#cards article").count(),1);
-    assert((await scopePage.locator("#cards").innerText()).includes("작품제출: 원문 확인 필요"));
+    assert.match(await scopePage.locator(".row-deadline").innerText(),/작품제출\\s+원문 확인 필요/);
+    assert(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),"mobile must not overflow horizontally");
     await scopePage.locator('[data-view]').click();
     assert.equal(await scopePage.locator("#scenarioCalc").count(),0);
     assert.equal(scopeErrors.length,0,scopeErrors.join(" | "));
