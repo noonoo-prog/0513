@@ -7,10 +7,10 @@
     "해체감리",
     "석면감리"
   ],
-  "updated_at": "2026-11-14T19:46:22+09:00",
+  "updated_at": "2026-11-15T20:22:19+09:00",
   "status": "ready",
   "source": "조달청 나라장터 입찰공고정보서비스",
-  "query_window": "2026-11-09 ~ 2026-11-14",
+  "query_window": "2026-11-10 ~ 2026-11-15",
   "total_matches": 107,
   "items": [
     {
@@ -108,656 +108,6 @@
         "status": "unknown",
         "evidence": "지역제한 정보가 API에 없음",
         "verified": false
-      }
-    },
-    {
-      "id": "R26BK01819791-000",
-      "number": "R26BK01819791",
-      "order": "000",
-      "category": "석면감리",
-      "registration_deadline": null,
-      "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
-      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
-      "attachments": [
-        {
-          "name": "공고문(대전장대초 석면철거공사 석면감리용역).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819791&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "과업설명서(대전장대초 석면철거공사 감리용역).hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819791&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "산출서(대전장대초 석면철거공사 감리용역)-공고용.xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819791&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "대전장대초 석면철거공사 석면감리용역",
-      "agency": "대전광역시교육청 대전광역시서부교육지원청",
-      "notice_at": "2026-11-10 16:39:22",
-      "deadline": "2026-11-16 10:00:00",
-      "budget": "26070000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "수의계약",
-      "method": "전자입찰",
-      "priority": "제외",
-      "reasons": [
-        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
-        "석면감리 관련 공고명",
-        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01819791&bidPbancOrd=000",
-      "document_analysis": {
-        "status": "일부 텍스트 자동 추출",
-        "files": [
-          {
-            "name": "공고문(대전장대초 석면철거공사 석면감리용역).pdf",
-            "format": "PDF",
-            "status": "본문 추출됨"
-          }
-        ],
-        "evidence": {
-          "region_clause": "찰 장 소 국가종합전자조달시스템 (http://www.g2b.go.kr) 2. 계약방법 가. 조달청 국가종합전자조달시스템(g2b)을 통해 총액으로 견적을 제출해야 합니다. 나. 지역제한(대전광역시), 공동수급 불허 대상 용역입니다. 다. 청렴서약제가 적용되는 용역입니다. 라. 전자계약 및 전자청구 대상입니다. 마. 본 용역은「엔지니어링사업진흥법 시행령」제42조에 따라 손해배상보험(공제)을 가입하여야 하며, 손해배상보험(공제)증권을 수요기관에 제출하여야 합니다. 바. 본 용역은 부가가치세가 포함된 금액이므로 입찰자가 면세사업자인 경우 입찰금액은 반드시 부가가치세를 포함하여 투찰하여야 하며, 입찰결과 낙찰자가 면세사업자인 경우 낙찰금액에서 부가가",
-          "license_clause": "한 취업 포함)을 제공하지 않을 것이며, 이를 위반하면 「지방계약법」제31조제1항제7호에 따른 부정당업자의 입찰참가자격 제한 처분을 받겠습니다. 2. 특정인의 낙찰을 위한 담합 등 입찰의 자유경쟁을 방해하는 행위나 불공정한 행위 시에는 「지방계약법」제31조제1항제2호에 따른 부정당업자의 입찰참가자격 제한 처분을 받겠습니다. 3. 공정한 직무수행을 방해하는 알선․청탁을 통하여 입찰 또는 계약과 관련된 특정 정보의 제공을 요구하거나 받는 행위를 하지 않겠습니다. 4. 회사 임․직원이 관계 직원에게 금품․향응 등을 제공하거나 담합 등 불공정행위를 하지 않도록 교육하고 내부비리 제보자에 대해서도 일체의 불이익처분을 하지 않겠습니다. 관계 직원이 금품・향응 등을 요구할 경우에는 아래 부패·공익신고센터로 신고하여 주시기 바랍니다. 전화신고: 1",
-          "staffing_clause": "합니다. 나. 「석면안전관리법」 제30조의2에 따라 석면해체작업감리인을 등록한 업체로서 「석면해체작업감리인 기준」에서 정한 배치기준에 적격한 교육을 이수 받은 고급감리원 또는 일반감리원이 소속된 업체이어야 합니다. ※ 「석면해체작업감리인 기준」 제3조에 따라 다음 각 호의 어느 하나에 해당하는 자는 해당 석면해체·제거작업의 감리인이 될 수 없습니다. 1. 해당 건축물이나 설비에 대한 석면해체·제거작업을 수행하는 자 2. 해당 건축물이나 설비에 대하여 석면조사를 실시한 기관 3. 법 제28조 및 같은법 시행규칙 제38조제1항에 따라 당해 석면해체·제거 사업장의 석면 비산 정도를 측정하는 기관(이하 ‘석면 비산 정도 측정기관’이라 한다) 4.「산업안전보건법」제124조 및 같은법 시행규칙 제184조에",
-          "base_evidence": "1] 수의계약 배제사유에 해당하지 않는 자로 합니다. 라. 예정가격은 기초금액의 ±3% 범위 내에서 정한 복수예비가격 15개를 작성하여 입찰참가자가 2개씩 전자 추첨하여 가장 많이 선택된 4개의 예비가격을 산술 평균한 가격으로 합니다. 마. 동일 가격으로 견적서를 제출한 자가 2인 이상일 경우, 「국가종합전자조달 시스",
-          "score_clause": "므로 이를 확인하지 않아 발생하는 책임은 입찰 참가자에게 있습니다. 사. 본 견적제출건은 적격심사 제외 대상입니다. 아. 최종 낙찰자는 통지를 받은 후 10일 이내에 계약에 필요한 서류를 갖추고 계약을 체결하여야 합니다. 자. 납품완료 된 설계도서의 저작권은 대전광역시서부교육지원청에 귀속됩니다. 7. 견적제출의 무효 「지방자치단체를 당사자로 하는 계약에 관한 법률시행령」 제39조 및 같은 법 시행규칙 제42조와 「지방자치단체 입찰 및"
-        }
-      },
-      "eligibility_status": "참가 불가",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "공고문 서울 외 지역제한: 대전광역시",
-        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
-      ],
-      "eligibility_missing": [
-        "업체 실적 필수조건 및 배점",
-        "석면해체작업 감리인 지정·등록 요건"
-      ],
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      },
-      "region_assessment": {
-        "status": "excluded",
-        "evidence": "공고문 서울 외 지역제한: 대전광역시",
-        "verified": true
-      }
-    },
-    {
-      "id": "R26BK01820423-000",
-      "number": "R26BK01820423",
-      "order": "000",
-      "category": "석면감리",
-      "registration_deadline": null,
-      "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
-      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
-      "attachments": [
-        {
-          "name": "공고문(대전정림중 석면철거공사 석면감리용역).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820423&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "과업설명서(대전정림중 석면철거공사 감리용역).hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820423&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "산출서(대전정림중 석면철거공사 감리용역)-공고용.xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820423&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "대전정림중 석면철거공사 석면감리용역",
-      "agency": "대전광역시교육청 대전광역시서부교육지원청",
-      "notice_at": "2026-11-10 17:08:40",
-      "deadline": "2026-11-16 10:00:00",
-      "budget": "27082000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "수의계약",
-      "method": "전자입찰",
-      "priority": "제외",
-      "reasons": [
-        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
-        "석면감리 관련 공고명",
-        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01820423&bidPbancOrd=000",
-      "document_analysis": {
-        "status": "일부 텍스트 자동 추출",
-        "files": [
-          {
-            "name": "공고문(대전정림중 석면철거공사 석면감리용역).pdf",
-            "format": "PDF",
-            "status": "본문 추출됨"
-          }
-        ],
-        "evidence": {
-          "region_clause": "찰 장 소 국가종합전자조달시스템 (http://www.g2b.go.kr) 2. 계약방법 가. 조달청 국가종합전자조달시스템(g2b)을 통해 총액으로 견적을 제출해야 합니다. 나. 지역제한(대전광역시), 공동수급 불허 대상 용역입니다. 다. 청렴서약제가 적용되는 용역입니다. 라. 전자계약 및 전자청구 대상입니다. 마. 본 용역은「엔지니어링사업진흥법 시행령」제42조에 따라 손해배상보험(공제)을 가입하여야 하며, 손해배상보험(공제)증권을 수요기관에 제출하여야 합니다. 바. 본 용역은 부가가치세가 포함된 금액이므로 입찰자가 면세사업자인 경우 입찰금액은 반드시 부가가치세를 포함하여 투찰하여야 하며, 입찰결과 낙찰자가 면세사업자인 경우 낙찰금액에서 부가가",
-          "license_clause": "한 취업 포함)을 제공하지 않을 것이며, 이를 위반하면 「지방계약법」제31조제1항제7호에 따른 부정당업자의 입찰참가자격 제한 처분을 받겠습니다. 2. 특정인의 낙찰을 위한 담합 등 입찰의 자유경쟁을 방해하는 행위나 불공정한 행위 시에는 「지방계약법」제31조제1항제2호에 따른 부정당업자의 입찰참가자격 제한 처분을 받겠습니다. 3. 공정한 직무수행을 방해하는 알선․청탁을 통하여 입찰 또는 계약과 관련된 특정 정보의 제공을 요구하거나 받는 행위를 하지 않겠습니다. 4. 회사 임․직원이 관계 직원에게 금품․향응 등을 제공하거나 담합 등 불공정행위를 하지 않도록 교육하고 내부비리 제보자에 대해서도 일체의 불이익처분을 하지 않겠습니다. 관계 직원이 금품・향응 등을 요구할 경우에는 아래 부패·공익신고센터로 신고하여 주시기 바랍니다. 전화신고: 1",
-          "staffing_clause": "합니다. 나. 「석면안전관리법」 제30조의2에 따라 석면해체작업감리인을 등록한 업체로서 「석면해체작업감리인 기준」에서 정한 배치기준에 적격한 교육을 이수 받은 고급감리원 또는 일반감리원이 소속된 업체이어야 합니다. ※ 「석면해체작업감리인 기준」 제3조에 따라 다음 각 호의 어느 하나에 해당하는 자는 해당 석면해체·제거작업의 감리인이 될 수 없습니다. 1. 해당 건축물이나 설비에 대한 석면해체·제거작업을 수행하는 자 2. 해당 건축물이나 설비에 대하여 석면조사를 실시한 기관 3. 법 제28조 및 같은법 시행규칙 제38조제1항에 따라 당해 석면해체·제거 사업장의 석면 비산 정도를 측정하는 기관(이하 ‘석면 비산 정도 측정기관’이라 한다) 4.「산업안전보건법」제124조 및 같은법 시행규칙 제184조에",
-          "base_evidence": "1] 수의계약 배제사유에 해당하지 않는 자로 합니다. 라. 예정가격은 기초금액의 ±3% 범위 내에서 정한 복수예비가격 15개를 작성하여 입찰참가자가 2개씩 전자 추첨하여 가장 많이 선택된 4개의 예비가격을 산술 평균한 가격으로 합니다. 마. 동일 가격으로 견적서를 제출한 자가 2인 이상일 경우, 「국가종합전자조달 시스",
-          "score_clause": "므로 이를 확인하지 않아 발생하는 책임은 입찰 참가자에게 있습니다. 사. 본 견적제출건은 적격심사 제외 대상입니다. 아. 최종 낙찰자는 통지를 받은 후 10일 이내에 계약에 필요한 서류를 갖추고 계약을 체결하여야 합니다. 자. 납품완료 된 설계도서의 저작권은 대전광역시서부교육지원청에 귀속됩니다. 7. 견적제출의 무효 「지방자치단체를 당사자로 하는 계약에 관한 법률시행령」 제39조 및 같은 법 시행규칙 제42조와 「지방자치단체 입찰 및"
-        }
-      },
-      "eligibility_status": "참가 불가",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "공고문 서울 외 지역제한: 대전광역시",
-        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
-      ],
-      "eligibility_missing": [
-        "업체 실적 필수조건 및 배점",
-        "석면해체작업 감리인 지정·등록 요건"
-      ],
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      },
-      "region_assessment": {
-        "status": "excluded",
-        "evidence": "공고문 서울 외 지역제한: 대전광역시",
-        "verified": true
-      }
-    },
-    {
-      "id": "R26BK01820529-000",
-      "number": "R26BK01820529",
-      "order": "000",
-      "category": "석면감리",
-      "registration_deadline": null,
-      "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
-      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
-      "attachments": [
-        {
-          "name": "공고문(대전갑천초 석면철거공사 석면감리용역).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820529&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "과업설명서(대전갑천초 석면철거공사 석면감리용역).hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820529&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "산출서(대전갑천초 석면철거공사 감리용역)-공고용.xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820529&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "대전갑천초 석면철거공사 석면감리용역",
-      "agency": "대전광역시교육청 대전광역시서부교육지원청",
-      "notice_at": "2026-11-10 17:18:29",
-      "deadline": "2026-11-16 10:00:00",
-      "budget": "25047000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "수의계약",
-      "method": "전자입찰",
-      "priority": "제외",
-      "reasons": [
-        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
-        "석면감리 관련 공고명",
-        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01820529&bidPbancOrd=000",
-      "document_analysis": {
-        "status": "일부 텍스트 자동 추출",
-        "files": [
-          {
-            "name": "공고문(대전갑천초 석면철거공사 석면감리용역).pdf",
-            "format": "PDF",
-            "status": "본문 추출됨"
-          }
-        ],
-        "evidence": {
-          "region_clause": "찰 장 소 국가종합전자조달시스템 (http://www.g2b.go.kr) 2. 계약방법 가. 조달청 국가종합전자조달시스템(g2b)을 통해 총액으로 견적을 제출해야 합니다. 나. 지역제한(대전광역시), 공동수급 불허 대상 용역입니다. 다. 청렴서약제가 적용되는 용역입니다. 라. 전자계약 및 전자청구 대상입니다. 마. 본 용역은「엔지니어링사업진흥법 시행령」제42조에 따라 손해배상보험(공제)을 가입하여야 하며, 손해배상보험(공제)증권을 수요기관에 제출하여야 합니다. 바. 본 용역은 부가가치세가 포함된 금액이므로 입찰자가 면세사업자인 경우 입찰금액은 반드시 부가가치세를 포함하여 투찰하여야 하며, 입찰결과 낙찰자가 면세사업자인 경우 낙찰금액에서 부가가",
-          "license_clause": "한 취업 포함)을 제공하지 않을 것이며, 이를 위반하면 「지방계약법」제31조제1항제7호에 따른 부정당업자의 입찰참가자격 제한 처분을 받겠습니다. 2. 특정인의 낙찰을 위한 담합 등 입찰의 자유경쟁을 방해하는 행위나 불공정한 행위 시에는 「지방계약법」제31조제1항제2호에 따른 부정당업자의 입찰참가자격 제한 처분을 받겠습니다. 3. 공정한 직무수행을 방해하는 알선․청탁을 통하여 입찰 또는 계약과 관련된 특정 정보의 제공을 요구하거나 받는 행위를 하지 않겠습니다. 4. 회사 임․직원이 관계 직원에게 금품․향응 등을 제공하거나 담합 등 불공정행위를 하지 않도록 교육하고 내부비리 제보자에 대해서도 일체의 불이익처분을 하지 않겠습니다. 관계 직원이 금품・향응 등을 요구할 경우에는 아래 부패·공익신고센터로 신고하여 주시기 바랍니다. 전화신고: 1",
-          "staffing_clause": "합니다. 나. 「석면안전관리법」 제30조의2에 따라 석면해체작업감리인을 등록한 업체로서 「석면해체작업감리인 기준」에서 정한 배치기준에 적격한 교육을 이수 받은 고급감리원 또는 일반감리원이 소속된 업체이어야 합니다. ※ 「석면해체작업감리인 기준」 제3조에 따라 다음 각 호의 어느 하나에 해당하는 자는 해당 석면해체·제거작업의 감리인이 될 수 없습니다. 1. 해당 건축물이나 설비에 대한 석면해체·제거작업을 수행하는 자 2. 해당 건축물이나 설비에 대하여 석면조사를 실시한 기관 3. 법 제28조 및 같은법 시행규칙 제38조제1항에 따라 당해 석면해체·제거 사업장의 석면 비산 정도를 측정하는 기관(이하 ‘석면 비산 정도 측정기관’이라 한다) 4.「산업안전보건법」제124조 및 같은법 시행규칙 제184조에",
-          "base_evidence": "1] 수의계약 배제사유에 해당하지 않는 자로 합니다. 라. 예정가격은 기초금액의 ±3% 범위 내에서 정한 복수예비가격 15개를 작성하여 입찰참가자가 2개씩 전자 추첨하여 가장 많이 선택된 4개의 예비가격을 산술 평균한 가격으로 합니다. 마. 동일 가격으로 견적서를 제출한 자가 2인 이상일 경우, 「국가종합전자조달 시스",
-          "score_clause": "므로 이를 확인하지 않아 발생하는 책임은 입찰 참가자에게 있습니다. 사. 본 견적제출건은 적격심사 제외 대상입니다. 아. 최종 낙찰자는 통지를 받은 후 10일 이내에 계약에 필요한 서류를 갖추고 계약을 체결하여야 합니다. 자. 납품완료 된 설계도서의 저작권은 대전광역시서부교육지원청에 귀속됩니다. 7. 견적제출의 무효 「지방자치단체를 당사자로 하는 계약에 관한 법률시행령」 제39조 및 같은 법 시행규칙 제42조와 「지방자치단체 입찰 및"
-        }
-      },
-      "eligibility_status": "참가 불가",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "공고문 서울 외 지역제한: 대전광역시",
-        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
-      ],
-      "eligibility_missing": [
-        "업체 실적 필수조건 및 배점",
-        "석면해체작업 감리인 지정·등록 요건"
-      ],
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      },
-      "region_assessment": {
-        "status": "excluded",
-        "evidence": "공고문 서울 외 지역제한: 대전광역시",
-        "verified": true
-      }
-    },
-    {
-      "id": "R26BK01820640-000",
-      "number": "R26BK01820640",
-      "order": "000",
-      "category": "석면감리",
-      "registration_deadline": null,
-      "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
-      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
-      "attachments": [
-        {
-          "name": "공고문(대전남선중 석면철거공사 석면감리용역).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820640&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "과업설명서(대전남선중 석면철거공사 석면감리용역).hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820640&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "산출서(대전남선중 석면철거공사 석면감리용역)-공고용.xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820640&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "대전남선중 석면철거공사 석면감리용역",
-      "agency": "대전광역시교육청 대전광역시서부교육지원청",
-      "notice_at": "2026-11-10 17:32:38",
-      "deadline": "2026-11-16 10:00:00",
-      "budget": "25047000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "수의계약",
-      "method": "전자입찰",
-      "priority": "제외",
-      "reasons": [
-        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
-        "석면감리 관련 공고명",
-        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01820640&bidPbancOrd=000",
-      "document_analysis": {
-        "status": "일부 텍스트 자동 추출",
-        "files": [
-          {
-            "name": "공고문(대전남선중 석면철거공사 석면감리용역).pdf",
-            "format": "PDF",
-            "status": "본문 추출됨"
-          }
-        ],
-        "evidence": {
-          "region_clause": "찰 장 소 국가종합전자조달시스템 (http://www.g2b.go.kr) 2. 계약방법 가. 조달청 국가종합전자조달시스템(g2b)을 통해 총액으로 견적을 제출해야 합니다. 나. 지역제한(대전광역시), 공동수급 불허 대상 용역입니다. 다. 청렴서약제가 적용되는 용역입니다. 라. 전자계약 및 전자청구 대상입니다. 마. 본 용역은「엔지니어링사업진흥법 시행령」제42조에 따라 손해배상보험(공제)을 가입하여야 하며, 손해배상보험(공제)증권을 수요기관에 제출하여야 합니다. 바. 본 용역은 부가가치세가 포함된 금액이므로 입찰자가 면세사업자인 경우 입찰금액은 반드시 부가가치세를 포함하여 투찰하여야 하며, 입찰결과 낙찰자가 면세사업자인 경우 낙찰금액에서 부가가",
-          "license_clause": "한 취업 포함)을 제공하지 않을 것이며, 이를 위반하면 「지방계약법」제31조제1항제7호에 따른 부정당업자의 입찰참가자격 제한 처분을 받겠습니다. 2. 특정인의 낙찰을 위한 담합 등 입찰의 자유경쟁을 방해하는 행위나 불공정한 행위 시에는 「지방계약법」제31조제1항제2호에 따른 부정당업자의 입찰참가자격 제한 처분을 받겠습니다. 3. 공정한 직무수행을 방해하는 알선․청탁을 통하여 입찰 또는 계약과 관련된 특정 정보의 제공을 요구하거나 받는 행위를 하지 않겠습니다. 4. 회사 임․직원이 관계 직원에게 금품․향응 등을 제공하거나 담합 등 불공정행위를 하지 않도록 교육하고 내부비리 제보자에 대해서도 일체의 불이익처분을 하지 않겠습니다. 관계 직원이 금품・향응 등을 요구할 경우에는 아래 부패·공익신고센터로 신고하여 주시기 바랍니다. 전화신고: 1",
-          "staffing_clause": "합니다. 나. 「석면안전관리법」 제30조의2에 따라 석면해체작업감리인을 등록한 업체로서 「석면해체작업감리인 기준」에서 정한 배치기준에 적격한 교육을 이수 받은 고급감리원 또는 일반감리원이 소속된 업체이어야 합니다. ※ 「석면해체작업감리인 기준」 제3조에 따라 다음 각 호의 어느 하나에 해당하는 자는 해당 석면해체·제거작업의 감리인이 될 수 없습니다. 1. 해당 건축물이나 설비에 대한 석면해체·제거작업을 수행하는 자 2. 해당 건축물이나 설비에 대하여 석면조사를 실시한 기관 3. 법 제28조 및 같은법 시행규칙 제38조제1항에 따라 당해 석면해체·제거 사업장의 석면 비산 정도를 측정하는 기관(이하 ‘석면 비산 정도 측정기관’이라 한다) 4.「산업안전보건법」제124조 및 같은법 시행규칙 제184조에",
-          "base_evidence": "1] 수의계약 배제사유에 해당하지 않는 자로 합니다. 라. 예정가격은 기초금액의 ±3% 범위 내에서 정한 복수예비가격 15개를 작성하여 입찰참가자가 2개씩 전자 추첨하여 가장 많이 선택된 4개의 예비가격을 산술 평균한 가격으로 합니다. 마. 동일 가격으로 견적서를 제출한 자가 2인 이상일 경우, 「국가종합전자조달 시스",
-          "score_clause": "므로 이를 확인하지 않아 발생하는 책임은 입찰 참가자에게 있습니다. 사. 본 견적제출건은 적격심사 제외 대상입니다. 아. 최종 낙찰자는 통지를 받은 후 10일 이내에 계약에 필요한 서류를 갖추고 계약을 체결하여야 합니다. 자. 납품완료 된 설계도서의 저작권은 대전광역시서부교육지원청에 귀속됩니다. 7. 견적제출의 무효 「지방자치단체를 당사자로 하는 계약에 관한 법률시행령」 제39조 및 같은 법 시행규칙 제42조와 「지방자치단체 입찰 및"
-        }
-      },
-      "eligibility_status": "참가 불가",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "공고문 서울 외 지역제한: 대전광역시",
-        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
-      ],
-      "eligibility_missing": [
-        "업체 실적 필수조건 및 배점",
-        "석면해체작업 감리인 지정·등록 요건"
-      ],
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      },
-      "region_assessment": {
-        "status": "excluded",
-        "evidence": "공고문 서울 외 지역제한: 대전광역시",
-        "verified": true
-      }
-    },
-    {
-      "id": "R26BK01820734-000",
-      "number": "R26BK01820734",
-      "order": "000",
-      "category": "석면감리",
-      "registration_deadline": null,
-      "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
-      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
-      "attachments": [
-        {
-          "name": "공고문(대전노은초 석면철거공사 석면감리용역).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820734&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "과업설명서(대전노은초 석면철거공사 감리용역).hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820734&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "산출서(대전노은초 석면철거공사 감리용역)-공고용.xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820734&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "대전노은초 석면철거공사 석면감리용역",
-      "agency": "대전광역시교육청 대전광역시서부교육지원청",
-      "notice_at": "2026-11-10 17:40:54",
-      "deadline": "2026-11-16 10:00:00",
-      "budget": "28105000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "수의계약",
-      "method": "전자입찰",
-      "priority": "제외",
-      "reasons": [
-        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
-        "석면감리 관련 공고명",
-        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01820734&bidPbancOrd=000",
-      "document_analysis": {
-        "status": "일부 텍스트 자동 추출",
-        "files": [
-          {
-            "name": "공고문(대전노은초 석면철거공사 석면감리용역).pdf",
-            "format": "PDF",
-            "status": "본문 추출됨"
-          }
-        ],
-        "evidence": {
-          "region_clause": "찰 장 소 국가종합전자조달시스템 (http://www.g2b.go.kr) 2. 계약방법 가. 조달청 국가종합전자조달시스템(g2b)을 통해 총액으로 견적을 제출해야 합니다. 나. 지역제한(대전광역시), 공동수급 불허 대상 용역입니다. 다. 청렴서약제가 적용되는 용역입니다. 라. 전자계약 및 전자청구 대상입니다. 마. 본 용역은「엔지니어링사업진흥법 시행령」제42조에 따라 손해배상보험(공제)을 가입하여야 하며, 손해배상보험(공제)증권을 수요기관에 제출하여야 합니다. 바. 본 용역은 부가가치세가 포함된 금액이므로 입찰자가 면세사업자인 경우 입찰금액은 반드시 부가가치세를 포함하여 투찰하여야 하며, 입찰결과 낙찰자가 면세사업자인 경우 낙찰금액에서 부가가",
-          "license_clause": "한 취업 포함)을 제공하지 않을 것이며, 이를 위반하면 「지방계약법」제31조제1항제7호에 따른 부정당업자의 입찰참가자격 제한 처분을 받겠습니다. 2. 특정인의 낙찰을 위한 담합 등 입찰의 자유경쟁을 방해하는 행위나 불공정한 행위 시에는 「지방계약법」제31조제1항제2호에 따른 부정당업자의 입찰참가자격 제한 처분을 받겠습니다. 3. 공정한 직무수행을 방해하는 알선․청탁을 통하여 입찰 또는 계약과 관련된 특정 정보의 제공을 요구하거나 받는 행위를 하지 않겠습니다. 4. 회사 임․직원이 관계 직원에게 금품․향응 등을 제공하거나 담합 등 불공정행위를 하지 않도록 교육하고 내부비리 제보자에 대해서도 일체의 불이익처분을 하지 않겠습니다. 관계 직원이 금품・향응 등을 요구할 경우에는 아래 부패·공익신고센터로 신고하여 주시기 바랍니다. 전화신고: 1",
-          "staffing_clause": "합니다. 나. 「석면안전관리법」 제30조의2에 따라 석면해체작업감리인을 등록한 업체로서 「석면해체작업감리인 기준」에서 정한 배치기준에 적격한 교육을 이수 받은 고급감리원 또는 일반감리원이 소속된 업체이어야 합니다. ※ 「석면해체작업감리인 기준」 제3조에 따라 다음 각 호의 어느 하나에 해당하는 자는 해당 석면해체·제거작업의 감리인이 될 수 없습니다. 1. 해당 건축물이나 설비에 대한 석면해체·제거작업을 수행하는 자 2. 해당 건축물이나 설비에 대하여 석면조사를 실시한 기관 3. 법 제28조 및 같은법 시행규칙 제38조제1항에 따라 당해 석면해체·제거 사업장의 석면 비산 정도를 측정하는 기관(이하 ‘석면 비산 정도 측정기관’이라 한다) 4.「산업안전보건법」제124조 및 같은법 시행규칙 제184조에",
-          "base_evidence": "1] 수의계약 배제사유에 해당하지 않는 자로 합니다. 라. 예정가격은 기초금액의 ±3% 범위 내에서 정한 복수예비가격 15개를 작성하여 입찰참가자가 2개씩 전자 추첨하여 가장 많이 선택된 4개의 예비가격을 산술 평균한 가격으로 합니다. 마. 동일 가격으로 견적서를 제출한 자가 2인 이상일 경우, 「국가종합전자조달 시스",
-          "score_clause": "므로 이를 확인하지 않아 발생하는 책임은 입찰 참가자에게 있습니다. 사. 본 견적제출건은 적격심사 제외 대상입니다. 아. 최종 낙찰자는 통지를 받은 후 10일 이내에 계약에 필요한 서류를 갖추고 계약을 체결하여야 합니다. 자. 납품완료 된 설계도서의 저작권은 대전광역시서부교육지원청에 귀속됩니다. 7. 견적제출의 무효 「지방자치단체를 당사자로 하는 계약에 관한 법률시행령」 제39조 및 같은 법 시행규칙 제42조와 「지방자치단체 입찰 및"
-        }
-      },
-      "eligibility_status": "참가 불가",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "공고문 서울 외 지역제한: 대전광역시",
-        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
-      ],
-      "eligibility_missing": [
-        "업체 실적 필수조건 및 배점",
-        "석면해체작업 감리인 지정·등록 요건"
-      ],
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      },
-      "region_assessment": {
-        "status": "excluded",
-        "evidence": "공고문 서울 외 지역제한: 대전광역시",
-        "verified": true
-      }
-    },
-    {
-      "id": "R26BK01822012-000",
-      "number": "R26BK01822012",
-      "order": "000",
-      "category": "석면감리",
-      "registration_deadline": null,
-      "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
-      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
-      "attachments": [
-        {
-          "name": "공고문(안계초등학교 본관동 석면철거공사 감리용역).hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01822012&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "공고문(안계초등학교 본관동 석면철거공사 감리용역).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01822012&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "(시설2과-6252 (첨부)) 붙임 3-2. 과업지시서(안계초 본관동 석면철거공사 감리용역).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01822012&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": 18282000,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "안계초등학교 본관동 석면철거공사 감리용역 수의계약 안내 공고",
-      "agency": "경상남도교육청 경상남도창원교육지원청",
-      "notice_at": "2026-11-10 17:47:14",
-      "deadline": "2026-11-16 10:00:00",
-      "budget": "18282000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "수의계약",
-      "method": "전자입찰",
-      "priority": "제외",
-      "reasons": [
-        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
-        "석면감리 관련 공고명",
-        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01822012&bidPbancOrd=000",
-      "document_analysis": {
-        "status": "일부 텍스트 자동 추출",
-        "files": [
-          {
-            "name": "공고문(안계초등학교 본관동 석면철거공사 감리용역).hwp",
-            "format": "HWP",
-            "status": "본문 추출됨"
-          }
-        ],
-        "evidence": {
-          "region_clause": "적제출과 계약 방식 가. 견적서에 산출내역서를 첨부하지 않는 총액 견적으로 국가종합전자조달시스템(G2B)을 이용하여 2인 이상으로부터 견적서를 제출받는 수의계약 대상입니다. 나. 지역제한(경상남도 창원시) 대상 용역입니다. 다. 해당 용역은 전자계약, 청렴서약제 시행 대상 용역입니다. 라. 해당 용역은 공동계약은 불허합니다. 3. 견적제출 참가 자격 가. 지방자치단체를 당사자로 하는 계약에 관한 법률 시행령」 제13조, 같은 법 시행규칙 제14조의 규정에 따른 자격 요건을 갖추고, 「석면안전관리법」제30조의2에 의거 석면해체작업감리인(7472)으로 등록된 업체로서 같은법 시행령 제42조제1항 관련 「별표 3의2」의 자격을 갖추고, ‘석면해체작업",
-          "license_clause": "용 신고: 스마트폰으로 아래의 QR코드를 찍으면 신고창이 열립니다. 漠杳 ☎ 공고와 그 밖의 문의 연락처 •입찰참가자격등록 등 국가종합전자조달시스템 이용에 관한 사항: 조달청(☎1588-0800) •입찰공고, 개찰 및 계약에 관한 사항: 창원교육지원청 계약담당(☎055-210-0644) •설계도면, 시방서 열람 등 용역내용에 관한 사항: 창원교육지원청 시설담당(☎055-250-7586) [유의 사항] ※ 해당 공고와 관련하여 공고문과 규격서(모든 붙임 서류)의 내용이 서로 다른 경우에는 공고문이 우선 적용됩니다. ※ 공고문에 정한 각종 규정은 개정될 수 있으며, 바뀔 경우 개정 규정 부칙의 시행일(또는 적용례)에 따라 개정 규정을 적용할 수 있습니다. 1. 견적에 부치는 사항 氠瑢 용 역 명 안계초등학교 본관동 석면철거공사 감리용역 용",
-          "staffing_clause": "같은법 시행령 제42조제1항 관련 「별표 3의2」의 자격을 갖추고, ‘석면해체작업 감리인 기준’ 「별표1」의 교육을 이수받은 고급감리원 이상 소속된 업체이어야 합니다. * 고용노동부 고시 「석면해체작업감리인 기준」에 의거 아래의 어느 하나에 해당하는 자는 해당 석면해체·제거작업 감리인이 될 수 없습니다. ① 해당 건축물이나 설비에 대한 석면해체·제거작업을 수행하는 자 ② 해당 건축물이나 설비에 대하여 석면조사를 실시한 기관 ③ 「산업안전보건법」 제28조 및 같은법 시행규칙 제38조제1항에 따라 당해 석면해체·제거 사업장의 석면 비산 정도를 측정하는 기관(이하‘석면 비산 정도 측정기관’이라 한다) ④ 「산업안전보건법」제124조 및 같은법 시행규칙 제184조에 따라 당해 석면해체·제거작업에 대한 공기",
-          "base_evidence": "9.~2027. 1. 25. (28일간) 용역개요 汤捯 과업지시서 참고 기초금액 추정가격 부가가치세 18,282,000원 16,620,000원 1,662,000원 ※ 면세사업자 또는 영세율을 적용받는 사업자는 반드시 부가가치세를 포함한 가격으로 투찰하여야 하며, 최종 계약 시에는 부가가치세를 제외하는 금액으로 계약을 체",
-          "score_clause": "기준에 미달하는 자 ※ 기술자 보유현황의 심사는 「낙찰자결정기준」제1장 입찰참가자격 사전심사기준 제5절 “4”의 그밖에 해당공사 수행능력상 결격여부, 제2장의2 기술·학술연구 용역 적격심사 세부기준 <별표>의 기술인력 평가방법을 준용한다. 이때 ‘입찰공고일’은 ‘안내공고일’로 ‘적격심사서류 제출마감일’은 ‘견적서 제출마감일’로 본다. ⑤ 견적서 제출 마감일 기준 최근 3개월 이내에 해당 지방자치단체의 입찰 ․ 계약 및 그 이행과 관"
-        }
-      },
-      "eligibility_status": "참가 불가",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "공고문 서울 외 지역제한: 경상남도 창원시",
-        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
-      ],
-      "eligibility_missing": [
-        "업체 실적 필수조건 및 배점",
-        "석면해체작업 감리인 지정·등록 요건"
-      ],
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      },
-      "region_assessment": {
-        "status": "excluded",
-        "evidence": "공고문 서울 외 지역제한: 경상남도 창원시",
-        "verified": true
-      }
-    },
-    {
-      "id": "R26BK01819673-000",
-      "number": "R26BK01819673",
-      "order": "000",
-      "category": "석면감리",
-      "registration_deadline": null,
-      "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
-      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
-      "attachments": [
-        {
-          "name": "[공고문] 임호초등학교 석면철거 감리용역.hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819673&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "[공고문] 임호초등학교 석면철거 감리용역.pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819673&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "[과업지시서] 임호초등학교 석면철거 감리용역.hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819673&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": 24120000,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "임호초등학교 석면철거 감리용역 수의계약 안내 공고",
-      "agency": "경상남도교육청 경상남도김해교육지원청",
-      "notice_at": "2026-11-10 17:34:30",
-      "deadline": "2026-11-16 12:00:00",
-      "budget": "24120000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "수의계약",
-      "method": "전자입찰",
-      "priority": "제외",
-      "reasons": [
-        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
-        "석면감리 관련 공고명",
-        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01819673&bidPbancOrd=000",
-      "document_analysis": {
-        "status": "일부 텍스트 자동 추출",
-        "files": [
-          {
-            "name": "[공고문] 임호초등학교 석면철거 감리용역.hwpx",
-            "format": "HWPX/DOCX",
-            "status": "본문 추출됨"
-          }
-        ],
-        "evidence": {
-          "region_clause": "국가종합전자조달시스템(G2B)을 이용하여 2인 이상으로부터 견적서를 제출받는 수의계약 및 전자계약 대상입니다. 나. 견적서에 산출내역서를 첨부하지 않는 총액 견적 입니다. 다. 지역제한(경상남도 김해시) 및 청렴서약제 시행 대상 용역입니다. 3. 견적제출 참가 자격 가. 「지방자치단체를 당사 자로 하는 계약에 관한 법률 시행령」제13조 및「동법 시행규칙」제14조의 규정에 의한 자격요건을 갖추고, 「석면안전관리법」 제30조의2에 의한 석면해체작업감리인 으 로 등록된 자로서 「동법 시행령」 제42조 제 1항 관련 ｢별표 3의2｣의 자격을 갖추고, 「 석면해체작업 감리인 기준 」 [별표1]의 교육을 이수받은 고급감리원 이 소속된 아래 각 호의 어느",
-          "license_clause": "폰 활용 신고: 스마트폰으로 아래의 QR코드를 스캔하면 신고창이 열립니다. ◈ 공고 관련 기타문의 연락처 •입찰참가자격등록 등 국가종합전자조달시스템 이용에 관한 사항: 조달청 (☎1588-0800) •공고, 개찰 및 계약에 관한 사항: 김해교육지원청 교육재정과 경리담당 (☎055-330-7636) •과업 에 관한 사항: 김해교육지원청 교육시설과 초등시설담당 (☎055-330-7676) [유의사항] ※ 본 공고와 관련하여 공고서와 규격서(첨부서류 일체)의 내용이 서로 다른 경우에는 공고문이 우선 적용됩니다. ※ 공고문에 정한 각종 규정은 개정될 수 있으며, 개정될 경우 개정규정 부칙의 시행일(또는 적용례)에 따라 개정 규정의 적용 여부가 결정될 수 있습니다. 1. 견적에 부치는 사항 용 역 명 임호초등학교 석면철거 감리용역 용역현장 임호",
-          "staffing_clause": "행령」 제42조 제 1항 관련 ｢별표 3의2｣의 자격을 갖추고, 「 석면해체작업 감리인 기준 」 [별표1]의 교육을 이수받은 고급감리원 이 소속된 아래 각 호의 어느 하나에 해당하는 업체이어야 합니다. 1) 「한국산업안전보건공단법」에 따른 한국산업안전보건공단 2) 「건축사법」 제23조에 따라 건축사사무소개설신고를 한 자 3) 「기술사법」 제6조에 따라 기술사사무소 개설등록을 한 자 4) 「건설기술 진흥법」 제26조 및 같은 법 시행령 제44조제1호 및 제2호가목ㆍ다목에 따라 종합 전문분야 또는 설계ㆍ사업관리 전문분야 중 일반 또는 건설사업관리 분야로 등록한 건설엔지니어링사업자 5) 「산업안전보건법」 제119조제2항에 따른 석면조사기관 또는 같은 법 제125조제3항에 따른 작업환경측정기관 6) 「환경",
-          "base_evidence": "현장 임호초등학교 용역기간 착수일로부터 35일 용역개요 과업지시서 참고 기초금액 추정가격 부가가치세 24,120,000원 21,927,273원 2,192,727원 ※ 면세사업자 또는 영세율을 적용받는 사업자는 반드시 부가가치세를 포함한 가격으로 투찰하여야 하며, 최종 계약 시에는 부가가치세를 제외하는 금액으로 계약을 체"
-        }
-      },
-      "eligibility_status": "참가 불가",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "공고문 서울 외 지역제한: 경상남도 김해시",
-        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
-      ],
-      "eligibility_missing": [
-        "업체 실적 필수조건 및 배점",
-        "석면해체작업 감리인 지정·등록 요건"
-      ],
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      },
-      "region_assessment": {
-        "status": "excluded",
-        "evidence": "공고문 서울 외 지역제한: 경상남도 김해시",
-        "verified": true
       }
     },
     {
@@ -2876,6 +2226,564 @@
       }
     },
     {
+      "id": "R26BK01819791-000",
+      "number": "R26BK01819791",
+      "order": "000",
+      "category": "석면감리",
+      "registration_deadline": null,
+      "submission_deadline": null,
+      "competition_type": null,
+      "workload_status": "과업·기간 원문 확인 필요",
+      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
+      "attachments": [
+        {
+          "name": "공고문(대전장대초 석면철거공사 석면감리용역).pdf",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819791&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
+        },
+        {
+          "name": "과업설명서(대전장대초 석면철거공사 감리용역).hwp",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819791&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
+        },
+        {
+          "name": "산출서(대전장대초 석면철거공사 감리용역)-공고용.xlsx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819791&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
+        }
+      ],
+      "base_amount": null,
+      "floor_rate": null,
+      "raw_qualification": {
+        "industry": "",
+        "participation_region": "",
+        "limited_region": "",
+        "joint_venture": "(없음)공동수급불허",
+        "pq": ""
+      },
+      "title": "대전장대초 석면철거공사 석면감리용역",
+      "agency": "대전광역시교육청 대전광역시서부교육지원청",
+      "notice_at": "2026-11-10 16:39:22",
+      "deadline": "2026-11-16 10:00:00",
+      "budget": "26070000",
+      "budget_type": "배정예산",
+      "region": "정보 미확인",
+      "contract": "수의계약",
+      "method": "전자입찰",
+      "priority": "제외",
+      "reasons": [
+        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
+        "석면감리 관련 공고명",
+        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
+        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
+      ],
+      "eligibility": "원문 확인 필요",
+      "performance": "업체 감리실적 필수·배점 여부 미확인",
+      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01819791&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "일부 텍스트 자동 추출",
+        "files": [
+          {
+            "name": "공고문(대전장대초 석면철거공사 석면감리용역).pdf",
+            "format": "PDF",
+            "status": "본문 추출됨"
+          }
+        ],
+        "evidence": {
+          "region_clause": "찰 장 소 국가종합전자조달시스템 (http://www.g2b.go.kr) 2. 계약방법 가. 조달청 국가종합전자조달시스템(g2b)을 통해 총액으로 견적을 제출해야 합니다. 나. 지역제한(대전광역시), 공동수급 불허 대상 용역입니다. 다. 청렴서약제가 적용되는 용역입니다. 라. 전자계약 및 전자청구 대상입니다. 마. 본 용역은「엔지니어링사업진흥법 시행령」제42조에 따라 손해배상보험(공제)을 가입하여야 하며, 손해배상보험(공제)증권을 수요기관에 제출하여야 합니다. 바. 본 용역은 부가가치세가 포함된 금액이므로 입찰자가 면세사업자인 경우 입찰금액은 반드시 부가가치세를 포함하여 투찰하여야 하며, 입찰결과 낙찰자가 면세사업자인 경우 낙찰금액에서 부가가",
+          "license_clause": "한 취업 포함)을 제공하지 않을 것이며, 이를 위반하면 「지방계약법」제31조제1항제7호에 따른 부정당업자의 입찰참가자격 제한 처분을 받겠습니다. 2. 특정인의 낙찰을 위한 담합 등 입찰의 자유경쟁을 방해하는 행위나 불공정한 행위 시에는 「지방계약법」제31조제1항제2호에 따른 부정당업자의 입찰참가자격 제한 처분을 받겠습니다. 3. 공정한 직무수행을 방해하는 알선․청탁을 통하여 입찰 또는 계약과 관련된 특정 정보의 제공을 요구하거나 받는 행위를 하지 않겠습니다. 4. 회사 임․직원이 관계 직원에게 금품․향응 등을 제공하거나 담합 등 불공정행위를 하지 않도록 교육하고 내부비리 제보자에 대해서도 일체의 불이익처분을 하지 않겠습니다. 관계 직원이 금품・향응 등을 요구할 경우에는 아래 부패·공익신고센터로 신고하여 주시기 바랍니다. 전화신고: 1",
+          "staffing_clause": "합니다. 나. 「석면안전관리법」 제30조의2에 따라 석면해체작업감리인을 등록한 업체로서 「석면해체작업감리인 기준」에서 정한 배치기준에 적격한 교육을 이수 받은 고급감리원 또는 일반감리원이 소속된 업체이어야 합니다. ※ 「석면해체작업감리인 기준」 제3조에 따라 다음 각 호의 어느 하나에 해당하는 자는 해당 석면해체·제거작업의 감리인이 될 수 없습니다. 1. 해당 건축물이나 설비에 대한 석면해체·제거작업을 수행하는 자 2. 해당 건축물이나 설비에 대하여 석면조사를 실시한 기관 3. 법 제28조 및 같은법 시행규칙 제38조제1항에 따라 당해 석면해체·제거 사업장의 석면 비산 정도를 측정하는 기관(이하 ‘석면 비산 정도 측정기관’이라 한다) 4.「산업안전보건법」제124조 및 같은법 시행규칙 제184조에",
+          "base_evidence": "1] 수의계약 배제사유에 해당하지 않는 자로 합니다. 라. 예정가격은 기초금액의 ±3% 범위 내에서 정한 복수예비가격 15개를 작성하여 입찰참가자가 2개씩 전자 추첨하여 가장 많이 선택된 4개의 예비가격을 산술 평균한 가격으로 합니다. 마. 동일 가격으로 견적서를 제출한 자가 2인 이상일 경우, 「국가종합전자조달 시스",
+          "score_clause": "므로 이를 확인하지 않아 발생하는 책임은 입찰 참가자에게 있습니다. 사. 본 견적제출건은 적격심사 제외 대상입니다. 아. 최종 낙찰자는 통지를 받은 후 10일 이내에 계약에 필요한 서류를 갖추고 계약을 체결하여야 합니다. 자. 납품완료 된 설계도서의 저작권은 대전광역시서부교육지원청에 귀속됩니다. 7. 견적제출의 무효 「지방자치단체를 당사자로 하는 계약에 관한 법률시행령」 제39조 및 같은 법 시행규칙 제42조와 「지방자치단체 입찰 및"
+        }
+      },
+      "eligibility_status": "참가 불가",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "공고문 서울 외 지역제한: 대전광역시",
+        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
+      ],
+      "eligibility_missing": [
+        "업체 실적 필수조건 및 배점",
+        "석면해체작업 감리인 지정·등록 요건"
+      ],
+      "price_analysis": {
+        "status": "계산 불가",
+        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
+        "base_amount": null,
+        "floor_rate": null,
+        "adjustment_rate": null
+      },
+      "region_assessment": {
+        "status": "excluded",
+        "evidence": "공고문 서울 외 지역제한: 대전광역시",
+        "verified": true
+      }
+    },
+    {
+      "id": "R26BK01820423-000",
+      "number": "R26BK01820423",
+      "order": "000",
+      "category": "석면감리",
+      "registration_deadline": null,
+      "submission_deadline": null,
+      "competition_type": null,
+      "workload_status": "과업·기간 원문 확인 필요",
+      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
+      "attachments": [
+        {
+          "name": "공고문(대전정림중 석면철거공사 석면감리용역).pdf",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820423&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
+        },
+        {
+          "name": "과업설명서(대전정림중 석면철거공사 감리용역).hwp",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820423&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
+        },
+        {
+          "name": "산출서(대전정림중 석면철거공사 감리용역)-공고용.xlsx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820423&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
+        }
+      ],
+      "base_amount": null,
+      "floor_rate": null,
+      "raw_qualification": {
+        "industry": "",
+        "participation_region": "",
+        "limited_region": "",
+        "joint_venture": "(없음)공동수급불허",
+        "pq": ""
+      },
+      "title": "대전정림중 석면철거공사 석면감리용역",
+      "agency": "대전광역시교육청 대전광역시서부교육지원청",
+      "notice_at": "2026-11-10 17:08:40",
+      "deadline": "2026-11-16 10:00:00",
+      "budget": "27082000",
+      "budget_type": "배정예산",
+      "region": "정보 미확인",
+      "contract": "수의계약",
+      "method": "전자입찰",
+      "priority": "제외",
+      "reasons": [
+        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
+        "석면감리 관련 공고명",
+        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
+        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
+      ],
+      "eligibility": "원문 확인 필요",
+      "performance": "업체 감리실적 필수·배점 여부 미확인",
+      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01820423&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "일부 텍스트 자동 추출",
+        "files": [
+          {
+            "name": "공고문(대전정림중 석면철거공사 석면감리용역).pdf",
+            "format": "PDF",
+            "status": "본문 추출됨"
+          }
+        ],
+        "evidence": {
+          "region_clause": "찰 장 소 국가종합전자조달시스템 (http://www.g2b.go.kr) 2. 계약방법 가. 조달청 국가종합전자조달시스템(g2b)을 통해 총액으로 견적을 제출해야 합니다. 나. 지역제한(대전광역시), 공동수급 불허 대상 용역입니다. 다. 청렴서약제가 적용되는 용역입니다. 라. 전자계약 및 전자청구 대상입니다. 마. 본 용역은「엔지니어링사업진흥법 시행령」제42조에 따라 손해배상보험(공제)을 가입하여야 하며, 손해배상보험(공제)증권을 수요기관에 제출하여야 합니다. 바. 본 용역은 부가가치세가 포함된 금액이므로 입찰자가 면세사업자인 경우 입찰금액은 반드시 부가가치세를 포함하여 투찰하여야 하며, 입찰결과 낙찰자가 면세사업자인 경우 낙찰금액에서 부가가",
+          "license_clause": "한 취업 포함)을 제공하지 않을 것이며, 이를 위반하면 「지방계약법」제31조제1항제7호에 따른 부정당업자의 입찰참가자격 제한 처분을 받겠습니다. 2. 특정인의 낙찰을 위한 담합 등 입찰의 자유경쟁을 방해하는 행위나 불공정한 행위 시에는 「지방계약법」제31조제1항제2호에 따른 부정당업자의 입찰참가자격 제한 처분을 받겠습니다. 3. 공정한 직무수행을 방해하는 알선․청탁을 통하여 입찰 또는 계약과 관련된 특정 정보의 제공을 요구하거나 받는 행위를 하지 않겠습니다. 4. 회사 임․직원이 관계 직원에게 금품․향응 등을 제공하거나 담합 등 불공정행위를 하지 않도록 교육하고 내부비리 제보자에 대해서도 일체의 불이익처분을 하지 않겠습니다. 관계 직원이 금품・향응 등을 요구할 경우에는 아래 부패·공익신고센터로 신고하여 주시기 바랍니다. 전화신고: 1",
+          "staffing_clause": "합니다. 나. 「석면안전관리법」 제30조의2에 따라 석면해체작업감리인을 등록한 업체로서 「석면해체작업감리인 기준」에서 정한 배치기준에 적격한 교육을 이수 받은 고급감리원 또는 일반감리원이 소속된 업체이어야 합니다. ※ 「석면해체작업감리인 기준」 제3조에 따라 다음 각 호의 어느 하나에 해당하는 자는 해당 석면해체·제거작업의 감리인이 될 수 없습니다. 1. 해당 건축물이나 설비에 대한 석면해체·제거작업을 수행하는 자 2. 해당 건축물이나 설비에 대하여 석면조사를 실시한 기관 3. 법 제28조 및 같은법 시행규칙 제38조제1항에 따라 당해 석면해체·제거 사업장의 석면 비산 정도를 측정하는 기관(이하 ‘석면 비산 정도 측정기관’이라 한다) 4.「산업안전보건법」제124조 및 같은법 시행규칙 제184조에",
+          "base_evidence": "1] 수의계약 배제사유에 해당하지 않는 자로 합니다. 라. 예정가격은 기초금액의 ±3% 범위 내에서 정한 복수예비가격 15개를 작성하여 입찰참가자가 2개씩 전자 추첨하여 가장 많이 선택된 4개의 예비가격을 산술 평균한 가격으로 합니다. 마. 동일 가격으로 견적서를 제출한 자가 2인 이상일 경우, 「국가종합전자조달 시스",
+          "score_clause": "므로 이를 확인하지 않아 발생하는 책임은 입찰 참가자에게 있습니다. 사. 본 견적제출건은 적격심사 제외 대상입니다. 아. 최종 낙찰자는 통지를 받은 후 10일 이내에 계약에 필요한 서류를 갖추고 계약을 체결하여야 합니다. 자. 납품완료 된 설계도서의 저작권은 대전광역시서부교육지원청에 귀속됩니다. 7. 견적제출의 무효 「지방자치단체를 당사자로 하는 계약에 관한 법률시행령」 제39조 및 같은 법 시행규칙 제42조와 「지방자치단체 입찰 및"
+        }
+      },
+      "eligibility_status": "참가 불가",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "공고문 서울 외 지역제한: 대전광역시",
+        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
+      ],
+      "eligibility_missing": [
+        "업체 실적 필수조건 및 배점",
+        "석면해체작업 감리인 지정·등록 요건"
+      ],
+      "price_analysis": {
+        "status": "계산 불가",
+        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
+        "base_amount": null,
+        "floor_rate": null,
+        "adjustment_rate": null
+      },
+      "region_assessment": {
+        "status": "excluded",
+        "evidence": "공고문 서울 외 지역제한: 대전광역시",
+        "verified": true
+      }
+    },
+    {
+      "id": "R26BK01820529-000",
+      "number": "R26BK01820529",
+      "order": "000",
+      "category": "석면감리",
+      "registration_deadline": null,
+      "submission_deadline": null,
+      "competition_type": null,
+      "workload_status": "과업·기간 원문 확인 필요",
+      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
+      "attachments": [
+        {
+          "name": "공고문(대전갑천초 석면철거공사 석면감리용역).pdf",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820529&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
+        },
+        {
+          "name": "과업설명서(대전갑천초 석면철거공사 석면감리용역).hwp",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820529&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
+        },
+        {
+          "name": "산출서(대전갑천초 석면철거공사 감리용역)-공고용.xlsx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820529&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
+        }
+      ],
+      "base_amount": null,
+      "floor_rate": null,
+      "raw_qualification": {
+        "industry": "",
+        "participation_region": "",
+        "limited_region": "",
+        "joint_venture": "(없음)공동수급불허",
+        "pq": ""
+      },
+      "title": "대전갑천초 석면철거공사 석면감리용역",
+      "agency": "대전광역시교육청 대전광역시서부교육지원청",
+      "notice_at": "2026-11-10 17:18:29",
+      "deadline": "2026-11-16 10:00:00",
+      "budget": "25047000",
+      "budget_type": "배정예산",
+      "region": "정보 미확인",
+      "contract": "수의계약",
+      "method": "전자입찰",
+      "priority": "제외",
+      "reasons": [
+        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
+        "석면감리 관련 공고명",
+        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
+        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
+      ],
+      "eligibility": "원문 확인 필요",
+      "performance": "업체 감리실적 필수·배점 여부 미확인",
+      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01820529&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "일부 텍스트 자동 추출",
+        "files": [
+          {
+            "name": "공고문(대전갑천초 석면철거공사 석면감리용역).pdf",
+            "format": "PDF",
+            "status": "본문 추출됨"
+          }
+        ],
+        "evidence": {
+          "region_clause": "찰 장 소 국가종합전자조달시스템 (http://www.g2b.go.kr) 2. 계약방법 가. 조달청 국가종합전자조달시스템(g2b)을 통해 총액으로 견적을 제출해야 합니다. 나. 지역제한(대전광역시), 공동수급 불허 대상 용역입니다. 다. 청렴서약제가 적용되는 용역입니다. 라. 전자계약 및 전자청구 대상입니다. 마. 본 용역은「엔지니어링사업진흥법 시행령」제42조에 따라 손해배상보험(공제)을 가입하여야 하며, 손해배상보험(공제)증권을 수요기관에 제출하여야 합니다. 바. 본 용역은 부가가치세가 포함된 금액이므로 입찰자가 면세사업자인 경우 입찰금액은 반드시 부가가치세를 포함하여 투찰하여야 하며, 입찰결과 낙찰자가 면세사업자인 경우 낙찰금액에서 부가가",
+          "license_clause": "한 취업 포함)을 제공하지 않을 것이며, 이를 위반하면 「지방계약법」제31조제1항제7호에 따른 부정당업자의 입찰참가자격 제한 처분을 받겠습니다. 2. 특정인의 낙찰을 위한 담합 등 입찰의 자유경쟁을 방해하는 행위나 불공정한 행위 시에는 「지방계약법」제31조제1항제2호에 따른 부정당업자의 입찰참가자격 제한 처분을 받겠습니다. 3. 공정한 직무수행을 방해하는 알선․청탁을 통하여 입찰 또는 계약과 관련된 특정 정보의 제공을 요구하거나 받는 행위를 하지 않겠습니다. 4. 회사 임․직원이 관계 직원에게 금품․향응 등을 제공하거나 담합 등 불공정행위를 하지 않도록 교육하고 내부비리 제보자에 대해서도 일체의 불이익처분을 하지 않겠습니다. 관계 직원이 금품・향응 등을 요구할 경우에는 아래 부패·공익신고센터로 신고하여 주시기 바랍니다. 전화신고: 1",
+          "staffing_clause": "합니다. 나. 「석면안전관리법」 제30조의2에 따라 석면해체작업감리인을 등록한 업체로서 「석면해체작업감리인 기준」에서 정한 배치기준에 적격한 교육을 이수 받은 고급감리원 또는 일반감리원이 소속된 업체이어야 합니다. ※ 「석면해체작업감리인 기준」 제3조에 따라 다음 각 호의 어느 하나에 해당하는 자는 해당 석면해체·제거작업의 감리인이 될 수 없습니다. 1. 해당 건축물이나 설비에 대한 석면해체·제거작업을 수행하는 자 2. 해당 건축물이나 설비에 대하여 석면조사를 실시한 기관 3. 법 제28조 및 같은법 시행규칙 제38조제1항에 따라 당해 석면해체·제거 사업장의 석면 비산 정도를 측정하는 기관(이하 ‘석면 비산 정도 측정기관’이라 한다) 4.「산업안전보건법」제124조 및 같은법 시행규칙 제184조에",
+          "base_evidence": "1] 수의계약 배제사유에 해당하지 않는 자로 합니다. 라. 예정가격은 기초금액의 ±3% 범위 내에서 정한 복수예비가격 15개를 작성하여 입찰참가자가 2개씩 전자 추첨하여 가장 많이 선택된 4개의 예비가격을 산술 평균한 가격으로 합니다. 마. 동일 가격으로 견적서를 제출한 자가 2인 이상일 경우, 「국가종합전자조달 시스",
+          "score_clause": "므로 이를 확인하지 않아 발생하는 책임은 입찰 참가자에게 있습니다. 사. 본 견적제출건은 적격심사 제외 대상입니다. 아. 최종 낙찰자는 통지를 받은 후 10일 이내에 계약에 필요한 서류를 갖추고 계약을 체결하여야 합니다. 자. 납품완료 된 설계도서의 저작권은 대전광역시서부교육지원청에 귀속됩니다. 7. 견적제출의 무효 「지방자치단체를 당사자로 하는 계약에 관한 법률시행령」 제39조 및 같은 법 시행규칙 제42조와 「지방자치단체 입찰 및"
+        }
+      },
+      "eligibility_status": "참가 불가",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "공고문 서울 외 지역제한: 대전광역시",
+        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
+      ],
+      "eligibility_missing": [
+        "업체 실적 필수조건 및 배점",
+        "석면해체작업 감리인 지정·등록 요건"
+      ],
+      "price_analysis": {
+        "status": "계산 불가",
+        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
+        "base_amount": null,
+        "floor_rate": null,
+        "adjustment_rate": null
+      },
+      "region_assessment": {
+        "status": "excluded",
+        "evidence": "공고문 서울 외 지역제한: 대전광역시",
+        "verified": true
+      }
+    },
+    {
+      "id": "R26BK01820640-000",
+      "number": "R26BK01820640",
+      "order": "000",
+      "category": "석면감리",
+      "registration_deadline": null,
+      "submission_deadline": null,
+      "competition_type": null,
+      "workload_status": "과업·기간 원문 확인 필요",
+      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
+      "attachments": [
+        {
+          "name": "공고문(대전남선중 석면철거공사 석면감리용역).pdf",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820640&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
+        },
+        {
+          "name": "과업설명서(대전남선중 석면철거공사 석면감리용역).hwp",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820640&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
+        },
+        {
+          "name": "산출서(대전남선중 석면철거공사 석면감리용역)-공고용.xlsx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820640&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
+        }
+      ],
+      "base_amount": null,
+      "floor_rate": null,
+      "raw_qualification": {
+        "industry": "",
+        "participation_region": "",
+        "limited_region": "",
+        "joint_venture": "(없음)공동수급불허",
+        "pq": ""
+      },
+      "title": "대전남선중 석면철거공사 석면감리용역",
+      "agency": "대전광역시교육청 대전광역시서부교육지원청",
+      "notice_at": "2026-11-10 17:32:38",
+      "deadline": "2026-11-16 10:00:00",
+      "budget": "25047000",
+      "budget_type": "배정예산",
+      "region": "정보 미확인",
+      "contract": "수의계약",
+      "method": "전자입찰",
+      "priority": "제외",
+      "reasons": [
+        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
+        "석면감리 관련 공고명",
+        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
+        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
+      ],
+      "eligibility": "원문 확인 필요",
+      "performance": "업체 감리실적 필수·배점 여부 미확인",
+      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01820640&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "일부 텍스트 자동 추출",
+        "files": [
+          {
+            "name": "공고문(대전남선중 석면철거공사 석면감리용역).pdf",
+            "format": "PDF",
+            "status": "본문 추출됨"
+          }
+        ],
+        "evidence": {
+          "region_clause": "찰 장 소 국가종합전자조달시스템 (http://www.g2b.go.kr) 2. 계약방법 가. 조달청 국가종합전자조달시스템(g2b)을 통해 총액으로 견적을 제출해야 합니다. 나. 지역제한(대전광역시), 공동수급 불허 대상 용역입니다. 다. 청렴서약제가 적용되는 용역입니다. 라. 전자계약 및 전자청구 대상입니다. 마. 본 용역은「엔지니어링사업진흥법 시행령」제42조에 따라 손해배상보험(공제)을 가입하여야 하며, 손해배상보험(공제)증권을 수요기관에 제출하여야 합니다. 바. 본 용역은 부가가치세가 포함된 금액이므로 입찰자가 면세사업자인 경우 입찰금액은 반드시 부가가치세를 포함하여 투찰하여야 하며, 입찰결과 낙찰자가 면세사업자인 경우 낙찰금액에서 부가가",
+          "license_clause": "한 취업 포함)을 제공하지 않을 것이며, 이를 위반하면 「지방계약법」제31조제1항제7호에 따른 부정당업자의 입찰참가자격 제한 처분을 받겠습니다. 2. 특정인의 낙찰을 위한 담합 등 입찰의 자유경쟁을 방해하는 행위나 불공정한 행위 시에는 「지방계약법」제31조제1항제2호에 따른 부정당업자의 입찰참가자격 제한 처분을 받겠습니다. 3. 공정한 직무수행을 방해하는 알선․청탁을 통하여 입찰 또는 계약과 관련된 특정 정보의 제공을 요구하거나 받는 행위를 하지 않겠습니다. 4. 회사 임․직원이 관계 직원에게 금품․향응 등을 제공하거나 담합 등 불공정행위를 하지 않도록 교육하고 내부비리 제보자에 대해서도 일체의 불이익처분을 하지 않겠습니다. 관계 직원이 금품・향응 등을 요구할 경우에는 아래 부패·공익신고센터로 신고하여 주시기 바랍니다. 전화신고: 1",
+          "staffing_clause": "합니다. 나. 「석면안전관리법」 제30조의2에 따라 석면해체작업감리인을 등록한 업체로서 「석면해체작업감리인 기준」에서 정한 배치기준에 적격한 교육을 이수 받은 고급감리원 또는 일반감리원이 소속된 업체이어야 합니다. ※ 「석면해체작업감리인 기준」 제3조에 따라 다음 각 호의 어느 하나에 해당하는 자는 해당 석면해체·제거작업의 감리인이 될 수 없습니다. 1. 해당 건축물이나 설비에 대한 석면해체·제거작업을 수행하는 자 2. 해당 건축물이나 설비에 대하여 석면조사를 실시한 기관 3. 법 제28조 및 같은법 시행규칙 제38조제1항에 따라 당해 석면해체·제거 사업장의 석면 비산 정도를 측정하는 기관(이하 ‘석면 비산 정도 측정기관’이라 한다) 4.「산업안전보건법」제124조 및 같은법 시행규칙 제184조에",
+          "base_evidence": "1] 수의계약 배제사유에 해당하지 않는 자로 합니다. 라. 예정가격은 기초금액의 ±3% 범위 내에서 정한 복수예비가격 15개를 작성하여 입찰참가자가 2개씩 전자 추첨하여 가장 많이 선택된 4개의 예비가격을 산술 평균한 가격으로 합니다. 마. 동일 가격으로 견적서를 제출한 자가 2인 이상일 경우, 「국가종합전자조달 시스",
+          "score_clause": "므로 이를 확인하지 않아 발생하는 책임은 입찰 참가자에게 있습니다. 사. 본 견적제출건은 적격심사 제외 대상입니다. 아. 최종 낙찰자는 통지를 받은 후 10일 이내에 계약에 필요한 서류를 갖추고 계약을 체결하여야 합니다. 자. 납품완료 된 설계도서의 저작권은 대전광역시서부교육지원청에 귀속됩니다. 7. 견적제출의 무효 「지방자치단체를 당사자로 하는 계약에 관한 법률시행령」 제39조 및 같은 법 시행규칙 제42조와 「지방자치단체 입찰 및"
+        }
+      },
+      "eligibility_status": "참가 불가",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "공고문 서울 외 지역제한: 대전광역시",
+        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
+      ],
+      "eligibility_missing": [
+        "업체 실적 필수조건 및 배점",
+        "석면해체작업 감리인 지정·등록 요건"
+      ],
+      "price_analysis": {
+        "status": "계산 불가",
+        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
+        "base_amount": null,
+        "floor_rate": null,
+        "adjustment_rate": null
+      },
+      "region_assessment": {
+        "status": "excluded",
+        "evidence": "공고문 서울 외 지역제한: 대전광역시",
+        "verified": true
+      }
+    },
+    {
+      "id": "R26BK01820734-000",
+      "number": "R26BK01820734",
+      "order": "000",
+      "category": "석면감리",
+      "registration_deadline": null,
+      "submission_deadline": null,
+      "competition_type": null,
+      "workload_status": "과업·기간 원문 확인 필요",
+      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
+      "attachments": [
+        {
+          "name": "공고문(대전노은초 석면철거공사 석면감리용역).pdf",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820734&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
+        },
+        {
+          "name": "과업설명서(대전노은초 석면철거공사 감리용역).hwp",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820734&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
+        },
+        {
+          "name": "산출서(대전노은초 석면철거공사 감리용역)-공고용.xlsx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01820734&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
+        }
+      ],
+      "base_amount": null,
+      "floor_rate": null,
+      "raw_qualification": {
+        "industry": "",
+        "participation_region": "",
+        "limited_region": "",
+        "joint_venture": "(없음)공동수급불허",
+        "pq": ""
+      },
+      "title": "대전노은초 석면철거공사 석면감리용역",
+      "agency": "대전광역시교육청 대전광역시서부교육지원청",
+      "notice_at": "2026-11-10 17:40:54",
+      "deadline": "2026-11-16 10:00:00",
+      "budget": "28105000",
+      "budget_type": "배정예산",
+      "region": "정보 미확인",
+      "contract": "수의계약",
+      "method": "전자입찰",
+      "priority": "제외",
+      "reasons": [
+        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
+        "석면감리 관련 공고명",
+        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
+        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
+      ],
+      "eligibility": "원문 확인 필요",
+      "performance": "업체 감리실적 필수·배점 여부 미확인",
+      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01820734&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "일부 텍스트 자동 추출",
+        "files": [
+          {
+            "name": "공고문(대전노은초 석면철거공사 석면감리용역).pdf",
+            "format": "PDF",
+            "status": "본문 추출됨"
+          }
+        ],
+        "evidence": {
+          "region_clause": "찰 장 소 국가종합전자조달시스템 (http://www.g2b.go.kr) 2. 계약방법 가. 조달청 국가종합전자조달시스템(g2b)을 통해 총액으로 견적을 제출해야 합니다. 나. 지역제한(대전광역시), 공동수급 불허 대상 용역입니다. 다. 청렴서약제가 적용되는 용역입니다. 라. 전자계약 및 전자청구 대상입니다. 마. 본 용역은「엔지니어링사업진흥법 시행령」제42조에 따라 손해배상보험(공제)을 가입하여야 하며, 손해배상보험(공제)증권을 수요기관에 제출하여야 합니다. 바. 본 용역은 부가가치세가 포함된 금액이므로 입찰자가 면세사업자인 경우 입찰금액은 반드시 부가가치세를 포함하여 투찰하여야 하며, 입찰결과 낙찰자가 면세사업자인 경우 낙찰금액에서 부가가",
+          "license_clause": "한 취업 포함)을 제공하지 않을 것이며, 이를 위반하면 「지방계약법」제31조제1항제7호에 따른 부정당업자의 입찰참가자격 제한 처분을 받겠습니다. 2. 특정인의 낙찰을 위한 담합 등 입찰의 자유경쟁을 방해하는 행위나 불공정한 행위 시에는 「지방계약법」제31조제1항제2호에 따른 부정당업자의 입찰참가자격 제한 처분을 받겠습니다. 3. 공정한 직무수행을 방해하는 알선․청탁을 통하여 입찰 또는 계약과 관련된 특정 정보의 제공을 요구하거나 받는 행위를 하지 않겠습니다. 4. 회사 임․직원이 관계 직원에게 금품․향응 등을 제공하거나 담합 등 불공정행위를 하지 않도록 교육하고 내부비리 제보자에 대해서도 일체의 불이익처분을 하지 않겠습니다. 관계 직원이 금품・향응 등을 요구할 경우에는 아래 부패·공익신고센터로 신고하여 주시기 바랍니다. 전화신고: 1",
+          "staffing_clause": "합니다. 나. 「석면안전관리법」 제30조의2에 따라 석면해체작업감리인을 등록한 업체로서 「석면해체작업감리인 기준」에서 정한 배치기준에 적격한 교육을 이수 받은 고급감리원 또는 일반감리원이 소속된 업체이어야 합니다. ※ 「석면해체작업감리인 기준」 제3조에 따라 다음 각 호의 어느 하나에 해당하는 자는 해당 석면해체·제거작업의 감리인이 될 수 없습니다. 1. 해당 건축물이나 설비에 대한 석면해체·제거작업을 수행하는 자 2. 해당 건축물이나 설비에 대하여 석면조사를 실시한 기관 3. 법 제28조 및 같은법 시행규칙 제38조제1항에 따라 당해 석면해체·제거 사업장의 석면 비산 정도를 측정하는 기관(이하 ‘석면 비산 정도 측정기관’이라 한다) 4.「산업안전보건법」제124조 및 같은법 시행규칙 제184조에",
+          "base_evidence": "1] 수의계약 배제사유에 해당하지 않는 자로 합니다. 라. 예정가격은 기초금액의 ±3% 범위 내에서 정한 복수예비가격 15개를 작성하여 입찰참가자가 2개씩 전자 추첨하여 가장 많이 선택된 4개의 예비가격을 산술 평균한 가격으로 합니다. 마. 동일 가격으로 견적서를 제출한 자가 2인 이상일 경우, 「국가종합전자조달 시스",
+          "score_clause": "므로 이를 확인하지 않아 발생하는 책임은 입찰 참가자에게 있습니다. 사. 본 견적제출건은 적격심사 제외 대상입니다. 아. 최종 낙찰자는 통지를 받은 후 10일 이내에 계약에 필요한 서류를 갖추고 계약을 체결하여야 합니다. 자. 납품완료 된 설계도서의 저작권은 대전광역시서부교육지원청에 귀속됩니다. 7. 견적제출의 무효 「지방자치단체를 당사자로 하는 계약에 관한 법률시행령」 제39조 및 같은 법 시행규칙 제42조와 「지방자치단체 입찰 및"
+        }
+      },
+      "eligibility_status": "참가 불가",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "공고문 서울 외 지역제한: 대전광역시",
+        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
+      ],
+      "eligibility_missing": [
+        "업체 실적 필수조건 및 배점",
+        "석면해체작업 감리인 지정·등록 요건"
+      ],
+      "price_analysis": {
+        "status": "계산 불가",
+        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
+        "base_amount": null,
+        "floor_rate": null,
+        "adjustment_rate": null
+      },
+      "region_assessment": {
+        "status": "excluded",
+        "evidence": "공고문 서울 외 지역제한: 대전광역시",
+        "verified": true
+      }
+    },
+    {
+      "id": "R26BK01822012-000",
+      "number": "R26BK01822012",
+      "order": "000",
+      "category": "석면감리",
+      "registration_deadline": null,
+      "submission_deadline": null,
+      "competition_type": null,
+      "workload_status": "과업·기간 원문 확인 필요",
+      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
+      "attachments": [
+        {
+          "name": "공고문(안계초등학교 본관동 석면철거공사 감리용역).hwp",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01822012&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
+        },
+        {
+          "name": "공고문(안계초등학교 본관동 석면철거공사 감리용역).pdf",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01822012&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
+        },
+        {
+          "name": "(시설2과-6252 (첨부)) 붙임 3-2. 과업지시서(안계초 본관동 석면철거공사 감리용역).hwpx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01822012&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
+        }
+      ],
+      "base_amount": 18282000,
+      "floor_rate": null,
+      "raw_qualification": {
+        "industry": "",
+        "participation_region": "",
+        "limited_region": "",
+        "joint_venture": "(없음)공동수급불허",
+        "pq": ""
+      },
+      "title": "안계초등학교 본관동 석면철거공사 감리용역 수의계약 안내 공고",
+      "agency": "경상남도교육청 경상남도창원교육지원청",
+      "notice_at": "2026-11-10 17:47:14",
+      "deadline": "2026-11-16 10:00:00",
+      "budget": "18282000",
+      "budget_type": "배정예산",
+      "region": "정보 미확인",
+      "contract": "수의계약",
+      "method": "전자입찰",
+      "priority": "제외",
+      "reasons": [
+        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
+        "석면감리 관련 공고명",
+        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
+        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
+      ],
+      "eligibility": "원문 확인 필요",
+      "performance": "업체 감리실적 필수·배점 여부 미확인",
+      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01822012&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "일부 텍스트 자동 추출",
+        "files": [
+          {
+            "name": "공고문(안계초등학교 본관동 석면철거공사 감리용역).hwp",
+            "format": "HWP",
+            "status": "본문 추출됨"
+          }
+        ],
+        "evidence": {
+          "region_clause": "적제출과 계약 방식 가. 견적서에 산출내역서를 첨부하지 않는 총액 견적으로 국가종합전자조달시스템(G2B)을 이용하여 2인 이상으로부터 견적서를 제출받는 수의계약 대상입니다. 나. 지역제한(경상남도 창원시) 대상 용역입니다. 다. 해당 용역은 전자계약, 청렴서약제 시행 대상 용역입니다. 라. 해당 용역은 공동계약은 불허합니다. 3. 견적제출 참가 자격 가. 지방자치단체를 당사자로 하는 계약에 관한 법률 시행령」 제13조, 같은 법 시행규칙 제14조의 규정에 따른 자격 요건을 갖추고, 「석면안전관리법」제30조의2에 의거 석면해체작업감리인(7472)으로 등록된 업체로서 같은법 시행령 제42조제1항 관련 「별표 3의2」의 자격을 갖추고, ‘석면해체작업",
+          "license_clause": "용 신고: 스마트폰으로 아래의 QR코드를 찍으면 신고창이 열립니다. 漠杳 ☎ 공고와 그 밖의 문의 연락처 •입찰참가자격등록 등 국가종합전자조달시스템 이용에 관한 사항: 조달청(☎1588-0800) •입찰공고, 개찰 및 계약에 관한 사항: 창원교육지원청 계약담당(☎055-210-0644) •설계도면, 시방서 열람 등 용역내용에 관한 사항: 창원교육지원청 시설담당(☎055-250-7586) [유의 사항] ※ 해당 공고와 관련하여 공고문과 규격서(모든 붙임 서류)의 내용이 서로 다른 경우에는 공고문이 우선 적용됩니다. ※ 공고문에 정한 각종 규정은 개정될 수 있으며, 바뀔 경우 개정 규정 부칙의 시행일(또는 적용례)에 따라 개정 규정을 적용할 수 있습니다. 1. 견적에 부치는 사항 氠瑢 용 역 명 안계초등학교 본관동 석면철거공사 감리용역 용",
+          "staffing_clause": "같은법 시행령 제42조제1항 관련 「별표 3의2」의 자격을 갖추고, ‘석면해체작업 감리인 기준’ 「별표1」의 교육을 이수받은 고급감리원 이상 소속된 업체이어야 합니다. * 고용노동부 고시 「석면해체작업감리인 기준」에 의거 아래의 어느 하나에 해당하는 자는 해당 석면해체·제거작업 감리인이 될 수 없습니다. ① 해당 건축물이나 설비에 대한 석면해체·제거작업을 수행하는 자 ② 해당 건축물이나 설비에 대하여 석면조사를 실시한 기관 ③ 「산업안전보건법」 제28조 및 같은법 시행규칙 제38조제1항에 따라 당해 석면해체·제거 사업장의 석면 비산 정도를 측정하는 기관(이하‘석면 비산 정도 측정기관’이라 한다) ④ 「산업안전보건법」제124조 및 같은법 시행규칙 제184조에 따라 당해 석면해체·제거작업에 대한 공기",
+          "base_evidence": "9.~2027. 1. 25. (28일간) 용역개요 汤捯 과업지시서 참고 기초금액 추정가격 부가가치세 18,282,000원 16,620,000원 1,662,000원 ※ 면세사업자 또는 영세율을 적용받는 사업자는 반드시 부가가치세를 포함한 가격으로 투찰하여야 하며, 최종 계약 시에는 부가가치세를 제외하는 금액으로 계약을 체",
+          "score_clause": "기준에 미달하는 자 ※ 기술자 보유현황의 심사는 「낙찰자결정기준」제1장 입찰참가자격 사전심사기준 제5절 “4”의 그밖에 해당공사 수행능력상 결격여부, 제2장의2 기술·학술연구 용역 적격심사 세부기준 <별표>의 기술인력 평가방법을 준용한다. 이때 ‘입찰공고일’은 ‘안내공고일’로 ‘적격심사서류 제출마감일’은 ‘견적서 제출마감일’로 본다. ⑤ 견적서 제출 마감일 기준 최근 3개월 이내에 해당 지방자치단체의 입찰 ․ 계약 및 그 이행과 관"
+        }
+      },
+      "eligibility_status": "참가 불가",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "공고문 서울 외 지역제한: 경상남도 창원시",
+        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
+      ],
+      "eligibility_missing": [
+        "업체 실적 필수조건 및 배점",
+        "석면해체작업 감리인 지정·등록 요건"
+      ],
+      "price_analysis": {
+        "status": "계산 불가",
+        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
+        "base_amount": null,
+        "floor_rate": null,
+        "adjustment_rate": null
+      },
+      "region_assessment": {
+        "status": "excluded",
+        "evidence": "공고문 서울 외 지역제한: 경상남도 창원시",
+        "verified": true
+      }
+    },
+    {
       "id": "R26BK01807652-000",
       "number": "R26BK01807652",
       "order": "000",
@@ -3132,6 +3040,98 @@
         "status": "unknown",
         "evidence": "지역제한 정보가 API에 없음",
         "verified": false
+      }
+    },
+    {
+      "id": "R26BK01819673-000",
+      "number": "R26BK01819673",
+      "order": "000",
+      "category": "석면감리",
+      "registration_deadline": null,
+      "submission_deadline": null,
+      "competition_type": null,
+      "workload_status": "과업·기간 원문 확인 필요",
+      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
+      "attachments": [
+        {
+          "name": "[공고문] 임호초등학교 석면철거 감리용역.hwpx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819673&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
+        },
+        {
+          "name": "[공고문] 임호초등학교 석면철거 감리용역.pdf",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819673&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
+        },
+        {
+          "name": "[과업지시서] 임호초등학교 석면철거 감리용역.hwpx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819673&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
+        }
+      ],
+      "base_amount": 24120000,
+      "floor_rate": null,
+      "raw_qualification": {
+        "industry": "",
+        "participation_region": "",
+        "limited_region": "",
+        "joint_venture": "(없음)공동수급불허",
+        "pq": ""
+      },
+      "title": "임호초등학교 석면철거 감리용역 수의계약 안내 공고",
+      "agency": "경상남도교육청 경상남도김해교육지원청",
+      "notice_at": "2026-11-10 17:34:30",
+      "deadline": "2026-11-16 12:00:00",
+      "budget": "24120000",
+      "budget_type": "배정예산",
+      "region": "정보 미확인",
+      "contract": "수의계약",
+      "method": "전자입찰",
+      "priority": "제외",
+      "reasons": [
+        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
+        "석면감리 관련 공고명",
+        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
+        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
+      ],
+      "eligibility": "원문 확인 필요",
+      "performance": "업체 감리실적 필수·배점 여부 미확인",
+      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01819673&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "일부 텍스트 자동 추출",
+        "files": [
+          {
+            "name": "[공고문] 임호초등학교 석면철거 감리용역.hwpx",
+            "format": "HWPX/DOCX",
+            "status": "본문 추출됨"
+          }
+        ],
+        "evidence": {
+          "region_clause": "국가종합전자조달시스템(G2B)을 이용하여 2인 이상으로부터 견적서를 제출받는 수의계약 및 전자계약 대상입니다. 나. 견적서에 산출내역서를 첨부하지 않는 총액 견적 입니다. 다. 지역제한(경상남도 김해시) 및 청렴서약제 시행 대상 용역입니다. 3. 견적제출 참가 자격 가. 「지방자치단체를 당사 자로 하는 계약에 관한 법률 시행령」제13조 및「동법 시행규칙」제14조의 규정에 의한 자격요건을 갖추고, 「석면안전관리법」 제30조의2에 의한 석면해체작업감리인 으 로 등록된 자로서 「동법 시행령」 제42조 제 1항 관련 ｢별표 3의2｣의 자격을 갖추고, 「 석면해체작업 감리인 기준 」 [별표1]의 교육을 이수받은 고급감리원 이 소속된 아래 각 호의 어느",
+          "license_clause": "폰 활용 신고: 스마트폰으로 아래의 QR코드를 스캔하면 신고창이 열립니다. ◈ 공고 관련 기타문의 연락처 •입찰참가자격등록 등 국가종합전자조달시스템 이용에 관한 사항: 조달청 (☎1588-0800) •공고, 개찰 및 계약에 관한 사항: 김해교육지원청 교육재정과 경리담당 (☎055-330-7636) •과업 에 관한 사항: 김해교육지원청 교육시설과 초등시설담당 (☎055-330-7676) [유의사항] ※ 본 공고와 관련하여 공고서와 규격서(첨부서류 일체)의 내용이 서로 다른 경우에는 공고문이 우선 적용됩니다. ※ 공고문에 정한 각종 규정은 개정될 수 있으며, 개정될 경우 개정규정 부칙의 시행일(또는 적용례)에 따라 개정 규정의 적용 여부가 결정될 수 있습니다. 1. 견적에 부치는 사항 용 역 명 임호초등학교 석면철거 감리용역 용역현장 임호",
+          "staffing_clause": "행령」 제42조 제 1항 관련 ｢별표 3의2｣의 자격을 갖추고, 「 석면해체작업 감리인 기준 」 [별표1]의 교육을 이수받은 고급감리원 이 소속된 아래 각 호의 어느 하나에 해당하는 업체이어야 합니다. 1) 「한국산업안전보건공단법」에 따른 한국산업안전보건공단 2) 「건축사법」 제23조에 따라 건축사사무소개설신고를 한 자 3) 「기술사법」 제6조에 따라 기술사사무소 개설등록을 한 자 4) 「건설기술 진흥법」 제26조 및 같은 법 시행령 제44조제1호 및 제2호가목ㆍ다목에 따라 종합 전문분야 또는 설계ㆍ사업관리 전문분야 중 일반 또는 건설사업관리 분야로 등록한 건설엔지니어링사업자 5) 「산업안전보건법」 제119조제2항에 따른 석면조사기관 또는 같은 법 제125조제3항에 따른 작업환경측정기관 6) 「환경",
+          "base_evidence": "현장 임호초등학교 용역기간 착수일로부터 35일 용역개요 과업지시서 참고 기초금액 추정가격 부가가치세 24,120,000원 21,927,273원 2,192,727원 ※ 면세사업자 또는 영세율을 적용받는 사업자는 반드시 부가가치세를 포함한 가격으로 투찰하여야 하며, 최종 계약 시에는 부가가치세를 제외하는 금액으로 계약을 체"
+        }
+      },
+      "eligibility_status": "참가 불가",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "공고문 서울 외 지역제한: 경상남도 김해시",
+        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
+      ],
+      "eligibility_missing": [
+        "업체 실적 필수조건 및 배점",
+        "석면해체작업 감리인 지정·등록 요건"
+      ],
+      "price_analysis": {
+        "status": "계산 불가",
+        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
+        "base_amount": null,
+        "floor_rate": null,
+        "adjustment_rate": null
+      },
+      "region_assessment": {
+        "status": "excluded",
+        "evidence": "공고문 서울 외 지역제한: 경상남도 김해시",
+        "verified": true
       }
     },
     {
