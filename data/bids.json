@@ -7,11 +7,11 @@
     "해체감리",
     "석면감리"
   ],
-  "updated_at": "2026-11-19T20:59:00+09:00",
+  "updated_at": "2026-11-20T20:59:57+09:00",
   "status": "ready",
   "source": "조달청 나라장터 입찰공고정보서비스",
-  "query_window": "2026-11-14 ~ 2026-11-19",
-  "total_matches": 126,
+  "query_window": "2026-11-15 ~ 2026-11-20",
+  "total_matches": 122,
   "items": [
     {
       "id": "R26BK01832369-000",
@@ -370,981 +370,6 @@
         "서울 업체 참가 가능 지역",
         "업체 실적 필수조건 및 배점",
         "설계 참여인력·협업 분야·과업기간"
-      ],
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      },
-      "region_assessment": {
-        "status": "unknown",
-        "evidence": "지역제한 정보가 API에 없음",
-        "verified": false
-      }
-    },
-    {
-      "id": "R26BK01824114-000",
-      "number": "R26BK01824114",
-      "order": "000",
-      "category": "석면감리",
-      "registration_deadline": null,
-      "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
-      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
-      "attachments": [
-        {
-          "name": "[과업지시서] 가야중학교 석면해체 감리용역.hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01824114&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        },
-        {
-          "name": "[공고문] 가야중학교 석면해체 감리용역.hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01824114&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
-        },
-        {
-          "name": "[공고문] 가야중학교 석면해체 감리용역.pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01824114&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "가야중학교 석면해체 감리용역 수의계약 안내 공고",
-      "agency": "경상남도교육청 경상남도김해교육지원청",
-      "notice_at": "2026-11-16 08:33:05",
-      "deadline": "2026-11-20 10:00:00",
-      "budget": "17085000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "수의계약",
-      "method": "전자입찰",
-      "priority": "지역 확인 우선",
-      "reasons": [
-        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
-        "석면감리 관련 공고명",
-        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01824114&bidPbancOrd=000",
-      "document_analysis": {
-        "status": "일부 텍스트 자동 추출",
-        "files": [
-          {
-            "name": "[과업지시서] 가야중학교 석면해체 감리용역.hwp",
-            "format": "HWP",
-            "status": "본문 추출됨"
-          }
-        ],
-        "evidence": {
-          "license_clause": ". 11. 경상남도김해교육지원청 【교육시설과】 1. 적용범위 이 과업지시서는 경상남도김해교육지원청이 발주한 석면해체·제거작업의 감리와 관련해 발주자와 수급인이 지켜야 할 사항을 명시한 설명서이다. 2. 작업 범위 가. 용역명: 가야중학교 석면해체 감리용역 나. 용역기간: 용역 착수일로부터 35일 다. 용역개요: 1) 위치: 가야중학교 내 2) 대상: 교내 석면 함유 내·외장재(텍스 등) 3) 면적: 3,005.1m² 3. 일반사항 이 과업지시서에 기재되지 않은 사항이라도 석면해체·제거작업 감리에 필요한 관련 규정에서 정한 사항과 법령 개정 등으로 변경된 사항은 감독관에게 보고하고 감독관과 협의하여 수급인의 책임으로 면밀히 감리 업무를 수행한다. 또한, 필요하다고 인정될 경우 감독관과 수급인은 환경부 및 고용노동부 석면관련 전문기관(공단, 협회 등)에게 감리 등에 대한 자문을 구하여 적절하게 진행될 수 있도록 대책을 수립한다. ※ 사전설명회에 석면해체제거작업과 관련된 설명 및 자문을 수행해야함 4. 자격요건 감리인은 「석면안전관리법」에 따른 환경부 고시「석면해체작업 감리인",
-          "staffing_clause": "자격요건 감리인은 「석면안전관리법」에 따른 환경부 고시「석면해체작업 감리인 기준」 [별표1]의 자격을 갖추고 교육을 이수한 고급감리원이 소속된 아래 각 호의 어느 하나에 해당하는 업체로 한다. ① 「산업안전보건법」에 따른 석면조사기관 ② 「건축사법」에 따라 건축사사무소 개설신고를 한 자 ③ 「건설기술진흥법」에 따라 종합 또는 설계·사업관리 분야의 일반 또는 건설사업관리로 등록된 건설기술용역업자 ④ 「한국환경공단법」에 따른 한국환경공단 ⑤ 「한국산업안전보건공단법」에 따른 한국산업안전보건공단 ⑥ 「석면안전관리법」에 따른 석면환경센터 ⑦ 「산업안전보건법」에 따라 작업환경을 측정하는 지정측정기관 ⑧ 「환경분야 시험 검사 등에 관한 법률」에 따라 다중이용시설 등의 실내공간오염물질의 측정대행업 등록을 한 자",
-          "score_clause": "행위 등이 많은 것으로 알고 있습니다. 내실 있는 업체를 선정하는 방법이 있나요? A9. 적격심사 기준 평가 시 신인도 평가에서 가산점을 주는 등 노동부의 석면 해체· 제거작업 안전성 평가 등급을 반영하여 석면 해체·제거업자 선정할 것을 권장합니다. Q10. 석면 해체·제거작업을 위해서는 사전에 조명, 냉난방기 등의 설비 해체가 필요합니다. 적절한 방법이 있나요? A10. 석면 해체·제거작업 전 보양 및 밀폐가 된 상태에서 조명기구,"
-        }
-      },
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "업체 실적 필수조건 및 배점",
-        "석면해체작업 감리인 지정·등록 요건"
-      ],
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      },
-      "region_assessment": {
-        "status": "unknown",
-        "evidence": "지역제한 정보가 API에 없음",
-        "verified": false
-      }
-    },
-    {
-      "id": "R26BK01827817-000",
-      "number": "R26BK01827817",
-      "order": "000",
-      "category": "석면감리",
-      "registration_deadline": null,
-      "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
-      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
-      "attachments": [
-        {
-          "name": "[공고문] 김해대청고등학교 석면해체 감리용역.hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01827817&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "[공고문] 김해대청고등학교 석면해체 감리용역.pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01827817&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "과업지시서(김해대청고 석면해체 감리용역).hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01827817&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": 17085000,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "김해대청고등학교 석면해체 감리용역 수의계약 안내 공고",
-      "agency": "경상남도교육청 경상남도김해교육지원청",
-      "notice_at": "2026-11-16 08:54:11",
-      "deadline": "2026-11-20 10:00:00",
-      "budget": "17085000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "수의계약",
-      "method": "전자입찰",
-      "priority": "제외",
-      "reasons": [
-        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
-        "석면감리 관련 공고명",
-        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01827817&bidPbancOrd=000",
-      "document_analysis": {
-        "status": "일부 텍스트 자동 추출",
-        "files": [
-          {
-            "name": "[공고문] 김해대청고등학교 석면해체 감리용역.hwp",
-            "format": "HWP",
-            "status": "본문 추출됨"
-          }
-        ],
-        "evidence": {
-          "region_clause": "은 국가종합전자조달시스템(G2B)을 이용하여 2인 이상으로부터 견적서를 제출받는 수의계약 및 전자계약 대상입니다. 나. 견적서에 산출내역서를 첨부하지 않는 총액 견적입니다. 다. 지역제한(경상남도 김해시) 및 청렴서약제 시행 대상 용역입니다. 3. 견적제출 참가 자격 가.「지방자치단체를 당사자로 하는 계약에 관한 법률 시행령」제13조 및「같은 법 시행규칙」제14조의 규정에 따른 자격요건을 갖추고, 「석면안전관리법」제30조의2에 의한 석면해체작업감리인으로 등록된 자로서 「같은 법 시행령」 제42조 제1항 관련 ｢별표 3의2｣의 자격을 갖추고, 환경부 고시「석면해체작업 감리인 기준」 [별표1]에서 정한 교육을 이수한 고급감리원이 소속된 아래 각 호",
-          "license_clause": "捤獥 汤捯 湰灧 湰灧 漠杳 경상남도김해교육지원청 공고 제2026-246호 김해대청고등학교 석면해체 감리용역 수의계약 안내 공고 견적제출에 참가하고자 하는 자는 공고서, 과업지시서(특수조건) 및 최신법령 등을 반드시 열람하여 그 내용을 숙지하여야 하며, 숙지하지 못함에 따른 책임은 견적제출자에게 있습니다. - 다 음 - Ⅰ. 수의계약 안내 공고 및 관련서류 Ⅱ. 국가종합전자조달시스템 전자입찰특별유의서(조달청 고시) Ⅲ. 지방자치단체 입찰 및 계약 집행기준(행정안전부 예규) Ⅳ. 지방자치단체 입찰시 낙찰자 결정기준(행정안전부 예규) 氠瑢 < 본 계약은 청렴서약제가 적용됩니다 > ◈ 지방계약법 제6조의 2에 따른 청렴계약을 위반하여 아래의 행위를 하는 경우 입찰·낙찰을 취소하거나 계약을 해제․해지하는 등의 불이익을 받을 수 있습니다. ◦ 입찰·낙찰 및 계약체결 또는 계약이행 과정(준공 이후 포함)에서 관계 공무원에게 직· 간접적으로 금품·향응 등(친인척 등에 대한 부정한 취업 제공 포함)의 부당한 이익을 제공하는 경우 ◦ 특정인의 낙찰을 위한 담합 등 입찰의 자유경쟁을 방해하",
-          "staffing_clause": "2조 제1항 관련 ｢별표 3의2｣의 자격을 갖추고, 환경부 고시「석면해체작업 감리인 기준」 [별표1]에서 정한 교육을 이수한 고급감리원이 소속된 아래 각 호의 어느 하나에 해당하는 업체이어야 합니다. 1) 「한국산업안전보건공단법」에 따른 한국산업안전보건공단 2) 「건축사법」 제23조에 따라 건축사사무소개설신고를 한 자 3) 「기술사법」 제6조에 따라 기술사사무소 개설등록을 한 자 4) 「건설기술 진흥법」 제26조 및 같은 법 시행령 제44조제1호 및 제2호가목ㆍ다목에 따라 종합 전문분야 또는 설계ㆍ사업관리 전문분야 중 일반 또는 건설사업관리 분야로 등록한 건설엔지니어링사업자 5) 「산업안전보건법」 제119조제2항에 따른 석면조사기관 또는 같은 법 제125조제3항에 따른 작업환경측정기관 6) 「환경분",
-          "base_evidence": "김해대청고등학교 용역기간 착수일로부터 35일간 용역개요 과업지시서 참고 기초금액 추정가격 부가가치세 17,085,000원 15,531,810원 1,553,190원 ※ 면세사업자 또는 영세율을 적용받는 사업자는 반드시 부가가치세를 포함한 가격으로 투찰하여야 하며, 최종 계약 시에는 부가가치세를 제외하는 금액으로 계약을 체",
-          "score_clause": "업종등록 기준에 미달하는 자 ※ 기술자 보유현황의 심사는 「낙찰자결정기준」제2장 시설공사 적격심사 세부기준 <별지 2>의 그밖에 해당공사 수행능력상 결격여부, 제3장 기술용역 적격심사 세부기준 <별표>의 기술인력 평가방법을 준용한다. 이때 ‘입찰공고일’은 ‘안내공고일’로 ‘적격심사서류 제출마감일’은 ‘견적서 제출마감일’로 본다. ⑤ 견적서 제출 마감일 기준 최근 3개월 이내에 해당 지방자치단체의 입찰 ․ 계약 및 그 이행과 관련하여"
-        }
-      },
-      "eligibility_status": "참가 불가",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "공고문 서울 외 지역제한: 경상남도 김해시",
-        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
-      ],
-      "eligibility_missing": [
-        "업체 실적 필수조건 및 배점",
-        "석면해체작업 감리인 지정·등록 요건"
-      ],
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      },
-      "region_assessment": {
-        "status": "excluded",
-        "evidence": "공고문 서울 외 지역제한: 경상남도 김해시",
-        "verified": true
-      }
-    },
-    {
-      "id": "R26BK01829720-000",
-      "number": "R26BK01829720",
-      "order": "000",
-      "category": "설계용역",
-      "registration_deadline": null,
-      "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
-      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
-      "attachments": [
-        {
-          "name": "공고문.hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01829720&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "공고문.pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01829720&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "과업지시서.hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01829720&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "경상남도교육청 창원도서관 꿈담 증축 설계의 경제성(VE) 등 검토용역 수의계약 안내공고",
-      "agency": "경상남도교육청",
-      "notice_at": "2026-11-16 08:41:08",
-      "deadline": "2026-11-20 10:00:00",
-      "budget": "25300000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "수의계약",
-      "method": "전자입찰",
-      "priority": "제외",
-      "reasons": [
-        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
-        "설계용역 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "설계실적 보유현황 및 필수·배점 조건 미확인 (감리실적과 별도)",
-      "staffing": "설계 참여인력·협업 분야 자격 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01829720&bidPbancOrd=000",
-      "document_analysis": {
-        "status": "일부 텍스트 자동 추출",
-        "files": [
-          {
-            "name": "공고문.hwp",
-            "format": "HWP",
-            "status": "본문 추출됨"
-          }
-        ],
-        "evidence": {
-          "region_clause": "적제출 및 계약방식 가. 견적서에 산출내역서를 첨부하지 않는 총액 견적으로 국가종합전자조달시스템(G2B)을 이용하여 2인 이상으로부터 견적서를 제출받는 수의계약 대상입니다. 나. 지역제한(경상남도) 대상 용역입니다. 다. 해당 용역은 전자계약, 청렴서약제 시행 대상 용역입니다. 라. 해당 용역은 공동도급은 불허합니다. 3. 견적제출 참가 자격 가.「지방자치단체를 당사자로 하는 계약에 관한 법률 시행령」 제13조, 같은 법 시행규칙 제14조의 규정에 따른 자격 요건을 갖춘 자로서, 「건축사법」제7조의 규정에 의한 건축사면허를 소지하고, 같은 법 제23조 규정에 의한 건축사사무소(업종코드 4817) 개설 등록을 마친 업체 또는「건설기술진흥법」제26",
-          "license_clause": ": 스마트폰으로 아래의 QR코드를 찍으면 신고창이 열립니다. 漠杳 氠瑢 ☎ 견적제출 관련 기타문의 연락처 •입찰참가자격등록 등 국가종합전자조달시스템 이용에 관한 사항: 조달청(☎1588-0800) •공고, 개찰 및 계약에 관한 사항: 경상남도교육청 재정과(☎055-268-1474) •과업 내용 등에 관한 사항: 경상남도교육청 시설과(☎055-268-1544) [유의 사항] ※ 해당 견적제출 공고와 관련하여 공고서와 규격서(모든 붙임 서류)의 내용이 서로 다른 경우에는 수의계약 공고문이 우선 적용 됩니다. ※ 공고문에 정한 각종 규정은 개정될 수 있으며, 바뀔 경우 개정 규정 부칙의 시행(또는 적용례)에 따라 개정 규정의 적용 여부가 결정될 수 있습니다. 1. 견적에 부치는 사항 氠瑢 용 역 명 汤捯 경상남도교육청 창원도서관 꿈담 증축",
-          "score_clause": "기준에 미달하는 자 ※ 기술자 보유현황의 심사는 「낙찰자결정기준」제1장 입찰참가자격 사전심사기준 제5절 “4”의 그밖에 해당공사 수행능력상 결격여부, 제2장의2 기술·학술연구 용역 적격심사 세부기준 <별표>의 기술인력 평가방법을 준용한다. 이때 ‘입찰공고일’은 ‘안내공고일’로 ‘적격심사서류 제출마감일’은 ‘견적서 제출마감일’로 본다. ⑤ 견적서 제출 마감일 기준 최근 3개월 이내에 해당 지방자치단체의 입찰 ․ 계약 및 그 이행과 관"
-        }
-      },
-      "eligibility_status": "참가 불가",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "공고문 서울 외 지역제한: 경상남도",
-        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
-      ],
-      "eligibility_missing": [
-        "업체 실적 필수조건 및 배점",
-        "설계 참여인력·협업 분야·과업기간"
-      ],
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      },
-      "region_assessment": {
-        "status": "excluded",
-        "evidence": "공고문 서울 외 지역제한: 경상남도",
-        "verified": true
-      }
-    },
-    {
-      "id": "R26BK01830837-000",
-      "number": "R26BK01830837",
-      "order": "000",
-      "category": "석면감리",
-      "registration_deadline": null,
-      "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
-      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
-      "attachments": [
-        {
-          "name": "공고문(봉곡중학교 석면해체 감리용역).hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01830837&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "공고문(봉곡중학교 석면해체 감리용역).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01830837&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "(교육재정과-32101 (첨부) 경상남도창원교육지원청 시설1과) 4-1과업지시서(봉곡중학교_석면감리용역).hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01830837&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": 12188000,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "봉곡중학교 석면해체 감리용역 수의계약 안내 공고",
-      "agency": "경상남도교육청 경상남도창원교육지원청",
-      "notice_at": "2026-11-16 13:00:23",
-      "deadline": "2026-11-20 10:00:00",
-      "budget": "12188000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "수의계약",
-      "method": "전자입찰",
-      "priority": "제외",
-      "reasons": [
-        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
-        "석면감리 관련 공고명",
-        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01830837&bidPbancOrd=000",
-      "document_analysis": {
-        "status": "일부 텍스트 자동 추출",
-        "files": [
-          {
-            "name": "공고문(봉곡중학교 석면해체 감리용역).hwp",
-            "format": "HWP",
-            "status": "본문 추출됨"
-          }
-        ],
-        "evidence": {
-          "region_clause": "적제출과 계약 방식 가. 견적서에 산출내역서를 첨부하지 않는 총액 견적으로 국가종합전자조달시스템(G2B)을 이용하여 2인 이상으로부터 견적서를 제출받는 수의계약 대상입니다. 나. 지역제한(경상남도 창원시) 대상 용역입니다. 다. 해당 용역은 전자계약, 청렴서약제 시행 대상 용역입니다. 라. 해당 용역은 공동계약은 불허합니다. 3. 견적제출 참가 자격 가. 지방자치단체를 당사자로 하는 계약에 관한 법률 시행령」 제13조, 같은 법 시행규칙 제14조의 규정에 따른 자격 요건을 갖추고, 「석면안전관리법」제30조의2에 의거 석면해체작업감리인(7472)으로 등록된 업체로서 같은법 시행령 제42조제1항 관련 「별표 3의2」의 자격을 갖추고, ‘석면해체작업",
-          "license_clause": "捤獥 汤捯 湰灧 湰灧 漠杳 경상남도창원교육지원청 공고 제2026-629호 봉곡중학교 석면해체 감리용역 수의계약 안내 공고 견적제출에 참가하고자 하는 자는 공고문과 물량내역서, 최신법령 등을 반드시 열람하여 그 내용을 충분히 알아야 합니다. 관련 내용을 잘 알지 못해 발생한 책임은 견적제출자에게 있습니다. - 다 음 - Ⅰ. 수의계약 안내공고 및 관련서류 Ⅱ. 국가종합전자조달시스템 전자입찰특별유의서(조달청 고시) Ⅲ. 지방자치단체 입찰 및 계약 집행기준(행정안전부 예규) Ⅳ. 지방자치단체 입찰시 낙찰자 결정기준(행정안전부 예규) 氠瑢 氠瑢 < 해당 계약은 청렴서약제가 적용됩니다 > ◈「지방계약법」 제6조의2에 따른 청렴계약을 위반하여 아래의 행위를 하는 경우 입찰․낙찰을 취소하거나 계약을 해제․해지하는 등의 불이익을 받을 수 있습니다. ◦ 입찰․낙찰, 계약체결 또는 계약이행 과정(준공 이후 포함)에서 관계 공무원에게 직․간접적으로 금품․향응 등(친인척 등에 대한 부정한 취업 제공 포함)의 부당한 이익을 제공하는 경우 ◦ 특정인의 낙찰을 위한 담합 등 입찰의 자유경쟁을 방해",
-          "staffing_clause": "같은법 시행령 제42조제1항 관련 「별표 3의2」의 자격을 갖추고, ‘석면해체작업 감리인 기준’ 「별표1」의 교육을 이수받은 고급감리원 이상 소속된 업체이어야 합니다. * 고용노동부 고시 「석면해체작업감리인 기준」에 의거 아래의 어느 하나에 해당하는 자는 해당 석면해체·제거작업 감리인이 될 수 없습니다. ① 해당 건축물이나 설비에 대한 석면해체·제거작업을 수행하는 자 ② 해당 건축물이나 설비에 대하여 석면조사를 실시한 기관 ③ 「산업안전보건법」 제28조 및 같은법 시행규칙 제38조제1항에 따라 당해 석면해체·제거 사업장의 석면 비산 정도를 측정하는 기관(이하‘석면 비산 정도 측정기관’이라 한다) ④ 「산업안전보건법」제124조 및 같은법 시행규칙 제184조에 따라 당해 석면해체·제거작업에 대한 공기",
-          "base_evidence": "봉곡중학교 용역기간 착수일로부터 30일간 용역개요 汤捯 과업지시서 참고 기초금액 추정가격 부가가치세 12,188,000원 11,080,000원 1,108,000원 ※ 면세사업자 또는 영세율을 적용받는 사업자는 반드시 부가가치세를 포함한 가격으로 투찰하여야 하며, 최종 계약 시에는 부가가치세를 제외하는 금액으로 계약을 체",
-          "score_clause": "기준에 미달하는 자 ※ 기술자 보유현황의 심사는 「낙찰자결정기준」제1장 입찰참가자격 사전심사기준 제5절 “4”의 그밖에 해당공사 수행능력상 결격여부, 제2장의2 기술·학술연구 용역 적격심사 세부기준 <별표>의 기술인력 평가방법을 준용한다. 이때 ‘입찰공고일’은 ‘안내공고일’로 ‘적격심사서류 제출마감일’은 ‘견적서 제출마감일’로 본다. ⑤ 견적서 제출 마감일 기준 최근 3개월 이내에 해당 지방자치단체의 입찰 ․ 계약 및 그 이행과 관"
-        }
-      },
-      "eligibility_status": "참가 불가",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "공고문 서울 외 지역제한: 경상남도 창원시",
-        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
-      ],
-      "eligibility_missing": [
-        "업체 실적 필수조건 및 배점",
-        "석면해체작업 감리인 지정·등록 요건"
-      ],
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      },
-      "region_assessment": {
-        "status": "excluded",
-        "evidence": "공고문 서울 외 지역제한: 경상남도 창원시",
-        "verified": true
-      }
-    },
-    {
-      "id": "R26BK01830952-000",
-      "number": "R26BK01830952",
-      "order": "000",
-      "category": "석면감리",
-      "registration_deadline": null,
-      "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
-      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
-      "attachments": [
-        {
-          "name": "공고문(인천여상 실천동 및 인천고 백주년기념관 석면철거공사 석면감리용역).hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01830952&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "공고문(인천여상 실천동 및 인천고 백주년기념관 석면철거공사 석면감리용역).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01830952&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "석면감리용역 과업지침서.hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01830952&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        },
-        {
-          "name": "석면감리용역비 산출서(인천여상, 인천고).xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01830952&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "인천여상 실천동 및 인천고 백주년 기념관 석면철거공사 석면감리용역(계속비)",
-      "agency": "인천광역시교육청 인천광역시남부교육지원청",
-      "notice_at": "2026-11-16 16:25:32",
-      "deadline": "2026-11-20 10:00:00",
-      "budget": "14610000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "수의계약",
-      "method": "전자입찰",
-      "priority": "제외",
-      "reasons": [
-        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
-        "석면감리 관련 공고명",
-        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01830952&bidPbancOrd=000",
-      "document_analysis": {
-        "status": "일부 텍스트 자동 추출",
-        "files": [
-          {
-            "name": "공고문(인천여상 실천동 및 인천고 백주년기념관 석면철거공사 석면감리용역).hwp",
-            "format": "HWP",
-            "status": "본문 추출됨"
-          }
-        ],
-        "evidence": {
-          "region_clause": "ce.go.kr > 계약과정정보공개시스템 > 계약정보공개) 2. 견적제출 및 계약방식 가. 조달청 국가종합전자조달시스템(G2B)를 이용한 2인 이상 수의계약 견적제출입니다. 나. 지역제한(인천광역시), 총액 견적제출, 계속비 계약, 청렴계약 대상 용역입니다. 다. 계약체결은 국가종합전자조달시스템(G2B)에서 전자계약으로 체결합니다. 라. 공동수급 불허 대상 용역입니다. 마. 손해배상보험 또는 공제 가입대상 용역입니다. 바. 본 용역은 「공직자의 이해충돌 방지법」에 따른 수의계약 체결제한에 해당하는 용역으로, 견적 제출자는 수의계약체결 제한 여부에 대하여 관련 법령과 규정을 숙지하고 ‘수의계약 체결 제한 여부 확인서’ 작성에 동의한 것으로 간주하",
-          "license_clause": "게 있음을 알려드립니다. 1. 수의계약 견적제출 안내 공고문 2. 국가종합전자조달시스템 전자입찰특별유의서, 입찰참가자격등록규정(조달청 고시) 3. 지방자치단체 입찰 및 계약 집행기준(행정안전부 예규) 4. 기타 지방계약법령, 용역 관련 법령, 예규, 고시 등 5. 계약이행 특수조건(별도 첨부) 【유의사항】 본 공고문에 정한 각종 규정은 개정될 수 있으며, 개정될 경우 개정규정 부칙의 시행일(또는 적용례)에 따라 개정 규정의 적용 여부가 결정될 수 있습니다. 氠瑢 〈 본 계약은 청렴계약제가 적용됩니다. 〉 汤捯 본 계약은 지방자치단체를 당사자로 하는 계약에 관한 법률 제6조의2에 따른 청렴계약제가 적용되는 용역입니다. 견적제출자는 반드시 견적제출 시 아래의 청렴계약서에 관한 내용을 숙지․승낙하여야 하며, 동 내용을 위반한 경우 발주기관의",
-          "staffing_clause": "시행령」 제42조제1항 관련 [별표3의2]의 자격을 갖추고, 「석면해체작업감리인 기준」 [별표1]에서 정한 교육을 이수받은 고급감리원을 보유하였으며, 「석면해체작업감리인 기준」제3조에 따른 자격요건을 갖춘 업체여야 합니다. 氠瑢 汤捯 ※ 다음 각 호의 어느 하나에 해당하는 자는 해당 석면해체 〮 제거 작업의 감리인이 될 수 없습니다. ① 해당 건축물이나 설비에 대한 석면해체·제거작업을 수행하는 자 ② 해당 건축물이나 설비에 대하여 석면조사를 실시한 기관 ③ 법 제28조 및 같은법 시행규칙 제38조제1항에 따라 당해 석면해체·제거 사업장의 석면 비산 정도 를 측정하는 기관 ④ 「산업안전보건법」제124조 및 같은법 시행규칙 제184조에 따라 당해 석면해체·제거작업에 대한 공 기 중 석면농도를 측정하는",
-          "base_evidence": "11:00 개찰장소 汤捯 인천광역시남부교육지원청 입찰집행관PC 추정금액 기초금액(A+B) 추정가격(A) 부가가치세(B) 소계 浵╦ 13,281,818 浵ࡦ 浵╦ 1,328,182 浵ࡦ 浵╦ 14,610,000 浵ࡦ 14,610,000원 계속비 추정 연부액 2026년 추정 연부액: 금0원 2027년 추정 연부액: 금14,",
-          "score_clause": "업종등록 기준에 미달하는 자 ※ 기술자 보유현황의 심사는 「낙찰자결정기준」제2장 시설공사 적격심사 세부기준 <별지 2>의 그밖에 해당공사 수행능력상 결격여부, 제3장 기술용역 적격심사 세부기준 <별표>의 기술인력 평가방법을 준용한다. 이때 ‘입찰공고일’은 ‘안내공고일’로 ‘적격심사서류 제출마감일’은 ‘견적서 제출마감일’로 본다. ⑤ 견적서 제출 마감일 기준 최근 3개월 이내에 해당 지방자치단체의 입찰 ․ 계약 및 그 이행과 관련하여"
-        }
-      },
-      "eligibility_status": "참가 불가",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "공고문 서울 외 지역제한: 인천광역시",
-        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
-      ],
-      "eligibility_missing": [
-        "업체 실적 필수조건 및 배점",
-        "석면해체작업 감리인 지정·등록 요건"
-      ],
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      },
-      "region_assessment": {
-        "status": "excluded",
-        "evidence": "공고문 서울 외 지역제한: 인천광역시",
-        "verified": true
-      }
-    },
-    {
-      "id": "R26BK01832121-000",
-      "number": "R26BK01832121",
-      "order": "000",
-      "category": "건축감리",
-      "registration_deadline": null,
-      "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
-      "collaboration_status": "추가 분야 자격·분담 확인 필요",
-      "attachments": [
-        {
-          "name": "기술용역 소액수의 견적서 제출안내서-여수화학센터 대용량포방사시스템 차고(청사) 신축사업 건설사업관리용역(건축,전기,통신,소방).hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01832121&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "기술용역 소액수의 견적서 제출안내서-여수화학센터 대용량포방사시스템 차고(청사) 신축사업 건설사업관리용역(건축,전기,통신,소방).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01832121&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "여수화학센터 대용량포방사시스템 차고(청사) 신축사업 건설사업관리용역(건축,토목,기계) 업무수행지침서.hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01832121&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        },
-        {
-          "name": "여수화학센터 대용량포방사시스템 차고(청사) 신축사업 건설사업관리용역(전기,통신,소방) 업무수행지침서.hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01832121&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)분담이행",
-        "pq": ""
-      },
-      "title": "여수화학센터 대용량포방사시스템 차고(청사) 신축사업 건설사업관리용역(건축, 전기, 통신, 소방)",
-      "agency": "소방청 중앙119구조본부",
-      "notice_at": "2026-11-16 14:14:44",
-      "deadline": "2026-11-20 10:00:00",
-      "budget": "59864000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "수의계약",
-      "method": "전자입찰",
-      "priority": "제외",
-      "reasons": [
-        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01832121&bidPbancOrd=000",
-      "document_analysis": {
-        "status": "일부 텍스트 자동 추출",
-        "files": [
-          {
-            "name": "기술용역 소액수의 견적서 제출안내서-여수화학센터 대용량포방사시스템 차고(청사) 신축사업 건설사업관리용역(건축,전기,통신,소방).hwp",
-            "format": "HWP",
-            "status": "본문 추출됨"
-          }
-        ],
-        "evidence": {
-          "region_clause": "9,864,000【추정가격 54,421,818원 + 부가가치세 5,442,182원】 2. 견적서 제출방식 2.1. 나라장터를 통하여 총액으로 견적서를 제출하여야 합니다. 2.2. 지역제한(전남광주통합특별시) 대상용역입니다. 2.3. 장기계속계약 대상용역입니다. 2.4. 전자입찰 대상용역입니다. 2.5. 청렴계약제가 적용되는 용역으로서 입찰자는 청렴계약서(서약서)를 제출하여야 합니다. 다만 나라장터를 이용하여 제출하는 경우에는 전자입찰서에 ‘청렴계약서(서약서)’의 내용을 포함하고 있으므로 전자입찰서 제출로 청렴계약서(서약서) 제출을 갈음합니다. 2.6. 손해배상책임보험 가입 대상용역입니다.「엔지니어링산업진흥법 시행령」제42조에 의거 손해배상책임보",
-          "license_clause": "합니다. 이 건과 관련하여 문의할 사항이 있을 경우 아래를 참고하시기 바랍니다. ○ 입찰안내 상담 및 입찰참가 자격등록 : 조달청 정부조달 콜센터(☎ 1588-0800) ○ 입찰공고, 개찰, 계약방법 등 : 중앙119구조본부 기획협력과 김지훈(☎ 053-712-1013) ○ 수요기관과 관련된 세부사업 문의 : 중앙119구조본부 기획협력과 김동진(☎ 053-712-1123) 氠瑢 중앙119구조본부 氠瑢 이 견적서 제출에 참가하는 자는 다음의 안내서를 구성하는 공고서 및 각종 규정 등을 반드시 열람하고 숙지하여야 하며, 숙지하지 못함에 따라 발생하는 모든 책임은 입찰자에게 있음을 알려드립니다. - 다 음 - 1. 기술용역 소액수의 견적서 제출안내서(공고) 2. 국가종합전자조달시스템 전자입찰특별유의서(조달청 고시) 3. 국가종합전자조달시",
-          "base_evidence": "바에 따릅니다. 8. 예정가격 및 계약상대자 결정 8.1. 예정가격은 기초금액의 ±2% 범위 내에서 복수예비가격 15개를 작성, 입찰에 참여하는 각 업체가 추첨한(2개씩 선택) 번호 중 가장 많이 선택된 4개의 복수예비가격을 산술평균한 금액으로 결정됩니다. 8.1.1. 본 용역은 총액으로 견적을 제출하여야 하며, 예정",
-          "score_clause": "경우에는 동 조항에 따라 차순위자를 계약상대자로 결정합니다. 8.2. 소액견적 대상으로 적격심사는 실시하지 않습니다. 8.3. 동일가격으로 견적서를 제출한 자가 2인 이상인 때에는 「국가종합전자조달시스템 전자입찰특별유의서」제15조에 따라 동일가격 입찰 시 전자조달시스템을 통해 자동으로 추첨하는 방식을 적용하여 낙찰자를 결정합니다. 9. 입찰(견적서 제출)무효 9.1. ｢국가계약법 시행령｣ 제39조 제4항, 동법 시행규칙 제44조,"
-        }
-      },
-      "eligibility_status": "참가 불가",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "공고문 서울 외 지역제한: 전남광주통합특별시",
-        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
-      ],
-      "eligibility_missing": [
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      },
-      "region_assessment": {
-        "status": "excluded",
-        "evidence": "공고문 서울 외 지역제한: 전남광주통합특별시",
-        "verified": true
-      }
-    },
-    {
-      "id": "R26BK01833364-000",
-      "number": "R26BK01833364",
-      "order": "000",
-      "category": "석면감리",
-      "registration_deadline": null,
-      "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
-      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
-      "attachments": [
-        {
-          "name": "[공고문]명도초등학교 본관동 석면해체제거 감리용역.hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01833364&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "[공고문]명도초등학교 본관동 석면해체제거 감리용역.pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01833364&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "[과업지시서]명도초 본관동 석면해체제거 감리용역.hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01833364&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        },
-        {
-          "name": "[특기시방서]명도초 본관동 석면해체제거 감리용역.hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01833364&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
-        },
-        {
-          "name": "[용역비산출서]명도초 본관동 석면해체제거 감리용역.xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01833364&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "명도초등학교 본관동 석면해체제거 감리용역 수의계약 안내 공고",
-      "agency": "경상남도교육청 경상남도창원교육지원청",
-      "notice_at": "2026-11-16 17:34:20",
-      "deadline": "2026-11-20 10:00:00",
-      "budget": "23361000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "수의계약",
-      "method": "전자입찰",
-      "priority": "지역 확인 우선",
-      "reasons": [
-        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
-        "석면감리 관련 공고명",
-        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01833364&bidPbancOrd=000",
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력",
-        "석면해체작업 감리인 지정·등록 요건"
-      ],
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      },
-      "region_assessment": {
-        "status": "unknown",
-        "evidence": "지역제한 정보가 API에 없음",
-        "verified": false
-      }
-    },
-    {
-      "id": "R26BK01833634-000",
-      "number": "R26BK01833634",
-      "order": "000",
-      "category": "석면감리",
-      "registration_deadline": null,
-      "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
-      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
-      "attachments": [
-        {
-          "name": "공고문(대전구봉중 외부석면해체공사 석면감리용역).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01833634&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "과업설명서_대전구봉중 외부석면 해체공사 석면감리용역.hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01833634&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "산출서_대전구봉중 외부석면 해체공사 석면감리용역-공고용.xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01833634&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "대전구봉중 외부석면 해체공사 석면감리용역",
-      "agency": "대전광역시교육청 대전광역시서부교육지원청",
-      "notice_at": "2026-11-16 16:52:15",
-      "deadline": "2026-11-20 10:00:00",
-      "budget": "16082000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "수의계약",
-      "method": "전자입찰",
-      "priority": "지역 확인 우선",
-      "reasons": [
-        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
-        "석면감리 관련 공고명",
-        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01833634&bidPbancOrd=000",
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력",
-        "석면해체작업 감리인 지정·등록 요건"
-      ],
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      },
-      "region_assessment": {
-        "status": "unknown",
-        "evidence": "지역제한 정보가 API에 없음",
-        "verified": false
-      }
-    },
-    {
-      "id": "R26BK01840786-001",
-      "number": "R26BK01840786",
-      "order": "001",
-      "category": "석면감리",
-      "registration_deadline": null,
-      "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
-      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
-      "attachments": [
-        {
-          "name": "2. 용역개요(서울금북초 석면해체제거공사 감리용역).hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01840786&bidPbancOrd=001&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "4. 과업지시서(서울금북초 석면해체제거공사 감리용역).hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01840786&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "서울금북초 석면해체제거공사 감리용역",
-      "agency": "서울특별시교육청 서울특별시성동광진교육지원청",
-      "notice_at": "2026-11-19 14:25:08",
-      "deadline": "2026-11-20 12:00:00",
-      "budget": "19839000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "수의계약",
-      "method": "전자시담",
-      "priority": "지역 확인 우선",
-      "reasons": [
-        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
-        "석면감리 관련 공고명",
-        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01840786&bidPbancOrd=001",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "석면해체작업 감리인 지정·등록 요건"
-      ],
-      "document_analysis": {
-        "status": "일부 텍스트 자동 추출",
-        "files": [
-          {
-            "name": "2. 용역개요(서울금북초 석면해체제거공사 감리용역).hwp",
-            "format": "HWP",
-            "status": "본문 추출됨"
-          }
-        ],
-        "evidence": {
-          "staffing_clause": "학교명 공 종 건물명 해체·제거 면적(㎡) 비 고 서울금북초 석면해체작업 감리 본관동, 후관동, 정보관(증축동) 4,292㎡ 고급감리원 1인 소계 4. 용역금액 : 금19,839,000원 5. 용역기간 : 착수일로부터 40일 가. 상주 근무 기간(23일) : 내부 보양부터 폐기물 반출까지 나. 비상주근무기간(17일) : 행정절차 업무기간, 보고서 작성 및 구청 보고 등 6. 용역범위 : 석면마감재 철거에 따른 석면 해체작업 감리용역 7. 감 독 자 : 학교시설지원과 주무관 신혜빈 (TEL. 02-2286-3729) 8. 참고사항 ○ 공사 진행 시 관령 법령 및 지침 숙지하여 공사 실시 - 산업안전보건법 및 시행령 시행규칙, 산업안전보건기준에 관한 규칙 - 석면안전관리법 및 시행령 시행규칙 - 학교보"
-        }
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      },
-      "region_assessment": {
-        "status": "unknown",
-        "evidence": "지역제한 정보가 API에 없음",
-        "verified": false
-      }
-    },
-    {
-      "id": "R26BK01842294-000",
-      "number": "R26BK01842294",
-      "order": "000",
-      "category": "건축감리",
-      "registration_deadline": null,
-      "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
-      "collaboration_status": "추가 분야 자격·분담 확인 필요",
-      "attachments": [
-        {
-          "name": "학교시설지원과) 과업지시서(청담초 본관, 신관동 내진보강공사 건축감리용역).hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01842294&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "청담초 본관 및 신관동 내진보강공사 건축감리용역",
-      "agency": "서울특별시교육청 서울특별시강남서초교육지원청",
-      "notice_at": "2026-11-19 16:23:38",
-      "deadline": "2026-11-20 12:00:00",
-      "budget": "27717000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "수의계약",
-      "method": "전자시담",
-      "priority": "지역 확인 우선",
-      "reasons": [
-        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01842294&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "일부 텍스트 자동 추출",
-        "files": [
-          {
-            "name": "학교시설지원과) 과업지시서(청담초 본관, 신관동 내진보강공사 건축감리용역).hwp",
-            "format": "HWP",
-            "status": "본문 추출됨"
-          }
-        ],
-        "evidence": {}
-      },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      },
-      "region_assessment": {
-        "status": "unknown",
-        "evidence": "지역제한 정보가 API에 없음",
-        "verified": false
-      }
-    },
-    {
-      "id": "R26BK01831512-000",
-      "number": "R26BK01831512",
-      "order": "000",
-      "category": "석면감리",
-      "registration_deadline": null,
-      "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
-      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
-      "attachments": [
-        {
-          "name": "[공고문] 화정초등학교 본관동 석면 철거 감리용역.hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01831512&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "[공고문] 화정초등학교 본관동 석면 철거 감리용역.pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01831512&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "과업지시서(화정초등학교 본관동 석면 철거 감리용역).hwp",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01831512&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "화정초등학교 본관동 석면 철거 감리용역 수의계약 안내공고",
-      "agency": "경상남도교육청 경상남도김해교육지원청",
-      "notice_at": "2026-11-16 16:25:05",
-      "deadline": "2026-11-20 14:00:00",
-      "budget": "15075000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "수의계약",
-      "method": "전자입찰",
-      "priority": "지역 확인 우선",
-      "reasons": [
-        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
-        "석면감리 관련 공고명",
-        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01831512&bidPbancOrd=000",
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력",
-        "석면해체작업 감리인 지정·등록 요건"
       ],
       "price_analysis": {
         "status": "계산 불가",
@@ -3141,16 +2166,6 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01842531&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "지역제한 대상 지역 미확정 — 원문 직접 확인"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -3166,6 +2181,16 @@
           "base_evidence": "0,000원, 부가가치세 1,239,000원, 손해배상공제로 포함 바. 기초금액: 금13,629,000원(부가세 포함) 2. 견적서 제출 및 개찰의 일시와 장소 가. 견적서(전자입찰) 제출기간: 2026. 11. 23.(월) 10:00 ~ 2026. 11. 25.(수) 10:00 나. 개찰일시: 2026. 11. 25."
         }
       },
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "지역제한 대상 지역 미확정 — 원문 직접 확인"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역",
+        "업체 실적 필수조건 및 배점",
+        "감리원 등급/배치기간/경력"
+      ],
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -3177,8 +2202,7 @@
         "status": "unknown",
         "evidence": "지역제한 정보가 API에 없음",
         "verified": false
-      },
-      "base_amount_source": "공고문 텍스트 자동 추출 · 원문 확인 필요"
+      }
     },
     {
       "id": "R26BK01842982-000",
@@ -3209,7 +2233,7 @@
         }
       ],
       "base_amount": 109425000,
-      "floor_rate": null,
+      "floor_rate": 88.0,
       "raw_qualification": {
         "industry": "",
         "participation_region": "",
@@ -3237,17 +2261,6 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "해체공사감리자 지정·배치조건 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01842982&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "지역제한 대상 지역 미확정 — 원문 직접 확인"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력",
-        "해체공사감리자 지정 요건"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -3265,22 +2278,32 @@
           "score_clause": "차분) 착수일로부터 60일간 바. 본 입찰은 전자계약(총액), 지역제한, 청렴계약 대상, 적격심사 비대상 입니다. ※ 붙임 과업지시서를 반드시 숙지하고 과업에 관한 사항은 발주부서 (신청사건립과, 061-749-2770) 에 확인 후 투찰하기 바라며, 확인하지 않아 발생하는 모든 책임은 투찰자에게 있습니다 . 2. 입찰공고 및 개찰 입찰서 제출 기간 개 찰 일 시 장 소 2026. 11. 23. 09:00 ~ 2026. 11. 25."
         }
       },
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "지역제한 대상 지역 미확정 — 원문 직접 확인"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역",
+        "업체 실적 필수조건 및 배점",
+        "감리원 등급/배치기간/경력",
+        "해체공사감리자 지정 요건"
+      ],
       "price_analysis": {
         "status": "가정 계산 가능",
-        "reason": "기초금액에 예정가격 사정률 100%를 가정한 하한선. 실투찰 추천가는 아님",
         "base_amount": 109425000,
         "floor_rate": 88.0,
         "adjustment_rate": 100,
         "reference_floor_amount": 96294000,
         "range_99_amount": 95331060,
-        "range_101_amount": 97256940
+        "range_101_amount": 97256940,
+        "reason": "기초금액·하한율 원문 확인 필요. 사정률 100% 가정값이며 투찰추천가가 아닙니다."
       },
       "region_assessment": {
         "status": "unknown",
         "evidence": "지역제한 정보가 API에 없음",
         "verified": false
-      },
-      "base_amount_source": "공고문 텍스트 자동 추출 · 원문 확인 필요"
+      }
     },
     {
       "id": "R26BK01841764-000",
@@ -3338,16 +2361,6 @@
       "performance": "설계실적 보유현황 및 필수·배점 조건 미확인 (감리실적과 별도)",
       "staffing": "설계 참여인력·협업 분야 자격 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01841764&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "지역제한 대상 지역 미확정 — 원문 직접 확인"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "업체 실적 필수조건 및 배점",
-        "설계 참여인력·협업 분야·과업기간"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -3364,6 +2377,16 @@
           "score_clause": "견적서에 산출내역서를 첨부하지 않는 지역제한 총액입찰입니다. 나. 전자입찰로만 진행하며 적격심사 비대상 용역입니다. 4. 참가자 자격 (다음 각 호의 자격을 모두 갖춘 자) 가. 「지방자치단체를 당사자로 하는 계약에 관한 법률 시행령」제13조 및 시행규칙 제14조의 규정에 의한 자격요건을 갖추고, 주된 법인등기부상 본점(개인사업자인 경우에는 사업자 등록증 또는 관련 법령에 따른 허가·인가·면허·등록·신고 등에 관련된 서류에 기재된"
         }
       },
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "지역제한 대상 지역 미확정 — 원문 직접 확인"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역",
+        "업체 실적 필수조건 및 배점",
+        "설계 참여인력·협업 분야·과업기간"
+      ],
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -3375,8 +2398,7 @@
         "status": "unknown",
         "evidence": "지역제한 정보가 API에 없음",
         "verified": false
-      },
-      "base_amount_source": "공고문 텍스트 자동 추출 · 원문 확인 필요"
+      }
     },
     {
       "id": "R26BK01842457-000",
@@ -3430,14 +2452,6 @@
       "performance": "설계실적 보유현황 및 필수·배점 조건 미확인 (감리실적과 별도)",
       "staffing": "설계 참여인력·협업 분야 자격 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01842457&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "업체 실적 필수조건 및 배점"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -3452,6 +2466,14 @@
           "staffing_clause": "한다. 지역대내 체력단련실은 공공청사의 획일적인 이미지에서 탈피하여 사용자 중심의 자유롭고 다양한 분위기를 연출하되, 북측면 배치 계획시 북측 창호면적비를 최소화 한다. 주변 환경과 조화된 배치계획, 건물의 특성 및 주변경관을 고려한 입면계획, 시설 이용에 편리한 평면계획 등을 검토하여 기능성, 상징성, 예술성을 조화롭고 창의적으로 계획한다. 공공청사로서의 119지역대의 고유기능 외에도 주변 지역 주민과 시민들에게 친근한 이미지를 나타내도록 계획한다. 건축물의 구조계획 및 재료선정은 안전성(내풍, 내진), 경제성, 내구성, 기능성, 미관, 유지관리, 염해방지 등을 종합적으로 고려하여 합리적인 설계가 되도록 한다. 개략공사비 등을 구체적으로 산정하여 공사비가 초과되지 않도록 계획하여야 한다. 내·외장"
         }
       },
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역",
+        "업체 실적 필수조건 및 배점"
+      ],
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -3547,6 +2569,757 @@
         "status": "unknown",
         "evidence": "지역제한 정보가 API에 없음",
         "verified": false
+      }
+    },
+    {
+      "id": "R26BK01842735-000",
+      "number": "R26BK01842735",
+      "order": "000",
+      "category": "석면감리",
+      "registration_deadline": null,
+      "submission_deadline": null,
+      "competition_type": null,
+      "workload_status": "과업·기간 원문 확인 필요",
+      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
+      "attachments": [
+        {
+          "name": "공고문.hwpx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01842735&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
+        },
+        {
+          "name": "공고문.pdf",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01842735&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
+        },
+        {
+          "name": "과업지시서(초계초등학교덕곡분교 석면철거 감리 용역).hwp",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01842735&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
+        },
+        {
+          "name": "용역비산출서(게시용).xlsx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01842735&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
+        }
+      ],
+      "base_amount": 5843000,
+      "floor_rate": null,
+      "raw_qualification": {
+        "industry": "",
+        "participation_region": "",
+        "limited_region": "",
+        "joint_venture": "(없음)공동수급불허",
+        "pq": ""
+      },
+      "title": "초계초등학교덕곡분교 석면철거 감리 용역 수의계약 안내 공고",
+      "agency": "경상남도교육청 경상남도합천교육지원청",
+      "notice_at": "2026-11-20 16:16:05",
+      "deadline": "2026-11-26 10:00:00",
+      "budget": "5843000",
+      "budget_type": "배정예산",
+      "region": "정보 미확인",
+      "contract": "수의계약",
+      "method": "전자입찰",
+      "priority": "제외",
+      "reasons": [
+        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
+        "석면감리 관련 공고명",
+        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
+        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
+      ],
+      "eligibility": "원문 확인 필요",
+      "performance": "업체 감리실적 필수·배점 여부 미확인",
+      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01842735&bidPbancOrd=000",
+      "eligibility_status": "참가 불가",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "공고문 서울 외 지역제한: 경상남도",
+        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
+      ],
+      "eligibility_missing": [
+        "업체 실적 필수조건 및 배점",
+        "석면해체작업 감리인 지정·등록 요건"
+      ],
+      "document_analysis": {
+        "status": "일부 텍스트 자동 추출",
+        "files": [
+          {
+            "name": "공고문.hwpx",
+            "format": "HWPX/DOCX",
+            "status": "본문 추출됨"
+          }
+        ],
+        "evidence": {
+          "region_clause": "제출 및 계약방식 가. 견적서에 산출내역서를 첨부하지 않는 총액 견적 으로 국가종합전자조달시스템(G2B)을 이용하여 2인 이상으로부터 견적서를 제출받는 수의계약 대상입니다. 나. 지역제한(경상남도) 대상 용역입니다. 다. 해당 공사는 청렴서약제 시행 대상 용역입니다. 3. 견적제출 참가자격 가. 지방자치단체를 당사자로 하는 계약에 관한 법률 시행령」 제13조, 같은 법 시행규칙 제14조의 규정에 따른 자격 요건을 갖추고, 「석면안전관리법 」제30조의2에 의거 석면해체작업감리인[7472]으로 등록된 업체 로 서 같은법 시행령 제42조제1항 관련 [별표 3의2]의 자격을 갖추고,‘석면해체작업 감리인 기준’ [별표1]의 교육을 이수 받은 고급감리원",
+          "license_clause": "폰 활용 신고: 스마트폰으로 아래의 QR코드를 스캔하면 신고창이 열립니다. ☎ 공고 관련 기타문의 연락처 •입찰참가자격등록 등 국가종합전자조달시스템 이용에 관한 사항: 조달청(☎1588-0800) •공고, 개찰 및 계약에 관한 사항: 합천교육지원청 교육재정담당 (☎ 055-930-7091 ) •설계도면, 시방서 열람 등 공사내용에 관한 사항: 합천교육지원청 시설담당 (☎ 055-930-7102 ) [유의사항] ※ 본 공고와 관련하여 공고서와 규격서(첨부서류 일체)의 내용이 서로 다른 경우에는 수의계약 안내공고문이 우선 적용 됩니다. ※ 공고문에 정한 각종 규정은 개정될 수 있으며, 개정될 경우 개정규정 부칙의 시행일(또는 적용례)에 따라 개정규정의 적용 여부가 결정될 수 있습니다. 1. 견적에 부치는 사항 (단위: 원) 용 역 명 초계",
+          "staffing_clause": "같은법 시행령 제42조제1항 관련 [별표 3의2]의 자격을 갖추고,‘석면해체작업 감리인 기준’ [별표1]의 교육을 이수 받은 고급감리원 또는 일반감리원 이 소속된 업체이어야 합니다. *고용노동부 고시 「석면해체작업감리인 기준」에 의거 아래의 어느 하나에 해당하는 자는 해당 석면해체·제거작업 감리인이 될 수 없습니다. ① 해당 건축물이나 설비에 대한 석면해체·제거작업을 수행하는 자 ② 해당 건축물이나 설비에 대하여 석면조사를 실시한 기관 ③ 「산업안전보건법」 제28조 및 같은법 시행규칙 제38조제1항에 따라 당해 석면해체·제거 사업장의 석면 비산 정도를 측정하는 기관(이하‘석면 비산 정도 측정기관’이라 한다) ④ 「 산업안전보건법」제124조 및 같은법 시행규칙 제184조에 따라 당해 석면해체·제거작업",
+          "base_evidence": "역기간 착수일로부터 석면철거공사 준공일까지 용역개요 석면철거 감리 1식 기초금액 추정가격 부가가치세 5,843,000 5,311,818 531,182 ※ 면세사업자 또는 영세율을 적용받는 사업자는 반드시 부가가치세를 포함한 가격으로 투찰하여야 하며, 최종 계약 시에는 부가가치세를 제외하는 금액으로 계약을 체결합니다. 2"
+        }
+      },
+      "price_analysis": {
+        "status": "계산 불가",
+        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
+        "base_amount": null,
+        "floor_rate": null,
+        "adjustment_rate": null
+      },
+      "region_assessment": {
+        "status": "excluded",
+        "evidence": "공고문 서울 외 지역제한: 경상남도",
+        "verified": true
+      },
+      "base_amount_source": "공고문 텍스트 자동 추출 · 원문 확인 필요"
+    },
+    {
+      "id": "R26BK01842735-001",
+      "number": "R26BK01842735",
+      "order": "001",
+      "category": "석면감리",
+      "registration_deadline": null,
+      "submission_deadline": null,
+      "competition_type": null,
+      "workload_status": "과업·기간 원문 확인 필요",
+      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
+      "attachments": [
+        {
+          "name": "공고문.hwp",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01842735&bidPbancOrd=001&fileType=&fileSeq=1&prcmBsneSeCd=05"
+        },
+        {
+          "name": "공고문.pdf",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01842735&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=05"
+        },
+        {
+          "name": "과업지시서(초계초등학교덕곡분교 석면철거 감리 용역).hwp",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01842735&bidPbancOrd=001&fileType=&fileSeq=3&prcmBsneSeCd=05"
+        },
+        {
+          "name": "용역비산출서(게시용).xlsx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01842735&bidPbancOrd=001&fileType=&fileSeq=4&prcmBsneSeCd=05"
+        }
+      ],
+      "base_amount": 5843000,
+      "floor_rate": null,
+      "raw_qualification": {
+        "industry": "",
+        "participation_region": "",
+        "limited_region": "",
+        "joint_venture": "(없음)공동수급불허",
+        "pq": ""
+      },
+      "title": "초계초등학교덕곡분교 석면철거 감리 용역 수의계약 안내 공고",
+      "agency": "경상남도교육청 경상남도합천교육지원청",
+      "notice_at": "2026-11-20 18:32:51",
+      "deadline": "2026-11-26 10:00:00",
+      "budget": "5843000",
+      "budget_type": "배정예산",
+      "region": "정보 미확인",
+      "contract": "수의계약",
+      "method": "전자입찰",
+      "priority": "제외",
+      "reasons": [
+        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
+        "석면감리 관련 공고명",
+        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
+        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
+      ],
+      "eligibility": "원문 확인 필요",
+      "performance": "업체 감리실적 필수·배점 여부 미확인",
+      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01842735&bidPbancOrd=001",
+      "eligibility_status": "참가 불가",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "공고문 서울 외 지역제한: 경상남도",
+        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
+      ],
+      "eligibility_missing": [
+        "업체 실적 필수조건 및 배점",
+        "석면해체작업 감리인 지정·등록 요건"
+      ],
+      "document_analysis": {
+        "status": "일부 텍스트 자동 추출",
+        "files": [
+          {
+            "name": "공고문.hwp",
+            "format": "HWP",
+            "status": "본문 추출됨"
+          }
+        ],
+        "evidence": {
+          "region_clause": "적제출 및 계약방식 가. 견적서에 산출내역서를 첨부하지 않는 총액 견적으로 국가종합전자조달시스템(G2B)을 이용하여 2인 이상으로부터 견적서를 제출받는 수의계약 대상입니다. 나. 지역제한(경상남도) 대상 용역입니다. 다. 해당 공사는 청렴서약제 시행 대상 용역입니다. 3. 견적제출 참가자격 가. 지방자치단체를 당사자로 하는 계약에 관한 법률 시행령」 제13조, 같은 법 시행규칙 제14조의 규정에 따른 자격 요건을 갖추고, 「석면안전관리법」제30조의2에 의거 석면해체작업감리인[7472]으로 등록된 업체로서 같은법 시행령 제42조제1항 관련 [별표 3의2]의 자격을 갖추고,‘석면해체작업 감리인 기준’[별표1]의 교육을 이수 받은 고급감리원 또는 일",
+          "license_clause": "고: 스마트폰으로 아래의 QR코드를 스캔하면 신고창이 열립니다. 漠杳 氠瑢 ☎ 공고 관련 기타문의 연락처 •입찰참가자격등록 등 국가종합전자조달시스템 이용에 관한 사항: 조달청(☎1588-0800) •공고, 개찰 및 계약에 관한 사항: 합천교육지원청 교육재정담당(☎055-930-7091) •설계도면, 시방서 열람 등 공사내용에 관한 사항: 합천교육지원청 시설담당(☎055-930-7102) [유의사항] ※ 본 공고와 관련하여 공고서와 규격서(첨부서류 일체)의 내용이 서로 다른 경우에는 수의계약 안내공고문이 우선 적용 됩니다. ※ 공고문에 정한 각종 규정은 개정될 수 있으며, 개정될 경우 개정규정 부칙의 시행일(또는 적용례)에 따라 개정규정의 적용 여부가 결정될 수 있습니다. 1. 견적에 부치는 사항 (단위: 원) 氠瑢 용 역 명 초계초등학",
+          "staffing_clause": "같은법 시행령 제42조제1항 관련 [별표 3의2]의 자격을 갖추고,‘석면해체작업 감리인 기준’[별표1]의 교육을 이수 받은 고급감리원 또는 일반감리원이 소속된 업체이어야 합니다. *고용노동부 고시 「석면해체작업감리인 기준」에 의거 아래의 어느 하나에 해당하는 자는 해당 석면해체·제거작업 감리인이 될 수 없습니다. ① 해당 건축물이나 설비에 대한 석면해체·제거작업을 수행하는 자 ② 해당 건축물이나 설비에 대하여 석면조사를 실시한 기관 ③ 「산업안전보건법」 제28조 및 같은법 시행규칙 제38조제1항에 따라 당해 석면해체·제거 사업장의 석면 비산 정도를 측정하는 기관(이하‘석면 비산 정도 측정기관’이라 한다) ④ 「산업안전보건법」제124조 및 같은법 시행규칙 제184조에 따라 당해 석면해체·제거작업에",
+          "base_evidence": "역기간 착수일로부터 석면철거공사 준공일까지 용역개요 석면철거 감리 1식 기초금액 추정가격 부가가치세 5,843,000 5,311,818 531,182 ※ 면세사업자 또는 영세율을 적용받는 사업자는 반드시 부가가치세를 포함한 가격으로 투찰하여야 하며, 최종 계약 시에는 부가가치세를 제외하는 금액으로 계약을 체결합니다. 2",
+          "score_clause": "기준에 미달하는 자 ※ 기술자 보유현황의 심사는 「낙찰자결정기준」제1장 입찰참가자격 사전심사기준 제5절 “4”의 그밖에 해당공사 수행능력상 결격여부, 제2장의2 기술·학술연구 용역 적격심사 세부기준 <별표>의 기술인력 평가방법을 준용한다. 이때 ‘입찰공고일’은 ‘안내공고일’로 ‘적격심사서류 제출마감일’은 ‘견적서 제출마감일’로 본다. ⑤ 견적서 제출 마감일 기준 최근 3개월 이내에 해당 지방자치단체의 입찰 ․ 계약 및 그 이행과 관"
+        }
+      },
+      "price_analysis": {
+        "status": "계산 불가",
+        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
+        "base_amount": null,
+        "floor_rate": null,
+        "adjustment_rate": null
+      },
+      "region_assessment": {
+        "status": "excluded",
+        "evidence": "공고문 서울 외 지역제한: 경상남도",
+        "verified": true
+      },
+      "base_amount_source": "공고문 텍스트 자동 추출 · 원문 확인 필요"
+    },
+    {
+      "id": "R26BK01843800-000",
+      "number": "R26BK01843800",
+      "order": "000",
+      "category": "설계용역",
+      "registration_deadline": null,
+      "submission_deadline": null,
+      "competition_type": null,
+      "workload_status": "과업·기간 원문 확인 필요",
+      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
+      "attachments": [
+        {
+          "name": "공고문.pdf",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01843800&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
+        },
+        {
+          "name": "용역 과업지시서.hwp",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01843800&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
+        }
+      ],
+      "base_amount": 38240000,
+      "floor_rate": null,
+      "raw_qualification": {
+        "industry": "",
+        "participation_region": "",
+        "limited_region": "",
+        "joint_venture": "(없음)공동수급불허",
+        "pq": ""
+      },
+      "title": "(가칭)명지4중학교 교사신축 설계의 경제성(VE) 등 검토 용역",
+      "agency": "부산광역시교육청",
+      "notice_at": "2026-11-20 08:54:32",
+      "deadline": "2026-11-26 10:00:00",
+      "budget": "38240000",
+      "budget_type": "배정예산",
+      "region": "정보 미확인",
+      "contract": "수의계약",
+      "method": "전자입찰",
+      "priority": "지역 확인 우선",
+      "reasons": [
+        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
+        "설계용역 관련 공고명",
+        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
+      ],
+      "eligibility": "원문 확인 필요",
+      "performance": "설계실적 보유현황 및 필수·배점 조건 미확인 (감리실적과 별도)",
+      "staffing": "설계 참여인력·협업 분야 자격 확인",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01843800&bidPbancOrd=000",
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "지역제한 대상 지역 미확정 — 원문 직접 확인"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역",
+        "업체 실적 필수조건 및 배점",
+        "설계 참여인력·협업 분야·과업기간"
+      ],
+      "document_analysis": {
+        "status": "일부 텍스트 자동 추출",
+        "files": [
+          {
+            "name": "공고문.pdf",
+            "format": "PDF",
+            "status": "본문 추출됨"
+          }
+        ],
+        "evidence": {
+          "region_clause": "(전자입찰) 제출 및 계약방식 가. 견적(입찰)서에 산출내역서를 첨부하지 않은 총액견적(입찰)입니다. 나. 조달청 국가종합전자조달시스템을 통한 전자입찰 방식으로 집행합니다. 다. 지역제한 및 청렴계약 대상 용역입니다. 라. 본 용역은 공동도급이 허용되지 않습니다. 3 견적서 제출 참가자격 가. 「지방자치단체를 당사자로 하는 계약에 관한 법률 시행령」 제13조 및 같은 법 시행규칙 제14조 자격요건을 갖추고, 「지방자치단체를 당사자로 하는 계약에 관 한 법률 시행령」 제92조 (부정당업자의 입찰 참가자격 제한)에 해당되지 않는 업 체로서 「지방자치단체 입찰 및 계약 집행기준」제5장 수의계약 운영요령 <별표1> 에 의한 배제 업체에 해당하지 않는",
+          "license_clause": "터 에 신고하여 주시기 바랍니다. 계약상대자는 아래 청렴계약(서약) 사항을 위반할 경우 계약 해제‧해지 및 입찰참가자격 제한 등 불이익을 받게 됩니다. 입찰, 낙찰, 계약의 체결 및 이행, 감독‧검사와 관련된 직접 또는 간접 적인 사례, 증여, 금품‧향응 등(친인척 등에 대한 부정한 취업 제공 포함) 제공 금지 특정인의 낙찰을 위한 담합 등 입찰의 자유경쟁을 방해하는 행위나 불공정한 행위의 금지 공정한 직무수행을 방해하는 알선‧청탁을 통하여 입찰 또는 계약과 관련된 특정 정보의 제공을 요구하거나 받는 행위의 금지 <공공기관 사칭 사기 4대 피해예방 수칙> 1. 내선번호 확인: 공고문의 내선번호가 실제 소속기관의 것인지 해당기관 누리집에서 점검 2. 발신처/공문(공고문) 진위 확인: 의심스러운 경우 해당 부서에 직접 문의 3. 절대 선입",
+          "floor_evidence": "조달시스템의 안내에 따라야 합니다. 사. 본 안내공고에 대하여 개찰결과 유찰(2개 이상 유효 투찰에도 불구하고 예가 초과, 낙찰 하한율 미달 등으로 1순위 업체가 없는 경우) 시에는 1회에 한하여 재입찰 실시하며 재입 찰은 개찰당일 13:00까지 투찰하시고, 13:30에 개찰하게 되오니 착오 없으시기 바랍니다.",
+          "base_evidence": "토 1식(과업지시서 참조) 바. 용역기간: 착수일로부터 60일까지 사. 기초금액: 금38,240,000원(추정가격 34,763,636원 + 부가가치세 3,476,364원) ※ 이 용역금액은 부가가치세가 포함된 금액이므로 면세사업자인 경우 반드시 부가가치세를 포함하여 투찰하여야 하며, 개찰결과 낙찰자가 면세사업자인 경우"
+        }
+      },
+      "price_analysis": {
+        "status": "계산 불가",
+        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
+        "base_amount": null,
+        "floor_rate": null,
+        "adjustment_rate": null
+      },
+      "region_assessment": {
+        "status": "unknown",
+        "evidence": "지역제한 정보가 API에 없음",
+        "verified": false
+      },
+      "base_amount_source": "공고문 텍스트 자동 추출 · 원문 확인 필요"
+    },
+    {
+      "id": "R26BK01846059-000",
+      "number": "R26BK01846059",
+      "order": "000",
+      "category": "건축감리",
+      "registration_deadline": null,
+      "submission_deadline": null,
+      "competition_type": null,
+      "workload_status": "과업·기간 원문 확인 필요",
+      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
+      "attachments": [
+        {
+          "name": "공고문(음성 테니스장 건립사업 건축공사 감리용역).hwpx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846059&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
+        },
+        {
+          "name": "공고문(음성 테니스장 건립사업 건축공사 감리용역)_변환본.pdf",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846059&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
+        },
+        {
+          "name": "과업지시서(음성 테니스장 건립사업 건축공사 감리용역).hwpx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846059&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
+        },
+        {
+          "name": "내역서(음성 테니스장 건립사업 건축공사 감리용역).xlsx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846059&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
+        }
+      ],
+      "base_amount": 51097000,
+      "floor_rate": null,
+      "raw_qualification": {
+        "industry": "",
+        "participation_region": "",
+        "limited_region": "",
+        "joint_venture": "(없음)공동수급불허",
+        "pq": ""
+      },
+      "title": "음성 테니스장 건립사업 건축공사 감리용역",
+      "agency": "충청북도 음성군",
+      "notice_at": "2026-11-20 16:29:13",
+      "deadline": "2026-11-26 10:00:00",
+      "budget": "51097000",
+      "budget_type": "배정예산",
+      "region": "정보 미확인",
+      "contract": "수의계약",
+      "method": "전자입찰",
+      "priority": "제외",
+      "reasons": [
+        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
+        "건축감리 관련 공고명",
+        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
+      ],
+      "eligibility": "원문 확인 필요",
+      "performance": "업체 감리실적 필수·배점 여부 미확인",
+      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01846059&bidPbancOrd=000",
+      "eligibility_status": "참가 불가",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "공고문 본점 소재지 서울 외 제한: 음성군",
+        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
+      ],
+      "eligibility_missing": [
+        "업체 실적 필수조건 및 배점",
+        "감리원 등급/배치기간/경력"
+      ],
+      "document_analysis": {
+        "status": "일부 텍스트 자동 추출",
+        "files": [
+          {
+            "name": "공고문(음성 테니스장 건립사업 건축공사 감리용역).hwpx",
+            "format": "HWPX/DOCX",
+            "status": "본문 추출됨"
+          }
+        ],
+        "evidence": {
+          "region_clause": "1조(부정당업자의 입찰 참가 자격 제한)에 해당되지 않은 업체로서 입찰일까지(낙찰자는 계약체결일까지) 아래의 자격을 모두 갖춘 업체여야 합니다. ① 입찰공고일 전일부터 입찰일까지 주된 영업소의 소재지가 음성군 내의 업체, [신규사업자(법인인 경우 법인등기일, 개인사업자인 경우 사업자등록일 기준으로 한다)인 경우 입찰공고일 이후를 포함한다] [법인등기부상 본점소재지(개인사업자인 경우에는 사업자 등록증 또는 관련법령에 따른 허가· 인가·면허·등록․신고 등에 관련된 서류에 기재된 사업장의 소재지)를 말한다. ② 「 건축사법」제7조 규정에 의한 건축사 면허를 소지하고 같은 법 제23조 규정에 의한 건축사사무소 개설신고를 필한 업체 나. 본 용역은 「중소기",
+          "license_clause": "니다. 다. 본 용역은 전자입찰 방식에 의하여 집행하므로 견적서 제출마감일 전일까지 국가 종합전자조달시스템 입찰참가자격등록규정에 따라 조달청에 입찰참가자격의 등록을 하여야 합니다. 4 견적제출 참가자의 자격 가. 「지방자치단체를 당사자로 하는 계약에 관한 법률 시행령」제13조 및 동법 시행규칙 제14조의 참가자격을 갖추고, 같은법 제31조(부정당업자의 입찰 참가 자격 제한)에 해당되지 않은 업체로서 입찰일까지(낙찰자는 계약체결일까지) 아래의 자격을 모두 갖춘 업체여야 합니다. ① 입찰공고일 전일부터 입찰일까지 주된 영업소의 소재지가 음성군 내의 업체, [신규사업자(법인인 경우 법인등기일, 개인사업자인 경우 사업자등록일 기준으로 한다)인 경우 입찰공고일 이후를 포함한다] [법인등기부상 본점소재지(개인사업자인 경우에는 사업자 등록증 또는",
+          "floor_evidence": "정합니다. 나. 투찰금액이 예정가격이하로써 행정안전부예규 지방자치단체 입찰 및 계약집행기준 제5장 수의계약 운용요령에서 정한 낙찰하한율(88%) 이상인 자 중 최저가 투찰자를 낙찰자로 결정하며, 낙찰자는 낙찰자결정 통지를 받은 날로부터 10일 이내에 계약을 체결하여야 합니다. 다. 동일가격으로 견적입찰한자가 2인",
+          "base_evidence": "리용역 추정가격 금46,451,818원 부가가치세 금4,645,182원 기초금액 금51,097,000원 위치 과업지시서 참조 사 업 량 과업지시서 참조 용역기간 착수일로부터 390일간 ※ 기초금액은 손해배상보험료 및 부가가치세 포함입니다. ※ 본 사업예산은 부가가치세가 포함된 금액으로 입찰자가 면세사업자인 경우 입찰금액",
+          "score_clause": "적서 제출 대상입니다. 나. 입찰서에 산출내역서를 첨부하지 않는 총액입찰 대상 용역이며, 적격심사 비대상 입니다. 다. 본 용역은 전자입찰 방식에 의하여 집행하므로 견적서 제출마감일 전일까지 국가 종합전자조달시스템 입찰참가자격등록규정에 따라 조달청에 입찰참가자격의 등록을 하여야 합니다. 4 견적제출 참가자의 자격 가. 「지방자치단체를 당사자로 하는 계약에 관한 법률 시행령」제13조 및 동법 시행규칙 제14조의 참가자격을 갖추고, 같은"
+        }
+      },
+      "price_analysis": {
+        "status": "가정 계산 가능",
+        "reason": "기초금액에 예정가격 사정률 100%를 가정한 하한선. 실투찰 추천가는 아님",
+        "base_amount": 51097000,
+        "floor_rate": 88.0,
+        "adjustment_rate": 100,
+        "reference_floor_amount": 44965360,
+        "range_99_amount": 44515706,
+        "range_101_amount": 45415014
+      },
+      "region_assessment": {
+        "status": "excluded",
+        "evidence": "공고문 본점 소재지 서울 외 제한: 음성군",
+        "verified": true
+      },
+      "base_amount_source": "공고문 텍스트 자동 추출 · 원문 확인 필요"
+    },
+    {
+      "id": "R26BK01846392-000",
+      "number": "R26BK01846392",
+      "order": "000",
+      "category": "석면감리",
+      "registration_deadline": null,
+      "submission_deadline": null,
+      "competition_type": null,
+      "workload_status": "과업·기간 원문 확인 필요",
+      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
+      "attachments": [
+        {
+          "name": "(공고서) 금구중 교사 석면해체공사 감리용역 수의계약 안내공고.hwp",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846392&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
+        },
+        {
+          "name": "(공고서) 금구중 교사 석면해체공사 감리용역 수의계약 안내공고.pdf",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846392&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
+        },
+        {
+          "name": "(과업지시서) 금구중 교사 석면해체공사 감리용역.hwp",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846392&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
+        }
+      ],
+      "base_amount": null,
+      "floor_rate": null,
+      "raw_qualification": {
+        "industry": "",
+        "participation_region": "",
+        "limited_region": "",
+        "joint_venture": "(없음)공동수급불허",
+        "pq": ""
+      },
+      "title": "금구중 교사 석면해체공사 감리용역 수의계약 안내공고",
+      "agency": "전남광주통합특별시교육청 전남광주통합특별시광주서부교육지원청",
+      "notice_at": "2026-11-20 17:48:41",
+      "deadline": "2026-11-26 10:00:00",
+      "budget": "31580000",
+      "budget_type": "배정예산",
+      "region": "정보 미확인",
+      "contract": "수의계약",
+      "method": "전자입찰",
+      "priority": "제외",
+      "reasons": [
+        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
+        "석면감리 관련 공고명",
+        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
+        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
+      ],
+      "eligibility": "원문 확인 필요",
+      "performance": "업체 감리실적 필수·배점 여부 미확인",
+      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01846392&bidPbancOrd=000",
+      "eligibility_status": "참가 불가",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "공고문 본점 소재지 서울 외 제한: 전남, 광주통합특별시, 광산구, 광주광역시",
+        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
+      ],
+      "eligibility_missing": [
+        "업체 실적 필수조건 및 배점",
+        "석면해체작업 감리인 지정·등록 요건"
+      ],
+      "document_analysis": {
+        "status": "일부 텍스트 자동 추출",
+        "files": [
+          {
+            "name": "(공고서) 금구중 교사 석면해체공사 감리용역 수의계약 안내공고.hwp",
+            "format": "HWP",
+            "status": "본문 추출됨"
+          }
+        ],
+        "evidence": {
+          "region_clause": "참가자격 가.「지방자치단체를 당사자로 하는 계약에 관한 법률 시행령」제13조의 규정에 의한 요건을 갖춘 자로, 견적공고일 전일부터 개찰일(낙찰자는 계약 체결일)까지 법인등기부상 본점 소재지(개인사업자인 경우에는 사업자등록증 또는 관련 법령에 따른 허가·면허·등록·신고 등에 관련된 서류에 기재된 사업장의 소재지)를 계속 전남광주통합특별시 동구, 서구, 남구, 북구, 광산구(종전 광주광역시)에 둔 업체이어야 하며, 그러하지 않을 경우 계약상대자 결정을 취소함 나. 「석면안전관리법」제30조의 2 및 같은 법 시행령 [별표 3의2]의 자격을 갖추고 석면해체작업 감리인으로 등록한 자로서, 환경부, 국토교통부, 고용노동부가 공동 고시한「석면해체작업감리인 기",
+          "license_clause": "捤獥 汤捯 용역 수의계약 안내공고 ▢ 용 역 명: 금구중 교사 석면해체공사 감리용역[계속비] ▢ 개 찰 일 시: 2026. 11. 26.(목) 11:01 ▢ 수 요 기 관: 금구중 氠瑢 이 안내서는 전남광주통합특별시광주서부교육지원청이 집행하는 용역 수의계약에서 견적서 제출참가자와 계약상대자가 숙지하고 준수하여야 할 사항을 기재한 것으로서 견적참가를 희망하는 자는 이를 열람하여 숙지하여야 합니다. 본 건과 관련하여 문의사항이 있는 경우 아래로 연락주시기 바랍니다. - 견적 ․ 계약: 행정지원과 (주무관 이기옥 062-600-9733) - 용역: 학교시설지원과 (주무관 나영일 062-600-9783) - 부패 ․ 비리행위, 불공정행위 등: 행정지원과 (062-600-9883) 또는 감사담당관(062-380-4215) - 전자입찰 이용 안내: 조달청 콜센터(1588-0800) [유의사항] ▸ 본 건과 관련하여 수의계약 안내공고서와 과업내용서 등의 내용이 서로 다른 경우에는 수의계약 안내공고서가 우선 적용됩니다. ▸ 공고서에 정한 각종 규정은 개정될 수 있으며, 개정될 경우 개",
+          "staffing_clause": "으로 등록한 자로서, 환경부, 국토교통부, 고용노동부가 공동 고시한「석면해체작업감리인 기준」[별표1]에서 정한 교육을 이수한 고급감리원이 소속된 아래 각 호의 어느 하나에 해당하는 업체를 말한다. 1)「한국산업안전보건공단법」에 따른 한국산업안전보건공단 2)「건축사법」제23조에 따라 건축사사무소 개설신고를 한 자 3)「기술사법」제6조에 따라 기술사사무소 개설등록을 한 자 4)「건설기술 진흥법 제26조 및 같은 법 시행령 제44조제1호 및 제2호가목ㆍ다목에 따라 종합 전문분야 또는 설계ㆍ사업관리 전문분야 중 일반 또는 건설사업관리 분야로 등록한 건설엔지니어링사업자 5)「산업안전보건법 제119조제2항에 따른 석면조사기관 또는 같은 법 제125조제5항에 따른 작업환경측정기관 6)「환경분야 시험ㆍ검사 등에",
+          "base_evidence": "일로부터 2027. 2. 28.까지 마. 용역금액 (금액단위:원) 氠瑢 기초금액 추정가격 부가가치세 추정금액 31,580,000 浵╦ 28,709,091 浵ࡦ 浵╦ 2,870,909 浵ࡦ 浵╦ 31,580,000 浵ࡦ 2. 견적서 제출 및 계약방식 가. 견적서에 산출내역서를 첨부하지 않는 총액 견적 대상 용역 나. 지역"
+        }
+      },
+      "price_analysis": {
+        "status": "계산 불가",
+        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
+        "base_amount": null,
+        "floor_rate": null,
+        "adjustment_rate": null
+      },
+      "region_assessment": {
+        "status": "excluded",
+        "evidence": "공고문 본점 소재지 서울 외 제한: 전남, 광주통합특별시, 광산구, 광주광역시",
+        "verified": true
+      }
+    },
+    {
+      "id": "R26BK01846448-000",
+      "number": "R26BK01846448",
+      "order": "000",
+      "category": "석면감리",
+      "registration_deadline": null,
+      "submission_deadline": null,
+      "competition_type": null,
+      "workload_status": "과업·기간 원문 확인 필요",
+      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
+      "attachments": [
+        {
+          "name": "(공고서) 천곡중 교사 석면해체공사 감리용역 수의계약 안내공고.hwp",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846448&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
+        },
+        {
+          "name": "(공고서) 천곡중 교사 석면해체공사 감리용역 수의계약 안내공고.pdf",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846448&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
+        },
+        {
+          "name": "(과업지시서) 천곡중 교사 석면해체공사 감리용역.hwp",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846448&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
+        }
+      ],
+      "base_amount": null,
+      "floor_rate": null,
+      "raw_qualification": {
+        "industry": "",
+        "participation_region": "",
+        "limited_region": "",
+        "joint_venture": "(없음)공동수급불허",
+        "pq": ""
+      },
+      "title": "천곡중 교사 석면해체공사 감리용역 수의계약 안내공고",
+      "agency": "전남광주통합특별시교육청 전남광주통합특별시광주서부교육지원청",
+      "notice_at": "2026-11-20 18:12:30",
+      "deadline": "2026-11-26 10:00:00",
+      "budget": "29244000",
+      "budget_type": "배정예산",
+      "region": "정보 미확인",
+      "contract": "수의계약",
+      "method": "전자입찰",
+      "priority": "제외",
+      "reasons": [
+        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
+        "석면감리 관련 공고명",
+        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
+        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
+      ],
+      "eligibility": "원문 확인 필요",
+      "performance": "업체 감리실적 필수·배점 여부 미확인",
+      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01846448&bidPbancOrd=000",
+      "eligibility_status": "참가 불가",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "공고문 본점 소재지 서울 외 제한: 전남, 광주통합특별시, 광산구, 광주광역시",
+        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
+      ],
+      "eligibility_missing": [
+        "업체 실적 필수조건 및 배점",
+        "석면해체작업 감리인 지정·등록 요건"
+      ],
+      "document_analysis": {
+        "status": "일부 텍스트 자동 추출",
+        "files": [
+          {
+            "name": "(공고서) 천곡중 교사 석면해체공사 감리용역 수의계약 안내공고.hwp",
+            "format": "HWP",
+            "status": "본문 추출됨"
+          }
+        ],
+        "evidence": {
+          "region_clause": "참가자격 가.「지방자치단체를 당사자로 하는 계약에 관한 법률 시행령」제13조의 규정에 의한 요건을 갖춘 자로, 견적공고일 전일부터 개찰일(낙찰자는 계약 체결일)까지 법인등기부상 본점 소재지(개인사업자인 경우에는 사업자등록증 또는 관련 법령에 따른 허가·면허·등록·신고 등에 관련된 서류에 기재된 사업장의 소재지)를 계속 전남광주통합특별시 동구, 서구, 남구, 북구, 광산구(종전 광주광역시)에 둔 업체이어야 하며, 그러하지 않을 경우 계약상대자 결정을 취소함 나. 「석면안전관리법」제30조의 2 및 같은 법 시행령 [별표 3의2]의 자격을 갖추고 석면해체작업 감리인으로 등록한 자로서, 환경부, 국토교통부, 고용노동부가 공동 고시한「석면해체작업감리인 기",
+          "license_clause": "捤獥 汤捯 용역 수의계약 안내공고 ▢ 용 역 명: 천곡중 교사 석면해체공사 감리용역[계속비] ▢ 개 찰 일 시: 2026. 11. 26.(목) 11:02 ▢ 수 요 기 관: 천곡중 氠瑢 이 안내서는 전남광주통합특별시광주서부교육지원청이 집행하는 용역 수의계약에서 견적서 제출참가자와 계약상대자가 숙지하고 준수하여야 할 사항을 기재한 것으로서 견적참가를 희망하는 자는 이를 열람하여 숙지하여야 합니다. 본 건과 관련하여 문의사항이 있는 경우 아래로 연락주시기 바랍니다. - 견적 ․ 계약: 행정지원과 (주무관 이기옥 062-600-9733) - 용역: 학교시설지원과 (주무관 나영일 062-600-9783) - 부패 ․ 비리행위, 불공정행위 등: 행정지원과 (062-600-9883) 또는 감사담당관(062-380-4215) - 전자입찰 이용 안내: 조달청 콜센터(1588-0800) [유의사항] ▸ 본 건과 관련하여 수의계약 안내공고서와 과업내용서 등의 내용이 서로 다른 경우에는 수의계약 안내공고서가 우선 적용됩니다. ▸ 공고서에 정한 각종 규정은 개정될 수 있으며, 개정될 경우 개",
+          "staffing_clause": "으로 등록한 자로서, 환경부, 국토교통부, 고용노동부가 공동 고시한「석면해체작업감리인 기준」[별표1]에서 정한 교육을 이수한 고급감리원이 소속된 아래 각 호의 어느 하나에 해당하는 업체를 말한다. 1)「한국산업안전보건공단법」에 따른 한국산업안전보건공단 2)「건축사법」제23조에 따라 건축사사무소 개설신고를 한 자 3)「기술사법」제6조에 따라 기술사사무소 개설등록을 한 자 4)「건설기술 진흥법 제26조 및 같은 법 시행령 제44조제1호 및 제2호가목ㆍ다목에 따라 종합 전문분야 또는 설계ㆍ사업관리 전문분야 중 일반 또는 건설사업관리 분야로 등록한 건설엔지니어링사업자 5)「산업안전보건법 제119조제2항에 따른 석면조사기관 또는 같은 법 제125조제5항에 따른 작업환경측정기관 6)「환경분야 시험ㆍ검사 등에",
+          "base_evidence": "일로부터 2027. 2. 28.까지 마. 용역금액 (금액단위:원) 氠瑢 기초금액 추정가격 부가가치세 추정금액 29,244,000 浵╦ 26,585,455 浵ࡦ 浵╦ 2,658,545 浵ࡦ 浵╦ 29,244,000 浵ࡦ 2. 견적서 제출 및 계약방식 가. 견적서에 산출내역서를 첨부하지 않는 총액 견적 대상 용역 나. 지역"
+        }
+      },
+      "price_analysis": {
+        "status": "계산 불가",
+        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
+        "base_amount": null,
+        "floor_rate": null,
+        "adjustment_rate": null
+      },
+      "region_assessment": {
+        "status": "excluded",
+        "evidence": "공고문 본점 소재지 서울 외 제한: 전남, 광주통합특별시, 광산구, 광주광역시",
+        "verified": true
+      }
+    },
+    {
+      "id": "R26BK01846508-000",
+      "number": "R26BK01846508",
+      "order": "000",
+      "category": "석면감리",
+      "registration_deadline": null,
+      "submission_deadline": null,
+      "competition_type": null,
+      "workload_status": "과업·기간 원문 확인 필요",
+      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
+      "attachments": [
+        {
+          "name": "(공고서) 신가중 석면철거공사 감리용역 수의계약 안내공고.hwp",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846508&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
+        },
+        {
+          "name": "(공고서) 신가중 석면철거공사 감리용역 수의계약 안내공고.pdf",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846508&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
+        },
+        {
+          "name": "(과업지시서) 신가중 석면철거공사 감리용역.hwp",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846508&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
+        }
+      ],
+      "base_amount": null,
+      "floor_rate": null,
+      "raw_qualification": {
+        "industry": "",
+        "participation_region": "",
+        "limited_region": "",
+        "joint_venture": "(없음)공동수급불허",
+        "pq": ""
+      },
+      "title": "신가중 석면철거공사 감리용역 수의계약 안내공고",
+      "agency": "전남광주통합특별시교육청 전남광주통합특별시광주서부교육지원청",
+      "notice_at": "2026-11-20 18:18:07",
+      "deadline": "2026-11-26 10:00:00",
+      "budget": "24574000",
+      "budget_type": "배정예산",
+      "region": "정보 미확인",
+      "contract": "수의계약",
+      "method": "전자입찰",
+      "priority": "제외",
+      "reasons": [
+        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
+        "석면감리 관련 공고명",
+        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
+        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
+      ],
+      "eligibility": "원문 확인 필요",
+      "performance": "업체 감리실적 필수·배점 여부 미확인",
+      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01846508&bidPbancOrd=000",
+      "eligibility_status": "참가 불가",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "공고문 본점 소재지 서울 외 제한: 전남, 광주통합특별시, 광산구, 광주광역시",
+        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
+      ],
+      "eligibility_missing": [
+        "업체 실적 필수조건 및 배점",
+        "석면해체작업 감리인 지정·등록 요건"
+      ],
+      "document_analysis": {
+        "status": "일부 텍스트 자동 추출",
+        "files": [
+          {
+            "name": "(공고서) 신가중 석면철거공사 감리용역 수의계약 안내공고.hwp",
+            "format": "HWP",
+            "status": "본문 추출됨"
+          }
+        ],
+        "evidence": {
+          "region_clause": "참가자격 가.「지방자치단체를 당사자로 하는 계약에 관한 법률 시행령」제13조의 규정에 의한 요건을 갖춘 자로, 견적공고일 전일부터 개찰일(낙찰자는 계약 체결일)까지 법인등기부상 본점 소재지(개인사업자인 경우에는 사업자등록증 또는 관련 법령에 따른 허가·면허·등록·신고 등에 관련된 서류에 기재된 사업장의 소재지)를 계속 전남광주통합특별시 동구, 서구, 남구, 북구, 광산구(종전 광주광역시)에 둔 업체이어야 하며, 그러하지 않을 경우 계약상대자 결정을 취소함 나. 「석면안전관리법」제30조의 2 및 같은 법 시행령 [별표 3의2]의 자격을 갖추고 석면해체작업 감리인으로 등록한 자로서, 환경부, 국토교통부, 고용노동부가 공동 고시한「석면해체작업감리인 기",
+          "license_clause": "니다. Ⅰ. 용역 수의계약 안내공고 Ⅱ. 국가종합전자조달시스템 전자입찰특별유의서 Ⅲ. 국가종합전자조달시스템 입찰참가자격등록규정 Ⅳ. 지방자치단체 입찰 및 계약 집행기준 Ⅴ.전남광주통합특별시교육청 물품 및 용역계약 특수조건 (전남광주통합특별시교육청 고시 제2026-10003호, 2026. 7. 7.) 氠瑢 위 규정 등은 입찰공고일 기준 최신 규정 반영 氠瑢 <자료 검색> (법령·계약예규 등) 국가법령정보센터(http://www.law.go.kr)에서 검색 ※ 정확한 자료 검색이 되지 않을 경우 입찰공고 담당자에게 확인 氠瑢 신가중 석면철거공사 감리용역 수의계약 안내공고 氠瑢 < 본 계약은 청렴서약제가 적용됩니다 > 견적서 제출자는 반드시 견적서 제출시 아래의 청렴계약(청렴서약)에 관한 내용을 숙지·승낙하여야 하며, 동 내용을 위반하여 발",
+          "staffing_clause": "으로 등록한 자로서, 환경부, 국토교통부, 고용노동부가 공동 고시한「석면해체작업감리인 기준」[별표1]에서 정한 교육을 이수한 고급감리원이 소속된 아래 각 호의 어느 하나에 해당하는 업체를 말한다. 1)「한국산업안전보건공단법」에 따른 한국산업안전보건공단 2)「건축사법」제23조에 따라 건축사사무소 개설신고를 한 자 3)「기술사법」제6조에 따라 기술사사무소 개설등록을 한 자 4)「건설기술 진흥법 제26조 및 같은 법 시행령 제44조제1호 및 제2호가목ㆍ다목에 따라 종합 전문분야 또는 설계ㆍ사업관리 전문분야 중 일반 또는 건설사업관리 분야로 등록한 건설엔지니어링사업자 5)「산업안전보건법 제119조제2항에 따른 석면조사기관 또는 같은 법 제125조제5항에 따른 작업환경측정기관 6)「환경분야 시험ㆍ검사 등에",
+          "base_evidence": "용역기간: 착수일로부터 60일까지 마. 용역금액 (금액단위:원) 氠瑢 기초금액 추정가격 부가가치세 추정금액 24,574,000 浵╦ 22,340,000 浵ࡦ 浵╦ 2,234,000 浵ࡦ 浵╦ 24,574,000 浵ࡦ 2. 견적서 제출 및 계약방식 가. 견적서에 산출내역서를 첨부하지 않는 총액 견적 대상 용역 나. 지역"
+        }
+      },
+      "price_analysis": {
+        "status": "계산 불가",
+        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
+        "base_amount": null,
+        "floor_rate": null,
+        "adjustment_rate": null
+      },
+      "region_assessment": {
+        "status": "excluded",
+        "evidence": "공고문 본점 소재지 서울 외 제한: 전남, 광주통합특별시, 광산구, 광주광역시",
+        "verified": true
+      }
+    },
+    {
+      "id": "R26BK01846516-000",
+      "number": "R26BK01846516",
+      "order": "000",
+      "category": "석면감리",
+      "registration_deadline": null,
+      "submission_deadline": null,
+      "competition_type": null,
+      "workload_status": "과업·기간 원문 확인 필요",
+      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
+      "attachments": [
+        {
+          "name": "(공고서) 송정중 석면철거공사 감리용역 수의계약 안내공고.hwp",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846516&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
+        },
+        {
+          "name": "(공고서) 송정중 석면철거공사 감리용역 수의계약 안내공고.pdf",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846516&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
+        },
+        {
+          "name": "(과업지시서) 송정중 석면철거공사 감리용역.hwp",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846516&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
+        }
+      ],
+      "base_amount": null,
+      "floor_rate": null,
+      "raw_qualification": {
+        "industry": "",
+        "participation_region": "",
+        "limited_region": "",
+        "joint_venture": "(없음)공동수급불허",
+        "pq": ""
+      },
+      "title": "송정중 석면철거공사 감리용역 수의계약 안내공고",
+      "agency": "전남광주통합특별시교육청 전남광주통합특별시광주서부교육지원청",
+      "notice_at": "2026-11-20 18:23:23",
+      "deadline": "2026-11-26 10:00:00",
+      "budget": "32747000",
+      "budget_type": "배정예산",
+      "region": "정보 미확인",
+      "contract": "수의계약",
+      "method": "전자입찰",
+      "priority": "제외",
+      "reasons": [
+        "수의·소액계약 표기 — 실적 평가 여부 원문 확인",
+        "석면감리 관련 공고명",
+        "석면해체작업 감리인 지정·등록·배치 자격 원문 확인",
+        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
+      ],
+      "eligibility": "원문 확인 필요",
+      "performance": "업체 감리실적 필수·배점 여부 미확인",
+      "staffing": "석면해체작업 감리인 지정·배치조건 원문 확인",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01846516&bidPbancOrd=000",
+      "eligibility_status": "참가 불가",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "공고문 본점 소재지 서울 외 제한: 전남, 광주통합특별시, 광산구, 광주광역시",
+        "서울 소재 사무소 지역제한 불일치 (원문 재확인)"
+      ],
+      "eligibility_missing": [
+        "업체 실적 필수조건 및 배점",
+        "석면해체작업 감리인 지정·등록 요건"
+      ],
+      "document_analysis": {
+        "status": "일부 텍스트 자동 추출",
+        "files": [
+          {
+            "name": "(공고서) 송정중 석면철거공사 감리용역 수의계약 안내공고.hwp",
+            "format": "HWP",
+            "status": "본문 추출됨"
+          }
+        ],
+        "evidence": {
+          "region_clause": "참가자격 가.「지방자치단체를 당사자로 하는 계약에 관한 법률 시행령」제13조의 규정에 의한 요건을 갖춘 자로, 견적공고일 전일부터 개찰일(낙찰자는 계약 체결일)까지 법인등기부상 본점 소재지(개인사업자인 경우에는 사업자등록증 또는 관련 법령에 따른 허가·면허·등록·신고 등에 관련된 서류에 기재된 사업장의 소재지)를 계속 전남광주통합특별시 동구, 서구, 남구, 북구, 광산구(종전 광주광역시)에 둔 업체이어야 하며, 그러하지 않을 경우 계약상대자 결정을 취소함 나. 「석면안전관리법」제30조의 2 및 같은 법 시행령 [별표 3의2]의 자격을 갖추고 석면해체작업 감리인으로 등록한 자로서, 환경부, 국토교통부, 고용노동부가 공동 고시한「석면해체작업감리인 기",
+          "license_clause": "니다. Ⅰ. 용역 수의계약 안내공고 Ⅱ. 국가종합전자조달시스템 전자입찰특별유의서 Ⅲ. 국가종합전자조달시스템 입찰참가자격등록규정 Ⅳ. 지방자치단체 입찰 및 계약 집행기준 Ⅴ.전남광주통합특별시교육청 물품 및 용역계약 특수조건 (전남광주통합특별시교육청 고시 제2026-10003호, 2026. 7. 7.) 氠瑢 위 규정 등은 입찰공고일 기준 최신 규정 반영 氠瑢 <자료 검색> (법령·계약예규 등) 국가법령정보센터(http://www.law.go.kr)에서 검색 ※ 정확한 자료 검색이 되지 않을 경우 입찰공고 담당자에게 확인 氠瑢 송정중 석면철거공사 감리용역 수의계약 안내공고 氠瑢 < 본 계약은 청렴서약제가 적용됩니다 > 견적서 제출자는 반드시 견적서 제출시 아래의 청렴계약(청렴서약)에 관한 내용을 숙지·승낙하여야 하며, 동 내용을 위반하여 발",
+          "staffing_clause": "으로 등록한 자로서, 환경부, 국토교통부, 고용노동부가 공동 고시한「석면해체작업감리인 기준」[별표1]에서 정한 교육을 이수한 고급감리원이 소속된 아래 각 호의 어느 하나에 해당하는 업체를 말한다. 1)「한국산업안전보건공단법」에 따른 한국산업안전보건공단 2)「건축사법」제23조에 따라 건축사사무소 개설신고를 한 자 3)「기술사법」제6조에 따라 기술사사무소 개설등록을 한 자 4)「건설기술 진흥법 제26조 및 같은 법 시행령 제44조제1호 및 제2호가목ㆍ다목에 따라 종합 전문분야 또는 설계ㆍ사업관리 전문분야 중 일반 또는 건설사업관리 분야로 등록한 건설엔지니어링사업자 5)「산업안전보건법 제119조제2항에 따른 석면조사기관 또는 같은 법 제125조제5항에 따른 작업환경측정기관 6)「환경분야 시험ㆍ검사 등에",
+          "base_evidence": "용역기간: 착수일로부터 60일까지 마. 용역금액 (금액단위:원) 氠瑢 기초금액 추정가격 부가가치세 추정금액 32,747,000 浵╦ 29,770,000 浵ࡦ 浵╦ 2,977,000 浵ࡦ 浵╦ 32,747,000 浵ࡦ 2. 견적서 제출 및 계약방식 가. 견적서에 산출내역서를 첨부하지 않는 총액 견적 대상 용역 나. 지역"
+        }
+      },
+      "price_analysis": {
+        "status": "계산 불가",
+        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
+        "base_amount": null,
+        "floor_rate": null,
+        "adjustment_rate": null
+      },
+      "region_assessment": {
+        "status": "excluded",
+        "evidence": "공고문 본점 소재지 서울 외 제한: 전남, 광주통합특별시, 광산구, 광주광역시",
+        "verified": true
       }
     },
     {
@@ -3774,16 +3547,6 @@
       "performance": "설계실적 보유현황 및 필수·배점 조건 미확인 (감리실적과 별도)",
       "staffing": "설계 참여인력·협업 분야 자격 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01842104&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소 등록 및 협업 분야 자격",
-        "업체 실적 필수조건 및 배점",
-        "설계 참여인력·협업 분야·과업기간"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -3795,6 +3558,16 @@
         ],
         "evidence": {}
       },
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역",
+        "건축사사무소 등록 및 협업 분야 자격",
+        "업체 실적 필수조건 및 배점",
+        "설계 참여인력·협업 분야·과업기간"
+      ],
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -3863,15 +3636,6 @@
       "performance": "설계실적 보유현황 및 필수·배점 조건 미확인 (감리실적과 별도)",
       "staffing": "설계 참여인력·협업 분야 자격 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01842989&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "업체 실적 필수조건 및 배점",
-        "설계 참여인력·협업 분야·과업기간"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -3885,455 +3649,15 @@
           "license_clause": "2. 응모자격 가. 공고일 기준 「건축사법」 제7조에 따른 건축사 면허를 소지하고, 동법 제 23조에 따라 건축사사무소 등록을 필한 업체로서 관계법령에 결격사유가 없어야 한다. 나. 공동이행방식으로 참여하는 경우 대표자 및 공동참가자 모두 가)의 자격 조건을 갖추어야하며, 과반의 비율을 가진 참가자를 대표자로 선정하여야 한다.  공동참가시 총 업체(대표사 포함) 수는 2개사 이내로 하여야하고, 모든 법적 권리와 의무사항은 대표자에게 귀속되며 참가신청 시 대표자 선임계, 공동 수급협정서를 제출하여야 한다.  단독으로 참가 신청 후 공동으로 변경하는 것은 불가하며, 일원이 중도 탈퇴하였을 때는 탈퇴자를 다른 자로 교체할 수 없다.  공동참가에 따른 책임과 권리사항은 「지방자치단체를 당사자로 하는 계약에 관한 법률」, 「건설기술진흥법」"
         }
       },
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      },
-      "region_assessment": {
-        "status": "unknown",
-        "evidence": "지역제한 정보가 API에 없음",
-        "verified": false
-      }
-    },
-    {
-      "id": "R26BK01819471-000",
-      "number": "R26BK01819471",
-      "order": "000",
-      "category": "건축감리",
-      "registration_deadline": null,
-      "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
-      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
-      "attachments": [
-        {
-          "name": "주택건설공사 감리자(건축) 모집공고(씨티호반청평지구 공동주택 신축공사).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819471&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "총공사비 산출내역.xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819471&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "예정공정표(씨티호반청평지구).xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819471&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        },
-        {
-          "name": "감리비 산출근거(건축).xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819471&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
-        },
-        {
-          "name": "주택건설공사 감리자(건축) 모집공고(씨티호반청평지구 공동주택 신축공사).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819471&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": 1831173067,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "주택건설공사 감리자(건축) 모집 공고(씨티호반청평지구 공동주택 신축공사)",
-      "agency": "경기도 가평군",
-      "notice_at": "2026-11-10 14:22:28",
-      "deadline": "2026-11-20 10:00:00",
-      "budget": "2076588015",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "일반경쟁",
-      "method": "전자입찰",
-      "priority": "지역 확인 우선",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01819471&bidPbancOrd=000",
-      "document_analysis": {
-        "status": "일부 텍스트 자동 추출",
-        "files": [
-          {
-            "name": "주택건설공사 감리자(건축) 모집공고(씨티호반청평지구 공동주택 신축공사).hwpx",
-            "format": "HWP",
-            "status": "본문 추출됨"
-          }
-        ],
-        "evidence": {
-          "license_clause": ") 다. 시 공 자 : 대명건설㈜ 대표자 서경선 (☎ 02-2222-7324) 라. 설 계 자 : ㈜플랜애드건축사사무소 대표자 손민창 (☎ 02-554-8171) 마. 사업개요 ○ 위 치 : 경기도 가평군 청평면 청평리 731-18번지 일원 ○ 대지면적 : 17,014.00㎡ ○ 연 면 적 : 48,906.7637㎡ ○ 규 모 : 지하2층, 지상29층, 아파트 3개동 및 부대복리시설 ○ 세 대 수 : 292세대 ○ 공사기간(예정) : 2026. 12. 01. ~ 2029. 10. 31. (35개월) ○ 사업계획승인일 : 2023. 12. 22. 바. 사 업 비 ○ 총사업비 : 108,957,000천원 ○ 대 지 비 : 13,398,000천원 ○ 총공사비 : 90,245,000천원 (일반관리비, 이윤포함) 1. 감리대상 공사비 : 80,",
-          "performance_clause": "호 서식](Ⅰ.총괄표+Ⅱ.평가항목별 세부평가내역) 3) 재무상태 건실도 : 신용평가등급확인서 4) 감리업무 수행실적 확인서 ■ 유의사항 - 한국건설엔지니어링협회 또는 대한건축사협회(이하“협회\"라 한다)에서 발급한 증명서류에 명시된 실적에 한하여 인정 - 법인 건축사 명의로 수행한 감리수행 실적은 법인의 것으로만 인정 ※ 감리업무 수행실적은 모집공고일 기준으로 최근 3년이내에 「주택법」, 「건설기술진흥법」에 따른 주택건설공사의 감리 또는 시공단계의 건설사업관리용역을 준공(최근 3년간 중 해당 감리기간 동안 수행한 개월 수에 따라 산정)하였거나, 수행 중(전체 용역기간 중 최근 3년간에 실제 감리 또는 시공단계의 건설사업관리용역를 수행한 개월수에 따라 평가하여 산정)인 실적(감리수행금액)을 인정함. ※ 감리업무수행실적에 감리비 미기재 및 미확인된 사항은 감리실적으로 인정될 수 없어 평가에",
-          "staffing_clause": "5% 적용) ○ 기초금액 : 1,831,173,067원(감리비기준의 97%) ※ 소숫점 이하(원단위 미만) 절사 3. 감리원 배치계획표(사업주체가 제출한 주요공정계획서에 의함) 漠杳 ※ 상기 배치계획은 실착공 상황에 따라 변경될 수 있습니다. ※ 사실 확인 서류(감리원배치계획표 등) 작성 시 제시된 예정공정표(개월수)에 따라 작성하시기 바랍니다. 4. 입찰서 제출 일시 및 방법 가. 일 시 : 2026. 11. 18.(수) 10:00 ~ 2026. 11. 20.(금) 10:00 나. 방 법 : 전자입찰서는 반드시 국가종합전자조달시스템( 汫╨ http://www.g2b.go.kr 汫h )을 이용하여 제출하여야 합니다. 다. 유의사항 1) 전자입찰서 제출 시 11.가의 서류(파일형식:PDF)를 첨부하",
-          "floor_evidence": "합산하여 최종 예비순위가 확정됩니다. ※ 국가종합전자조달시스템상의 개찰결과는 종합평가에 의한 우선순위가 아닌 입찰가격에 따른 낙찰하한율 적용순위이며 낙찰하한율은 사업수행능력 배점(세대별)에 종합평점 85점이 되기위한 예정가격 대비 최소입찰가격 비율을 말함. ※ 사업수행능력평가 및 개찰결과 상위 3개 업체는 개찰일",
-          "base_evidence": "1,887,807,286원(감리대상공사비의 2.353755% 적용) ○ 기초금액 : 1,831,173,067원(감리비기준의 97%) ※ 소숫점 이하(원단위 미만) 절사 3. 감리원 배치계획표(사업주체가 제출한 주요공정계획서에 의함) 漠杳 ※ 상기 배치계획은 실착공 상황에 따라 변경될 수 있습니다. ※ 사실 확인 서류(감",
-          "score_clause": "하는 입찰서에는 입찰보증금 납부확약 내용이 포함되어 있습니다. 7) 감리자신청서 미첨부시 적격심사 대상에서 제외(실격처리)됩니다. 8) 나라장터 「동일 IP 중복투찰 제한」적용과 관련하여 같은 입찰에서 동일한 IP로는 입찰서를 1회만 제출토록 제한하고 있으며, 입찰자가 접속한 IP로 해당 입찰에 타 업체가 입찰서 제출시 사용한 IP가 있는 경우에는 입찰서 제출이 불가합니다. 9) 동일가격 입찰 시 전자조달 시스템을 통해 자동 추첨방식"
-        }
-      },
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역"
-      ],
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      },
-      "region_assessment": {
-        "status": "unknown",
-        "evidence": "지역제한 정보가 API에 없음",
-        "verified": false
-      }
-    },
-    {
-      "id": "R26BK01819681-000",
-      "number": "R26BK01819681",
-      "order": "000",
-      "category": "건축감리",
-      "registration_deadline": null,
-      "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
-      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
-      "attachments": [
-        {
-          "name": "(제출용)총사업비  공사비  공정표(대라수아파트).xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819681&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "26.11.06 감리비 산출서(정읍 연지동 주상복합아파트 신축공사(주택  전기  소방) (1).xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819681&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "주택건설공사 감리자(건축) 모집공고(대라수아파트).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819681&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        },
-        {
-          "name": "주택건설공사 감리자(건축) 모집공고(대라수아파트)(pdf).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819681&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "정읍시 연지동 361-1일원 주상복합 신축공사 주택건설공사 감리자(건축) 모집 공고",
-      "agency": "전북특별자치도 정읍시",
-      "notice_at": "2026-11-10 09:46:54",
-      "deadline": "2026-11-20 10:00:00",
-      "budget": "2627387782",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "일반경쟁",
-      "method": "전자입찰",
-      "priority": "지역 확인 우선",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01819681&bidPbancOrd=000",
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [
-          {
-            "name": "(제출용)총사업비  공사비  공정표(대라수아파트).xlsx",
-            "format": "HWPX/DOCX",
-            "status": "본문 추출 불가"
-          }
-        ],
-        "evidence": {}
-      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
       ],
       "eligibility_missing": [
         "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
         "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
+        "설계 참여인력·협업 분야·과업기간"
       ],
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      },
-      "region_assessment": {
-        "status": "unknown",
-        "evidence": "지역제한 정보가 API에 없음",
-        "verified": false
-      }
-    },
-    {
-      "id": "R26BK01819681-001",
-      "number": "R26BK01819681",
-      "order": "001",
-      "category": "건축감리",
-      "registration_deadline": null,
-      "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
-      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
-      "attachments": [
-        {
-          "name": "(변경공고(나라장터 업종제한 추가))주택건설공사 감리자(건축) 모집공고(대라수아파트).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819681&bidPbancOrd=001&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "(변경공고(나라장터 입찰제한추가))주택건설공사 감리자(건축) 모집공고(대라수아파트).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819681&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "(최종)(제출용)총사업비  공사비  공정표(대라수아파트).xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01819681&bidPbancOrd=001&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": 2316878317,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(없음)공동수급불허",
-        "pq": ""
-      },
-      "title": "(변경공고)정읍시 연지동 361-1일원 주상복합 신축공사 주택건설공사 감리자(건축) 모집 공고",
-      "agency": "전북특별자치도 정읍시",
-      "notice_at": "2026-11-17 09:32:50",
-      "deadline": "2026-11-20 10:00:00",
-      "budget": "2627387782",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "일반경쟁",
-      "method": "전자입찰",
-      "priority": "지역 확인 우선",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01819681&bidPbancOrd=001",
-      "document_analysis": {
-        "status": "일부 텍스트 자동 추출",
-        "files": [
-          {
-            "name": "(변경공고(나라장터 업종제한 추가))주택건설공사 감리자(건축) 모집공고(대라수아파트).hwpx",
-            "format": "HWPX/DOCX",
-            "status": "본문 추출됨"
-          }
-        ],
-        "evidence": {
-          "license_clause": "공 자 : 대라수건설(주) 대표이사 선종현 (☎ 062-456-7557) 라. 설 계 자 : ㈜일우엔지니어링건축사사무소 대표이사 안길전 (☎ 063-233-7151) 마. 사업개요 ○ 위 치 : 정읍시 연지동 361-1 일원 ○ 대지면적 : 12,816㎡ ○ 연 면 적 : 99,922.2245㎡ ○ 규 모 : 지하3층/지상26층 공동주택(아파트) 3개동 373세대, 업무시설(오피스텔) 1개동 144호, 부대ㆍ복리시설, 근린생활시설 ○ 공사기간 : 2026. 12. 01 ~ 2030. 04. 01 (착공신고 수리일로부터 40개월) ○ 사업계획승인일 : 2023. 12. 05.(2023-건축과-주택건설사업계획승인-4) 바. 사 업 비 ○ 총사업비 : 184,452,071천원 ○ 대 지 비 : 24,419,447천원 ○ 총공사비 : 126,",
-          "performance_clause": "서(별지 제2호 서식-Ⅱ) 및 별첨2,3,4 (4) 재무상태 건실도 : 신용평가등급 확인서 (5) 감리업무 수행실적 확인서 (6) 행정제재 여부 증명 : 최근 1년간 입찰참가 제한ㆍ업무정지 및 부실벌점관련 (7) 설계용역 수행 여부 확인 증명서(해당하는 경우) (8) 기술개발실적 증빙자료 (9) 기술개발투자실적 증명 : 공인회계사 또는 세무사가 증명한 최근 3년간 건설기술 개발 투자실적 (10) 업무중첩도 관련“예정공정표 및 감리원배치계획서 ”(해당하는 경우) (11) 교체빈도 (12) 감리업무수행계획서 (13) 확인서“별지 제5호서식” (해당하는 경우) (14) 감리원 관련 : 자격증명서, 학력증명서, 경력증명서, 행정제재, 교육이수확인서 (15) 감리자 응모자격 관련서류 : 건설엔지니어링사업자 등록증, 건축사업무신고필증, 사업자등록증, 법인등기부 등본, 인감증명서, 사용인감계, 위",
-          "staffing_clause": "6,878,317 원 (감리대가기준×97%) ※ 총사업비 산출총괄표 및 공종별 총공사비 구성현황표 : 붙임 참조 3. 감리원 배치계획표(사업주체가 제출한 주요공정계획서에 의함) : 붙임 참조 ※ 상기 배치계획은 실 착공 상황에 따라 변경될 수 있음 4. 입찰서 제출일시 및 방법 가. 일 시 : 2026. 11. 18.(수) 10:00 ~ 2026. 11. 20.(금) 10:00 나. 방 법 : 이 입찰은 전자입찰로만 집행하며, 전자입찰서는 반드시 조달청 국가종합전자조달시스템( http://www.g2b.go.kr )을 이용하여 제출하여야 합니다. 다. 유의사항 (1) 전자입찰서 제출시 8.가항의 서류(신청서 접수시 제출서류)를 첨부하여야 합니다. ※ 감리자지정 신청서류는 국가종합전자조달시스템(나라",
-          "floor_evidence": "한 유선상담은 일체 받지 않습니다. 라. 국가종합전자조달시스템상의 개찰결과는 종합평가에 의한 우선순위가 아닌 입찰가격에 따른 낙찰 하한율 적용순위이며 낙찰하한율은 사업수행능력 배점(세대별)에 종합평점 85점이 되기위한 예정가격 대비 최소입찰가격 비율을 말함. ※ 주택건설공사 감리자 지정기준 별표 감리자의 적격심사항",
-          "base_evidence": "7 원 ( 감리대상공사의 2.3292% 적용, 부가가치세 미포함 ) ※ 기초금액 : 2,316,878,317 원 (감리대가기준×97%) ※ 총사업비 산출총괄표 및 공종별 총공사비 구성현황표 : 붙임 참조 3. 감리원 배치계획표(사업주체가 제출한 주요공정계획서에 의함) : 붙임 참조 ※ 상기 배치계획은 실 착공 상황에 따",
-          "score_clause": "을 받지 않도록 유의하시기 바랍니다. (2) 신청서 제출서류(8.가항의 서류)를 미첨부시 적격심사 대상에서 제외(실격처리) 됩니다. 라. 예정가격은‘감리대가’의 97% ± 3% 범위 내에서 산출한 15개의 복수예비가격에서 입찰 참가업체가 입찰시 선택한 2개의 예비가격 번호 중 선택빈도가 가장 많은 4개의 번호에 해당하는 예비가격을 산술평균한 가격으로 합니다. 마. 입찰보증금은 납부를 확약하는 내용이 포함된 입찰서 제출로 갈음합니다."
-        }
-      },
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역"
-      ],
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      },
-      "region_assessment": {
-        "status": "unknown",
-        "evidence": "지역제한 정보가 API에 없음",
-        "verified": false
-      }
-    },
-    {
-      "id": "R26BK01822348-000",
-      "number": "R26BK01822348",
-      "order": "000",
-      "category": "건축감리",
-      "registration_deadline": null,
-      "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
-      "collaboration_status": "추가 분야 자격·분담 확인 필요",
-      "attachments": [
-        {
-          "name": "가격입찰 공고문[서천소방서 판교119안전센터 이전신축공사 감독권한대행 등 건설사업관리용역].hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01822348&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "가격입찰 공고문[서천소방서 판교119안전센터 이전신축공사 감독권한대행 등 건설사업관리용역].pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01822348&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "과업내용서[서천소방서 판교119안전센터 이전신축공사 감독권한대행 등 건설사업관리용역].hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01822348&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        },
-        {
-          "name": "배치계획표[서천소방서 판교119안전센터 이전신축공사 감독권한대행 등 건설사업관리용역].pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01822348&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
-        },
-        {
-          "name": "공내역서[서천소방서 판교119안전센터 이전신축공사 감독권한대행 등 건설사업관리용역].xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01822348&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)혼합방식",
-        "pq": "전자문서"
-      },
-      "title": "서천소방서 판교119안전센터 이전신축공사 감독권한대행 등 건설사업관리용역(P.Q 후 가격입찰)",
-      "agency": "충청남도 건설본부",
-      "notice_at": "2026-11-12 10:08:32",
-      "deadline": "2026-11-20 10:00:00",
-      "budget": "1282419000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "지명경쟁",
-      "method": "전자입찰",
-      "priority": "지역 확인 우선",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01822348&bidPbancOrd=000",
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "price_analysis": {
-        "status": "계산 불가",
-        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
-        "base_amount": null,
-        "floor_rate": null,
-        "adjustment_rate": null
-      },
-      "region_assessment": {
-        "status": "unknown",
-        "evidence": "지역제한 정보가 API에 없음",
-        "verified": false
-      }
-    },
-    {
-      "id": "R26BK01767360-000",
-      "number": "R26BK01767360",
-      "order": "000",
-      "category": "건축감리",
-      "registration_deadline": null,
-      "submission_deadline": null,
-      "competition_type": null,
-      "workload_status": "과업·기간 원문 확인 필요",
-      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
-      "attachments": [
-        {
-          "name": "기술용역 입찰설명서(R26DC00256974).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01767360&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
-        },
-        {
-          "name": "기술용역 입찰설명서(R26DC00256974).pdf",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01767360&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
-        },
-        {
-          "name": "과업지시서(R26DC00259674).hwpx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01767360&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
-        },
-        {
-          "name": "배치계획표(R26DC00259674).xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01767360&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
-        },
-        {
-          "name": "(2026.1.)종합심사낙찰제(시공단계_CM)통합평가방식_종합기술제안서_정량평가(제출양식).xlsx",
-          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01767360&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=05"
-        }
-      ],
-      "base_amount": null,
-      "floor_rate": null,
-      "raw_qualification": {
-        "industry": "",
-        "participation_region": "",
-        "limited_region": "",
-        "joint_venture": "(전자)혼합방식",
-        "pq": ""
-      },
-      "title": "중부경찰서 신축 건설사업관리용역",
-      "agency": "조달청",
-      "notice_at": "2026-10-15 09:12:57",
-      "deadline": "2026-11-20 18:00:00",
-      "budget": "5873559000",
-      "budget_type": "배정예산",
-      "region": "정보 미확인",
-      "contract": "일반경쟁",
-      "method": "전자입찰",
-      "priority": "지역 확인 우선",
-      "reasons": [
-        "건축감리 관련 공고명",
-        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
-      ],
-      "eligibility": "원문 확인 필요",
-      "performance": "업체 감리실적 필수·배점 여부 미확인",
-      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
-      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01767360&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소/감리자 등록 자격",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -6116,16 +5440,6 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01843129&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음",
-        "지역제한 대상 지역 미확정 — 원문 직접 확인"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "업체 실적 필수조건 및 배점",
-        "감리원 등급/배치기간/경력"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -6143,6 +5457,16 @@
           "score_clause": "찰하여 주시기 바랍니다. 2. 견적제출(입찰) 및 계약방식: 총액(일반)입찰, 전자입찰, 적격심사 대상 3. 입찰참가 자격 및 공동도급에 관한 사항 가 .「지방자치단체를 당사자로 하는 계약에 관한 법률」제31조(부정당업자의 입찰 참가자격제한)에 해당하지 아니하고 시행령 제13조 및 같은 법 시행 규칙 제14조에 따른 자격을 갖춘 자로서 강화군 공고 제2026-1575호에 의한 사업수행능력평가(P.Q)결과 입찰참가 적격자로 선정된 아래"
         }
       },
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "지역제한 대상 지역 미확정 — 원문 직접 확인"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역",
+        "업체 실적 필수조건 및 배점",
+        "감리원 등급/배치기간/경력"
+      ],
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -7509,16 +6833,6 @@
       "performance": "설계실적 보유현황 및 필수·배점 조건 미확인 (감리실적과 별도)",
       "staffing": "설계 참여인력·협업 분야 자격 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01830162&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소 등록 및 협업 분야 자격",
-        "업체 실적 필수조건 및 배점",
-        "설계 참여인력·협업 분야·과업기간"
-      ],
       "document_analysis": {
         "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
         "files": [
@@ -7530,6 +6844,16 @@
         ],
         "evidence": {}
       },
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역",
+        "건축사사무소 등록 및 협업 분야 자격",
+        "업체 실적 필수조건 및 배점",
+        "설계 참여인력·협업 분야·과업기간"
+      ],
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -7602,16 +6926,6 @@
       "performance": "설계실적 보유현황 및 필수·배점 조건 미확인 (감리실적과 별도)",
       "staffing": "설계 참여인력·협업 분야 자격 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01841943&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역",
-        "건축사사무소 등록 및 협업 분야 자격",
-        "업체 실적 필수조건 및 배점",
-        "설계 참여인력·협업 분야·과업기간"
-      ],
       "document_analysis": {
         "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
         "files": [
@@ -7623,6 +6937,16 @@
         ],
         "evidence": {}
       },
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역",
+        "건축사사무소 등록 및 협업 분야 자격",
+        "업체 실적 필수조건 및 배점",
+        "설계 참여인력·협업 분야·과업기간"
+      ],
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -7687,13 +7011,6 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01842551&bidPbancOrd=000",
-      "eligibility_status": "자격 확인 필요",
-      "eligibility_evidence": [
-        "지역제한 정보가 API에 없음"
-      ],
-      "eligibility_missing": [
-        "서울 업체 참가 가능 지역"
-      ],
       "document_analysis": {
         "status": "일부 텍스트 자동 추출",
         "files": [
@@ -7712,6 +7029,13 @@
           "score_clause": "아닌 입찰가격에 따른 낙찰하한율 적용순위이며, 낙찰하한율은 사업수행능력 배점(세대별)에 종합평점 85점이 되기 위한 예정가격 대비 최소입찰가격 비율을 말함. ※ 사업수행능력 평가 및 개찰결과 상위 3개 업체는 개찰일 다음날 우리군 홈페이지(https://www.pc.go.kr/) 게시판에 결과가 공개되며, 결과에 대한 유선 상담은 일체 받지 않습니다. 6. 사실 확인 서류 제출 기간 (종합평점 예비 상위 3개 업체에 한함) 가. 일"
         }
       },
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역"
+      ],
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -7723,8 +7047,7 @@
         "status": "unknown",
         "evidence": "지역제한 정보가 API에 없음",
         "verified": false
-      },
-      "base_amount_source": "공고문 텍스트 자동 추출 · 원문 확인 필요"
+      }
     },
     {
       "id": "R26BK01756869-000",
@@ -8297,6 +7620,96 @@
       }
     },
     {
+      "id": "R26BK01843816-000",
+      "number": "R26BK01843816",
+      "order": "000",
+      "category": "건축감리",
+      "registration_deadline": null,
+      "submission_deadline": null,
+      "competition_type": null,
+      "workload_status": "과업·기간 원문 확인 필요",
+      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
+      "attachments": [
+        {
+          "name": "주택건설공사 감리자(건축) 모집공고문(울산KTX역세권복합단지A3 공동주택).hwpx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01843816&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
+        },
+        {
+          "name": "주택건설공사 감리자(건축) 모집공고문(울산KTX역세권복합단지A3 공동주택).pdf",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01843816&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
+        },
+        {
+          "name": "총공사비 산출총괄표 및 예정공정표(건축).xlsx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01843816&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
+        }
+      ],
+      "base_amount": 6780456900,
+      "floor_rate": null,
+      "raw_qualification": {
+        "industry": "",
+        "participation_region": "",
+        "limited_region": "",
+        "joint_venture": "(없음)공동수급불허",
+        "pq": ""
+      },
+      "title": "주택건설공사 감리자(건축) 모집 공고(울산KTX역세권복합특화단지 A3)",
+      "agency": "울산광역시 울산경제자유구역청",
+      "notice_at": "2026-11-20 08:55:03",
+      "deadline": "2026-12-03 14:00:00",
+      "budget": "7689177936",
+      "budget_type": "배정예산",
+      "region": "정보 미확인",
+      "contract": "일반경쟁",
+      "method": "전자입찰",
+      "priority": "지역 확인 우선",
+      "reasons": [
+        "건축감리 관련 공고명",
+        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
+      ],
+      "eligibility": "원문 확인 필요",
+      "performance": "업체 감리실적 필수·배점 여부 미확인",
+      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01843816&bidPbancOrd=000",
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역"
+      ],
+      "document_analysis": {
+        "status": "일부 텍스트 자동 추출",
+        "files": [
+          {
+            "name": "주택건설공사 감리자(건축) 모집공고문(울산KTX역세권복합단지A3 공동주택).hwpx",
+            "format": "HWPX/DOCX",
+            "status": "본문 추출됨"
+          }
+        ],
+        "evidence": {
+          "license_clause": "시 영등포구 의사당대로 1길 25(하남빌딩 8층), 02-2239-1000 라. 설 계 자 : ㈜정림건축종합건축사사무소, 서울시 중구 세종대로12길, 12(남대문로4가),02-708-8600 마. 사업개요 ○ 위 치 : 울산광역시 울주군 삼남읍 신화리 산21-4 (A3BL) ○ 대지면적 : 59,845.30㎡ ○ 연 면 적 : 222,775.1024㎡ ○ 규 모 : 지하 3층, 지상 35층, 9개동 아파트, 근린생활시설 ○ 세 대 수 : ○ 공사기간 : 2027. 01. 01. ~ 2030. 10. 31. (46개월) ○ 사업계획승인일 : 바. 사 업 비 ○ 총사업비 : 642,302,776 ○ 대 지 비 : 153,662,000 ○ 총공사비 : 358,392,776 가) 건축 감리대상 공사비 : 312,060,793 나) 타법 감리대",
+          "performance_clause": "부평가서[별지제2호 서식-1] 및 별첨2,3,4 4) 재무상태 건실도 : 신용평가등급 확인서 5) 감리업무 수행실적 확인서 6) 행정제재 여부 증명 : 최근 1년간 입찰참가 제한ㆍ업무정지 및 부실벌점관련 7) 설계용역 수행 8) 기술개발실적 증빙자료 9) 기술개발투자실적 증명 : 본공고상의 재무검토보고서 또는 투자실적 증명서류 10) 업무중첩도 관련“예정공정표 및 감리원배치계획서 ” (해당하는 경우) ※ 다른 공사‧용역 등에 참여하고 있는 자가 있는 경우에는 한국건설엔지니어링협회 또는 대한건축사협회가 공고일 이후 발급한 업무중복 현황 확인서 11) 교체빈도 12) 확인서[별지 제5호서식] (해당하는 경우) 13) 감리업무수행계획서 (책임감리원 서명․날인) 14) 감리원 관련 ※ 참여감리원의 최근 1년간의 경력서 복사본(협회발행본, 주민등록번호 뒷자리 삭제, 원본대조필 필히 확인) 15",
+          "staffing_clause": "도, 원단위 미만 절사) ※ 기초금액 : 6,780,456,900원 (감리대가기준의 97%, 원단위 미만 절사) 3. 감리원 배치계획표(사업주체가 제출한 주요공정계획서에 의함) ■착공예정일 : 2027년 01월 01일 ■공사기간 : 46개월 (2027. 01. 01. ~ 2030. 10. 31.) ※ 상기 배치계획은 사업주체가 제출한 주요공정계획서에 의하며, 향후 실착공 상황에 따라 변경될 수 있음. 4. 입찰서 제출일시 및 방법 가. 일 시 : 2026. 12. 1(화) 10:00 ~ 2026. 12. 3.(목) 14:00 / 3일간 나. 방 법 : 전자입찰서는 반드시 국가종합전자조달시스템 ( http://www.g2b.go.kr )을 이용하여 제출 하여야 합니다. 다. 유의사항 1) 전자입찰서",
+          "floor_evidence": "산하여 최종 예비순위가 확정됩니다. 3) 국가종합전자조달시스템상의 개찰결과는 종합평가에 의한 우선순위가 아닌 입찰가격에 따른 낙찰하한율 적용순위이며 낙찰하한율은 사업수행능력 배점(세대별)에 종합평점 85점이 되기 위한 예정가격 대비 최소입찰가격 비율을 말함. ※ 세대별 낙찰하한율 산출표를 별첨<참고자료2>하오니",
+          "base_evidence": "감리대상공사비의 2.24%적용 , 부가세 별도, 원단위 미만 절사) ※ 기초금액 : 6,780,456,900원 (감리대가기준의 97%, 원단위 미만 절사) 3. 감리원 배치계획표(사업주체가 제출한 주요공정계획서에 의함) ■착공예정일 : 2027년 01월 01일 ■공사기간 : 46개월 (2027. 01. 01. ~ 203",
+          "score_clause": "지 않도록 유의하시기 바랍니다. 2) 8.가항의 서류(신청서 접수시 제출서류)를 미첨부시 적격심사 대상에서 제외(실격처리) 됩니다. 3) 나라장터 시스템 전자입찰 이용자 등록을 하여야만 전자입찰서 제출이 가능하며, 전자입찰 이용자 등록을 하지 않은 자는 지정 공인인증기관의 인증서를 교부받은 후 조달업체 이용약관에 동의한 다음 나라장터 시스템에 이용자 등록을 하여야 합니다. 4) 전자입찰서 제출확인은 입찰자가 나라장터 시스템의‘전자문서"
+        }
+      },
+      "price_analysis": {
+        "status": "계산 불가",
+        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
+        "base_amount": null,
+        "floor_rate": null,
+        "adjustment_rate": null
+      },
+      "region_assessment": {
+        "status": "unknown",
+        "evidence": "지역제한 정보가 API에 없음",
+        "verified": false
+      },
+      "base_amount_source": "공고문 텍스트 자동 추출 · 원문 확인 필요"
+    },
+    {
       "id": "R26BK01817862-000",
       "number": "R26BK01817862",
       "order": "000",
@@ -8749,6 +8162,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01842301&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -8759,11 +8177,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -10222,6 +9635,108 @@
       }
     },
     {
+      "id": "R26BK01846010-000",
+      "number": "R26BK01846010",
+      "order": "000",
+      "category": "건축감리",
+      "registration_deadline": null,
+      "submission_deadline": null,
+      "competition_type": null,
+      "workload_status": "과업·기간 원문 확인 필요",
+      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
+      "attachments": [
+        {
+          "name": "기술용역 입찰설명서(R26DC00284669).hwpx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846010&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
+        },
+        {
+          "name": "기술용역 입찰설명서(R26DC00284669).pdf",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846010&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
+        },
+        {
+          "name": "과업내용서(R26DC00284669).hwpx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846010&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
+        },
+        {
+          "name": "기술인 배치계획표(R26DC00284669).xlsx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846010&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
+        },
+        {
+          "name": "건설사업관리용역업자_사업수행능력평가서작성요령(2026. 1. 1.).xlsx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846010&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=05"
+        },
+        {
+          "name": "기술용역 업체정보등록 화면가이드('26.09).pptx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846010&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=05"
+        }
+      ],
+      "base_amount": null,
+      "floor_rate": null,
+      "raw_qualification": {
+        "industry": "",
+        "participation_region": "",
+        "limited_region": "",
+        "joint_venture": "(전자)공동이행",
+        "pq": "전자문서"
+      },
+      "title": "순천도사초 외 1교(순천풍덕초) 증축공사 감독권한대행 등 통합건설사업관리용역",
+      "agency": "조달청",
+      "notice_at": "2026-11-20 17:33:26",
+      "deadline": "2026-12-10 10:00:00",
+      "budget": "2050709000",
+      "budget_type": "배정예산",
+      "region": "정보 미확인",
+      "contract": "일반경쟁",
+      "method": "전자입찰",
+      "priority": "지역 확인 우선",
+      "reasons": [
+        "건축감리 관련 공고명",
+        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
+      ],
+      "eligibility": "원문 확인 필요",
+      "performance": "업체 감리실적 필수·배점 여부 미확인",
+      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01846010&bidPbancOrd=000",
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "지역제한 대상 지역 미확정 — 원문 직접 확인"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역"
+      ],
+      "document_analysis": {
+        "status": "일부 텍스트 자동 추출",
+        "files": [
+          {
+            "name": "기술용역 입찰설명서(R26DC00284669).hwpx",
+            "format": "HWPX/DOCX",
+            "status": "본문 추출됨"
+          }
+        ],
+        "evidence": {
+          "region_clause": "확인하시기 바랍니다. 2.2. 적격심사대상용역입니다. 2.2.1. 적격심사기준은 지방자치단체 입찰시 낙찰자 결정 기준 제2장의2「기술·학술연구 용역 적격심사세부기준」이 적용되며, 지역 업체 참여도는 아래와 같이 평가합니다. 1) 지역업체의 참여비율은 전체 용역금액에 대한 비율로 산정 2) 과업별 분담비율 : 건설기술용역업 100% ※ 전라남도 에 소재한 업체만 지역업체로 인정합니다.(단, 지역업체가 단독으로 참여하는 경우 지역업체참여도는 0점으로 처리 합니다.) 2.2.2. 지방자치단체 입찰 시 낙찰자 결정기준은 행정안전부 홈페이지 에 게재되어 있습니다. 2.2.3. 본 용역은 사업수행능력평가시 신용도 중 벌점 항목에 대해 감점없이 배점한도를 적",
+          "license_clause": ". 건설기술용역 입찰공고 Ⅱ. 국가종합전자조달시스템전자입찰특별유의서(조달청고시) Ⅲ. 국가종합전자조달시스템 입찰참가자격등록규정(조달청고시) Ⅳ. 기술용역 입찰 특별유의서(조달청 지침) Ⅴ. 입찰 유의서(지방자치단체 입찰 및 계약 집행기준, 행정안전부예규) Ⅵ. 지방자치단체용 건설기술(건설사업관리)용역계약 특수조건(조달청 지침) Ⅶ. 계약 일반조건(지방자치단체 입찰 및 계약 집행기준, 행정안전부예규) Ⅷ. 조달청 건설엔지니어링사업자 사업수행능력 세부평가기준(조달청 지침) Ⅸ. 지방자치단체 입찰시 낙찰자 결정 기준(행정안전부 예규) ☞ 유의사항 ∙ 본 건과 관련하여 입찰공고서와 과업지시서 등의 내용이 서로 다를 경우에는 입찰공고서가 우선 적용됩니다. ∙ 본 건 관련 각종 규정은 개정될 수 있으며, 개정될 경우 개정규정 부칙의 시 행일 (또",
+          "performance_clause": "3. 평가서 제출마감 기한 (온라인) : 2026 . 12. 02. 18:00 ※ PQ평가서 제출시 유사용역수행실적 실적구분 및 실적참여단계가 입력되지 않은 실적은 불인정 되므로 반드시 확인바랍니다. 4.3. 평가방법 4.3.1. 사업수행능력평가(PQ)는 PQ서류 제출 마감일 이 전에 온라인 으로 제출된 서류 (참여기술자의 등급ㆍ경력ㆍ실적ㆍ교육훈련, 유사용역수행실적 , 신용도, 기술개발 및 투자실적, 업무중첩도, 교체빈도, 가점 및 감점 등) 만으로 평가하며, 마감일 후에는 추가로 제출할 수 없습니다. 4.3.1.1 조달청 건설엔지니어링사업자 사업수행능력 세부평가기준 제11조(적격자 선정 결격)제5호에 따라 제출한 평가서류 확인 결과 당초 평가점수(입찰에 반영된 평가점수)보다 낮은 점수로서 적격심사 통과점수 미만으로 확인된 경우 입찰참가적격자 선정에서 제외합니다. ※ 단, 유사용역수행",
+          "staffing_clause": "회 증명서 상 기술자의 건설분야 경력 - 해당경력 : 전체경력 중 책임건설사업관리기술자(총괄감리원, 책임기술자), 상주기술자(상주감리원, 상주감리원(신규), 분야기술자, 상주(건축 사보) 기술자), 기술지원기술자(비상주감리원, 기술지원기술자) 의 경력. 다만, 기술지원기술자(비상주감리원, 기술지원기술자) 경력은 1/2을 인정 2.2.4.3 경력기간 산정 시 중복된 기간은 이중으로 인정하지 않습니다. 2.2.4.4 소수점 처리 없이 해당 구간의 등급 점수로 산정합니다. 2.2.4.5 관련협회의 증명서에 표기가 없는 경우 경력기간 합산 시 인정하지 않습니다. 2.3. 전자입찰대상용역입니다. 2.4. 청렴계약제가 적용되는 용역입니다. 2.5. 손해배상책임보험(공제)가입 및 하자보증금납부 대상용역입니다.",
+          "base_evidence": "출기간 중에는 24시간 입찰서의 제출이 가능합니다. 7.2.2. 예비가격기초금액은 개찰일 5일 전에 나라장터 시스템의 “입찰-입찰공고-입찰공고상세-기초 금액공개”에 게재될 예정이오니 이를 확인하고 입찰에 참가하시기 바랍니다. 7.2.3. 입찰서 제출 여부는 나라장터 시스템의 “입찰-입찰진행-나의 투찰 내역”에서 확인하여",
+          "score_clause": "방식 2.1 입찰참가자격사전심사(이하“PQ심사”라 함) 대상 용역입니다. 2.1.1. PQ심사기준은 “ 조달청 건설엔지니어링사업자 사업수행능력 세부평가기준” [ 조달청지침 제2298 호, 2025.11.28. ] 이 적용됩니다. ※ 입찰자는 변경된 평가내용[합산벌점, 신규고용률 등]을 반드시 확인하시기 바랍니다. 2.2. 적격심사대상용역입니다. 2.2.1. 적격심사기준은 지방자치단체 입찰시 낙찰자 결정 기준 제2장의2「기술·학술연구"
+        }
+      },
+      "price_analysis": {
+        "status": "계산 불가",
+        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
+        "base_amount": null,
+        "floor_rate": null,
+        "adjustment_rate": null
+      },
+      "region_assessment": {
+        "status": "unknown",
+        "evidence": "지역제한 정보가 API에 없음",
+        "verified": false
+      }
+    },
+    {
       "id": "R26BK01831747-000",
       "number": "R26BK01831747",
       "order": "000",
@@ -10839,6 +10354,104 @@
       }
     },
     {
+      "id": "R26BK01844976-000",
+      "number": "R26BK01844976",
+      "order": "000",
+      "category": "건축감리",
+      "registration_deadline": null,
+      "submission_deadline": null,
+      "competition_type": null,
+      "workload_status": "과업·기간 원문 확인 필요",
+      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
+      "attachments": [
+        {
+          "name": "기술용역 입찰설명서(R26DC00278473).hwpx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01844976&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
+        },
+        {
+          "name": "과업지시서(R26DC00278473).hwpx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01844976&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
+        },
+        {
+          "name": "배치계획표(R26DC00278473).xlsx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01844976&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
+        },
+        {
+          "name": "건설사업관리용역업자_사업수행능력평가서작성요령(2026. 1. 1.).xlsx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01844976&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
+        },
+        {
+          "name": "기술용역 입찰설명서(R26DC00278473).pdf",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01844976&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=05"
+        }
+      ],
+      "base_amount": null,
+      "floor_rate": null,
+      "raw_qualification": {
+        "industry": "",
+        "participation_region": "",
+        "limited_region": "",
+        "joint_venture": "(전자)혼합방식",
+        "pq": "전자문서"
+      },
+      "title": "체인지업그라운드 지역확산 모델 구축 건립공사 건설사업관리용역",
+      "agency": "조달청",
+      "notice_at": "2026-11-20 16:18:56",
+      "deadline": "2026-12-15 10:00:00",
+      "budget": "2402826000",
+      "budget_type": "배정예산",
+      "region": "정보 미확인",
+      "contract": "일반경쟁",
+      "method": "전자입찰",
+      "priority": "지역 확인 우선",
+      "reasons": [
+        "건축감리 관련 공고명",
+        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
+      ],
+      "eligibility": "원문 확인 필요",
+      "performance": "업체 감리실적 필수·배점 여부 미확인",
+      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01844976&bidPbancOrd=000",
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음",
+        "지역제한 대상 지역 미확정 — 원문 직접 확인"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역"
+      ],
+      "document_analysis": {
+        "status": "일부 텍스트 자동 추출",
+        "files": [
+          {
+            "name": "기술용역 입찰설명서(R26DC00278473).hwpx",
+            "format": "HWPX/DOCX",
+            "status": "본문 추출됨"
+          }
+        ],
+        "evidence": {
+          "region_clause": "확인하시기 바랍니다. 2.2. 적격심사대상용역입니다. 2.2.1. 적격심사기준은 지방자치단체 입찰시 낙찰자 결정 기준 제2장의2「기술·학술연구 용역 적격심사세부기준」이 적용되며, 지역업체 참여도는 아래와 같이 평가합니다. 1) 지역업체의 참여비율은 전체 용역금액에 대한 비율로 산정 2) 과업별 분담비율 : ① 건설엔지니어링업 : 86% ② 통신 : 11% ③ 소방 : 3% ※ 경상북도 에 소재한 업체만 지역업체로 인정합니다.(단, 지역업체가 단독으로 참여하는 경우 지역업체참여도는 0점으로 처리합니다.) 2.2.2. 지방자치단체 입찰 시 낙찰자 결정기준은 행정안전부 홈페이지 에 게재되어 있습니다. 2.2.3. PQ대상용역은 PQ심사 시 경영상태를",
+          "license_clause": ". 건설기술용역 입찰공고 Ⅱ. 국가종합전자조달시스템전자입찰특별유의서(조달청고시) Ⅲ. 국가종합전자조달시스템 입찰참가자격등록규정(조달청고시) Ⅳ. 기술용역 입찰 특별유의서(조달청 지침) Ⅴ. 입찰 유의서(지방자치단체 입찰 및 계약 집행기준, 행정안전부예규) Ⅵ. 지방자치단체용 건설기술(건설사업관리)용역계약 특수조건(조달청 지침) Ⅶ. 계약 일반조건(지방자치단체 입찰 및 계약 집행기준, 행정안전부예규) Ⅷ. 조달청 건설엔지니어링사업자 사업수행능력 세부평가기준(조달청 지침) Ⅸ. 지방자치단체 입찰시 낙찰자 결정 기준(행정안전부 예규) ☞ 유의사항 ∙ 본 건과 관련하여 입찰공고서와 과업지시서 등의 내용이 서로 다를 경우에는 입찰공고서가 우선 적용됩니다. ∙ 본 건 관련 각종 규정은 개정될 수 있으며, 개정될 경우 개정규정 부칙의 시 행일 (또",
+          "performance_clause": "3. 평가서 제출마감 기한 (온라인) : 2026 . 12. 07. 18:00 ※ PQ평가서 제출시 유사용역수행실적 실적구분 및 실적참여단계가 입력되지 않은 실적은 불인정 되므로 반드시 확인바랍니다. 4.3. 평가방법 4.3.1. 사업수행능력평가(PQ)는 PQ서류 제출 마감일 이 전에 온라인 으로 제출된 서류 (참여기술자의 등급ㆍ경력ㆍ실적ㆍ교육훈련, 유사용역수행실적 , 신용도, 기술개발 및 투자실적, 업무중첩도, 교체빈도, 가점 및 감점 등) 만으로 평가하며, 마감일 후에는 추가로 제출할 수 없습니다. 4.3.1.1 조달청 건설엔지니어링사업자 사업수행능력 세부평가기준 제11조(적격자 선정 결격)제5호에 따라 제출한 평가서류 확인 결과 당초 평가점수(입찰에 반영된 평가점수)보다 낮은 점수로서 적격심사 통과점수 미만으로 확인된 경우 입찰참가적격자 선정에서 제외합니다. ※ 단, 유사용역수행",
+          "staffing_clause": "회 증명서 상 기술자의 건설분야 경력 - 해당경력 : 전체경력 중 책임건설사업관리기술자(총괄감리원, 책임기술자), 상주기술자(상주감리원, 상주감리원(신규), 분야기술자, 상주(건축 사보) 기술자), 기술지원기술자(비상주감리원, 기술지원기술자) 의 경력. 다만, 기술지원기술자(비상주감리원, 기술지원기술자) 경력은 1/2을 인정 2.2.5.3 경력기간 산정 시 중복된 기간은 이중으로 인정하지 않습니다. 2.2.5.4 소수점 처리 없이 해당 구간의 등급 점수로 산정합니다. 2.2.5.5 관련협회의 증명서에 표기가 없는 경우 경력기간 합산 시 인정하지 않습니다. 2.3. 전자입찰대상용역입니다. 2.4. 청렴계약제가 적용되는 용역입니다. 2.5. 손해배상책임보험(공제)가입 및 하자보증금납부 대상용역입니다.",
+          "base_evidence": "출기간 중에는 24시간 입찰서의 제출이 가능합니다. 7.2.2. 예비가격기초금액은 개찰일 5일 전에 나라장터 시스템의 “입찰-입찰공고-입찰 공고상세-기초금액공개”에 게재될 예정이오니 이를 확인하고 입찰에 참가하시기 바랍니다. 7.2.3. 입찰서 제출 여부는 나라장터 시스템의 “입찰-입찰진행-나의 투찰 내역”에서 확인하여",
+          "score_clause": "방식 2.1 입찰참가자격사전심사(이하“PQ심사”라 함) 대상 용역입니다. 2.1.1. PQ심사기준은 “ 조달청 건설엔지니어링사업자 사업수행능력 세부평가기준” [ 조달청지침 제2298 호, 2025.11.28. ] 이 적용됩니다. ※ 입찰자는 변경된 평가내용[합산벌점, 신규고용률 등]을 반드시 확인하시기 바랍니다. 2.2. 적격심사대상용역입니다. 2.2.1. 적격심사기준은 지방자치단체 입찰시 낙찰자 결정 기준 제2장의2「기술·학술연구"
+        }
+      },
+      "price_analysis": {
+        "status": "계산 불가",
+        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
+        "base_amount": null,
+        "floor_rate": null,
+        "adjustment_rate": null
+      },
+      "region_assessment": {
+        "status": "unknown",
+        "evidence": "지역제한 정보가 API에 없음",
+        "verified": false
+      }
+    },
+    {
       "id": "R26BK01764045-000",
       "number": "R26BK01764045",
       "order": "000",
@@ -11364,6 +10977,11 @@
       "performance": "업체 감리실적 필수·배점 여부 미확인",
       "staffing": "건축사·상주감리원 자격/기간 원문 확인",
       "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01842363&bidPbancOrd=000",
+      "document_analysis": {
+        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
+        "files": [],
+        "evidence": {}
+      },
       "eligibility_status": "자격 확인 필요",
       "eligibility_evidence": [
         "지역제한 정보가 API에 없음"
@@ -11374,11 +10992,6 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
-      "document_analysis": {
-        "status": "첨부 자동 분석 실패 — 원문 직접 확인 필요",
-        "files": [],
-        "evidence": {}
-      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
@@ -11474,6 +11087,104 @@
         "업체 실적 필수조건 및 배점",
         "감리원 등급/배치기간/경력"
       ],
+      "price_analysis": {
+        "status": "계산 불가",
+        "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
+        "base_amount": null,
+        "floor_rate": null,
+        "adjustment_rate": null
+      },
+      "region_assessment": {
+        "status": "unknown",
+        "evidence": "지역제한 정보가 API에 없음",
+        "verified": false
+      }
+    },
+    {
+      "id": "R26BK01842741-000",
+      "number": "R26BK01842741",
+      "order": "000",
+      "category": "건축감리",
+      "registration_deadline": null,
+      "submission_deadline": null,
+      "competition_type": null,
+      "workload_status": "과업·기간 원문 확인 필요",
+      "collaboration_status": "단독 수행 가능 여부 원문 확인 필요",
+      "attachments": [
+        {
+          "name": "과업내용서(R26DC00254082)_자산관리공사.hwpx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01842741&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
+        },
+        {
+          "name": "기술용역 입찰설명서(R26DC00254082)_자산관리공사.hwpx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01842741&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
+        },
+        {
+          "name": "배치계획표(R26DC00254082)_자산관리공사.xlsx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01842741&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=05"
+        },
+        {
+          "name": "★2. 건설사업관리용역업자_사업수행능력평가서작성요령(2026. 1. 1.).xlsx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01842741&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=05"
+        },
+        {
+          "name": "기술용역 입찰설명서(R26DC00254082)_자산관리공사.pdf",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01842741&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=05"
+        },
+        {
+          "name": "기술용역 업체정보등록 화면가이드('26.09).pptx",
+          "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01842741&bidPbancOrd=000&fileType=&fileSeq=8&prcmBsneSeCd=05"
+        }
+      ],
+      "base_amount": null,
+      "floor_rate": null,
+      "raw_qualification": {
+        "industry": "",
+        "participation_region": "",
+        "limited_region": "",
+        "joint_venture": "(전자)혼합방식",
+        "pq": "전자문서"
+      },
+      "title": "한국자산관리공사 전북지역본부 사옥 재건축 건설사업관리용역",
+      "agency": "조달청",
+      "notice_at": "2026-11-20 17:51:42",
+      "deadline": "2027-01-14 10:00:00",
+      "budget": "2690000000",
+      "budget_type": "배정예산",
+      "region": "정보 미확인",
+      "contract": "일반경쟁",
+      "method": "전자입찰",
+      "priority": "지역 확인 우선",
+      "reasons": [
+        "건축감리 관련 공고명",
+        "지역제한 정보 미기재 — 서울 업체 참여 가능 여부 확인"
+      ],
+      "eligibility": "원문 확인 필요",
+      "performance": "업체 감리실적 필수·배점 여부 미확인",
+      "staffing": "건축사·상주감리원 자격/기간 원문 확인",
+      "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01842741&bidPbancOrd=000",
+      "eligibility_status": "자격 확인 필요",
+      "eligibility_evidence": [
+        "지역제한 정보가 API에 없음"
+      ],
+      "eligibility_missing": [
+        "서울 업체 참가 가능 지역"
+      ],
+      "document_analysis": {
+        "status": "일부 텍스트 자동 추출",
+        "files": [
+          {
+            "name": "과업내용서(R26DC00254082)_자산관리공사.hwpx",
+            "format": "HWPX/DOCX",
+            "status": "본문 추출됨"
+          }
+        ],
+        "evidence": {
+          "license_clause": "현장 참여자의 배치기준 1) 건 설사업관리자는 발주청의 요구가 있는 경우를 제외하고 본 건설사업관리 입찰 참가 자격심사 시 입찰참가 제안서에 명시된 자가 업무에 참여토록 하여야 하며, 특별한 사유가 없는 한 건설사업관리용역 완료시까지 근무토록 하여야 한다. 2) 건설사업 관리자는 사업관리단의 구성안 (조직표 및 투입예정표) , 관리자의 경력 확인서를 발주청에게 제출하여 발주청의 승인을 받은 후 현장에 배치하여야 한다. 3) 건설사업관리 업무수행 중 부적격 사유가 발생하여 발주청이 교체를 명할 때에는 이에 응하여야 하고, 건설사업관리자의 사정에 의하여 참여기술자를 교체하고자 할 경우에는 동등 이상의 기술자격, 경력 등을 종합적 으로 검토하여 업무수행 능력이 저하되지 않는 범위 내에서 발주청의 사전 승인을 득한 후 교체하여야 한다. 4",
+          "performance_clause": "계획과 관련된 업무를 수행하되 업무의 중요성을 감안하여 사전에 업무에 투입되는 사업관리자의 경력, 유사사례 수행실적 등 업무수행능력을 객관적으로 증빙할 수 있는 과업수행계획서를 제출하여 발주청의 별도 승인을 받아 건설사업관리자를 배치하여야 한다. 4.8 주요 업무내용 4.8.1 건설사업관리 업무수행계획서 작성ㆍ운영 당해 건설공사의 개요, 발주청의 요구사항, 수행여건 등을 고려하여 건설공사 시행단계별 계약관리, 사업비관리, 공정관리, 품질관리, 안전관리, 사업정보관리 등 건설사업관리 업무수행 계획과 기타 필요한 사항을 포함하는 건설사업관리 과업수행 계획서 (CM Plan) 를 작성ㆍ운영하는 업무를 말한다. 4.8.2 건설사업관리 절차서 작성ㆍ운영 발주청, 설계자, 시공자, 건설사업관리자 등 건설사업 참여주체간의 역할 분담, 업무내용 등을 기초로 건설사업관리 업무수행에 대한 절차 및 방법",
+          "staffing_clause": "지른 현장기술자의 교체 요구 시 ⑧ 발주청이 설계 및 시공에 필요하다고 판단하는 사항 3.2.4 건설사업관리자 현장 참여자의 배치기준 1) 건 설사업관리자는 발주청의 요구가 있는 경우를 제외하고 본 건설사업관리 입찰 참가 자격심사 시 입찰참가 제안서에 명시된 자가 업무에 참여토록 하여야 하며, 특별한 사유가 없는 한 건설사업관리용역 완료시까지 근무토록 하여야 한다. 2) 건설사업 관리자는 사업관리단의 구성안 (조직표 및 투입예정표) , 관리자의 경력 확인서를 발주청에게 제출하여 발주청의 승인을 받은 후 현장에 배치하여야 한다. 3) 건설사업관리 업무수행 중 부적격 사유가 발생하여 발주청이 교체를 명할 때에는 이에 응하여야 하고, 건설사업관리자의 사정에 의하여 참여기술자를 교체하고자 할 경우에는 동"
+        }
+      },
       "price_analysis": {
         "status": "계산 불가",
         "reason": "공고 기초금액·낙찰하한율·참가자격 확인 필요",
